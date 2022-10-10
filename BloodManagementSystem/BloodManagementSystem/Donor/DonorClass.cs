@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar;
+using System.Configuration;
 
 namespace BloodManagementSystem
 {
@@ -26,7 +27,7 @@ namespace BloodManagementSystem
         public string Password { get; set; }
         public void Insert()
         {
-            using (SqlConnection con = new SqlConnection(ConnectionClass.Connection))
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
                 try
                 {
@@ -66,7 +67,7 @@ namespace BloodManagementSystem
 
         public void UpdateInfo(int id, string fn, string ln, string dob, string gender, string phone, string email, string country, string city, string region)
         {
-            using (SqlConnection con = new SqlConnection(ConnectionClass.Connection))
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
                 try
                 {
@@ -98,7 +99,7 @@ namespace BloodManagementSystem
 
         public void UpdateAcc(int id, string un, string pw)
         {
-            using (SqlConnection con = new SqlConnection(ConnectionClass.Connection))
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
                 try
                 {
@@ -120,7 +121,7 @@ namespace BloodManagementSystem
         }
         public static int GetCount()
         {
-            using (SqlConnection con = new SqlConnection(ConnectionClass.Connection))
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
                 try
                 {
@@ -146,7 +147,7 @@ namespace BloodManagementSystem
         }
         public static List<DonorClass> PopulateAcc()
         {
-            using (SqlConnection con = new SqlConnection(ConnectionClass.Connection))
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
                 try
                 {
@@ -176,7 +177,7 @@ namespace BloodManagementSystem
 
         public static List<DonorClass> PopulateAllDonor()
         {
-            using(SqlConnection con = new SqlConnection(ConnectionClass.Connection))
+            using(SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
                 try
                 {
@@ -222,6 +223,16 @@ namespace BloodManagementSystem
         {
             List<DonorClass> temp = PopulateAllDonor();
             return temp.Find(a => a.ID == id);
+        }
+        public static DonorClass findPass(int id)
+        {
+            List<DonorClass> temp = PopulateAcc();
+            return temp.Find(a => a.ID == id);
+        }
+        public static DonorClass findIDbyPhoneEmail(string phone, string email)
+        {
+            List<DonorClass> temp = PopulateAllDonor();
+            return temp.Find(a => a.Phone == phone && a.Email == email);
         }
 
     }

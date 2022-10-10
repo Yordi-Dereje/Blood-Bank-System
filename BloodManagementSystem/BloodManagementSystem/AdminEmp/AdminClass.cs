@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
 
 namespace BloodManagementSystem
 {
@@ -27,7 +28,7 @@ namespace BloodManagementSystem
 
         public void UpdateInfo(int id, string fn, string ln, string dob, string gender, string phone, string email, string country, string city, string region, bool adstat)
         {
-            using (SqlConnection con = new SqlConnection(ConnectionClass.Connection))
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
                 try
                 {
@@ -59,7 +60,7 @@ namespace BloodManagementSystem
         }
         public static List<AdminClass> PopulateAcc()
         {
-            using (SqlConnection con = new SqlConnection(ConnectionClass.Connection))
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
                 try
                 {
@@ -95,7 +96,7 @@ namespace BloodManagementSystem
 
         public static List<AdminClass> PopulateAll()
         {
-            using (SqlConnection con = new SqlConnection(ConnectionClass.Connection))
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
                 try
                 {

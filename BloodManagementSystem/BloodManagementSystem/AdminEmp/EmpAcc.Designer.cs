@@ -37,9 +37,10 @@
             // 
             // tbPWEmp
             // 
-            this.tbPWEmp.Location = new System.Drawing.Point(98, 231);
+            this.tbPWEmp.Location = new System.Drawing.Point(229, 263);
+            this.tbPWEmp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbPWEmp.Name = "tbPWEmp";
-            this.tbPWEmp.Size = new System.Drawing.Size(251, 35);
+            this.tbPWEmp.Size = new System.Drawing.Size(335, 39);
             this.tbPWEmp.StateCommon.Border.Color1 = System.Drawing.Color.Maroon;
             this.tbPWEmp.StateCommon.Border.Color2 = System.Drawing.Color.Black;
             this.tbPWEmp.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -50,9 +51,10 @@
             // 
             // kryptonLabel3
             // 
-            this.kryptonLabel3.Location = new System.Drawing.Point(98, 199);
+            this.kryptonLabel3.Location = new System.Drawing.Point(229, 224);
+            this.kryptonLabel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonLabel3.Name = "kryptonLabel3";
-            this.kryptonLabel3.Size = new System.Drawing.Size(93, 26);
+            this.kryptonLabel3.Size = new System.Drawing.Size(115, 32);
             this.kryptonLabel3.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
             this.kryptonLabel3.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel3.TabIndex = 181;
@@ -60,9 +62,10 @@
             // 
             // tbUNEmp
             // 
-            this.tbUNEmp.Location = new System.Drawing.Point(98, 126);
+            this.tbUNEmp.Location = new System.Drawing.Point(229, 134);
+            this.tbUNEmp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbUNEmp.Name = "tbUNEmp";
-            this.tbUNEmp.Size = new System.Drawing.Size(251, 35);
+            this.tbUNEmp.Size = new System.Drawing.Size(335, 39);
             this.tbUNEmp.StateCommon.Border.Color1 = System.Drawing.Color.Maroon;
             this.tbUNEmp.StateCommon.Border.Color2 = System.Drawing.Color.Black;
             this.tbUNEmp.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -73,9 +76,10 @@
             // 
             // lbl_UserName
             // 
-            this.lbl_UserName.Location = new System.Drawing.Point(98, 94);
+            this.lbl_UserName.Location = new System.Drawing.Point(229, 95);
+            this.lbl_UserName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbl_UserName.Name = "lbl_UserName";
-            this.lbl_UserName.Size = new System.Drawing.Size(104, 26);
+            this.lbl_UserName.Size = new System.Drawing.Size(128, 31);
             this.lbl_UserName.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
             this.lbl_UserName.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
             this.lbl_UserName.TabIndex = 179;
@@ -83,7 +87,8 @@
             // 
             // btnDone
             // 
-            this.btnDone.Location = new System.Drawing.Point(248, 344);
+            this.btnDone.Location = new System.Drawing.Point(327, 359);
+            this.btnDone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDone.Name = "btnDone";
             this.btnDone.OverrideDefault.Back.Color1 = System.Drawing.Color.Maroon;
             this.btnDone.OverrideDefault.Back.Color2 = System.Drawing.Color.Maroon;
@@ -98,7 +103,7 @@
             this.btnDone.OverrideDefault.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.btnDone.OverrideDefault.Border.Rounding = 20;
             this.btnDone.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnDone.Size = new System.Drawing.Size(101, 38);
+            this.btnDone.Size = new System.Drawing.Size(135, 47);
             this.btnDone.StateCommon.Back.Color1 = System.Drawing.Color.Maroon;
             this.btnDone.StateCommon.Back.Color2 = System.Drawing.Color.Maroon;
             this.btnDone.StateCommon.Back.ColorAngle = 45F;
@@ -130,21 +135,22 @@
             this.btnDone.StateTracking.Border.Rounding = 20;
             this.btnDone.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDone.TabIndex = 183;
-            this.btnDone.Values.Text = "Done";
+            this.btnDone.Values.Text = "Login";
             this.btnDone.Click += new System.EventHandler(this.btnDone_Click);
             // 
             // EmpAcc
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(466, 450);
+            this.ClientSize = new System.Drawing.Size(809, 500);
             this.Controls.Add(this.btnDone);
             this.Controls.Add(this.tbPWEmp);
             this.Controls.Add(this.kryptonLabel3);
             this.Controls.Add(this.tbUNEmp);
             this.Controls.Add(this.lbl_UserName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "EmpAcc";
             this.Text = "EmpAcc";
             this.Load += new System.EventHandler(this.EmpAcc_Load);

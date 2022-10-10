@@ -53,6 +53,7 @@
     </Reference>
     <Reference Include="MySql.Data, Version=8.0.29.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Xml.Linq" />
@@ -66,63 +67,68 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AcceptedDonation.cs">
+    <Compile Include="Donation\AcceptedDonation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AcceptedDonation.Designer.cs">
+    <Compile Include="Donation\AcceptedDonation.Designer.cs">
       <DependentUpon>AcceptedDonation.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdminClass.cs" />
-    <Compile Include="AdminEmpLogin.cs">
+    <Compile Include="AdminEmp\AdminClass.cs" />
+    <Compile Include="AdminEmp\AdminEmpLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminEmpLogin.Designer.cs">
+    <Compile Include="AdminEmp\AdminEmpLogin.Designer.cs">
       <DependentUpon>AdminEmpLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdminView.cs">
+    <Compile Include="AdminEmp\AdminView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminView.Designer.cs">
+    <Compile Include="AdminEmp\AdminView.Designer.cs">
       <DependentUpon>AdminView.cs</DependentUpon>
     </Compile>
-    <Compile Include="BloodStock.cs">
+    <Compile Include="Donation\BloodStock.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BloodStock.Designer.cs">
+    <Compile Include="Donation\BloodStock.Designer.cs">
       <DependentUpon>BloodStock.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConnectionClass.cs" />
-    <Compile Include="SQLDonationClass.cs" />
-    <Compile Include="DonorClass.cs" />
-    <Compile Include="DonorInfo.cs">
+    <Compile Include="Donor\DonorForgotPassword.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DonorInfo.Designer.cs">
+    <Compile Include="Donor\DonorForgotPassword.Designer.cs">
+      <DependentUpon>DonorForgotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEmp\EmpForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminEmp\EmpForgotPassword.Designer.cs">
+      <DependentUpon>EmpForgotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Donation\SQLDonationClass.cs" />
+    <Compile Include="Donor\DonorClass.cs" />
+    <Compile Include="Donor\DonorInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Donor\DonorInfo.Designer.cs">
       <DependentUpon>DonorInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="EmpAcc.cs">
+    <Compile Include="AdminEmp\EmpAcc.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EmpAcc.Designer.cs">
+    <Compile Include="AdminEmp\EmpAcc.Designer.cs">
       <DependentUpon>EmpAcc.cs</DependentUpon>
     </Compile>
-    <Compile Include="EmpDashBoard.cs">
+    <Compile Include="AdminEmp\EmployeeClass.cs" />
+    <Compile Include="AdminEmp\EmployeeRegi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EmpDashBoard.Designer.cs">
-      <DependentUpon>EmpDashBoard.cs</DependentUpon>
-    </Compile>
-    <Compile Include="EmployeeClass.cs" />
-    <Compile Include="EmployeeRegi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EmployeeRegi.Designer.cs">
+    <Compile Include="AdminEmp\EmployeeRegi.Designer.cs">
       <DependentUpon>EmployeeRegi.cs</DependentUpon>
     </Compile>
-    <Compile Include="EmployeeView.cs">
+    <Compile Include="AdminEmp\EmployeeView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EmployeeView.Designer.cs">
+    <Compile Include="AdminEmp\EmployeeView.Designer.cs">
       <DependentUpon>EmployeeView.cs</DependentUpon>
     </Compile>
     <Compile Include="Hospital.cs">
@@ -131,58 +137,58 @@
     <Compile Include="Hospital.Designer.cs">
       <DependentUpon>Hospital.cs</DependentUpon>
     </Compile>
-    <Compile Include="PrimaryChecks.cs">
+    <Compile Include="Donation\PrimaryChecks.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PrimaryChecks.Designer.cs">
+    <Compile Include="Donation\PrimaryChecks.Designer.cs">
       <DependentUpon>PrimaryChecks.cs</DependentUpon>
     </Compile>
-    <Compile Include="RequestDonor.cs">
+    <Compile Include="Donation\RequestDonor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RequestDonor.Designer.cs">
+    <Compile Include="Donation\RequestDonor.Designer.cs">
       <DependentUpon>RequestDonor.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCRequestingDonor.cs">
+    <Compile Include="Donation\UCRequestingDonor.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCRequestingDonor.Designer.cs">
+    <Compile Include="Donation\UCRequestingDonor.Designer.cs">
       <DependentUpon>UCRequestingDonor.cs</DependentUpon>
     </Compile>
-    <Compile Include="DashBoard.cs">
+    <Compile Include="Donation\DashBoard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DashBoard.Designer.cs">
+    <Compile Include="Donation\DashBoard.Designer.cs">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </Compile>
-    <Compile Include="DonationInfo.cs">
+    <Compile Include="Donation\DonationInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DonationInfo.Designer.cs">
+    <Compile Include="Donation\DonationInfo.Designer.cs">
       <DependentUpon>DonationInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="DonorCreateAcc.cs">
+    <Compile Include="Donor\DonorCreateAcc.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DonorCreateAcc.Designer.cs">
+    <Compile Include="Donor\DonorCreateAcc.Designer.cs">
       <DependentUpon>DonorCreateAcc.cs</DependentUpon>
     </Compile>
-    <Compile Include="DonorLogin.cs">
+    <Compile Include="Donor\DonorLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DonorLogin.Designer.cs">
+    <Compile Include="Donor\DonorLogin.Designer.cs">
       <DependentUpon>DonorLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="DonorRegi.cs">
+    <Compile Include="Donor\DonorRegi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DonorRegi.Designer.cs">
+    <Compile Include="Donor\DonorRegi.Designer.cs">
       <DependentUpon>DonorRegi.cs</DependentUpon>
     </Compile>
-    <Compile Include="DonorView.cs">
+    <Compile Include="Donor\DonorView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DonorView.Designer.cs">
+    <Compile Include="Donor\DonorView.Designer.cs">
       <DependentUpon>DonorView.cs</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.cs">
@@ -191,10 +197,10 @@
     <Compile Include="MainWindow.Designer.cs">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="Location.cs">
+    <Compile Include="Donation\Location.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Location.Designer.cs">
+    <Compile Include="Donation\Location.Designer.cs">
       <DependentUpon>Location.cs</DependentUpon>
     </Compile>
     <Compile Include="ManageAcc.cs">
@@ -203,31 +209,31 @@
     <Compile Include="ManageAcc.Designer.cs">
       <DependentUpon>ManageAcc.cs</DependentUpon>
     </Compile>
-    <Compile Include="DonationDetailPage.cs">
+    <Compile Include="Donation\DonationDetailPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DonationDetailPage.Designer.cs">
+    <Compile Include="Donation\DonationDetailPage.Designer.cs">
       <DependentUpon>DonationDetailPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RequestDon.cs">
+    <Compile Include="Donation\RequestDon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RequestDon.Designer.cs">
+    <Compile Include="Donation\RequestDon.Designer.cs">
       <DependentUpon>RequestDon.cs</DependentUpon>
     </Compile>
-    <Compile Include="SqlMedical.cs" />
-    <Compile Include="UCDonorInfo.cs">
+    <Compile Include="Donation\SqlMedical.cs" />
+    <Compile Include="Donor\UCDonorInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCDonorInfo.Designer.cs">
+    <Compile Include="Donor\UCDonorInfo.Designer.cs">
       <DependentUpon>UCDonorInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCSuccDonations.cs">
+    <Compile Include="Donation\UCSuccDonations.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCSuccDonations.Designer.cs">
+    <Compile Include="Donation\UCSuccDonations.Designer.cs">
       <DependentUpon>UCSuccDonations.cs</DependentUpon>
     </Compile>
     <Compile Include="Views.cs">
@@ -236,49 +242,52 @@
     <Compile Include="Views.Designer.cs">
       <DependentUpon>Views.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AcceptedDonation.resx">
+    <EmbeddedResource Include="Donation\AcceptedDonation.resx">
       <DependentUpon>AcceptedDonation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminEmpLogin.resx">
+    <EmbeddedResource Include="AdminEmp\AdminEmpLogin.resx">
       <DependentUpon>AdminEmpLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminView.resx">
+    <EmbeddedResource Include="AdminEmp\AdminView.resx">
       <DependentUpon>AdminView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BloodStock.resx">
+    <EmbeddedResource Include="Donation\BloodStock.resx">
       <DependentUpon>BloodStock.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DashBoard.resx">
+    <EmbeddedResource Include="Donation\DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DonationInfo.resx">
+    <EmbeddedResource Include="Donation\DonationInfo.resx">
       <DependentUpon>DonationInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DonorCreateAcc.resx">
+    <EmbeddedResource Include="Donor\DonorCreateAcc.resx">
       <DependentUpon>DonorCreateAcc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DonorInfo.resx">
+    <EmbeddedResource Include="Donor\DonorForgotPassword.resx">
+      <DependentUpon>DonorForgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Donor\DonorInfo.resx">
       <DependentUpon>DonorInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DonorLogin.resx">
+    <EmbeddedResource Include="Donor\DonorLogin.resx">
       <DependentUpon>DonorLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DonorRegi.resx">
+    <EmbeddedResource Include="Donor\DonorRegi.resx">
       <DependentUpon>DonorRegi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DonorView.resx">
+    <EmbeddedResource Include="Donor\DonorView.resx">
       <DependentUpon>DonorView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EmpAcc.resx">
+    <EmbeddedResource Include="AdminEmp\EmpAcc.resx">
       <DependentUpon>EmpAcc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EmpDashBoard.resx">
-      <DependentUpon>EmpDashBoard.cs</DependentUpon>
+    <EmbeddedResource Include="AdminEmp\EmpForgotPassword.resx">
+      <DependentUpon>EmpForgotPassword.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EmployeeRegi.resx">
+    <EmbeddedResource Include="AdminEmp\EmployeeRegi.resx">
       <DependentUpon>EmployeeRegi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EmployeeView.resx">
+    <EmbeddedResource Include="AdminEmp\EmployeeView.resx">
       <DependentUpon>EmployeeView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Hospital.resx">
@@ -287,16 +296,16 @@
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Location.resx">
+    <EmbeddedResource Include="Donation\Location.resx">
       <DependentUpon>Location.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageAcc.resx">
       <DependentUpon>ManageAcc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DonationDetailPage.resx">
+    <EmbeddedResource Include="Donation\DonationDetailPage.resx">
       <DependentUpon>DonationDetailPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PrimaryChecks.resx">
+    <EmbeddedResource Include="Donation\PrimaryChecks.resx">
       <DependentUpon>PrimaryChecks.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -308,19 +317,19 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="RequestDon.resx">
+    <EmbeddedResource Include="Donation\RequestDon.resx">
       <DependentUpon>RequestDon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RequestDonor.resx">
+    <EmbeddedResource Include="Donation\RequestDonor.resx">
       <DependentUpon>RequestDonor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCRequestingDonor.resx">
+    <EmbeddedResource Include="Donation\UCRequestingDonor.resx">
       <DependentUpon>UCRequestingDonor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCDonorInfo.resx">
+    <EmbeddedResource Include="Donor\UCDonorInfo.resx">
       <DependentUpon>UCDonorInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCSuccDonations.resx">
+    <EmbeddedResource Include="Donation\UCSuccDonations.resx">
       <DependentUpon>UCSuccDonations.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views.resx">
@@ -339,5 +348,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

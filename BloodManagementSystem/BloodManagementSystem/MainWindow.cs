@@ -20,9 +20,9 @@ namespace BloodManagementSystem
 
         private void gunaLabel1_Click(object sender, EventArgs e)
         {
-            Panel3.Controls.Clear();
-            DonorLogin dl = new DonorLogin(Panel3) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true};
-            Panel3.Controls.Add(dl);
+            gunaPanel3.Controls.Clear();
+            DonorLogin dl = new DonorLogin(gunaPanel3) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true};
+            gunaPanel3.Controls.Add(dl);
             dl.Show();
         }
 
@@ -38,9 +38,9 @@ namespace BloodManagementSystem
 
         private void lbl_AdminView_Click(object sender, EventArgs e)
         {
-            Panel3.Controls.Clear();
-            AdminEmpLogin ad = new AdminEmpLogin() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            Panel3.Controls.Add(ad);
+            gunaPanel3.Controls.Clear();
+            AdminEmpLogin ad = new AdminEmpLogin(gunaPanel3) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            gunaPanel3.Controls.Add(ad);
             ad.Show();
             
         }
@@ -69,5 +69,25 @@ namespace BloodManagementSystem
         {
 
         }
+
+        private void lbl_AdminView_MouseHover(object sender, EventArgs e)
+        {
+            lbl_AdminView.ForeColor = Color.Maroon;
+        }
+
+        private void lbl_AdminView_MouseLeave(object sender, EventArgs e)
+        {
+            lbl_AdminView.ForeColor = Color.Red;
+        }
+        private void lblAboutUs_MouseHover(object sender, EventArgs e)
+        {
+            lblAboutUs.ForeColor = Color.Maroon;
+        }
+        private void lblAboutUs_MouseLeave(object sender, EventArgs e)
+        {
+            lblAboutUs.ForeColor = Color.Red;
+        }
+
+        
     }
 }

@@ -12,9 +12,11 @@ namespace BloodManagementSystem
 {
     public partial class AdminEmpLogin : Form
     {
-        public AdminEmpLogin()
+        Panel p;
+        public AdminEmpLogin(Panel p)
         {
             InitializeComponent();
+            this.p = p;
         }
 
         private void btn_Login_Click(object sender, EventArgs e)
@@ -49,6 +51,14 @@ namespace BloodManagementSystem
 
             }
 
+        }
+
+        private void kryptonLinkLabel1_LinkClicked(object sender, EventArgs e)
+        {
+            p.Controls.Clear();
+            EmpForgotPassword ad = new EmpForgotPassword(p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            p.Controls.Add(ad);
+            ad.Show();
         }
     }
 }

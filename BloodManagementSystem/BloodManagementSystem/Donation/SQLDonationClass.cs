@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComponentFactory.Krypton.Toolkit;
+using System.Configuration;
 
 namespace BloodManagementSystem
 {
@@ -17,7 +18,7 @@ namespace BloodManagementSystem
 
         public List<SQLDonationClass> BloodID(int id)
         {
-            using (SqlConnection con = new SqlConnection(ConnectionClass.Connection))
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
                 try
                 {
@@ -47,7 +48,7 @@ namespace BloodManagementSystem
         }
         public void failInsert(int id, string date, int weight, int bpS, int bpD, bool anem)
         {
-            using (SqlConnection con = new SqlConnection(ConnectionClass.Connection))
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
                 try
                 {
@@ -77,7 +78,7 @@ namespace BloodManagementSystem
         
         public void successInsert(int id, string date, string venue, string bloodType)
         {
-            using (SqlConnection con = new SqlConnection(ConnectionClass.Connection))
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
                 try
                 {
@@ -104,7 +105,7 @@ namespace BloodManagementSystem
         }
         public void removePerson(int id)
         {
-            using (SqlConnection con = new SqlConnection(ConnectionClass.Connection))
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
                 try
                 {
@@ -127,7 +128,7 @@ namespace BloodManagementSystem
         }
         public void requestFormLoad(FlowLayoutPanel flp)
         {
-            using (SqlConnection con = new SqlConnection(ConnectionClass.Connection))
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
                 try
                 {

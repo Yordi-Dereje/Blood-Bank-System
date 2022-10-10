@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
 
 namespace BloodManagementSystem
 {
@@ -28,7 +29,7 @@ namespace BloodManagementSystem
 
         public void Insert()
         {
-            using (SqlConnection con = new SqlConnection(ConnectionClass.Connection))
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
                 try
                 {
@@ -67,7 +68,7 @@ namespace BloodManagementSystem
         }
         public void UpdateAcc(int id, string un, string pw)
         {
-            using (SqlConnection con = new SqlConnection(ConnectionClass.Connection))
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
                 try
                 {
@@ -93,7 +94,7 @@ namespace BloodManagementSystem
 
         public void UpdateInfo(int id, string fn, string ln, string dob, string gender, string phone, string email, string country, string city, string region/*, bool adstat*/)
         {
-            using (SqlConnection con = new SqlConnection(ConnectionClass.Connection))
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
                 try
                 {
@@ -127,7 +128,7 @@ namespace BloodManagementSystem
 
         public static List<EmployeeClass> PopulateAcc()
         {
-            using (SqlConnection con = new SqlConnection(ConnectionClass.Connection))
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
                 try
                 {
@@ -163,7 +164,7 @@ namespace BloodManagementSystem
 
         public static List<EmployeeClass> PopulateAll()
         {
-            using (SqlConnection con = new SqlConnection(ConnectionClass.Connection))
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
                 try
                 {
@@ -206,7 +207,7 @@ namespace BloodManagementSystem
         }
         public static int GetCount()
         {
-            using (SqlConnection con = new SqlConnection(ConnectionClass.Connection))
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
                 try
                 {
@@ -244,6 +245,15 @@ namespace BloodManagementSystem
             List<EmployeeClass> temp = PopulateAll();
             return temp.Find(a => a.ID == id);
         }
-
+        public static EmployeeClass findPass(int id)
+        {
+            List<EmployeeClass> temp = PopulateAcc();
+            return temp.Find(a => a.ID == id);
+        }
+        public static EmployeeClass findIDbyPhoneEmail(string phone, string email)
+        {
+            List<EmployeeClass> temp = PopulateAll();
+            return temp.Find(a => a.Phone == phone && a.Email == email);
+        }
     }
 }

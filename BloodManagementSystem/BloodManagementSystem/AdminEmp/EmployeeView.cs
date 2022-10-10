@@ -45,7 +45,7 @@ namespace BloodManagementSystem
         private void lbl_Home_Click(object sender, EventArgs e)
         {
             Panel_EmpDisplay.Controls.Clear();
-            EmpDashBoard ed = new EmpDashBoard() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            DashBoard ed = new DashBoard() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             Panel_EmpDisplay.Controls.Add(ed);
             ed.Show();
         }
@@ -66,5 +66,6 @@ namespace BloodManagementSystem
             Panel_EmpDisplay.Controls.Add(md);
             md.Show();
         }
+
     }
 }

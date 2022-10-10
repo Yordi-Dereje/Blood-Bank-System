@@ -30,7 +30,7 @@ namespace BloodManagementSystem
             else
                 gen = "Male";
             string dob = dtp.Value.ToString();
-            DonorCreateAcc dc = new DonorCreateAcc(p,id.ToString(), tbFN.Text, tbLN.Text, gen, dob, tbPhone.Text, tbEmail.Text, tbCo.Text, tbCi.Text, tbReg.Text) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            DonorCreateAcc dc = new DonorCreateAcc(p,id.ToString(), tbFN.Text, tbLN.Text, gen, dob, tbPhone.Text, tbEmail.Text, tbCo.Text, tbCity.Text, tbReg.Text) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             p.Controls.Add(dc);
             dc.Show();
         }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
 
 namespace BloodManagementSystem
 {
@@ -17,7 +18,7 @@ namespace BloodManagementSystem
         {
             //convert this to a procedure
             //and also one person can put in the request only once
-            using (SqlConnection con = new SqlConnection(ConnectionClass.Connection))
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
                 try
                 {
@@ -46,7 +47,7 @@ namespace BloodManagementSystem
         }
         public void Insert3(int id, CheckedListBox CLB3m)
         {
-            using (SqlConnection con = new SqlConnection(ConnectionClass.Connection))
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
                 try
                 {
@@ -75,7 +76,7 @@ namespace BloodManagementSystem
 
         public void InsertPer(int id, CheckedListBox CLBper)
         {
-            using (SqlConnection con = new SqlConnection(ConnectionClass.Connection))
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
                 try
                 {
@@ -109,7 +110,7 @@ namespace BloodManagementSystem
 
         public void InsertFull(int id, CheckedListBox CLB72h, CheckedListBox CLB3m, CheckedListBox CLBper)
         {
-            using (SqlConnection con = new SqlConnection(ConnectionClass.Connection))
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
                 bool c72 = false, c3 = false, cp = false;
                 if (CLB72h.CheckedIndices.Count > 0)

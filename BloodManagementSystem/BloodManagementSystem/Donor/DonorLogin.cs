@@ -51,5 +51,13 @@ namespace BloodManagementSystem
             p.Controls.Add(dr);
             dr.Show();
         }
+
+        private void kryptonLinkLabel1_LinkClicked(object sender, EventArgs e)
+        {
+            p.Controls.Clear();
+            DonorForgotPassword ad = new DonorForgotPassword(p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            p.Controls.Add(ad);
+            ad.Show();
+        }
     }
 }
