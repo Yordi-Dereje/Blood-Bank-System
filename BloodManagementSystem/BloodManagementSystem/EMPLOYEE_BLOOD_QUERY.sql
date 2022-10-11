@@ -453,6 +453,21 @@ BEGIN
 END
 --no need of stored
 CREATE TABLE BLOOD_COUNT(
+id int,
 bloodtype varchar(2),
-count int
+count int,
+Foreign key (id) references SUCCESSFUL_DONATION(BloodID)
 );
+--CREATE TRIGGER trig_BLOOD_COUNT
+--AFTER INSERT
+
+drop table blood_count;
+select *from blood_count;
+
+CREATE TABLE DONATION_INFO(
+Donor_ID int,
+Medical_Stat varchar(10),
+Donation_Stat varchar(15),
+Foreign key (Donor_ID) references DONOR_INFO(ID)
+);
+drop table donation_info;
