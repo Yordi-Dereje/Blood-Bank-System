@@ -36,7 +36,7 @@ namespace BloodManagementSystem
 
         private void checkedListBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

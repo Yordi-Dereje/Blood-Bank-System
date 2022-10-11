@@ -31,7 +31,7 @@ namespace BloodManagementSystem
             {
                 try
                 {
-                    string query = "EXEC spINSERT_DONOR_INFO @fn, @ln, @dob, @gender, @phone, @email, @country, @city, @region";
+                    string query = "INSERT INTO DONOR_INFO values (@fn, @ln, @dob, @gender, @phone, @email, @country, @city, @region)";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@fn", FirstName);
                     cmd.Parameters.AddWithValue("@ln", LastName);
@@ -43,7 +43,7 @@ namespace BloodManagementSystem
                     cmd.Parameters.AddWithValue("@city", City);
                     cmd.Parameters.AddWithValue("@region", Region);
 
-                    string query2 = "EXEC spINSERT_DONOR_ACCOUNTS @id, @un, @pw";
+                    string query2 = "INSERT INTO DONOR_ACCOUNTS VALUES (@id, @un, @pw)";
                     SqlCommand cmd2 = new SqlCommand(query2, con);
                     cmd2.Parameters.AddWithValue("@id", ID);
                     cmd2.Parameters.AddWithValue("@un", UserName);
@@ -51,7 +51,6 @@ namespace BloodManagementSystem
 
                     con.Open();
                     cmd.ExecuteNonQuery();
-                    //MessageBox.Show("Before or after");
                     cmd2.ExecuteNonQuery();
                     con.Close();
                 }
@@ -72,7 +71,7 @@ namespace BloodManagementSystem
                 try
                 {
 
-                    string query = "EXEC spUPDATE_DONOR_INFO @fn, @ln, @dob, @gender,  @phone,@email, @country, @city, @region ";
+                    string query = "UPDATE DONOR_INFO SET FirstName = @fn, LastName = @ln, Dob = @dob, Gender = @gender, Phone = @phone, Email = @email, Country = @country, City = @city, Region = @region WHERE ID = @id";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@fn", fn);
                     cmd.Parameters.AddWithValue("@ln", ln);
@@ -103,7 +102,7 @@ namespace BloodManagementSystem
             {
                 try
                 {
-                    string query = "EXEC spUpdate_DONOR_ACCOUNTS @un, @pw ";
+                    string query = "UPDATE DONOR_ACCOUNTS SET UserName = @un, Password = @pw WHERE ID = @id";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@un", un);
                     cmd.Parameters.AddWithValue("@pw", pw);
@@ -132,9 +131,7 @@ namespace BloodManagementSystem
                     con.Open();
                     count = Convert.ToInt32(cmd.ExecuteScalar());
                     cmd.Dispose();
-                    return count;
-                    con.Close();
-                    
+                    return count;           
                 }
                 catch (Exception e)
                 {
@@ -152,7 +149,7 @@ namespace BloodManagementSystem
                 try
                 {
                     List<DonorClass> temp = new List<DonorClass>();
-                    string query = "EXEC spDISPLAY_DONOR_ACCOUNTS";
+                    string query = "Select * from DONOR_ACCOUNTS";
                     SqlCommand cmd = new SqlCommand(query, con);
                     SqlDataReader sdr;
                     con.Open();
@@ -182,7 +179,7 @@ namespace BloodManagementSystem
                 try
                 {
                     List<DonorClass> temp = new List<DonorClass>();
-                    string query = "EXEC spDISPLAY_DONOR_INFO";
+                    string query = "Select * from DONOR_INFO";
                     SqlCommand cmd = new SqlCommand(query, con);
                     SqlDataReader sdr;
                     con.Open();
@@ -202,9 +199,7 @@ namespace BloodManagementSystem
                         r.Region = (string)sdr["Region"];
                         temp.Add(r);
                     }
-
                     return temp;
-                    con.Close();
                 }
                 catch (Exception e)
                 {

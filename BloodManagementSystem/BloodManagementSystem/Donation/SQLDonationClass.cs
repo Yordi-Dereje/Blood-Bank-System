@@ -52,7 +52,7 @@ namespace BloodManagementSystem
             {
                 try
                 {
-                    string query = "EXEC spINSERT_FAIL_HISTORY @id, @d, @w, @bps, @bpd, @anem";
+                    string query = "INSERT INTO FAIL_HISTORY values(@id, @d, @w, @bps, @bpd, @anem)";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@id", id);
                     cmd.Parameters.AddWithValue("@d", date);
@@ -82,24 +82,20 @@ namespace BloodManagementSystem
             {
                 try
                 {
-                    string query = "EXEC spINSERT_SUCCESSFUL_DONATION @id, @d, @v, @bt";
+                    con.Open();
+                    string query = "INSERT INTO SUCCESSFUL_DONATION values (@id, @d, @v, @bt)";
                     SqlCommand cmd = new SqlCommand(query, con);
-                    //cmd.Parameters.AddWithValue("@bid", BloodId);
                     cmd.Parameters.AddWithValue("@id", id);
                     cmd.Parameters.AddWithValue("@d", date);
                     cmd.Parameters.AddWithValue("@v", venue);
                     cmd.Parameters.AddWithValue("@bt", bloodType);
 
-                    con.Open();
+                    
                     cmd.ExecuteNonQuery();
                 }
                 catch (Exception e)
                 {
                     MessageBox.Show(e.Message);
-                }
-                finally
-                {
-                    con.Close();
                 };
             }
         }
@@ -133,7 +129,7 @@ namespace BloodManagementSystem
                 try
                 {
                     con.Open();
-                    SqlDataAdapter da = new SqlDataAdapter("spDISPLAY_FULL_CHECK", con);
+                    SqlDataAdapter da = new SqlDataAdapter("Select * from FULL_CHECK", con);
                     DataSet ds = new DataSet();
                     da.Fill(ds, "FULL_CHECK");
                     foreach (DataRow item in ds.Tables["FULL_CHECK"].Rows)

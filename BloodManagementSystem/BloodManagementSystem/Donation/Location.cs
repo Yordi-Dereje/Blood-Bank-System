@@ -48,11 +48,11 @@ namespace BloodManagementSystem
         }
         private void HideSubMenu()
         {
-            if(SubMenu_Panel1.Visible = true)
+            if(SubMenu_Panel1.Visible == true)
                 SubMenu_Panel1.Visible = false;
-            else if (SubMenu_Panel2.Visible = true)
+            else if (SubMenu_Panel2.Visible == true)
                 SubMenu_Panel2.Visible = false;
-            else if (SubMenu_Panel3.Visible = true)
+            else if (SubMenu_Panel3.Visible == true)
                 SubMenu_Panel3.Visible = false;
         }
         private void ShowSubMenu(Panel subMenu)

@@ -22,7 +22,7 @@ namespace BloodManagementSystem
             {
                 try
                 {
-                    string query = "EXEC spINSERT_DONOR_72CHECKS @id, @ab, @st, @as, @va, @al";
+                    string query = "INSERT INTO DONOR_72CHECKS values (@id, @ab, @st, @as, @va, @al)";
                     SqlCommand cmd = new SqlCommand(query, con);
                     con.Open();
                     cmd.Parameters.AddWithValue("@id", id);
@@ -51,7 +51,7 @@ namespace BloodManagementSystem
             {
                 try
                 {
-                    string query = "EXEC spINSERT_DONOR_3MON @id, @tat, @ep, @de, @mjs, @mns";
+                    string query = "INSERT INTO DONOR_3MON values (@id, @tat, @ep, @de, @mjs, @mns)";
                     SqlCommand cmd = new SqlCommand(query, con);
                     con.Open();
                     cmd.Parameters.AddWithValue("@id", id);
@@ -79,8 +79,8 @@ namespace BloodManagementSystem
             using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
                 try
-                {
-                    string query = "EXEC spINSERT_DONOR_PERCHECK @id, @hd, @hiv, @hb, @hc, @std, @c, @tb, @kd, @ab";
+                { 
+                    string query = "INSERT INTO DONOR_PERCHECK values (@id, @hd, @hiv, @hb, @hc, @std, @c, @tb, @kd, @ab)";
                     SqlCommand cmd = new SqlCommand(query, con);
                     con.Open();
                     cmd.Parameters.AddWithValue("@id", id);
@@ -94,7 +94,6 @@ namespace BloodManagementSystem
                     cmd.Parameters.AddWithValue("@kd", SqlDbType.Bit).Value = CLBper.GetItemCheckState(7);
                     cmd.Parameters.AddWithValue("@ab", SqlDbType.Bit).Value = CLBper.GetItemCheckState(8);
                     cmd.ExecuteNonQuery();
-
                 }
                 catch (Exception ee)
                 {
@@ -121,7 +120,7 @@ namespace BloodManagementSystem
                     cp = true;
                 try
                 {
-                    string query = "EXEC spINSERT_FULL_CHECK @id, @c72, @c3, @cp";
+                    string query = "INSERT INTO FULL_CHECK values (@id, @c72, @c3, @cp)";
                     SqlCommand cmd = new SqlCommand(query, con);
                     con.Open();
                     cmd.Parameters.AddWithValue("@id", id);

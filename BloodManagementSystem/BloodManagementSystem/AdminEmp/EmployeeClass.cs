@@ -33,7 +33,7 @@ namespace BloodManagementSystem
             {
                 try
                 {
-                    string query = "EXEC spINSERT_EMP_INFO @fn, @ln, @dob, @gender, @phone, @email, @country, @city, @region, @adstat";
+                    string query = "INSERT INTO EMP_INFO values (@fn, @ln, @dob, @gender, @phone, @email, @country, @city, @region, @adstat)";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@fn", FirstName);
                     cmd.Parameters.AddWithValue("@ln", LastName);
@@ -46,7 +46,7 @@ namespace BloodManagementSystem
                     cmd.Parameters.AddWithValue("@region", Region);
                     cmd.Parameters.AddWithValue("@adstat", SqlDbType.Bit).Value = AdminStatus;
 
-                    string query2 = "EXEC spINSERT_EMP_ACCOUNTS @id, @un, @pw";
+                    string query2 = "INSERT INTO EMP_ACCOUNTS VALUES (@id, @un, @pw)";
                     SqlCommand cmd2 = new SqlCommand(query2, con);
                     cmd2.Parameters.AddWithValue("@id", ID);
                     cmd2.Parameters.AddWithValue("@un", UserName);
@@ -72,7 +72,7 @@ namespace BloodManagementSystem
             {
                 try
                 {
-                    string query = "EXEC spUpdate_EMP_ACCOUNTS @un,  @pw ";
+                    string query = "Update EMP_ACCOUNTS SET UserName = @un, Password = @pw WHERE ID = @id";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@un", un);
                     cmd.Parameters.AddWithValue("@pw", pw);
@@ -98,7 +98,7 @@ namespace BloodManagementSystem
             {
                 try
                 {
-                    string query = "EXEC spUPDATE_EMP_INFO @fn, @ln, @dob, @gender,  @phone, @email,  @country,@city,  @region";
+                    string query = "Update EMP_INFO SET FirstName = @fn, LastName = @ln, Dob = @dob, Gender = @gender, Phone = @phone, Email = @email, Country = @country, City = @city, Region = @region WHERE ID = @id";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@fn", fn);
                     cmd.Parameters.AddWithValue("@ln", ln);
@@ -133,7 +133,7 @@ namespace BloodManagementSystem
                 try
                 {
                     List<EmployeeClass> temp = new List<EmployeeClass>();
-                    string query = "EXEC spDISPLAY_EMP_ACCOUNTS";
+                    string query = "Select * from EMP_ACCOUNTS";
                     SqlCommand cmd = new SqlCommand(query, con);
                     SqlDataReader sdr;
 
@@ -169,7 +169,7 @@ namespace BloodManagementSystem
                 try
                 {
                     List<EmployeeClass> temp = new List<EmployeeClass>();
-                    string query = "EXEC spDISPLAY_EMP_INFO";
+                    string query = "Select * from EMP_INFO";
                     SqlCommand cmd = new SqlCommand(query, con);
                     SqlDataReader sdr;
 

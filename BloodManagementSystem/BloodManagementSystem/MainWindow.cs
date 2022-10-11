@@ -26,23 +26,12 @@ namespace BloodManagementSystem
             dl.Show();
         }
 
-        private void Panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void gunaLabel2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void lbl_AdminView_Click(object sender, EventArgs e)
         {
             gunaPanel3.Controls.Clear();
             AdminEmpLogin ad = new AdminEmpLogin(gunaPanel3) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             gunaPanel3.Controls.Add(ad);
             ad.Show();
-            
         }
 
         private void gunaLabel2_MouseHover(object sender, EventArgs e)
@@ -67,7 +56,8 @@ namespace BloodManagementSystem
 
         private void MainWindow_Load(object sender, EventArgs e)
         {
-
+            //load the welcome message
+            //link the Welcome form...
         }
 
         private void lbl_AdminView_MouseHover(object sender, EventArgs e)
@@ -87,7 +77,5 @@ namespace BloodManagementSystem
         {
             lblAboutUs.ForeColor = Color.Red;
         }
-
-        
     }
 }

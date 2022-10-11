@@ -30,15 +30,12 @@
         {
             this.DonorDashPanel = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.lbl_DonorDash = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.lbl_TotalDonors = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.DonorDashPic = new System.Windows.Forms.PictureBox();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonLabel2 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.lbl_TotalUser = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.kryptonPanel2 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonLabel4 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.lbl_TotalTransfer = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.kryptonLabel3 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.lbl_TotalBlood = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
@@ -73,10 +70,9 @@
             // DonorDashPanel
             // 
             this.DonorDashPanel.Controls.Add(this.lbl_DonorDash);
-            this.DonorDashPanel.Controls.Add(this.lbl_TotalDonors);
             this.DonorDashPanel.Controls.Add(this.DonorDashPic);
             this.DonorDashPanel.Location = new System.Drawing.Point(85, 110);
-            this.DonorDashPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DonorDashPanel.Margin = new System.Windows.Forms.Padding(4);
             this.DonorDashPanel.Name = "DonorDashPanel";
             this.DonorDashPanel.Size = new System.Drawing.Size(285, 130);
             this.DonorDashPanel.StateCommon.Color1 = System.Drawing.Color.Maroon;
@@ -87,7 +83,7 @@
             // 
             this.lbl_DonorDash.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.BoldControl;
             this.lbl_DonorDash.Location = new System.Drawing.Point(27, 92);
-            this.lbl_DonorDash.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lbl_DonorDash.Margin = new System.Windows.Forms.Padding(4);
             this.lbl_DonorDash.Name = "lbl_DonorDash";
             this.lbl_DonorDash.Size = new System.Drawing.Size(88, 34);
             this.lbl_DonorDash.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
@@ -96,21 +92,10 @@
             this.lbl_DonorDash.TabIndex = 7;
             this.lbl_DonorDash.Values.Text = "Donors";
             // 
-            // lbl_TotalDonors
-            // 
-            this.lbl_TotalDonors.Location = new System.Drawing.Point(173, 66);
-            this.lbl_TotalDonors.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.lbl_TotalDonors.Name = "lbl_TotalDonors";
-            this.lbl_TotalDonors.Size = new System.Drawing.Size(90, 24);
-            this.lbl_TotalDonors.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
-            this.lbl_TotalDonors.StateCommon.ShortText.Color2 = System.Drawing.Color.White;
-            this.lbl_TotalDonors.TabIndex = 8;
-            this.lbl_TotalDonors.Values.Text = "totaldonors";
-            // 
             // DonorDashPic
             // 
             this.DonorDashPic.Location = new System.Drawing.Point(156, 36);
-            this.DonorDashPic.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DonorDashPic.Margin = new System.Windows.Forms.Padding(4);
             this.DonorDashPic.Name = "DonorDashPic";
             this.DonorDashPic.Size = new System.Drawing.Size(125, 75);
             this.DonorDashPic.TabIndex = 0;
@@ -119,10 +104,9 @@
             // kryptonPanel1
             // 
             this.kryptonPanel1.Controls.Add(this.kryptonLabel2);
-            this.kryptonPanel1.Controls.Add(this.lbl_TotalUser);
             this.kryptonPanel1.Controls.Add(this.pictureBox2);
             this.kryptonPanel1.Location = new System.Drawing.Point(989, 110);
-            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonPanel1.Name = "kryptonPanel1";
             this.kryptonPanel1.Size = new System.Drawing.Size(285, 130);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.Maroon;
@@ -131,31 +115,20 @@
             // 
             // kryptonLabel2
             // 
-            this.kryptonLabel2.Location = new System.Drawing.Point(37, 92);
-            this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel2.Location = new System.Drawing.Point(17, 88);
+            this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(77, 38);
+            this.kryptonLabel2.Size = new System.Drawing.Size(131, 38);
             this.kryptonLabel2.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonLabel2.StateCommon.ShortText.Color2 = System.Drawing.Color.White;
             this.kryptonLabel2.StateCommon.ShortText.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel2.TabIndex = 3;
-            this.kryptonLabel2.Values.Text = "Users";
-            // 
-            // lbl_TotalUser
-            // 
-            this.lbl_TotalUser.Location = new System.Drawing.Point(165, 66);
-            this.lbl_TotalUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.lbl_TotalUser.Name = "lbl_TotalUser";
-            this.lbl_TotalUser.Size = new System.Drawing.Size(109, 24);
-            this.lbl_TotalUser.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
-            this.lbl_TotalUser.StateCommon.ShortText.Color2 = System.Drawing.Color.White;
-            this.lbl_TotalUser.TabIndex = 4;
-            this.lbl_TotalUser.Values.Text = "kryptonLabel3";
+            this.kryptonLabel2.Values.Text = "Donations";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Location = new System.Drawing.Point(156, 36);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(125, 75);
             this.pictureBox2.TabIndex = 1;
@@ -164,10 +137,9 @@
             // kryptonPanel2
             // 
             this.kryptonPanel2.Controls.Add(this.kryptonLabel4);
-            this.kryptonPanel2.Controls.Add(this.lbl_TotalTransfer);
             this.kryptonPanel2.Controls.Add(this.pictureBox1);
             this.kryptonPanel2.Location = new System.Drawing.Point(528, 110);
-            this.kryptonPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonPanel2.Name = "kryptonPanel2";
             this.kryptonPanel2.Size = new System.Drawing.Size(285, 130);
             this.kryptonPanel2.StateCommon.Color1 = System.Drawing.Color.Maroon;
@@ -177,7 +149,7 @@
             // kryptonLabel4
             // 
             this.kryptonLabel4.Location = new System.Drawing.Point(28, 92);
-            this.kryptonLabel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel4.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel4.Name = "kryptonLabel4";
             this.kryptonLabel4.Size = new System.Drawing.Size(110, 34);
             this.kryptonLabel4.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
@@ -186,21 +158,10 @@
             this.kryptonLabel4.TabIndex = 5;
             this.kryptonLabel4.Values.Text = "Transfers";
             // 
-            // lbl_TotalTransfer
-            // 
-            this.lbl_TotalTransfer.Location = new System.Drawing.Point(172, 66);
-            this.lbl_TotalTransfer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.lbl_TotalTransfer.Name = "lbl_TotalTransfer";
-            this.lbl_TotalTransfer.Size = new System.Drawing.Size(109, 24);
-            this.lbl_TotalTransfer.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
-            this.lbl_TotalTransfer.StateCommon.ShortText.Color2 = System.Drawing.Color.White;
-            this.lbl_TotalTransfer.TabIndex = 6;
-            this.lbl_TotalTransfer.Values.Text = "kryptonLabel5";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(156, 36);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(125, 75);
             this.pictureBox1.TabIndex = 1;
@@ -209,7 +170,7 @@
             // kryptonLabel3
             // 
             this.kryptonLabel3.Location = new System.Drawing.Point(1030, 15);
-            this.kryptonLabel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel3.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel3.Name = "kryptonLabel3";
             this.kryptonLabel3.Size = new System.Drawing.Size(73, 38);
             this.kryptonLabel3.StateCommon.ShortText.Color1 = System.Drawing.Color.Red;
@@ -221,7 +182,7 @@
             // lbl_TotalBlood
             // 
             this.lbl_TotalBlood.Location = new System.Drawing.Point(1154, 29);
-            this.lbl_TotalBlood.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lbl_TotalBlood.Margin = new System.Windows.Forms.Padding(4);
             this.lbl_TotalBlood.Name = "lbl_TotalBlood";
             this.lbl_TotalBlood.Size = new System.Drawing.Size(85, 24);
             this.lbl_TotalBlood.TabIndex = 4;
@@ -230,7 +191,7 @@
             // kryptonLabel7
             // 
             this.kryptonLabel7.Location = new System.Drawing.Point(212, 265);
-            this.kryptonLabel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel7.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel7.Name = "kryptonLabel7";
             this.kryptonLabel7.Size = new System.Drawing.Size(50, 35);
             this.kryptonLabel7.StateCommon.ShortText.Color1 = System.Drawing.Color.Red;
@@ -249,7 +210,7 @@
             this.gunaCircleProgressBar1.Image = null;
             this.gunaCircleProgressBar1.ImageSize = new System.Drawing.Size(52, 52);
             this.gunaCircleProgressBar1.Location = new System.Drawing.Point(204, 308);
-            this.gunaCircleProgressBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaCircleProgressBar1.Margin = new System.Windows.Forms.Padding(4);
             this.gunaCircleProgressBar1.Name = "gunaCircleProgressBar1";
             this.gunaCircleProgressBar1.ProgressMaxColor = System.Drawing.Color.Maroon;
             this.gunaCircleProgressBar1.ProgressMinColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -268,7 +229,7 @@
             this.gunaCircleProgressBar2.Image = null;
             this.gunaCircleProgressBar2.ImageSize = new System.Drawing.Size(52, 52);
             this.gunaCircleProgressBar2.Location = new System.Drawing.Point(463, 308);
-            this.gunaCircleProgressBar2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaCircleProgressBar2.Margin = new System.Windows.Forms.Padding(4);
             this.gunaCircleProgressBar2.Name = "gunaCircleProgressBar2";
             this.gunaCircleProgressBar2.ProgressMaxColor = System.Drawing.Color.Maroon;
             this.gunaCircleProgressBar2.ProgressMinColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -287,7 +248,7 @@
             this.gunaCircleProgressBar3.Image = null;
             this.gunaCircleProgressBar3.ImageSize = new System.Drawing.Size(52, 52);
             this.gunaCircleProgressBar3.Location = new System.Drawing.Point(752, 308);
-            this.gunaCircleProgressBar3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaCircleProgressBar3.Margin = new System.Windows.Forms.Padding(4);
             this.gunaCircleProgressBar3.Name = "gunaCircleProgressBar3";
             this.gunaCircleProgressBar3.ProgressMaxColor = System.Drawing.Color.Maroon;
             this.gunaCircleProgressBar3.ProgressMinColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -306,7 +267,7 @@
             this.gunaCircleProgressBar4.Image = null;
             this.gunaCircleProgressBar4.ImageSize = new System.Drawing.Size(52, 52);
             this.gunaCircleProgressBar4.Location = new System.Drawing.Point(1020, 308);
-            this.gunaCircleProgressBar4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaCircleProgressBar4.Margin = new System.Windows.Forms.Padding(4);
             this.gunaCircleProgressBar4.Name = "gunaCircleProgressBar4";
             this.gunaCircleProgressBar4.ProgressMaxColor = System.Drawing.Color.Maroon;
             this.gunaCircleProgressBar4.ProgressMinColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -318,7 +279,7 @@
             // kryptonLabel9
             // 
             this.kryptonLabel9.Location = new System.Drawing.Point(770, 265);
-            this.kryptonLabel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel9.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel9.Name = "kryptonLabel9";
             this.kryptonLabel9.Size = new System.Drawing.Size(68, 35);
             this.kryptonLabel9.StateCommon.ShortText.Color1 = System.Drawing.Color.Red;
@@ -330,7 +291,7 @@
             // kryptonLabel10
             // 
             this.kryptonLabel10.Location = new System.Drawing.Point(1039, 265);
-            this.kryptonLabel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel10.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel10.Name = "kryptonLabel10";
             this.kryptonLabel10.Size = new System.Drawing.Size(52, 35);
             this.kryptonLabel10.StateCommon.ShortText.Color1 = System.Drawing.Color.Red;
@@ -342,7 +303,7 @@
             // kryptonLabel11
             // 
             this.kryptonLabel11.Location = new System.Drawing.Point(492, 265);
-            this.kryptonLabel11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel11.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel11.Name = "kryptonLabel11";
             this.kryptonLabel11.Size = new System.Drawing.Size(49, 35);
             this.kryptonLabel11.StateCommon.ShortText.Color1 = System.Drawing.Color.Red;
@@ -354,7 +315,7 @@
             // kryptonLabel5
             // 
             this.kryptonLabel5.Location = new System.Drawing.Point(541, 15);
-            this.kryptonLabel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel5.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel5.Name = "kryptonLabel5";
             this.kryptonLabel5.Size = new System.Drawing.Size(146, 35);
             this.kryptonLabel5.StateCommon.ShortText.Color1 = System.Drawing.Color.Red;
@@ -516,7 +477,7 @@
             this.Controls.Add(this.kryptonPanel1);
             this.Controls.Add(this.DonorDashPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DashBoard";
             this.Text = "DashBoard";
             ((System.ComponentModel.ISupportInitialize)(this.DonorDashPanel)).EndInit();
@@ -539,15 +500,12 @@
         #endregion
         private ComponentFactory.Krypton.Toolkit.KryptonPanel DonorDashPanel;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel lbl_DonorDash;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel lbl_TotalDonors;
         private System.Windows.Forms.PictureBox DonorDashPic;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel2;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel lbl_TotalUser;
         private System.Windows.Forms.PictureBox pictureBox2;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel2;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel4;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel lbl_TotalTransfer;
         private System.Windows.Forms.PictureBox pictureBox1;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel3;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel lbl_TotalBlood;

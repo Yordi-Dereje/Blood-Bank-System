@@ -53,6 +53,7 @@
             // 
             // lblHome
             // 
+            this.lblHome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblHome.AutoSize = true;
             this.lblHome.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHome.ForeColor = System.Drawing.Color.Red;
@@ -62,12 +63,12 @@
             this.lblHome.Size = new System.Drawing.Size(68, 25);
             this.lblHome.TabIndex = 10;
             this.lblHome.Text = "Home";
-            this.lblHome.Click += new System.EventHandler(this.gunaLabel2_Click);
             this.lblHome.MouseLeave += new System.EventHandler(this.lblHome_MouseLeave);
             this.lblHome.MouseHover += new System.EventHandler(this.gunaLabel2_MouseHover);
             // 
             // lbl_AdminView
             // 
+            this.lbl_AdminView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_AdminView.AutoSize = true;
             this.lbl_AdminView.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_AdminView.ForeColor = System.Drawing.Color.Red;
@@ -83,6 +84,7 @@
             // 
             // lblAboutUs
             // 
+            this.lblAboutUs.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAboutUs.AutoSize = true;
             this.lblAboutUs.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAboutUs.ForeColor = System.Drawing.Color.Red;
@@ -97,6 +99,7 @@
             // 
             // lblDonor
             // 
+            this.lblDonor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDonor.AutoSize = true;
             this.lblDonor.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDonor.ForeColor = System.Drawing.Color.Red;
@@ -112,6 +115,7 @@
             // 
             // kryptonLabel1
             // 
+            this.kryptonLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.kryptonLabel1.Location = new System.Drawing.Point(319, 13);
             this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel1.Name = "kryptonLabel1";
@@ -123,6 +127,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(684, 0);
@@ -157,10 +162,12 @@
             this.Panel3.Name = "Panel3";
             this.Panel3.Size = new System.Drawing.Size(814, 687);
             this.Panel3.TabIndex = 2;
-            this.Panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel3_Paint);
             // 
             // gunaPanel3
             // 
+            this.gunaPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaPanel3.Location = new System.Drawing.Point(4, 111);
             this.gunaPanel3.Name = "gunaPanel3";
             this.gunaPanel3.Size = new System.Drawing.Size(809, 500);
