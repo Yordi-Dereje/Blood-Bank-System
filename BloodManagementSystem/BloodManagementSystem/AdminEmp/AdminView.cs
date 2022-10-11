@@ -75,5 +75,19 @@ namespace BloodManagementSystem
         {
 
         }
+
+        private void lbl_Hospital_Click(object sender, EventArgs e)
+        {
+            PanelAdmin.Controls.Clear();
+            Hospital h = new Hospital() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            PanelAdmin.Controls.Add(h);
+            h.Show();
+
+        }
+
+        private void PicDonProfile_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

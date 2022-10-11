@@ -472,7 +472,7 @@
             // PanelSave
             // 
             this.PanelSave.Controls.Add(this.btnSave);
-            this.PanelSave.Location = new System.Drawing.Point(324, 451);
+            this.PanelSave.Location = new System.Drawing.Point(335, 451);
             this.PanelSave.Name = "PanelSave";
             this.PanelSave.Size = new System.Drawing.Size(149, 52);
             this.PanelSave.TabIndex = 168;

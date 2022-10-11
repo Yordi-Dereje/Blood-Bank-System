@@ -21,5 +21,13 @@ namespace BloodManagementSystem
         {
 
         }
+
+        private void btn_NewReq_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            HospitalRequestPage hp = new HospitalRequestPage(panel1) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            panel1.Controls.Add(hp);
+            hp.Show();
+        }
     }
 }

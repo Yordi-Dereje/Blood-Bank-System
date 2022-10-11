@@ -43,10 +43,14 @@
             this.signOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lbl_hi = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.PanelAdmin = new System.Windows.Forms.Panel();
+            this.gunaContextMenuStrip2 = new Guna.UI.WinForms.GunaContextMenuStrip();
+            this.aDDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eDITToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gunaPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicDonProfile)).BeginInit();
             this.gunaContextMenuStrip1.SuspendLayout();
+            this.gunaContextMenuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbl_Donation
@@ -64,6 +68,7 @@
             // lbl_Employee
             // 
             this.lbl_Employee.AutoSize = true;
+            this.lbl_Employee.ContextMenuStrip = this.gunaContextMenuStrip2;
             this.lbl_Employee.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Employee.ForeColor = System.Drawing.Color.Red;
             this.lbl_Employee.Location = new System.Drawing.Point(533, 32);
@@ -123,6 +128,7 @@
             this.lbl_Hospital.Size = new System.Drawing.Size(73, 19);
             this.lbl_Hospital.TabIndex = 17;
             this.lbl_Hospital.Text = "Hospital";
+            this.lbl_Hospital.Click += new System.EventHandler(this.lbl_Hospital_Click);
             // 
             // pictureBox2
             // 
@@ -158,6 +164,7 @@
             this.PicDonProfile.TabIndex = 7;
             this.PicDonProfile.TabStop = false;
             this.PicDonProfile.ContextMenuStripChanged += new System.EventHandler(this.PicDonProfile_MouseHover);
+            this.PicDonProfile.Click += new System.EventHandler(this.PicDonProfile_Click);
             this.PicDonProfile.MouseHover += new System.EventHandler(this.PicDonProfile_MouseHover);
             // 
             // gunaContextMenuStrip1
@@ -207,6 +214,35 @@
             this.PanelAdmin.Size = new System.Drawing.Size(984, 473);
             this.PanelAdmin.TabIndex = 2;
             // 
+            // gunaContextMenuStrip2
+            // 
+            this.gunaContextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aDDToolStripMenuItem,
+            this.eDITToolStripMenuItem});
+            this.gunaContextMenuStrip2.Name = "gunaContextMenuStrip2";
+            this.gunaContextMenuStrip2.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaContextMenuStrip2.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+            this.gunaContextMenuStrip2.RenderStyle.ColorTable = null;
+            this.gunaContextMenuStrip2.RenderStyle.RoundedEdges = true;
+            this.gunaContextMenuStrip2.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+            this.gunaContextMenuStrip2.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaContextMenuStrip2.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.gunaContextMenuStrip2.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+            this.gunaContextMenuStrip2.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.SystemDefault;
+            this.gunaContextMenuStrip2.Size = new System.Drawing.Size(99, 48);
+            // 
+            // aDDToolStripMenuItem
+            // 
+            this.aDDToolStripMenuItem.Name = "aDDToolStripMenuItem";
+            this.aDDToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
+            this.aDDToolStripMenuItem.Text = "ADD";
+            // 
+            // eDITToolStripMenuItem
+            // 
+            this.eDITToolStripMenuItem.Name = "eDITToolStripMenuItem";
+            this.eDITToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
+            this.eDITToolStripMenuItem.Text = "EDIT";
+            // 
             // AdminView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -224,6 +260,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicDonProfile)).EndInit();
             this.gunaContextMenuStrip1.ResumeLayout(false);
+            this.gunaContextMenuStrip2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -243,5 +280,8 @@
         private System.Windows.Forms.Panel PanelAdmin;
         private Guna.UI.WinForms.GunaLabel lbl_Branch;
         private Guna.UI.WinForms.GunaLabel lbl_Hospital;
+        private Guna.UI.WinForms.GunaContextMenuStrip gunaContextMenuStrip2;
+        private System.Windows.Forms.ToolStripMenuItem aDDToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eDITToolStripMenuItem;
     }
 }

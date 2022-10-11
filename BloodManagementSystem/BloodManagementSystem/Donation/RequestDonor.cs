@@ -28,5 +28,10 @@ namespace BloodManagementSystem
         {
 
         }
+
+        private void FlowPanelRequests_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

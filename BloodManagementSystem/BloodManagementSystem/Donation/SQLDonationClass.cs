@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComponentFactory.Krypton.Toolkit;
 using System.Configuration;
+using System.Configuration.Internal;
 
 namespace BloodManagementSystem
 {
@@ -120,6 +121,21 @@ namespace BloodManagementSystem
                 {
                     con.Close();
                 };
+            }
+        }
+        public void donorInfoFormLoad(FlowLayoutPanel flp)
+        {
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
+            {
+                try
+                {
+                    //SqlDataAdapter da = new SqlDataAdapter("Select ");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                };
+
             }
         }
         public void requestFormLoad(FlowLayoutPanel flp)

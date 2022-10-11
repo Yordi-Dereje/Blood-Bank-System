@@ -81,6 +81,7 @@
             this.FlowPanelRequests.Name = "FlowPanelRequests";
             this.FlowPanelRequests.Size = new System.Drawing.Size(813, 328);
             this.FlowPanelRequests.TabIndex = 9;
+            this.FlowPanelRequests.Paint += new System.Windows.Forms.PaintEventHandler(this.FlowPanelRequests_Paint);
             // 
             // RequestDonor
             // 

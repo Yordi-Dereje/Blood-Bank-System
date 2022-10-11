@@ -191,6 +191,18 @@
     <Compile Include="Donor\DonorView.Designer.cs">
       <DependentUpon>DonorView.cs</DependentUpon>
     </Compile>
+    <Compile Include="HospitalRequestDetailPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HospitalRequestDetailPage.Designer.cs">
+      <DependentUpon>HospitalRequestDetailPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalRequestPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HospitalRequestPage.Designer.cs">
+      <DependentUpon>HospitalRequestPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -235,6 +247,19 @@
     </Compile>
     <Compile Include="Donation\UCSuccDonations.Designer.cs">
       <DependentUpon>UCSuccDonations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SQLHospitalClass.cs" />
+    <Compile Include="UCHospital.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCHospital.Designer.cs">
+      <DependentUpon>UCHospital.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCHospitalReq.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCHospitalReq.Designer.cs">
+      <DependentUpon>UCHospitalReq.cs</DependentUpon>
     </Compile>
     <Compile Include="Views.cs">
       <SubType>Form</SubType>
@@ -293,6 +318,12 @@
     <EmbeddedResource Include="Hospital.resx">
       <DependentUpon>Hospital.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HospitalRequestDetailPage.resx">
+      <DependentUpon>HospitalRequestDetailPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HospitalRequestPage.resx">
+      <DependentUpon>HospitalRequestPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>
@@ -331,6 +362,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Donation\UCSuccDonations.resx">
       <DependentUpon>UCSuccDonations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCHospital.resx">
+      <DependentUpon>UCHospital.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCHospitalReq.resx">
+      <DependentUpon>UCHospitalReq.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views.resx">
       <DependentUpon>Views.cs</DependentUpon>

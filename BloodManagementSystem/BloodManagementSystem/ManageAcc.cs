@@ -63,7 +63,7 @@ namespace BloodManagementSystem
                 var log = EmployeeClass.findEmp(id);
                 if (log == null)
                 {
-                    MessageBox.Show("You can rly lose rn unless you did something absolutely wrong");
+                    MessageBox.Show("Employee  Doesnt exist");
                 }
                 else
                 {
@@ -106,12 +106,15 @@ namespace BloodManagementSystem
             {
                 DonorClass d = new DonorClass();
                 d.UpdateInfo(id, tbFN.Text, tbLN.Text, tbDOB.Text, tbGEN.Text, tbPhone.Text, tbEmail.Text, tbCou.Text, tbCi.Text, tbRe.Text);
+                MessageBox.Show("Updated Successfully");
             }
             else if (val == 2)
             {
                 var log = EmployeeClass.findEmp(id);
                 EmployeeClass s = new EmployeeClass();
                 s.UpdateInfo(id, tbFN.Text, tbLN.Text, tbDOB.Text, tbGEN.Text, tbPhone.Text, tbEmail.Text, tbCou.Text, tbCi.Text, tbRe.Text);
+                MessageBox.Show("Updated Successfully");
+
             }
         }
     }
