@@ -92,6 +92,12 @@
     <Compile Include="Donation\BloodStock.Designer.cs">
       <DependentUpon>BloodStock.cs</DependentUpon>
     </Compile>
+    <Compile Include="Donation\SuccessfulDonations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Donation\SuccessfulDonations.Designer.cs">
+      <DependentUpon>SuccessfulDonations.cs</DependentUpon>
+    </Compile>
     <Compile Include="Donor\DonorForgotPassword.cs">
       <SubType>Form</SubType>
     </Compile>

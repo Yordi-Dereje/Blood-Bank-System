@@ -13,10 +13,12 @@ namespace BloodManagementSystem
     public partial class DonorForgotPassword : Form
     {
         Panel p;
-        public DonorForgotPassword(Panel p)
+        Form f;
+        public DonorForgotPassword(Panel p, Form f)
         {
             InitializeComponent();
             this.p = p;
+            this.f = f;
         }
 
         private void btn_Submit_Click(object sender, EventArgs e)
@@ -26,7 +28,7 @@ namespace BloodManagementSystem
             {
                 MessageBox.Show("Invalid phone or email");
                 p.Controls.Clear();
-                DonorLogin d = new DonorLogin(p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                DonorLogin d = new DonorLogin(p, f) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
                 p.Controls.Add(d);
                 d.Show();
             }
@@ -35,7 +37,7 @@ namespace BloodManagementSystem
                 var log = DonorClass.findPass(result.ID);
                 MessageBox.Show("Dear " + log.UserName + ", your password is " + log.Password + ".");
                 p.Controls.Clear();
-                DonorLogin d = new DonorLogin(p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                DonorLogin d = new DonorLogin(p, f) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
                 p.Controls.Add(d);
                 d.Show();
             }

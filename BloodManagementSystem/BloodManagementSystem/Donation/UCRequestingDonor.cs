@@ -12,9 +12,11 @@ namespace BloodManagementSystem
 {
     public partial class UCRequestingDonor : UserControl
     {
-        public UCRequestingDonor()
+        Panel p;
+        public UCRequestingDonor(Panel p)
         {
             InitializeComponent();
+            this.p = p;
         }
         private int _id;
 
@@ -54,8 +56,21 @@ namespace BloodManagementSystem
 
         private void btnAccept_Click(object sender, EventArgs e)
         {
-            PrimaryChecks p = new PrimaryChecks(_id);
-            p.Show();
+            p.Controls.Clear();
+            PrimaryChecks pc = new PrimaryChecks(_id, p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            p.Controls.Add(pc);
+            pc.Show();
+
+        }
+
+        private void btnDecline_Click(object sender, EventArgs e)
+        {
+            SQLDonationClass sd = new SQLDonationClass();
+            sd.removePerson(_id);
+            p.Controls.Clear();
+            RequestDonor r = new RequestDonor(p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            p.Controls.Add(r);
+            r.Show();
         }
     }
 }

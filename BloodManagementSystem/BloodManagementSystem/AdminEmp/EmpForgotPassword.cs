@@ -13,10 +13,12 @@ namespace BloodManagementSystem
     public partial class EmpForgotPassword : Form
     {
         Panel p;
-        public EmpForgotPassword(Panel p)
+        Form f;
+        public EmpForgotPassword(Panel p, Form f)
         {
             InitializeComponent();
             this.p = p;
+            this.f = f;
         }
 
         private void btn_Submit_Click(object sender, EventArgs e)
@@ -26,7 +28,7 @@ namespace BloodManagementSystem
             {
                 MessageBox.Show("Invalid phone or email");
                 p.Controls.Clear();
-                AdminEmpLogin ad = new AdminEmpLogin(p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                AdminEmpLogin ad = new AdminEmpLogin(p, f) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
                 p.Controls.Add(ad);
                 ad.Show();
             }
@@ -35,7 +37,7 @@ namespace BloodManagementSystem
                 var log = EmployeeClass.findPass(result.ID);
                 MessageBox.Show("Dear " + log.UserName + ", your password is " + log.Password + ".");
                 p.Controls.Clear();
-                AdminEmpLogin ad = new AdminEmpLogin(p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                AdminEmpLogin ad = new AdminEmpLogin(p, f) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
                 p.Controls.Add(ad);
                 ad.Show();
             }

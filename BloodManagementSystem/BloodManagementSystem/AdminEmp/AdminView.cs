@@ -49,40 +49,42 @@ namespace BloodManagementSystem
 
         private void ManageAccToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            PanelAdmin.Controls.Clear();
-            ManageAcc md = new ManageAcc(id,2) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            PanelAdmin.Controls.Add(md);
+            panel2.Controls.Clear();
+            ManageAcc md = new ManageAcc(id,2, panel2) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            panel2.Controls.Add(md);
             md.Show();
         }
 
         private void lbl_Home_Click(object sender, EventArgs e)
         {
-            PanelAdmin.Controls.Clear();
+            panel2.Controls.Clear();
             DashBoard d = new DashBoard(){ Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            PanelAdmin.Controls.Add(d);
+            panel2.Controls.Add(d);
             d.Show();
         }
 
         private void lbl_Employee_Click(object sender, EventArgs e)
         {
-            PanelAdmin.Controls.Clear();
-            EmployeeRegi emp = new EmployeeRegi(PanelAdmin) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            PanelAdmin.Controls.Add(emp);
+            panel2.Controls.Clear();
+            EmployeeRegi emp = new EmployeeRegi(panel2) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            panel2.Controls.Add(emp);
             emp.Show();
         }
 
         private void lbl_Donation_Click(object sender, EventArgs e)
         {
-
+            panel2.Controls.Clear();
+            DonationInfo di = new DonationInfo(panel2, 0) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            panel2.Controls.Add(di);
+            di.Show();
         }
 
         private void lbl_Hospital_Click(object sender, EventArgs e)
         {
-            PanelAdmin.Controls.Clear();
+            panel2.Controls.Clear();
             Hospital h = new Hospital() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            PanelAdmin.Controls.Add(h);
+            panel2.Controls.Add(h);
             h.Show();
-
         }
 
         private void PicDonProfile_Click(object sender, EventArgs e)

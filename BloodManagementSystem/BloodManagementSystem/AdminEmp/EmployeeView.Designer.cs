@@ -43,6 +43,8 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Panel_EmpDisplay = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.Panel_Emp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicDonProfile)).BeginInit();
             this.gunaContextMenuStrip1.SuspendLayout();
@@ -52,6 +54,7 @@
             // 
             // Panel_Emp
             // 
+            this.Panel_Emp.Controls.Add(this.kryptonLabel1);
             this.Panel_Emp.Controls.Add(this.PicDonProfile);
             this.Panel_Emp.Controls.Add(this.lbl_hi);
             this.Panel_Emp.Controls.Add(this.lbl_Donation);
@@ -62,7 +65,7 @@
             this.Panel_Emp.Controls.Add(this.pictureBox2);
             this.Panel_Emp.Dock = System.Windows.Forms.DockStyle.Top;
             this.Panel_Emp.Location = new System.Drawing.Point(0, 0);
-            this.Panel_Emp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Panel_Emp.Margin = new System.Windows.Forms.Padding(4);
             this.Panel_Emp.Name = "Panel_Emp";
             this.Panel_Emp.Size = new System.Drawing.Size(1312, 84);
             this.Panel_Emp.TabIndex = 1;
@@ -73,8 +76,8 @@
             this.PicDonProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.PicDonProfile.ContextMenuStrip = this.gunaContextMenuStrip1;
             this.PicDonProfile.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PicDonProfile.Location = new System.Drawing.Point(1224, 4);
-            this.PicDonProfile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PicDonProfile.Location = new System.Drawing.Point(1224, 19);
+            this.PicDonProfile.Margin = new System.Windows.Forms.Padding(4);
             this.PicDonProfile.Name = "PicDonProfile";
             this.PicDonProfile.Size = new System.Drawing.Size(75, 57);
             this.PicDonProfile.TabIndex = 26;
@@ -113,8 +116,8 @@
             // 
             // lbl_hi
             // 
-            this.lbl_hi.Location = new System.Drawing.Point(1103, 15);
-            this.lbl_hi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lbl_hi.Location = new System.Drawing.Point(1103, 29);
+            this.lbl_hi.Margin = new System.Windows.Forms.Padding(4);
             this.lbl_hi.Name = "lbl_hi";
             this.lbl_hi.Size = new System.Drawing.Size(113, 32);
             this.lbl_hi.StateCommon.ShortText.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -126,7 +129,7 @@
             this.lbl_Donation.AutoSize = true;
             this.lbl_Donation.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Donation.ForeColor = System.Drawing.Color.Red;
-            this.lbl_Donation.Location = new System.Drawing.Point(798, 22);
+            this.lbl_Donation.Location = new System.Drawing.Point(799, 35);
             this.lbl_Donation.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Donation.Name = "lbl_Donation";
             this.lbl_Donation.Size = new System.Drawing.Size(98, 25);
@@ -139,7 +142,7 @@
             this.lbl_Blood.AutoSize = true;
             this.lbl_Blood.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Blood.ForeColor = System.Drawing.Color.Red;
-            this.lbl_Blood.Location = new System.Drawing.Point(923, 22);
+            this.lbl_Blood.Location = new System.Drawing.Point(924, 35);
             this.lbl_Blood.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Blood.Name = "lbl_Blood";
             this.lbl_Blood.Size = new System.Drawing.Size(125, 25);
@@ -151,7 +154,7 @@
             this.lbl_NewDon.AutoSize = true;
             this.lbl_NewDon.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_NewDon.ForeColor = System.Drawing.Color.Red;
-            this.lbl_NewDon.Location = new System.Drawing.Point(626, 22);
+            this.lbl_NewDon.Location = new System.Drawing.Point(627, 35);
             this.lbl_NewDon.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_NewDon.Name = "lbl_NewDon";
             this.lbl_NewDon.Size = new System.Drawing.Size(146, 25);
@@ -164,7 +167,7 @@
             this.lbl_Home.AutoSize = true;
             this.lbl_Home.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Home.ForeColor = System.Drawing.Color.Red;
-            this.lbl_Home.Location = new System.Drawing.Point(522, 22);
+            this.lbl_Home.Location = new System.Drawing.Point(523, 35);
             this.lbl_Home.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Home.Name = "lbl_Home";
             this.lbl_Home.Size = new System.Drawing.Size(68, 25);
@@ -191,7 +194,7 @@
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(111, 84);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -200,10 +203,11 @@
             // 
             // Panel_EmpDisplay
             // 
+            this.Panel_EmpDisplay.Controls.Add(this.panel2);
             this.Panel_EmpDisplay.Controls.Add(this.panel1);
             this.Panel_EmpDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Panel_EmpDisplay.Location = new System.Drawing.Point(0, 84);
-            this.Panel_EmpDisplay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Panel_EmpDisplay.Margin = new System.Windows.Forms.Padding(4);
             this.Panel_EmpDisplay.Name = "Panel_EmpDisplay";
             this.Panel_EmpDisplay.Size = new System.Drawing.Size(1312, 603);
             this.Panel_EmpDisplay.TabIndex = 2;
@@ -214,8 +218,26 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(350, 603);
-            this.panel1.TabIndex = 0;
+            this.panel1.Size = new System.Drawing.Size(320, 603);
+            this.panel1.TabIndex = 28;
+            // 
+            // panel2
+            // 
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(320, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(992, 603);
+            this.panel2.TabIndex = 29;
+            // 
+            // kryptonLabel1
+            // 
+            this.kryptonLabel1.Location = new System.Drawing.Point(343, 29);
+            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonLabel1.Name = "kryptonLabel1";
+            this.kryptonLabel1.Size = new System.Drawing.Size(107, 32);
+            this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel1.TabIndex = 27;
+            this.kryptonLabel1.Values.Text = "Employee";
             // 
             // EmployeeView
             // 
@@ -225,7 +247,7 @@
             this.ClientSize = new System.Drawing.Size(1312, 687);
             this.Controls.Add(this.Panel_EmpDisplay);
             this.Controls.Add(this.Panel_Emp);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "EmployeeView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EmployeeView";
@@ -255,6 +277,8 @@
         private Guna.UI.WinForms.GunaContextMenuStrip gunaContextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem manageAccountToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem signOutToolStripMenuItem;
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel1;
     }
 }

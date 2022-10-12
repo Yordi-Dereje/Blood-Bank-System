@@ -14,25 +14,26 @@ namespace BloodManagementSystem
     {
         int id,bid;
         string dpt;
-        public AcceptedDonation(int bid,int id, string dpt)
+        Panel p;
+        public AcceptedDonation(int bid,int id, string dpt, Panel p)
         {
             InitializeComponent();
             this.id = id;
             this.bid = bid;
             this.dpt = dpt;
+            this.p = p;
         }
 
         private void btnFinish_Click(object sender, EventArgs e)
         {
-             SQLDonationClass s = new SQLDonationClass();
-             s.successInsert(id, dpt, cbVen.SelectedItem.ToString(), cbBT.SelectedItem.ToString());
-             s.removePerson(id);
+            SQLDonationClass s = new SQLDonationClass();
+            s.successInsert(id, dpt, cbVen.SelectedItem.ToString(), cbBT.SelectedItem.ToString());
+            s.removePerson(id);
+
             EmployeeView ee = new EmployeeView(id);
             ee.Show();
-            MessageBox.Show("done");
-             this.Hide();
+            this.Close();
 
-            
         }
 
         private void AcceptedDonation_Load(object sender, EventArgs e)

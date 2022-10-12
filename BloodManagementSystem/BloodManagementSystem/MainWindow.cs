@@ -21,7 +21,7 @@ namespace BloodManagementSystem
         private void gunaLabel1_Click(object sender, EventArgs e)
         {
             gunaPanel3.Controls.Clear();
-            DonorLogin dl = new DonorLogin(gunaPanel3) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true};
+            DonorLogin dl = new DonorLogin(gunaPanel3, this) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true};
             gunaPanel3.Controls.Add(dl);
             dl.Show();
         }
@@ -29,7 +29,7 @@ namespace BloodManagementSystem
         private void lbl_AdminView_Click(object sender, EventArgs e)
         {
             gunaPanel3.Controls.Clear();
-            AdminEmpLogin ad = new AdminEmpLogin(gunaPanel3) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            AdminEmpLogin ad = new AdminEmpLogin(gunaPanel3, this) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             gunaPanel3.Controls.Add(ad);
             ad.Show();
         }

@@ -21,9 +21,9 @@ namespace BloodManagementSystem
 
         private void lbl_NewDon_Click(object sender, EventArgs e)
         {
-            Panel_EmpDisplay.Controls.Clear();
-            RequestDonor r = new RequestDonor() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            Panel_EmpDisplay.Controls.Add(r);
+            panel2.Controls.Clear();
+            RequestDonor r = new RequestDonor(panel2) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            panel2.Controls.Add(r);
             r.Show();
         }
 
@@ -44,26 +44,25 @@ namespace BloodManagementSystem
 
         private void lbl_Home_Click(object sender, EventArgs e)
         {
-            Panel_EmpDisplay.Controls.Clear();
+            panel2.Controls.Clear();
             DashBoard ed = new DashBoard() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            Panel_EmpDisplay.Controls.Add(ed);
+            panel2.Controls.Add(ed);
             ed.Show();
         }
 
         private void lbl_Donation_Click(object sender, EventArgs e)
         {
-            Panel_EmpDisplay.Controls.Clear();
-            DonorInfo d = new DonorInfo() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            Panel_EmpDisplay.Controls.Add(d);
-            d.Show();
-
+            panel2.Controls.Clear();
+            DonationInfo di = new DonationInfo(panel2, 0) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            panel2.Controls.Add(di);
+            di.Show();
         }
 
         private void manageAccountToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Panel_EmpDisplay.Controls.Clear();
-            ManageAcc md = new ManageAcc(id,2) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            Panel_EmpDisplay.Controls.Add(md);
+            panel2.Controls.Clear();
+            ManageAcc md = new ManageAcc(id,2, panel2) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            panel2.Controls.Add(md);
             md.Show();
         }
 

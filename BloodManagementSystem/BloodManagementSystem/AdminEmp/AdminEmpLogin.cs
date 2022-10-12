@@ -13,10 +13,12 @@ namespace BloodManagementSystem
     public partial class AdminEmpLogin : Form
     {
         Panel p;
-        public AdminEmpLogin(Panel p)
+        Form f;
+        public AdminEmpLogin(Panel p, Form f)
         {
             InitializeComponent();
             this.p = p;
+            this.f = f;
         }
 
         private void btn_Login_Click(object sender, EventArgs e)
@@ -35,17 +37,19 @@ namespace BloodManagementSystem
                 }
                 else
                 {
-                    if ((txt_usEmp.Text == "ADMIN" && txt_pwEmp.Text == "ADMIN") && log.AdminStatus) //more like check the admin status
+                    if ((txt_usEmp.Text == "ADMIN" && txt_pwEmp.Text == "ADMIN") || log.AdminStatus) //more like check the admin status
                     {
+                        
                         AdminView av = new AdminView(log.ID);
                         av.Show();
-                        this.Hide();
+                        f.Hide();
                     }
                     else
                     {
+                        
                         EmployeeView ev = new EmployeeView(log.ID);
                         ev.Show();
-                        this.Hide();
+                        f.Hide();
                     }
                 }
 
@@ -56,7 +60,7 @@ namespace BloodManagementSystem
         private void kryptonLinkLabel1_LinkClicked(object sender, EventArgs e)
         {
             p.Controls.Clear();
-            EmpForgotPassword ad = new EmpForgotPassword(p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            EmpForgotPassword ad = new EmpForgotPassword(p, f) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             p.Controls.Add(ad);
             ad.Show();
         }

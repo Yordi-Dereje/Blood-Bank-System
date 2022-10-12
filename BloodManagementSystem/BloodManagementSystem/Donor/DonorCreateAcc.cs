@@ -15,11 +15,13 @@ namespace BloodManagementSystem
     public partial class DonorCreateAcc : Form
     {
         Panel p;
+        Form f;
         string id,fn, ln, gen, dob, phone, email, country, city, region;
-        public DonorCreateAcc(Panel p,string id, string fn, string ln,  string gen, string dob, string phone, string email, string country, string city, string region)
+        public DonorCreateAcc(Panel p, Form f,string id, string fn, string ln,  string gen, string dob, string phone, string email, string country, string city, string region)
         {
             InitializeComponent();
             this.p = p;
+            this.f = f;
             this.id = id;
             this.fn = fn;
             this.ln = ln;
@@ -34,7 +36,7 @@ namespace BloodManagementSystem
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            //this.Hide();
+            this.Hide();
             DonorClass d = new DonorClass
             {
                 ID = int.Parse(id),
@@ -53,7 +55,7 @@ namespace BloodManagementSystem
             d.Insert();
 
             p.Controls.Clear();
-            DonorLogin dl = new DonorLogin(p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true};
+            DonorLogin dl = new DonorLogin(p, f) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true};
             p.Controls.Add(dl);
             dl.Show();
         }
