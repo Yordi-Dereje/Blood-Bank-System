@@ -480,7 +480,7 @@ BloodID int primary key IDENTITY,
 ID int,
 DateDonated varchar(30),
 Venue varchar(50),
-BloodType varchar(2),
+BloodType varchar(3),
 Foreign key (ID) references DONOR_INFO(ID)
 );
 Alter table SUCCESSFUL_DONATION ALTER COLUMN BLOODID INT IDENTITY(1000);
@@ -492,7 +492,7 @@ CREATE PROCEDURE spINSERT_SUCCESSFUL_DONATION
 @ID int,
 @DateDonated varchar(30),
 @Venue varchar(50),
-@BloodType varchar(2)
+@BloodType varchar(3)
 AS
 BEGIN
 	INSERT INTO SUCCESSFUL_DONATION VALUES (@ID,@DateDonated,@Venue,@BloodType);
@@ -503,7 +503,7 @@ CREATE PROCEDURE spUPDATE_SUCCESSFUL_DONATION
 @ID int,
 @DateDonated varchar(30),
 @Venue varchar(50),
-@BloodType varchar(2)
+@BloodType varchar(3)
 AS
 BEGIN
 	UPDATE SUCCESSFUL_DONATION SET DateDonated = @DateDonated,Venue = @Venue,BloodType = @BloodType WHERE ID = @ID;
@@ -574,6 +574,6 @@ BEGIN
 END
 --no need of stored
 CREATE TABLE BLOOD_COUNT(
-bloodtype varchar(2),
+bloodtype varchar(3),
 count int
 );
