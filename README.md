@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <center> <h1>Blood Bank</h1> </center>
 This repository contains a project done around the concept blood bank management system. It is written in c# language and tsql... can write sth better so just legizew
 
@@ -52,3 +53,6 @@ pic of the home page
 | Yordanos Dereje | DRB2102 B | MM8570 | <a href="https://github.com/Yordi-Dereje">Github account</a>
  |
  <br>
+=======
+# Blood Management System
+>>>>>>> a034bb2d4a8da4247f3f90334aab810c10da9cd6
