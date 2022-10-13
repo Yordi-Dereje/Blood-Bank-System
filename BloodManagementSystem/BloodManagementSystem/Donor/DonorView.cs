@@ -49,9 +49,9 @@ namespace BloodManagementSystem
 
         private void manageAccountToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            PanelDisplay.Controls.Clear();
-            ManageAcc md = new ManageAcc(id,1) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            PanelDisplay.Controls.Add(md);
+            panel3.Controls.Clear();
+            ManageAcc md = new ManageAcc(id,1, panel3) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            panel3.Controls.Add(md);
             md.Show();
         }
 
@@ -79,31 +79,26 @@ namespace BloodManagementSystem
 
         private void lbl_Donation_Click(object sender, EventArgs e)
         {
-            PanelDisplay.Controls.Clear();
-            DonationInfo df = new DonationInfo() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            PanelDisplay.Controls.Add(df);
+            panel3.Controls.Clear();
+            DonationInfo df = new DonationInfo(panel3, id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            panel3.Controls.Add(df);
             df.Show();
         }
 
         private void lbl_Medical_Click(object sender, EventArgs e)
         {
-            PanelDisplay.Controls.Clear();
+            panel3.Controls.Clear();
             DonationDetailPage mf = new DonationDetailPage() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            PanelDisplay.Controls.Add(mf);
+            panel3.Controls.Add(mf);
             mf.Show();
         }
 
         private void lbl_ReqDonation_Click(object sender, EventArgs e)
         {
-            PanelDisplay.Controls.Clear();
-            RequestDon rd = new RequestDon(PanelDisplay, id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            PanelDisplay.Controls.Add(rd);
+            panel3.Controls.Clear();
+            RequestDon rd = new RequestDon(panel3, id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            panel3.Controls.Add(rd);
             rd.Show();
-        }
-
-        private void gunaLabel1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void lbl_Home_Click(object sender, EventArgs e)

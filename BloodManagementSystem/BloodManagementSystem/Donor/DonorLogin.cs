@@ -13,10 +13,12 @@ namespace BloodManagementSystem
     public partial class DonorLogin : Form
     {
         Panel p;
-        public DonorLogin(Panel p)
+        Form f;
+        public DonorLogin(Panel p, Form f)
         {
             InitializeComponent();
             this.p = p;
+            this.f = f;
         }
         //login eskistekakel the click name
         private void btn_CreateAcc_Click(object sender, EventArgs e)
@@ -32,7 +34,7 @@ namespace BloodManagementSystem
                 {
                     DonorView dv = new DonorView(result.ID) { TopMost = true };
                     dv.Show();
-                    this.Hide();
+                    f.Hide();
                 }
             } 
             catch(Exception ex)
@@ -42,12 +44,10 @@ namespace BloodManagementSystem
             
             
         }
-        //create
         private void btn_Login_Click(object sender, EventArgs e)
         {
-            //this.Hide();
             p.Controls.Clear();
-            DonorRegi dr = new DonorRegi(p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            DonorRegi dr = new DonorRegi(p, f) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             p.Controls.Add(dr);
             dr.Show();
         }
@@ -55,7 +55,7 @@ namespace BloodManagementSystem
         private void kryptonLinkLabel1_LinkClicked(object sender, EventArgs e)
         {
             p.Controls.Clear();
-            DonorForgotPassword ad = new DonorForgotPassword(p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            DonorForgotPassword ad = new DonorForgotPassword(p, f) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             p.Controls.Add(ad);
             ad.Show();
         }

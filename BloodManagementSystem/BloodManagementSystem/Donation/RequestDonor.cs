@@ -12,16 +12,18 @@ namespace BloodManagementSystem
 {
     public partial class RequestDonor : Form
     {
-        public RequestDonor()
+        Panel p;
+        public RequestDonor(Panel p)
         {
             InitializeComponent();
+            this.p = p;
         }
 
         private void RequestDonor_Load(object sender, EventArgs e)
         {
             FlowPanelRequests.Controls.Clear();
             SQLDonationClass s = new SQLDonationClass();
-            s.requestFormLoad(FlowPanelRequests);
+            s.requestFormLoad(FlowPanelRequests, p);
         }
 
         private void PanelRequests_Paint(object sender, PaintEventArgs e)

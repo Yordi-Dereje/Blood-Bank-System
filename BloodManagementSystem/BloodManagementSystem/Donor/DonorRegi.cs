@@ -13,13 +13,20 @@ namespace BloodManagementSystem
     public partial class DonorRegi : Form
     {
         Panel p;
-        public DonorRegi(Panel p)
+        Form f;
+        public DonorRegi(Panel p, Form f)
         {
             InitializeComponent();
             this.p = p;
+            this.f = f;
         }
 
         private void btnNext_Click_1(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
         {
             p.Controls.Clear();
             int id = DonorClass.GetCount();
@@ -30,7 +37,7 @@ namespace BloodManagementSystem
             else
                 gen = "Male";
             string dob = dtp.Value.ToString();
-            DonorCreateAcc dc = new DonorCreateAcc(p,id.ToString(), tbFN.Text, tbLN.Text, gen, dob, tbPhone.Text, tbEmail.Text, tbCo.Text, tbCity.Text, tbReg.Text) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            DonorCreateAcc dc = new DonorCreateAcc(p, f, id.ToString(), tbFN.Text, tbLN.Text, gen, dob, tbPhone.Text, tbEmail.Text, tbCo.Text, tbCity.Text, tbReg.Text) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             p.Controls.Add(dc);
             dc.Show();
         }

@@ -199,6 +199,7 @@
             this.btnNext.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNext.TabIndex = 215;
             this.btnNext.Values.Text = "Next";
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // kryptonLabel12
             // 
@@ -416,7 +417,7 @@
             this.Controls.Add(this.gunaPanel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Location = new System.Drawing.Point(557, 150);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DonorRegi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "DonorRegi";

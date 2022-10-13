@@ -40,7 +40,7 @@
             // 
             this.lbl_per.AutoSize = true;
             this.lbl_per.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_per.Location = new System.Drawing.Point(620, 28);
+            this.lbl_per.Location = new System.Drawing.Point(491, 28);
             this.lbl_per.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_per.Name = "lbl_per";
             this.lbl_per.Size = new System.Drawing.Size(125, 26);
@@ -51,7 +51,7 @@
             // 
             this.lbl_3.AutoSize = true;
             this.lbl_3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_3.Location = new System.Drawing.Point(417, 28);
+            this.lbl_3.Location = new System.Drawing.Point(309, 28);
             this.lbl_3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_3.Name = "lbl_3";
             this.lbl_3.Size = new System.Drawing.Size(99, 26);
@@ -62,7 +62,7 @@
             // 
             this.lbl_72.AutoSize = true;
             this.lbl_72.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_72.Location = new System.Drawing.Point(188, 28);
+            this.lbl_72.Location = new System.Drawing.Point(143, 28);
             this.lbl_72.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_72.Name = "lbl_72";
             this.lbl_72.Size = new System.Drawing.Size(97, 26);
@@ -73,7 +73,7 @@
             // 
             this.lbl_id.AutoSize = true;
             this.lbl_id.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_id.Location = new System.Drawing.Point(19, 28);
+            this.lbl_id.Location = new System.Drawing.Point(35, 28);
             this.lbl_id.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_id.Name = "lbl_id";
             this.lbl_id.Size = new System.Drawing.Size(38, 26);
@@ -93,8 +93,8 @@
             this.btnAccept.ForeColor = System.Drawing.Color.Black;
             this.btnAccept.Image = null;
             this.btnAccept.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnAccept.Location = new System.Drawing.Point(838, 28);
-            this.btnAccept.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAccept.Location = new System.Drawing.Point(726, 28);
+            this.btnAccept.Margin = new System.Windows.Forms.Padding(4);
             this.btnAccept.Name = "btnAccept";
             this.btnAccept.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnAccept.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -119,8 +119,8 @@
             this.btnDecline.ForeColor = System.Drawing.Color.Black;
             this.btnDecline.Image = null;
             this.btnDecline.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnDecline.Location = new System.Drawing.Point(956, 28);
-            this.btnDecline.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDecline.Location = new System.Drawing.Point(833, 28);
+            this.btnDecline.Margin = new System.Windows.Forms.Padding(4);
             this.btnDecline.Name = "btnDecline";
             this.btnDecline.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnDecline.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -130,6 +130,7 @@
             this.btnDecline.Size = new System.Drawing.Size(99, 41);
             this.btnDecline.TabIndex = 13;
             this.btnDecline.Text = "Decline";
+            this.btnDecline.Click += new System.EventHandler(this.btnDecline_Click);
             // 
             // UCRequestingDonor
             // 
@@ -141,9 +142,9 @@
             this.Controls.Add(this.lbl_3);
             this.Controls.Add(this.lbl_72);
             this.Controls.Add(this.lbl_id);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCRequestingDonor";
-            this.Size = new System.Drawing.Size(1084, 80);
+            this.Size = new System.Drawing.Size(964, 76);
             this.Load += new System.EventHandler(this.RequestingDonor_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

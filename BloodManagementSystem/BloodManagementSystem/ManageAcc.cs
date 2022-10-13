@@ -16,11 +16,13 @@ namespace BloodManagementSystem
     {
         int id;
         int val;
-        public ManageAcc(int id, int val)
+        Panel p;
+        public ManageAcc(int id, int val, Panel p)
         {
             InitializeComponent();
             this.id = id;
             this.val = val;
+            this.p = p;
         }
 
         private void kryptonTextBox9_TextChanged(object sender, EventArgs e)

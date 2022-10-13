@@ -14,29 +14,29 @@ namespace BloodManagementSystem
 {
     public partial class DonationInfo : Form
     {
-        public DonationInfo()
+        Panel p;
+        int id;
+        public DonationInfo(Panel p, int id)
         {
             InitializeComponent();
-            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
-            {
-                con.Open();
-                SqlDataAdapter da = new SqlDataAdapter("spDISPLAY_SUCCESSFUL_DONATION", con);
-                DataSet ds = new DataSet();
-                da.Fill(ds, "SUCCESSFUL_DONATION");
-                foreach (DataRow item in ds.Tables["SUCCESSFUL_DONATION"].Rows)
-                {
-                    UCSuccDonations s = new UCSuccDonations();
-                    s.id = int.Parse(item["ID"].ToString());
-                    s.bid = int.Parse(item["BloodID"].ToString());
-                    s.venue = item["Venue"].ToString();
-                    s.dondate = item["DateDonated"].ToString();
-                    s.bloodtype = item["BloodType"].ToString();
-                    flowLayoutPanel1.Controls.Add(s);
-                }
-            }
+            this.p = p;
+            this.id = id;
         }
         private void DonationInfo_Load(object sender, EventArgs e)
         {
+            if (id == 0)
+            {
+                flowLayoutPanel1.Controls.Clear();
+                SQLDonationClass s = new SQLDonationClass();
+                s.successformLoad(flowLayoutPanel1);
+            }
+            else
+            {
+                //pass an id so it's filter out the results
+                flowLayoutPanel1.Controls.Clear();
+                SQLDonationClass s = new SQLDonationClass();
+                s.successformLoad(flowLayoutPanel1);
+            }
             
         }
 

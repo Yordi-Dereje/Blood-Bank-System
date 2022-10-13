@@ -36,7 +36,7 @@ namespace BloodManagementSystem
                         SQLDonationClass s = new SQLDonationClass();
                         s.BID = (int)sdr["BloodID"];
                         temp.Add(s);
-                        
+
                     }
                     return temp;
                 }
@@ -74,9 +74,9 @@ namespace BloodManagementSystem
                     con.Close();
                 };
             }
-            
+
         }
-        
+
         public void successInsert(int id, string date, string venue, string bloodType)
         {
             using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
@@ -91,7 +91,7 @@ namespace BloodManagementSystem
                     cmd.Parameters.AddWithValue("@v", venue);
                     cmd.Parameters.AddWithValue("@bt", bloodType);
 
-                    
+
                     cmd.ExecuteNonQuery();
                 }
                 catch (Exception e)
@@ -138,7 +138,7 @@ namespace BloodManagementSystem
 
             }
         }
-        public void requestFormLoad(FlowLayoutPanel flp)
+        public void requestFormLoad(FlowLayoutPanel flp, Panel p)
         {
             using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
@@ -148,25 +148,130 @@ namespace BloodManagementSystem
                     SqlDataAdapter da = new SqlDataAdapter("Select * from FULL_CHECK", con);
                     DataSet ds = new DataSet();
                     da.Fill(ds, "FULL_CHECK");
+                    bool flager = false;
                     foreach (DataRow item in ds.Tables["FULL_CHECK"].Rows)
                     {
-                        UCRequestingDonor r = new UCRequestingDonor();
+                        UCRequestingDonor r = new UCRequestingDonor(p);
                         r.ID = int.Parse(item["ID"].ToString());
                         r.stat_72hr = Convert.ToBoolean(item["Check72"]);
                         r.stat_3m = Convert.ToBoolean(item["Check3"]);
                         r.stat_per = Convert.ToBoolean(item["CheckPer"]);
+                        if (flager == false)
+                        {
+                            flager = true;
+                            r.BackColor = Color.LightGray;
+                        }
+                        else if (flager == true)
+                        {
+                            flager = false;
+                            r.BackColor = Color.DarkGray;
+                        }
                         flp.Controls.Add(r);
                     }
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 };
             }
-                
+        }
+        public void successformLoad(FlowLayoutPanel flp)
+        {
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
+            {
+                try
+                {
+                    con.Open();
+                    SqlDataAdapter da = new SqlDataAdapter("Select * from SUCCESSFUL_DONATION", con);
+                    DataSet ds = new DataSet();
+                    da.Fill(ds, "SUCCESSFUL_DONATION");
+                    bool flager = false;
+                    foreach (DataRow item in ds.Tables["SUCCESSFUL_DONATION"].Rows)
+                    {
+                        UCSuccDonations u = new UCSuccDonations();
+                        u.bid = int.Parse(item["BloodID"].ToString());
+                        u.id = int.Parse(item["ID"].ToString());
+                        u.dondate = item["DateDonated"].ToString();
+                        u.venue = item["Venue"].ToString();
+                        u.bloodtype = item["BloodType"].ToString();
+                        if (flager == false)
+                        {
+                            flager = true;
+                            u.BackColor = Color.LightGray;
+                        }
+                        else if (flager == true)
+                        {
+                            flager = false;
+                            u.BackColor = Color.DarkGray;
+                        }
+                        flp.Controls.Add(u);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                };
+            }
+        }
 
-            
+        public void successformLoadID(FlowLayoutPanel flp, int id)
+        {
+            /*using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
+            {
+                try
+                {
+                    con.Open();
+                    string query = "Select * from SUCCESSFUL_DONATION where ID = @id";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@id", id);
+                    SqlDataReader r = cmd.ExecuteReader();
+                    bool flager = false;
+                    while(r.Read())
+                    {
+                        foreach (var item in r)
+                        {
+                            UCSuccDonations u = new UCSuccDonations();
+                            u.bid = item.
+                            u.id = int.Parse(item["ID"].ToString());
+                            u.dondate = item["DateDonated"].ToString();
+                            u.venue = item["Venue"].ToString();
+                            u.bloodtype = item["BloodType"].ToString();
+                            if (flager == false)
+                            {
+                                flager = true;
+                                u.BackColor = Color.LightGray;
+                            }
+                            else if (flager == true)
+                            {
+                                flager = false;
+                                u.BackColor = Color.DarkGray;
+                            }
+                            flp.Controls.Add(u);
+                        }
+                        
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                };
+            }*/
+        }
+        public void failureformLoad(FlowLayoutPanel flp)
+        {
+            /*using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
+            {
+                try
+                {
+                    con.Open();
+                    SqlDataAdapter da = new SqlDataAdapter("Select * from FAIL_HISTORY", con);
+                    DataSet ds = new DataSet();
+                    da.Fill(ds, "FAIL_HISTORY");
+                    foreach (DataRow item in ds.Tables["FAIL_HISTORY"].Rows)
+                    {
+                        UCFailedDonations u = new UCFailedDonatins();
+                        
+                    }*/
         }
     }
-       
 }

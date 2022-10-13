@@ -14,10 +14,12 @@ namespace BloodManagementSystem
     public partial class PrimaryChecks : Form
     {
         int id;
-        public PrimaryChecks(int id)
+        Panel p;
+        public PrimaryChecks(int id, Panel p)
         {
             InitializeComponent();
-            this.id = id;  
+            this.id = id;
+            this.p = p;
         }
         private void PrimaryChecks_Load(object sender, EventArgs e)
         {
@@ -35,9 +37,10 @@ namespace BloodManagementSystem
             {
                 MessageBox.Show("Healthy human bean.");
 
-                AcceptedDonation a = new AcceptedDonation(bid,id, DateTimePicker1.Value.ToString());
+                p.Controls.Clear();
+                AcceptedDonation a = new AcceptedDonation(bid, id, DateTimePicker1.Value.ToString(), p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                p.Controls.Add(a);
                 a.Show();
-                this.Hide();
             }
             else
             {
@@ -57,7 +60,7 @@ namespace BloodManagementSystem
                 sd.removePerson(id);
                 EmployeeView ee = new EmployeeView(id);
                 ee.Show();
-                MessageBox.Show("Done");
+                MessageBox.Show("Inserted into failure table");
                 this.Hide();
             }
         }
