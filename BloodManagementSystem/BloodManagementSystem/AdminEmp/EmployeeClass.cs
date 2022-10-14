@@ -26,14 +26,14 @@ namespace BloodManagementSystem
         public bool AdminStatus { get; set; }
         public string UserName { get; set; }
         public string Password { get; set; }
-
+        public int Salary { get; set; }
         public void Insert()
         {
             using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
                 try
                 {
-                    string query = "INSERT INTO EMP_INFO values (@fn, @ln, @dob, @gender, @phone, @email, @country, @city, @region, @adstat)";
+                    string query = "INSERT INTO EMP_INFO values (@fn, @ln, @dob, @gender, @phone, @email, @country, @city, @region, @salary,@adstat)";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@fn", FirstName);
                     cmd.Parameters.AddWithValue("@ln", LastName);
@@ -44,6 +44,7 @@ namespace BloodManagementSystem
                     cmd.Parameters.AddWithValue("@country", Country);
                     cmd.Parameters.AddWithValue("@city", City);
                     cmd.Parameters.AddWithValue("@region", Region);
+                    cmd.Parameters.AddWithValue("@salary", Salary);
                     cmd.Parameters.AddWithValue("@adstat", SqlDbType.Bit).Value = AdminStatus;
 
                     string query2 = "INSERT INTO EMP_ACCOUNTS VALUES (@id, @un, @pw)";
@@ -91,14 +92,37 @@ namespace BloodManagementSystem
                 };
             }
         }
-
-        public void UpdateInfo(int id, string fn, string ln, string dob, string gender, string phone, string email, string country, string city, string region/*, bool adstat*/)
+        public void DeleteInfo(int id)
         {
             using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
                 try
                 {
-                    string query = "Update EMP_INFO SET FirstName = @fn, LastName = @ln, Dob = @dob, Gender = @gender, Phone = @phone, Email = @email, Country = @country, City = @city, Region = @region WHERE ID = @id";
+                    con.Open();
+                    string Query1 = "Delete from EMP_ACCOUNTS where ID = @id";
+                    SqlCommand cmd1 = new SqlCommand(Query1, con);
+                    cmd1.Parameters.AddWithValue("@id", id);
+                    cmd1.ExecuteNonQuery();
+
+                    string Query = "Delete from EMP_INFO where ID = @id";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.Parameters.AddWithValue("@id", id);
+                    cmd.ExecuteNonQuery();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                };
+            }
+        }
+        public void UpdateInfo(int id, string fn, string ln, string dob, string gender, string phone, string email, string country, string city, string region, int sal,bool adstat)
+        {
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
+            {
+                try
+                {
+                    string query = "Update EMP_INFO SET FirstName = @fn, LastName = @ln, Dob = @dob, Gender = @gender, Phone = @phone, Email = @email, Country = @country, City = @city, Region = @region, Stat = @adstat ,Salary = @sal WHERE ID = @id";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@fn", fn);
                     cmd.Parameters.AddWithValue("@ln", ln);
@@ -109,7 +133,8 @@ namespace BloodManagementSystem
                     cmd.Parameters.AddWithValue("@country", country);
                     cmd.Parameters.AddWithValue("@city", city);
                     cmd.Parameters.AddWithValue("@region", region);
-                   // cmd.Parameters.AddWithValue("@adstat", SqlDbType.Bit).Value = adstat;
+                    cmd.Parameters.AddWithValue("@sal", sal);
+                    cmd.Parameters.AddWithValue("@adstat", SqlDbType.Bit).Value = adstat;
                     cmd.Parameters.AddWithValue("@id", id);
 
                     con.Open();

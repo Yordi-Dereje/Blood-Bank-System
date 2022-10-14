@@ -67,6 +67,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminEmp\ListOfEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminEmp\ListOfEmp.Designer.cs">
+      <DependentUpon>ListOfEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEmp\ListOfEmpDetailPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminEmp\ListOfEmpDetailPage.Designer.cs">
+      <DependentUpon>ListOfEmpDetailPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEmp\UCEmp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminEmp\UCEmp.Designer.cs">
+      <DependentUpon>UCEmp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Donation\AcceptedDonation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -273,6 +291,15 @@
     <Compile Include="Views.Designer.cs">
       <DependentUpon>Views.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AdminEmp\ListOfEmp.resx">
+      <DependentUpon>ListOfEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminEmp\ListOfEmpDetailPage.resx">
+      <DependentUpon>ListOfEmpDetailPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminEmp\UCEmp.resx">
+      <DependentUpon>UCEmp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Donation\AcceptedDonation.resx">
       <DependentUpon>AcceptedDonation.cs</DependentUpon>
     </EmbeddedResource>

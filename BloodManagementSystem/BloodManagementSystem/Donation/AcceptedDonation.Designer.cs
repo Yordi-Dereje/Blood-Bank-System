@@ -175,7 +175,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(816, 489);
             this.Controls.Add(this.BID);
             this.Controls.Add(this.btnFinish);
             this.Controls.Add(this.label2);
@@ -184,6 +185,7 @@
             this.Controls.Add(this.cbBT);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AcceptedDonation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AcceptedDonation";

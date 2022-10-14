@@ -36,7 +36,7 @@ namespace BloodManagementSystem
             else
                 gender = "Male";
             string dob = dtpEmp.Value.ToString();
-            EmpAcc empac = new EmpAcc(p, id.ToString(), tbFNEmp.Text, tbLNEmp.Text, gender, dob, tbPhoneEmp.Text, tbEmailEmp.Text, tbCoEmp.Text, tbCiEmp.Text, tbRegEmp.Text) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            EmpAcc empac = new EmpAcc(p, id.ToString(), tbFNEmp.Text, tbLNEmp.Text, gender, dob, tbPhoneEmp.Text, tbEmailEmp.Text, tbCoEmp.Text, tbCiEmp.Text, tbRegEmp.Text,int.Parse(tbSalEmp.Text)) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             p.Controls.Add(empac);
             empac.Show();
         }

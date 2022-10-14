@@ -40,10 +40,9 @@
             // 
             this.lbl_per.AutoSize = true;
             this.lbl_per.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_per.Location = new System.Drawing.Point(491, 28);
-            this.lbl_per.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_per.Location = new System.Drawing.Point(368, 23);
             this.lbl_per.Name = "lbl_per";
-            this.lbl_per.Size = new System.Drawing.Size(125, 26);
+            this.lbl_per.Size = new System.Drawing.Size(99, 22);
             this.lbl_per.TabIndex = 11;
             this.lbl_per.Text = "Permanent";
             // 
@@ -51,10 +50,9 @@
             // 
             this.lbl_3.AutoSize = true;
             this.lbl_3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_3.Location = new System.Drawing.Point(309, 28);
-            this.lbl_3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_3.Location = new System.Drawing.Point(232, 23);
             this.lbl_3.Name = "lbl_3";
-            this.lbl_3.Size = new System.Drawing.Size(99, 26);
+            this.lbl_3.Size = new System.Drawing.Size(79, 22);
             this.lbl_3.TabIndex = 10;
             this.lbl_3.Text = "3 Month";
             // 
@@ -62,10 +60,9 @@
             // 
             this.lbl_72.AutoSize = true;
             this.lbl_72.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_72.Location = new System.Drawing.Point(143, 28);
-            this.lbl_72.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_72.Location = new System.Drawing.Point(107, 23);
             this.lbl_72.Name = "lbl_72";
-            this.lbl_72.Size = new System.Drawing.Size(97, 26);
+            this.lbl_72.Size = new System.Drawing.Size(77, 22);
             this.lbl_72.TabIndex = 9;
             this.lbl_72.Text = "72 Hour";
             // 
@@ -73,10 +70,9 @@
             // 
             this.lbl_id.AutoSize = true;
             this.lbl_id.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_id.Location = new System.Drawing.Point(35, 28);
-            this.lbl_id.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_id.Location = new System.Drawing.Point(26, 23);
             this.lbl_id.Name = "lbl_id";
-            this.lbl_id.Size = new System.Drawing.Size(38, 26);
+            this.lbl_id.Size = new System.Drawing.Size(31, 22);
             this.lbl_id.TabIndex = 8;
             this.lbl_id.Text = "ID";
             // 
@@ -93,15 +89,14 @@
             this.btnAccept.ForeColor = System.Drawing.Color.Black;
             this.btnAccept.Image = null;
             this.btnAccept.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnAccept.Location = new System.Drawing.Point(726, 28);
-            this.btnAccept.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAccept.Location = new System.Drawing.Point(544, 23);
             this.btnAccept.Name = "btnAccept";
             this.btnAccept.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnAccept.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnAccept.OnHoverForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnAccept.OnHoverImage = null;
             this.btnAccept.OnPressedColor = System.Drawing.Color.Black;
-            this.btnAccept.Size = new System.Drawing.Size(99, 41);
+            this.btnAccept.Size = new System.Drawing.Size(74, 33);
             this.btnAccept.TabIndex = 12;
             this.btnAccept.Text = "Accept";
             this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
@@ -119,22 +114,21 @@
             this.btnDecline.ForeColor = System.Drawing.Color.Black;
             this.btnDecline.Image = null;
             this.btnDecline.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnDecline.Location = new System.Drawing.Point(833, 28);
-            this.btnDecline.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDecline.Location = new System.Drawing.Point(625, 23);
             this.btnDecline.Name = "btnDecline";
             this.btnDecline.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnDecline.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnDecline.OnHoverForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnDecline.OnHoverImage = null;
             this.btnDecline.OnPressedColor = System.Drawing.Color.Black;
-            this.btnDecline.Size = new System.Drawing.Size(99, 41);
+            this.btnDecline.Size = new System.Drawing.Size(74, 33);
             this.btnDecline.TabIndex = 13;
             this.btnDecline.Text = "Decline";
             this.btnDecline.Click += new System.EventHandler(this.btnDecline_Click);
             // 
             // UCRequestingDonor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnDecline);
             this.Controls.Add(this.btnAccept);
@@ -142,9 +136,8 @@
             this.Controls.Add(this.lbl_3);
             this.Controls.Add(this.lbl_72);
             this.Controls.Add(this.lbl_id);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCRequestingDonor";
-            this.Size = new System.Drawing.Size(964, 76);
+            this.Size = new System.Drawing.Size(723, 62);
             this.Load += new System.EventHandler(this.RequestingDonor_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

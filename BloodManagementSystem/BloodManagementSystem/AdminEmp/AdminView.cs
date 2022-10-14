@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BloodManagementSystem.AdminEmp;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -66,9 +67,10 @@ namespace BloodManagementSystem
         private void lbl_Employee_Click(object sender, EventArgs e)
         {
             panel2.Controls.Clear();
-            EmployeeRegi emp = new EmployeeRegi(panel2) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            ListOfEmp emp = new ListOfEmp(panel2) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             panel2.Controls.Add(emp);
             emp.Show();
+            
         }
 
         private void lbl_Donation_Click(object sender, EventArgs e)

@@ -14,8 +14,9 @@ namespace BloodManagementSystem
     public partial class EmpAcc : Form
     {
         Panel p;
+        int salary;
         string id, fn, ln, gender, dob, phone, email, country, city, region;
-        public EmpAcc(Panel p, string id, string fn, string ln, string gender, string dob, string phone, string email, string country, string city, string region)
+        public EmpAcc(Panel p, string id, string fn, string ln, string gender, string dob, string phone, string email, string country, string city, string region,int salary)
         {
             InitializeComponent();
             this.p = p;
@@ -29,6 +30,7 @@ namespace BloodManagementSystem
             this.country = country;
             this.city = city;
             this.region = region;
+            this.salary = salary;
         }
 
         private void EmpAcc_Load(object sender, EventArgs e)
@@ -50,6 +52,7 @@ namespace BloodManagementSystem
                 Country = country,
                 City = city,
                 Region = region,
+                Salary = salary,
                 UserName = tbUNEmp.Text,
                 Password = tbPWEmp.Text
             };

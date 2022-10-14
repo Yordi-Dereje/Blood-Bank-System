@@ -114,7 +114,7 @@ namespace BloodManagementSystem
             {
                 var log = EmployeeClass.findEmp(id);
                 EmployeeClass s = new EmployeeClass();
-                s.UpdateInfo(id, tbFN.Text, tbLN.Text, tbDOB.Text, tbGEN.Text, tbPhone.Text, tbEmail.Text, tbCou.Text, tbCi.Text, tbRe.Text);
+                s.UpdateInfo(id, tbFN.Text, tbLN.Text, tbDOB.Text, tbGEN.Text, tbPhone.Text, tbEmail.Text, tbCou.Text, tbCi.Text, tbRe.Text,int.Parse(tbSal.Text),Convert.ToBoolean(tbStat.Text));
                 MessageBox.Show("Updated Successfully");
 
             }

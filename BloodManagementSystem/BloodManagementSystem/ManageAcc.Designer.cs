@@ -57,6 +57,10 @@
             this.btn_Edit = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btnSave = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.PanelSave = new System.Windows.Forms.Panel();
+            this.kryptonLabel10 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.tbSal = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kryptonLabel11 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.tbStat = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.PanelChangeLogin.SuspendLayout();
             this.PanelSave.SuspendLayout();
             this.SuspendLayout();
@@ -127,7 +131,7 @@
             // 
             // tbFN
             // 
-            this.tbFN.Location = new System.Drawing.Point(194, 58);
+            this.tbFN.Location = new System.Drawing.Point(199, 19);
             this.tbFN.Name = "tbFN";
             this.tbFN.ReadOnly = true;
             this.tbFN.Size = new System.Drawing.Size(191, 23);
@@ -135,7 +139,7 @@
             // 
             // tbPhone
             // 
-            this.tbPhone.Location = new System.Drawing.Point(194, 222);
+            this.tbPhone.Location = new System.Drawing.Point(199, 183);
             this.tbPhone.Name = "tbPhone";
             this.tbPhone.ReadOnly = true;
             this.tbPhone.Size = new System.Drawing.Size(191, 23);
@@ -143,7 +147,7 @@
             // 
             // tbEmail
             // 
-            this.tbEmail.Location = new System.Drawing.Point(194, 266);
+            this.tbEmail.Location = new System.Drawing.Point(199, 227);
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.ReadOnly = true;
             this.tbEmail.Size = new System.Drawing.Size(191, 23);
@@ -152,7 +156,7 @@
             // 
             // tbCou
             // 
-            this.tbCou.Location = new System.Drawing.Point(194, 308);
+            this.tbCou.Location = new System.Drawing.Point(199, 269);
             this.tbCou.Name = "tbCou";
             this.tbCou.ReadOnly = true;
             this.tbCou.Size = new System.Drawing.Size(191, 23);
@@ -160,7 +164,7 @@
             // 
             // tbCi
             // 
-            this.tbCi.Location = new System.Drawing.Point(194, 352);
+            this.tbCi.Location = new System.Drawing.Point(199, 313);
             this.tbCi.Name = "tbCi";
             this.tbCi.ReadOnly = true;
             this.tbCi.Size = new System.Drawing.Size(191, 23);
@@ -168,7 +172,7 @@
             // 
             // tbRe
             // 
-            this.tbRe.Location = new System.Drawing.Point(194, 396);
+            this.tbRe.Location = new System.Drawing.Point(199, 357);
             this.tbRe.Name = "tbRe";
             this.tbRe.ReadOnly = true;
             this.tbRe.Size = new System.Drawing.Size(191, 23);
@@ -176,7 +180,7 @@
             // 
             // tbLN
             // 
-            this.tbLN.Location = new System.Drawing.Point(194, 98);
+            this.tbLN.Location = new System.Drawing.Point(199, 59);
             this.tbLN.Name = "tbLN";
             this.tbLN.ReadOnly = true;
             this.tbLN.Size = new System.Drawing.Size(191, 23);
@@ -184,7 +188,7 @@
             // 
             // tbDOB
             // 
-            this.tbDOB.Location = new System.Drawing.Point(194, 138);
+            this.tbDOB.Location = new System.Drawing.Point(199, 99);
             this.tbDOB.Name = "tbDOB";
             this.tbDOB.ReadOnly = true;
             this.tbDOB.Size = new System.Drawing.Size(191, 23);
@@ -192,7 +196,7 @@
             // 
             // tbGEN
             // 
-            this.tbGEN.Location = new System.Drawing.Point(194, 182);
+            this.tbGEN.Location = new System.Drawing.Point(199, 143);
             this.tbGEN.Name = "tbGEN";
             this.tbGEN.ReadOnly = true;
             this.tbGEN.Size = new System.Drawing.Size(191, 23);
@@ -201,7 +205,7 @@
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(69, 98);
+            this.kryptonLabel1.Location = new System.Drawing.Point(74, 59);
             this.kryptonLabel1.Name = "kryptonLabel1";
             this.kryptonLabel1.Size = new System.Drawing.Size(102, 26);
             this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
@@ -210,7 +214,7 @@
             // 
             // kryptonLabel2
             // 
-            this.kryptonLabel2.Location = new System.Drawing.Point(72, 263);
+            this.kryptonLabel2.Location = new System.Drawing.Point(77, 224);
             this.kryptonLabel2.Name = "kryptonLabel2";
             this.kryptonLabel2.Size = new System.Drawing.Size(62, 26);
             this.kryptonLabel2.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
@@ -219,7 +223,7 @@
             // 
             // kryptonLabel3
             // 
-            this.kryptonLabel3.Location = new System.Drawing.Point(72, 219);
+            this.kryptonLabel3.Location = new System.Drawing.Point(77, 180);
             this.kryptonLabel3.Name = "kryptonLabel3";
             this.kryptonLabel3.Size = new System.Drawing.Size(64, 26);
             this.kryptonLabel3.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
@@ -228,7 +232,7 @@
             // 
             // kryptonLabel4
             // 
-            this.kryptonLabel4.Location = new System.Drawing.Point(69, 177);
+            this.kryptonLabel4.Location = new System.Drawing.Point(74, 138);
             this.kryptonLabel4.Name = "kryptonLabel4";
             this.kryptonLabel4.Size = new System.Drawing.Size(75, 26);
             this.kryptonLabel4.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
@@ -237,7 +241,7 @@
             // 
             // kryptonLabel5
             // 
-            this.kryptonLabel5.Location = new System.Drawing.Point(62, 138);
+            this.kryptonLabel5.Location = new System.Drawing.Point(67, 99);
             this.kryptonLabel5.Name = "kryptonLabel5";
             this.kryptonLabel5.Size = new System.Drawing.Size(126, 26);
             this.kryptonLabel5.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
@@ -246,7 +250,7 @@
             // 
             // kryptonLabel6
             // 
-            this.kryptonLabel6.Location = new System.Drawing.Point(69, 55);
+            this.kryptonLabel6.Location = new System.Drawing.Point(74, 16);
             this.kryptonLabel6.Name = "kryptonLabel6";
             this.kryptonLabel6.Size = new System.Drawing.Size(105, 26);
             this.kryptonLabel6.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
@@ -255,7 +259,7 @@
             // 
             // kryptonLabel7
             // 
-            this.kryptonLabel7.Location = new System.Drawing.Point(72, 396);
+            this.kryptonLabel7.Location = new System.Drawing.Point(77, 357);
             this.kryptonLabel7.Name = "kryptonLabel7";
             this.kryptonLabel7.Size = new System.Drawing.Size(70, 26);
             this.kryptonLabel7.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
@@ -264,7 +268,7 @@
             // 
             // kryptonLabel8
             // 
-            this.kryptonLabel8.Location = new System.Drawing.Point(72, 354);
+            this.kryptonLabel8.Location = new System.Drawing.Point(77, 315);
             this.kryptonLabel8.Name = "kryptonLabel8";
             this.kryptonLabel8.Size = new System.Drawing.Size(48, 26);
             this.kryptonLabel8.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
@@ -273,7 +277,7 @@
             // 
             // kryptonLabel9
             // 
-            this.kryptonLabel9.Location = new System.Drawing.Point(72, 308);
+            this.kryptonLabel9.Location = new System.Drawing.Point(77, 269);
             this.kryptonLabel9.Name = "kryptonLabel9";
             this.kryptonLabel9.Size = new System.Drawing.Size(82, 26);
             this.kryptonLabel9.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
@@ -477,12 +481,50 @@
             this.PanelSave.Size = new System.Drawing.Size(149, 52);
             this.PanelSave.TabIndex = 168;
             // 
+            // kryptonLabel10
+            // 
+            this.kryptonLabel10.Location = new System.Drawing.Point(77, 403);
+            this.kryptonLabel10.Name = "kryptonLabel10";
+            this.kryptonLabel10.Size = new System.Drawing.Size(66, 26);
+            this.kryptonLabel10.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
+            this.kryptonLabel10.TabIndex = 169;
+            this.kryptonLabel10.Values.Text = "Salary";
+            // 
+            // tbSal
+            // 
+            this.tbSal.Location = new System.Drawing.Point(199, 406);
+            this.tbSal.Name = "tbSal";
+            this.tbSal.ReadOnly = true;
+            this.tbSal.Size = new System.Drawing.Size(191, 23);
+            this.tbSal.TabIndex = 170;
+            // 
+            // kryptonLabel11
+            // 
+            this.kryptonLabel11.Location = new System.Drawing.Point(442, 406);
+            this.kryptonLabel11.Name = "kryptonLabel11";
+            this.kryptonLabel11.Size = new System.Drawing.Size(64, 26);
+            this.kryptonLabel11.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
+            this.kryptonLabel11.TabIndex = 171;
+            this.kryptonLabel11.Values.Text = "Status";
+            // 
+            // tbStat
+            // 
+            this.tbStat.Location = new System.Drawing.Point(527, 409);
+            this.tbStat.Name = "tbStat";
+            this.tbStat.ReadOnly = true;
+            this.tbStat.Size = new System.Drawing.Size(191, 23);
+            this.tbStat.TabIndex = 172;
+            // 
             // ManageAcc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1034, 528);
+            this.Controls.Add(this.tbStat);
+            this.Controls.Add(this.kryptonLabel11);
+            this.Controls.Add(this.tbSal);
+            this.Controls.Add(this.kryptonLabel10);
             this.Controls.Add(this.PanelSave);
             this.Controls.Add(this.btn_Edit);
             this.Controls.Add(this.btnChangeLogin);
@@ -547,5 +589,9 @@
         private ComponentFactory.Krypton.Toolkit.KryptonButton btn_Edit;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnSave;
         private System.Windows.Forms.Panel PanelSave;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel10;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox tbSal;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel11;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox tbStat;
     }
 }
