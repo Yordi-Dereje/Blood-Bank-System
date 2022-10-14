@@ -1,23 +1,29 @@
 <center> <h1>Blood Bank</h1> </center>
-This repository contains a project done around the concept blood bank management system. It is written in c# language and tsql... can write sth better so just legizew
+
+<center> <h3>Description</h3> </center>
+
+Written in the c# and tsql language, this repository contains a blood bank system. It accepts donations from registered donors and distributes blood to hospitals. 
 
 ---
 
 <center><h3> General Use </h3> </center>
 
-1. Clone this repository
+1. Clone this repository using the following:
+
+```
+https://github.com/Goldenlady0940/Blood-Bank-System.git
+```
 
 2. Once cloned, locate BloodManagementSystem.sln and open it
 
 3. Once opened, you execute it by clicking the run button
 
-4. This should display (also when home button is clicked)
+4. It should display the following:
 
 ```
 pic of the home page
 ```
 
-<br>
 5. There are 3 roles in this program, namely: 
 
 ##### Donor
@@ -26,11 +32,11 @@ pic of the home page
 
 	* Login - A successfully registered user is able to login to their personalized page
 	
-	* Request donation - User can fill a form about their current health state that will be submitted to an employee of chosen branch that will be elaborated more later
+	* Request donation - User can fill a form about their current health state that will be submitted to an employee
 	
 	* See donation history - User can see all donation history, successful and failed ones along with their reason of failure
 	
-	* Personal info - view and update registration info
+	* Personal info - View and update registration info
 
 ##### Admin
 	
@@ -40,19 +46,19 @@ pic of the home page
 	
 	* Login - Logging in takes the admin to their personalized page
 	
-	* Donation history - Able to see all donations, successful or failed and is able to filter out by search
+	* Donation history - Able to see all donations, either successful or failed
 	
-	* Donors list - Able to see all donors information and is also able to filter out by search
+	* Donors list - Able to see all donors information
 	
-	* Transfer - Able to verify and facilitate blood transfer from current branch to specified hospital
+	* Transfer - Able to verify and facilitate blood transfer from bank to specified hospital
 	
 	* Hospital list - Able to add, edit and view information about hospitals along with their transfer history
 	
-	* Dash board - Shows blood count and also sth sth
+	* Dash board - Shows blood count.
 	
 	* Employee info - Able to view, insert, update, delete and filter out employees
 	
-	* Personal info - view and edit their personal information
+	* Personal info - able to view and edit their personal information
 
 ##### Employee
 
@@ -66,9 +72,10 @@ pic of the home page
 		
 		* Decline requests (permanent illness automatically declined) will be put in failed history along with reason
 	
-	* Dash board - shows blood count and also sth sth
+	* Dash board - shows blood count.
 	
-	* Personal info - view and partially edit their personal information
+	* Personal info - able to view and partially edit their personal information
+<br>
 
 <center><h3> Authors </h3> </center>
 
