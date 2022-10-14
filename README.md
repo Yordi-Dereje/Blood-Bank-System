@@ -73,8 +73,9 @@ pic of the home page
 <br>
 <center><h3> Authors </h3> </center>
 | Names | Batch and section | ID | Github account |
-| ----- | ----------------- | -- | -------------- |
-| Sebrina Abdulrezak | DRB2102 B | YY0320 | <a href="https://github.com/GoldenLady0940">Github account</a>| 
-| Soliyana Daniel | DRB2102 B | YH4300 | <a href="https://github.com/soliyana141">Github account</a>|
-| Yordanos Dereje | DRB2102 B | MM8570 | <a href="https://github.com/Yordi-Dereje">Github account</a>|
+| --- | --- | --- | --- |
+| Sebrina Abdulrezak | DRB2102 B | YY0320 | <a href="https://github.com/GoldenLady0940">Github account</a> | 
+| Soliyana Daniel | DRB2102 B | YH4300 | <a href="https://github.com/soliyana141">Github account</a> |
+| Yordanos Dereje | DRB2102 B | MM8570 | <a href="https://github.com/Yordi-Dereje">Github account</a> |
+<br>
 
