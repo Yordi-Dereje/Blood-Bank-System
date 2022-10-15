@@ -140,7 +140,7 @@ Stat bit
 DROP TABLE EMP_INFO;
 Alter table EMP_INFO auto_increment = 1000;
 --STORED PROCEDURES FOR EMPLOYES
-
+update EMP_INFO SET SALARY = 1233 WHERE ID =3;
 --INSERT
 CREATE PROCEDURE spINSERT_EMP_INFO
 @FirstName varchar(50),
@@ -187,6 +187,7 @@ END
 CREATE PROCEDURE spLOAD_SEARCH_EMP_INFO
 @ID INT
 AS
+INSERT INTO EMP_INFO VALUES ('ee', 'ee', '12/12/12', 'Female', '2345','ee', 'ee', 'ee', 'ee', 344, 0);
 BEGIN
 	SELECT * FROM EMP_INFO WHERE ID = @ID
 END
@@ -199,7 +200,6 @@ BEGIN
 END
 
 SELECT *FROM EMP_ACCOUNTS;
-INSERT INTO EMP_INFO(FirstName, LastName, Dob, Gender, Phone, Email, Country, City, Region, Stat) VALUES ('ee', 'ee', '12/12/12', 'Female', 'ee', 'ee', 'ee', 'ee', 'ee', 0);
 INSERT INTO EMP_ACCOUNTS VALUES (1003,'ee', 'ee');
 
 CREATE TABLE EMP_ACCOUNTS

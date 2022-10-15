@@ -1,4 +1,4 @@
-Create database BloodBankSql;
+CREATE DATABASE BloodBankSql;
 Use BloodBankSql;
 
 Create table DONOR_INFO(

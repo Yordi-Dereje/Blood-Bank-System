@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
+using System.Data.SqlTypes;
 
 namespace BloodManagementSystem
 {
@@ -27,6 +28,24 @@ namespace BloodManagementSystem
         public string UserName { get; set; }
         public string Password { get; set; }
         public int Salary { get; set; }
+        public void Search(string tb)
+        {
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
+            {
+                try
+                {
+                    con.Open();
+                    string query = "Select * from EMP_INFO where ID= @tb or Phone = @tb or CONCAT(FirstName, ' ', LastName) like @tb";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@tb", tb);
+                    cmd.ExecuteNonQuery();
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
         public void Insert()
         {
             using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
@@ -213,6 +232,7 @@ namespace BloodManagementSystem
                         r.Country = (string)sdr["Country"];
                         r.City = (string)sdr["City"];
                         r.Region = (string)sdr["Region"];
+                        r.Salary = (int)sdr["Salary"];
                         r.AdminStatus = Convert.ToBoolean(sdr["Stat"]);
                         temp.Add(r);
                     }

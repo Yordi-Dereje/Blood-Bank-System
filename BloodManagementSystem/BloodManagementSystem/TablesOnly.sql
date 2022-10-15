@@ -120,7 +120,7 @@ City varchar(50),
 Region varchar(50),
 Stat bit
 );
-
+DROP TABLE EMP_INFO
 select * from emp_info;
 
 CREATE TABLE EMP_ACCOUNTS

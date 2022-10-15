@@ -72,7 +72,7 @@ Foreign key (ID) references DONOR_INFO(ID)
 -- BLOOD COUNT
 CREATE TABLE BLOOD_COUNT(
 bloodtype varchar(3),
-count int
+bloodcount int
 );
 
 -- PERMANENT ILLNESS LIST

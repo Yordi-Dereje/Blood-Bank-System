@@ -56,7 +56,7 @@ namespace BloodManagementSystem.AdminEmp
         private void btn_Edit_Click(object sender, EventArgs e)
         {
             EmployeeClass emp = new EmployeeClass();
-            emp.UpdateInfo(id, fn,ln, gen, phone, dob,email, co,  ci,reg,  sal, adstat);
+            emp.UpdateInfo(id, fn,ln, dob, gen, phone,email, co,  ci,reg,  sal, adstat);
         }
     }
 }

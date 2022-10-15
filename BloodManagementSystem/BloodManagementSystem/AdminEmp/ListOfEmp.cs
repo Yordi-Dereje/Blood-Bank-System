@@ -26,8 +26,7 @@ namespace BloodManagementSystem.AdminEmp
             {
                 UCEmp emp = new UCEmp();
                 emp.ID = item.ID;
-                emp.Name = item.FirstName;
-                emp.Name = item.LastName;
+                emp.Name = item.FirstName + " " + item.LastName ;
                 emp.Phone = item.Phone;
 
                 emp.Click += (object P, EventArgs e2) =>
@@ -48,6 +47,13 @@ namespace BloodManagementSystem.AdminEmp
             EmployeeRegi emp = new EmployeeRegi(p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             p.Controls.Add(emp);
             emp.Show();
+        }
+
+        private void btn_Search_Click(object sender, EventArgs e)
+        {
+            EmployeeClass emp = new EmployeeClass();
+            emp.Search(tbSearch.Text);
+            MessageBox.Show("Found!");
         }
     }
 }
