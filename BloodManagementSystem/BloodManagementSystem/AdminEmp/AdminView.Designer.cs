@@ -34,7 +34,7 @@
             this.gunaContextMenuStrip2 = new Guna.UI.WinForms.GunaContextMenuStrip();
             this.aDDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eDITToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gunaPanel3 = new Guna.UI.WinForms.GunaPanel();
+            this.gunaPanel = new Guna.UI.WinForms.GunaPanel();
             this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.lbl_Branch = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
@@ -50,7 +50,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.gunaContextMenuStrip2.SuspendLayout();
-            this.gunaPanel3.SuspendLayout();
+            this.gunaPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicDonProfile)).BeginInit();
             this.gunaContextMenuStrip1.SuspendLayout();
@@ -114,24 +114,24 @@
             this.eDITToolStripMenuItem.Size = new System.Drawing.Size(110, 24);
             this.eDITToolStripMenuItem.Text = "EDIT";
             // 
-            // gunaPanel3
+            // gunaPanel
             // 
-            this.gunaPanel3.Controls.Add(this.kryptonLabel1);
-            this.gunaPanel3.Controls.Add(this.lbl_Branch);
-            this.gunaPanel3.Controls.Add(this.gunaLabel2);
-            this.gunaPanel3.Controls.Add(this.lbl_transfer);
-            this.gunaPanel3.Controls.Add(this.pictureBox2);
-            this.gunaPanel3.Controls.Add(this.lbl_Donation);
-            this.gunaPanel3.Controls.Add(this.lbl_Home);
-            this.gunaPanel3.Controls.Add(this.PicDonProfile);
-            this.gunaPanel3.Controls.Add(this.lbl_Employee);
-            this.gunaPanel3.Controls.Add(this.lbl_hi);
-            this.gunaPanel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gunaPanel3.Location = new System.Drawing.Point(0, 0);
-            this.gunaPanel3.Margin = new System.Windows.Forms.Padding(4);
-            this.gunaPanel3.Name = "gunaPanel3";
-            this.gunaPanel3.Size = new System.Drawing.Size(1312, 78);
-            this.gunaPanel3.TabIndex = 1;
+            this.gunaPanel.Controls.Add(this.kryptonLabel1);
+            this.gunaPanel.Controls.Add(this.lbl_Branch);
+            this.gunaPanel.Controls.Add(this.gunaLabel2);
+            this.gunaPanel.Controls.Add(this.lbl_transfer);
+            this.gunaPanel.Controls.Add(this.pictureBox2);
+            this.gunaPanel.Controls.Add(this.lbl_Donation);
+            this.gunaPanel.Controls.Add(this.lbl_Home);
+            this.gunaPanel.Controls.Add(this.PicDonProfile);
+            this.gunaPanel.Controls.Add(this.lbl_Employee);
+            this.gunaPanel.Controls.Add(this.lbl_hi);
+            this.gunaPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gunaPanel.Location = new System.Drawing.Point(0, 0);
+            this.gunaPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaPanel.Name = "gunaPanel";
+            this.gunaPanel.Size = new System.Drawing.Size(1312, 78);
+            this.gunaPanel.TabIndex = 1;
             // 
             // kryptonLabel1
             // 
@@ -303,15 +303,15 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1312, 687);
             this.Controls.Add(this.PanelAdmin);
-            this.Controls.Add(this.gunaPanel3);
+            this.Controls.Add(this.gunaPanel);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdminView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminViews";
             this.Load += new System.EventHandler(this.AdminViews_Load);
             this.gunaContextMenuStrip2.ResumeLayout(false);
-            this.gunaPanel3.ResumeLayout(false);
-            this.gunaPanel3.PerformLayout();
+            this.gunaPanel.ResumeLayout(false);
+            this.gunaPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicDonProfile)).EndInit();
             this.gunaContextMenuStrip1.ResumeLayout(false);
@@ -321,7 +321,7 @@
         }
 
         #endregion
-        private Guna.UI.WinForms.GunaPanel gunaPanel3;
+        private Guna.UI.WinForms.GunaPanel gunaPanel;
         private System.Windows.Forms.PictureBox PicDonProfile;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel lbl_hi;
         private Guna.UI.WinForms.GunaLabel lbl_Donation;

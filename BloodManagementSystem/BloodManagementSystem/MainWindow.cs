@@ -18,15 +18,21 @@ namespace BloodManagementSystem
             InitializeComponent();
         }
 
-        private void gunaLabel1_Click(object sender, EventArgs e)
+        private void MainWindow_Load(object sender, EventArgs e)
+        {
+            //load the welcome message
+            //link the Welcome form...
+        }
+
+        private void lblDonor_Click(object sender, EventArgs e)
         {
             gunaPanel3.Controls.Clear();
-            DonorLogin dl = new DonorLogin(gunaPanel3, this) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true};
+            DonorLogin dl = new DonorLogin(gunaPanel3, this) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             gunaPanel3.Controls.Add(dl);
             dl.Show();
         }
 
-        private void lbl_AdminView_Click(object sender, EventArgs e)
+        private void lbl_AdminView_Click_1(object sender, EventArgs e)
         {
             gunaPanel3.Controls.Clear();
             AdminEmpLogin ad = new AdminEmpLogin(gunaPanel3, this) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
@@ -34,7 +40,7 @@ namespace BloodManagementSystem
             ad.Show();
         }
 
-        private void gunaLabel2_MouseHover(object sender, EventArgs e)
+        private void lblHome_MouseHover(object sender, EventArgs e)
         {
             lblHome.ForeColor = Color.Maroon;
         }
@@ -54,33 +60,24 @@ namespace BloodManagementSystem
             lblDonor.ForeColor = Color.Red;
         }
 
-        private void MainWindow_Load(object sender, EventArgs e)
-        {
-            //load the welcome message
-            //link the Welcome form...
-        }
-
         private void lbl_AdminView_MouseHover(object sender, EventArgs e)
         {
-            lbl_AdminView.ForeColor = Color.Maroon;
+            lblAdminView.ForeColor = Color.Maroon;
         }
 
-        private void lbl_AdminView_MouseLeave(object sender, EventArgs e)
+        private void lblAdminView_MouseLeave(object sender, EventArgs e)
         {
-            lbl_AdminView.ForeColor = Color.Red;
+            lblAdminView.ForeColor = Color.Red;
         }
+
         private void lblAboutUs_MouseHover(object sender, EventArgs e)
         {
             lblAboutUs.ForeColor = Color.Maroon;
         }
+
         private void lblAboutUs_MouseLeave(object sender, EventArgs e)
         {
             lblAboutUs.ForeColor = Color.Red;
-        }
-
-        private void kryptonLabel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
