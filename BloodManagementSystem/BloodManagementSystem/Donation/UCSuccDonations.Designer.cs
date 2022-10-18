@@ -49,7 +49,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F);
-            this.label4.Location = new System.Drawing.Point(676, 25);
+            this.label4.Location = new System.Drawing.Point(600, 25);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(70, 27);
             this.label4.TabIndex = 8;
@@ -97,7 +97,7 @@
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCSuccDonations";
-            this.Size = new System.Drawing.Size(1047, 70);
+            this.Size = new System.Drawing.Size(1047, 58);
             this.Load += new System.EventHandler(this.UCSuccDonations_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

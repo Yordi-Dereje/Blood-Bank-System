@@ -58,13 +58,21 @@ namespace BloodManagementSystem
             di.Show();
         }
 
-        private void manageAccountToolStripMenuItem_Click(object sender, EventArgs e)
+        /*private void manageAccountToolStripMenuItem_Click(object sender, EventArgs e) // where is this even
         {
             panel2.Controls.Clear();
             ManageAcc md = new ManageAcc(id,2, panel2) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             panel2.Controls.Add(md);
             md.Show();
-        }
+        }*/
 
+        private void PicDonProfile_Click(object sender, EventArgs e)
+        {
+            // object not referenced error here
+            panel2.Controls.Clear();
+            ManageAcc md = new ManageAcc(id, 2, panel2) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            panel2.Controls.Add(md);
+            md.Show();
+        }
     }
 }

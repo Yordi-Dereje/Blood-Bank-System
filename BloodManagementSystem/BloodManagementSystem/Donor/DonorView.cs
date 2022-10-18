@@ -22,22 +22,10 @@ namespace BloodManagementSystem
 
         private void PicDonProfile_Click(object sender, EventArgs e)
         {
-          
-        }
-
-        private void btnDonation_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnMedical_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnReqDonation_Click(object sender, EventArgs e)
-        {
-            
+            panel3.Controls.Clear(); // brings an error object not referened or sth along those lines
+            ManageAcc md = new ManageAcc(id, 1, panel3) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            panel3.Controls.Add(md);
+            md.Show();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -47,7 +35,7 @@ namespace BloodManagementSystem
             mw.Show();
         }
 
-        private void manageAccountToolStripMenuItem_Click(object sender, EventArgs e)
+        private void manageAccountToolStripMenuItem_Click(object sender, EventArgs e) // I can't even access this
         {
             panel3.Controls.Clear();
             ManageAcc md = new ManageAcc(id,1, panel3) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };

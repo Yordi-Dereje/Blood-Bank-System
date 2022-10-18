@@ -51,11 +51,23 @@
     <Reference Include="Guna.UI">
       <HintPath>..\..\..\..\Downloads\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
     </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data, Version=8.0.29.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -65,6 +77,8 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdminEmp\ListOfEmp.cs">
@@ -155,6 +169,12 @@
     <Compile Include="AdminEmp\EmployeeView.Designer.cs">
       <DependentUpon>EmployeeView.cs</DependentUpon>
     </Compile>
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Hospital.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -215,6 +235,13 @@
     <Compile Include="Donor\DonorView.Designer.cs">
       <DependentUpon>DonorView.cs</DependentUpon>
     </Compile>
+    <Compile Include="HospitalClass.cs" />
+    <Compile Include="HospitalRegi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HospitalRegi.Designer.cs">
+      <DependentUpon>HospitalRegi.cs</DependentUpon>
+    </Compile>
     <Compile Include="HospitalRequestDetailPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -273,6 +300,19 @@
       <DependentUpon>UCSuccDonations.cs</DependentUpon>
     </Compile>
     <Compile Include="SQLHospitalClass.cs" />
+    <Compile Include="Transfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transfer.Designer.cs">
+      <DependentUpon>Transfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransferClass.cs" />
+    <Compile Include="TransferList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransferList.Designer.cs">
+      <DependentUpon>TransferList.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCHospital.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -284,6 +324,12 @@
     </Compile>
     <Compile Include="UCHospitalReq.Designer.cs">
       <DependentUpon>UCHospitalReq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCTransfer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCTransfer.Designer.cs">
+      <DependentUpon>UCTransfer.cs</DependentUpon>
     </Compile>
     <Compile Include="Views.cs">
       <SubType>Form</SubType>
@@ -348,8 +394,14 @@
     <EmbeddedResource Include="AdminEmp\EmployeeView.resx">
       <DependentUpon>EmployeeView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Hospital.resx">
       <DependentUpon>Hospital.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HospitalRegi.resx">
+      <DependentUpon>HospitalRegi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HospitalRequestDetailPage.resx">
       <DependentUpon>HospitalRequestDetailPage.cs</DependentUpon>
@@ -396,15 +448,25 @@
     <EmbeddedResource Include="Donation\UCSuccDonations.resx">
       <DependentUpon>UCSuccDonations.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Transfer.resx">
+      <DependentUpon>Transfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransferList.resx">
+      <DependentUpon>TransferList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UCHospital.resx">
       <DependentUpon>UCHospital.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCHospitalReq.resx">
       <DependentUpon>UCHospitalReq.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UCTransfer.resx">
+      <DependentUpon>UCTransfer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views.resx">
       <DependentUpon>Views.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

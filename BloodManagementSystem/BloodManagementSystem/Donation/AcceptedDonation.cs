@@ -35,10 +35,9 @@ namespace BloodManagementSystem
             this.Close();
 
         }
-
         private void AcceptedDonation_Load(object sender, EventArgs e)
         {
-            BID.Text = bid.ToString();
+            //BID.Text = bid.ToString();
         }
     }
 }

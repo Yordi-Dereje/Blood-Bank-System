@@ -118,71 +118,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="kryptonLinkLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>434, 276</value>
+  <data name="kryptonLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>204, 190</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="kryptonLinkLabel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="kryptonLinkLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 21</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="kryptonLinkLabel1.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
-  </data>
-  <data name="kryptonLinkLabel1.Values.Text" xml:space="preserve">
-    <value>Forgot Password?</value>
-  </data>
-  <data name="&gt;&gt;kryptonLinkLabel1.Name" xml:space="preserve">
-    <value>kryptonLinkLabel1</value>
-  </data>
-  <data name="&gt;&gt;kryptonLinkLabel1.Type" xml:space="preserve">
-    <value>ComponentFactory.Krypton.Toolkit.KryptonLinkLabel, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
-  </data>
-  <data name="&gt;&gt;kryptonLinkLabel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;kryptonLinkLabel1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btn_Login.Location" type="System.Drawing.Point, System.Drawing">
-    <value>298, 338</value>
-  </data>
-  <data name="btn_Login.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="btn_Login.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 47</value>
-  </data>
-  <data name="btn_Login.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="btn_Login.Values.Text" xml:space="preserve">
-    <value>Login</value>
-  </data>
-  <data name="&gt;&gt;btn_Login.Name" xml:space="preserve">
-    <value>btn_Login</value>
-  </data>
-  <data name="&gt;&gt;btn_Login.Type" xml:space="preserve">
-    <value>ComponentFactory.Krypton.Toolkit.KryptonButton, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
-  </data>
-  <data name="&gt;&gt;btn_Login.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btn_Login.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="kryptonLabel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 186</value>
-  </data>
   <data name="kryptonLabel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="kryptonLabel3.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 32</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="kryptonLabel3.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
   </data>
@@ -202,7 +148,7 @@
     <value>4</value>
   </data>
   <data name="txt_usDonor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 96</value>
+    <value>204, 121</value>
   </data>
   <data name="txt_usDonor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -226,7 +172,7 @@
     <value>5</value>
   </data>
   <data name="lbl_UserName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 57</value>
+    <value>204, 82</value>
   </data>
   <data name="lbl_UserName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -253,7 +199,7 @@
     <value>6</value>
   </data>
   <data name="txt_pwDonor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 225</value>
+    <value>204, 229</value>
   </data>
   <data name="txt_pwDonor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -274,13 +220,43 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txt_pwDonor.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
+  </data>
+  <data name="btn_Login.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Login.Location" type="System.Drawing.Point, System.Drawing">
+    <value>277, 372</value>
+  </data>
+  <data name="btn_Login.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="btn_Login.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 47</value>
+  </data>
+  <data name="btn_Login.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="btn_Login.Values.Text" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="&gt;&gt;btn_Login.Name" xml:space="preserve">
+    <value>btn_Login</value>
+  </data>
+  <data name="&gt;&gt;btn_Login.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonButton, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;btn_Login.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_Login.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="btn_CreateAcc.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btn_CreateAcc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>235, 409</value>
+    <value>225, 427</value>
   </data>
   <data name="btn_CreateAcc.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -289,7 +265,7 @@
     <value>289, 47</value>
   </data>
   <data name="btn_CreateAcc.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
+    <value>34</value>
   </data>
   <data name="btn_CreateAcc.Values.Text" xml:space="preserve">
     <value>Create Account</value>
@@ -304,7 +280,34 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_CreateAcc.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
+  </data>
+  <data name="btn_ForgotPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>422, 272</value>
+  </data>
+  <data name="btn_ForgotPassword.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="btn_ForgotPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 21</value>
+  </data>
+  <data name="btn_ForgotPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="btn_ForgotPassword.Values.Text" xml:space="preserve">
+    <value>Forgot Password?</value>
+  </data>
+  <data name="&gt;&gt;btn_ForgotPassword.Name" xml:space="preserve">
+    <value>btn_ForgotPassword</value>
+  </data>
+  <data name="&gt;&gt;btn_ForgotPassword.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonLinkLabel, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;btn_ForgotPassword.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_ForgotPassword.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

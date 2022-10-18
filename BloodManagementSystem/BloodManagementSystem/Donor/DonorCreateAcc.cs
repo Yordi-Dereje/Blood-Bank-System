@@ -16,8 +16,8 @@ namespace BloodManagementSystem
     {
         Panel p;
         Form f;
-        string id,fn, ln, gen, dob, phone, email, country, city, region;
-        public DonorCreateAcc(Panel p, Form f,string id, string fn, string ln,  string gen, string dob, string phone, string email, string country, string city, string region)
+        string id,fn, ln, gen, dob, phone, email, country, city, region, bt;
+        public DonorCreateAcc(Panel p, Form f,string id, string fn, string ln,  string gen, string dob, string phone, string email, string country, string city, string region, string bt)
         {
             InitializeComponent();
             this.p = p;
@@ -32,6 +32,7 @@ namespace BloodManagementSystem
             this.country = country;
             this.city = city;
             this.region = region;
+            this.bt = bt;
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
@@ -50,7 +51,8 @@ namespace BloodManagementSystem
                 City = city,
                 Region = region,
                 UserName = tbUN.Text,
-                Password = tbPW.Text
+                Password = tbPW.Text,
+                BloodType = bt
             };
             d.Insert();
 

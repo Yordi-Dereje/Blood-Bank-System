@@ -52,7 +52,7 @@ namespace BloodManagementSystem
             {
                 try
                 {
-                    string query = "INSERT INTO EMP_INFO values (@fn, @ln, @dob, @gender, @phone, @email, @country, @city, @region, @salary,@adstat)";
+                    string query = "EXEC spINSERT_EMP_INFO @fn, @ln, @dob, @gender, @phone, @email, @country, @city, @region, @salary, @adstat";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@fn", FirstName);
                     cmd.Parameters.AddWithValue("@ln", LastName);
@@ -66,7 +66,7 @@ namespace BloodManagementSystem
                     cmd.Parameters.AddWithValue("@salary", Salary);
                     cmd.Parameters.AddWithValue("@adstat", SqlDbType.Bit).Value = AdminStatus;
 
-                    string query2 = "INSERT INTO EMP_ACCOUNTS VALUES (@id, @un, @pw)";
+                    string query2 = "EXEC spINSERT_EMP_ACCOUNTS @id, @un, @pw";
                     SqlCommand cmd2 = new SqlCommand(query2, con);
                     cmd2.Parameters.AddWithValue("@id", ID);
                     cmd2.Parameters.AddWithValue("@un", UserName);
@@ -79,10 +79,6 @@ namespace BloodManagementSystem
                 catch (Exception e)
                 {
                     MessageBox.Show(e.Message);
-                }
-                finally
-                {
-                    con.Close();
                 };
             }
         }
@@ -92,7 +88,7 @@ namespace BloodManagementSystem
             {
                 try
                 {
-                    string query = "Update EMP_ACCOUNTS SET UserName = @un, Password = @pw WHERE ID = @id";
+                    string query = "EXEC spUPDATE_EMP_ACCOUNTS @id, @un, @pw;";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@un", un);
                     cmd.Parameters.AddWithValue("@pw", pw);
@@ -118,12 +114,12 @@ namespace BloodManagementSystem
                 try
                 {
                     con.Open();
-                    string Query1 = "Delete from EMP_ACCOUNTS where ID = @id";
+                    string Query1 = "EXEC spDELETE_EMP_ACCOUNTS @id";
                     SqlCommand cmd1 = new SqlCommand(Query1, con);
                     cmd1.Parameters.AddWithValue("@id", id);
                     cmd1.ExecuteNonQuery();
 
-                    string Query = "Delete from EMP_INFO where ID = @id";
+                    string Query = "EXEC spDELETE_EMP_INFO @id";
                     SqlCommand cmd = new SqlCommand(Query, con);
                     cmd.Parameters.AddWithValue("@id", id);
                     cmd.ExecuteNonQuery();
@@ -141,7 +137,7 @@ namespace BloodManagementSystem
             {
                 try
                 {
-                    string query = "Update EMP_INFO SET FirstName = @fn, LastName = @ln, Dob = @dob, Gender = @gender, Phone = @phone, Email = @email, Country = @country, City = @city, Region = @region, Stat = @adstat ,Salary = @sal WHERE ID = @id";
+                    string query = "EXEC spUPDATE_EMP_INFO_AS_EMP @id, @fn, @ln, @dob, @gender, @phone, @email, @country, @city, @region";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@fn", fn);
                     cmd.Parameters.AddWithValue("@ln", ln);

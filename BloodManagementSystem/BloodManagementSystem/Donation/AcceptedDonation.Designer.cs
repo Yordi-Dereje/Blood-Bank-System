@@ -30,21 +30,20 @@
         {
             this.label2 = new System.Windows.Forms.Label();
             this.cbVen = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.cbBT = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btnFinish = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.BID = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label2.Location = new System.Drawing.Point(258, 212);
+            this.label2.Location = new System.Drawing.Point(344, 261);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 20);
+            this.label2.Size = new System.Drawing.Size(0, 24);
             this.label2.TabIndex = 138;
             // 
             // cbVen
@@ -55,21 +54,11 @@
             "Arada",
             "Lideta",
             "Yeka"});
-            this.cbVen.Location = new System.Drawing.Point(259, 155);
-            this.cbVen.Margin = new System.Windows.Forms.Padding(2);
+            this.cbVen.Location = new System.Drawing.Point(345, 191);
+            this.cbVen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbVen.Name = "cbVen";
-            this.cbVen.Size = new System.Drawing.Size(76, 21);
+            this.cbVen.Size = new System.Drawing.Size(100, 24);
             this.cbVen.TabIndex = 135;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 12.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label1.Location = new System.Drawing.Point(171, 102);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 20);
-            this.label1.TabIndex = 134;
-            this.label1.Text = "Blood_ID";
             // 
             // cbBT
             // 
@@ -83,19 +72,20 @@
             "AB-",
             "O+",
             "O-"});
-            this.cbBT.Location = new System.Drawing.Point(259, 212);
-            this.cbBT.Margin = new System.Windows.Forms.Padding(2);
+            this.cbBT.Location = new System.Drawing.Point(345, 261);
+            this.cbBT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbBT.Name = "cbBT";
-            this.cbBT.Size = new System.Drawing.Size(76, 21);
+            this.cbBT.Size = new System.Drawing.Size(100, 24);
             this.cbBT.TabIndex = 133;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label5.Location = new System.Drawing.Point(167, 211);
+            this.label5.Location = new System.Drawing.Point(223, 260);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(83, 20);
+            this.label5.Size = new System.Drawing.Size(101, 24);
             this.label5.TabIndex = 132;
             this.label5.Text = "Blood type";
             // 
@@ -103,15 +93,17 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 12.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label6.Location = new System.Drawing.Point(189, 155);
+            this.label6.Location = new System.Drawing.Point(252, 191);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(52, 20);
+            this.label6.Size = new System.Drawing.Size(64, 24);
             this.label6.TabIndex = 131;
             this.label6.Text = "Venue";
             // 
             // btnFinish
             // 
-            this.btnFinish.Location = new System.Drawing.Point(379, 271);
+            this.btnFinish.Location = new System.Drawing.Point(505, 334);
+            this.btnFinish.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnFinish.Name = "btnFinish";
             this.btnFinish.OverrideDefault.Back.Color1 = System.Drawing.Color.Maroon;
             this.btnFinish.OverrideDefault.Back.Color2 = System.Drawing.Color.Maroon;
@@ -126,7 +118,7 @@
             this.btnFinish.OverrideDefault.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.btnFinish.OverrideDefault.Border.Rounding = 20;
             this.btnFinish.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnFinish.Size = new System.Drawing.Size(101, 38);
+            this.btnFinish.Size = new System.Drawing.Size(135, 47);
             this.btnFinish.StateCommon.Back.Color1 = System.Drawing.Color.Maroon;
             this.btnFinish.StateCommon.Back.Color2 = System.Drawing.Color.Maroon;
             this.btnFinish.StateCommon.Back.ColorAngle = 45F;
@@ -161,31 +153,20 @@
             this.btnFinish.Values.Text = "Finish";
             this.btnFinish.Click += new System.EventHandler(this.btnFinish_Click);
             // 
-            // BID
-            // 
-            this.BID.AutoSize = true;
-            this.BID.Font = new System.Drawing.Font("Times New Roman", 12.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.BID.Location = new System.Drawing.Point(258, 102);
-            this.BID.Name = "BID";
-            this.BID.Size = new System.Drawing.Size(77, 20);
-            this.BID.TabIndex = 177;
-            this.BID.Text = "Blood_ID";
-            // 
             // AcceptedDonation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(816, 489);
-            this.Controls.Add(this.BID);
+            this.ClientSize = new System.Drawing.Size(1088, 602);
             this.Controls.Add(this.btnFinish);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cbVen);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.cbBT);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AcceptedDonation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AcceptedDonation";
@@ -199,11 +180,9 @@
 
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbVen;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbBT;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnFinish;
-        private System.Windows.Forms.Label BID;
     }
 }

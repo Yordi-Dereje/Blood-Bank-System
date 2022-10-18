@@ -77,5 +77,10 @@ namespace BloodManagementSystem
         {
             lblAboutUs.ForeColor = Color.Red;
         }
+
+        private void kryptonLabel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

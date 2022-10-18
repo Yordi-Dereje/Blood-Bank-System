@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeView));
             this.Panel_Emp = new System.Windows.Forms.Panel();
+            this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.PicDonProfile = new System.Windows.Forms.PictureBox();
             this.gunaContextMenuStrip1 = new Guna.UI.WinForms.GunaContextMenuStrip();
             this.manageAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,9 +43,8 @@
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Panel_EmpDisplay = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.Panel_Emp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicDonProfile)).BeginInit();
             this.gunaContextMenuStrip1.SuspendLayout();
@@ -70,6 +70,16 @@
             this.Panel_Emp.Size = new System.Drawing.Size(1312, 84);
             this.Panel_Emp.TabIndex = 1;
             // 
+            // kryptonLabel1
+            // 
+            this.kryptonLabel1.Location = new System.Drawing.Point(343, 29);
+            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonLabel1.Name = "kryptonLabel1";
+            this.kryptonLabel1.Size = new System.Drawing.Size(107, 32);
+            this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel1.TabIndex = 27;
+            this.kryptonLabel1.Values.Text = "Employee";
+            // 
             // PicDonProfile
             // 
             this.PicDonProfile.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PicDonProfile.BackgroundImage")));
@@ -82,6 +92,7 @@
             this.PicDonProfile.Size = new System.Drawing.Size(75, 57);
             this.PicDonProfile.TabIndex = 26;
             this.PicDonProfile.TabStop = false;
+            this.PicDonProfile.Click += new System.EventHandler(this.PicDonProfile_Click);
             // 
             // gunaContextMenuStrip1
             // 
@@ -106,7 +117,7 @@
             this.manageAccountToolStripMenuItem.Name = "manageAccountToolStripMenuItem";
             this.manageAccountToolStripMenuItem.Size = new System.Drawing.Size(190, 24);
             this.manageAccountToolStripMenuItem.Text = "Manage Account";
-            this.manageAccountToolStripMenuItem.Click += new System.EventHandler(this.manageAccountToolStripMenuItem_Click);
+            //this.manageAccountToolStripMenuItem.Click += new System.EventHandler(this.manageAccountToolStripMenuItem_Click);
             // 
             // signOutToolStripMenuItem
             // 
@@ -212,15 +223,6 @@
             this.Panel_EmpDisplay.Size = new System.Drawing.Size(1312, 603);
             this.Panel_EmpDisplay.TabIndex = 2;
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Maroon;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(320, 603);
-            this.panel1.TabIndex = 28;
-            // 
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -229,15 +231,14 @@
             this.panel2.Size = new System.Drawing.Size(992, 603);
             this.panel2.TabIndex = 29;
             // 
-            // kryptonLabel1
+            // panel1
             // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(343, 29);
-            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4);
-            this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(107, 32);
-            this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel1.TabIndex = 27;
-            this.kryptonLabel1.Values.Text = "Employee";
+            this.panel1.BackColor = System.Drawing.Color.Maroon;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(320, 603);
+            this.panel1.TabIndex = 28;
             // 
             // EmployeeView
             // 

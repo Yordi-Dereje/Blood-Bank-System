@@ -21,11 +21,6 @@ namespace BloodManagementSystem
             this.f = f;
         }
 
-        private void btnNext_Click_1(object sender, EventArgs e)
-        {
-           
-        }
-
         private void btnNext_Click(object sender, EventArgs e)
         {
             p.Controls.Clear();
@@ -37,7 +32,8 @@ namespace BloodManagementSystem
             else
                 gen = "Male";
             string dob = dtp.Value.ToString();
-            DonorCreateAcc dc = new DonorCreateAcc(p, f, id.ToString(), tbFN.Text, tbLN.Text, gen, dob, tbPhone.Text, tbEmail.Text, tbCo.Text, tbCity.Text, tbReg.Text) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            string bt = "-";
+            DonorCreateAcc dc = new DonorCreateAcc(p, f, id.ToString(), tbFN.Text, tbLN.Text, gen, dob, tbPhone.Text, tbEmail.Text, tbCo.Text, tbCity.Text, tbReg.Text, bt) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             p.Controls.Add(dc);
             dc.Show();
         }

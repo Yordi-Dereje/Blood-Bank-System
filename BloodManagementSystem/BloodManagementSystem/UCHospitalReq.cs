@@ -23,7 +23,7 @@ namespace BloodManagementSystem
             get { return _id; } 
             set { _id = value; lbl_ID.Text = _id.ToString(); } }
         private string _name;
-        public string Name 
+        public string name 
         { 
             get { return _name; } 
             set { _name = value; lbl_HName.Text = _name.ToString(); } 

@@ -38,7 +38,7 @@
             this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.lbl_Branch = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
-            this.lbl_Hospital = new Guna.UI.WinForms.GunaLabel();
+            this.lbl_transfer = new Guna.UI.WinForms.GunaLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lbl_Home = new Guna.UI.WinForms.GunaLabel();
             this.PicDonProfile = new System.Windows.Forms.PictureBox();
@@ -62,9 +62,10 @@
             this.lbl_Donation.AutoSize = true;
             this.lbl_Donation.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Donation.ForeColor = System.Drawing.Color.Red;
-            this.lbl_Donation.Location = new System.Drawing.Point(409, 21);
+            this.lbl_Donation.Location = new System.Drawing.Point(545, 26);
+            this.lbl_Donation.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Donation.Name = "lbl_Donation";
-            this.lbl_Donation.Size = new System.Drawing.Size(77, 19);
+            this.lbl_Donation.Size = new System.Drawing.Size(98, 25);
             this.lbl_Donation.TabIndex = 13;
             this.lbl_Donation.Text = "Donation";
             this.lbl_Donation.Click += new System.EventHandler(this.lbl_Donation_Click);
@@ -75,9 +76,10 @@
             this.lbl_Employee.ContextMenuStrip = this.gunaContextMenuStrip2;
             this.lbl_Employee.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Employee.ForeColor = System.Drawing.Color.Red;
-            this.lbl_Employee.Location = new System.Drawing.Point(511, 21);
+            this.lbl_Employee.Location = new System.Drawing.Point(681, 26);
+            this.lbl_Employee.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Employee.Name = "lbl_Employee";
-            this.lbl_Employee.Size = new System.Drawing.Size(82, 19);
+            this.lbl_Employee.Size = new System.Drawing.Size(104, 25);
             this.lbl_Employee.TabIndex = 14;
             this.lbl_Employee.Text = "Employee";
             this.lbl_Employee.Click += new System.EventHandler(this.lbl_Employee_Click);
@@ -98,18 +100,18 @@
             this.gunaContextMenuStrip2.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.gunaContextMenuStrip2.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.gunaContextMenuStrip2.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.SystemDefault;
-            this.gunaContextMenuStrip2.Size = new System.Drawing.Size(99, 48);
+            this.gunaContextMenuStrip2.Size = new System.Drawing.Size(111, 52);
             // 
             // aDDToolStripMenuItem
             // 
             this.aDDToolStripMenuItem.Name = "aDDToolStripMenuItem";
-            this.aDDToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
+            this.aDDToolStripMenuItem.Size = new System.Drawing.Size(110, 24);
             this.aDDToolStripMenuItem.Text = "ADD";
             // 
             // eDITToolStripMenuItem
             // 
             this.eDITToolStripMenuItem.Name = "eDITToolStripMenuItem";
-            this.eDITToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
+            this.eDITToolStripMenuItem.Size = new System.Drawing.Size(110, 24);
             this.eDITToolStripMenuItem.Text = "EDIT";
             // 
             // gunaPanel3
@@ -117,7 +119,7 @@
             this.gunaPanel3.Controls.Add(this.kryptonLabel1);
             this.gunaPanel3.Controls.Add(this.lbl_Branch);
             this.gunaPanel3.Controls.Add(this.gunaLabel2);
-            this.gunaPanel3.Controls.Add(this.lbl_Hospital);
+            this.gunaPanel3.Controls.Add(this.lbl_transfer);
             this.gunaPanel3.Controls.Add(this.pictureBox2);
             this.gunaPanel3.Controls.Add(this.lbl_Donation);
             this.gunaPanel3.Controls.Add(this.lbl_Home);
@@ -126,15 +128,17 @@
             this.gunaPanel3.Controls.Add(this.lbl_hi);
             this.gunaPanel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaPanel3.Location = new System.Drawing.Point(0, 0);
+            this.gunaPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.gunaPanel3.Name = "gunaPanel3";
-            this.gunaPanel3.Size = new System.Drawing.Size(984, 63);
+            this.gunaPanel3.Size = new System.Drawing.Size(1312, 78);
             this.gunaPanel3.TabIndex = 1;
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(227, 21);
+            this.kryptonLabel1.Location = new System.Drawing.Point(303, 26);
+            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(65, 26);
+            this.kryptonLabel1.Size = new System.Drawing.Size(80, 32);
             this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel1.TabIndex = 19;
             this.kryptonLabel1.Values.Text = "Admin";
@@ -144,9 +148,10 @@
             this.lbl_Branch.AutoSize = true;
             this.lbl_Branch.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Branch.ForeColor = System.Drawing.Color.Red;
-            this.lbl_Branch.Location = new System.Drawing.Point(697, 21);
+            this.lbl_Branch.Location = new System.Drawing.Point(929, 26);
+            this.lbl_Branch.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Branch.Name = "lbl_Branch";
-            this.lbl_Branch.Size = new System.Drawing.Size(63, 19);
+            this.lbl_Branch.Size = new System.Drawing.Size(81, 25);
             this.lbl_Branch.TabIndex = 18;
             this.lbl_Branch.Text = "Branch";
             // 
@@ -156,24 +161,26 @@
             this.gunaLabel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.gunaLabel2.Font = new System.Drawing.Font("Times New Roman", 18.75F, System.Drawing.FontStyle.Bold);
             this.gunaLabel2.ForeColor = System.Drawing.Color.Maroon;
-            this.gunaLabel2.Location = new System.Drawing.Point(78, 0);
+            this.gunaLabel2.Location = new System.Drawing.Point(104, 0);
+            this.gunaLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(138, 58);
+            this.gunaLabel2.Size = new System.Drawing.Size(177, 72);
             this.gunaLabel2.TabIndex = 16;
             this.gunaLabel2.Text = "National \r\nBlood Bank";
             this.gunaLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lbl_Hospital
+            // lbl_transfer
             // 
-            this.lbl_Hospital.AutoSize = true;
-            this.lbl_Hospital.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Hospital.ForeColor = System.Drawing.Color.Red;
-            this.lbl_Hospital.Location = new System.Drawing.Point(602, 21);
-            this.lbl_Hospital.Name = "lbl_Hospital";
-            this.lbl_Hospital.Size = new System.Drawing.Size(73, 19);
-            this.lbl_Hospital.TabIndex = 17;
-            this.lbl_Hospital.Text = "Hospital";
-            this.lbl_Hospital.Click += new System.EventHandler(this.lbl_Hospital_Click);
+            this.lbl_transfer.AutoSize = true;
+            this.lbl_transfer.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_transfer.ForeColor = System.Drawing.Color.Red;
+            this.lbl_transfer.Location = new System.Drawing.Point(803, 26);
+            this.lbl_transfer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_transfer.Name = "lbl_transfer";
+            this.lbl_transfer.Size = new System.Drawing.Size(92, 25);
+            this.lbl_transfer.TabIndex = 17;
+            this.lbl_transfer.Text = "Transfer";
+            this.lbl_transfer.Click += new System.EventHandler(this.lbl_Hospital_Click);
             // 
             // pictureBox2
             // 
@@ -181,8 +188,9 @@
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(78, 63);
+            this.pictureBox2.Size = new System.Drawing.Size(104, 78);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 15;
             this.pictureBox2.TabStop = false;
@@ -192,9 +200,10 @@
             this.lbl_Home.AutoSize = true;
             this.lbl_Home.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Home.ForeColor = System.Drawing.Color.Red;
-            this.lbl_Home.Location = new System.Drawing.Point(328, 21);
+            this.lbl_Home.Location = new System.Drawing.Point(437, 26);
+            this.lbl_Home.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Home.Name = "lbl_Home";
-            this.lbl_Home.Size = new System.Drawing.Size(53, 19);
+            this.lbl_Home.Size = new System.Drawing.Size(68, 25);
             this.lbl_Home.TabIndex = 12;
             this.lbl_Home.Text = "Home";
             this.lbl_Home.Click += new System.EventHandler(this.lbl_Home_Click);
@@ -205,9 +214,10 @@
             this.PicDonProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PicDonProfile.ContextMenuStrip = this.gunaContextMenuStrip1;
             this.PicDonProfile.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PicDonProfile.Location = new System.Drawing.Point(922, 11);
+            this.PicDonProfile.Location = new System.Drawing.Point(1229, 14);
+            this.PicDonProfile.Margin = new System.Windows.Forms.Padding(4);
             this.PicDonProfile.Name = "PicDonProfile";
-            this.PicDonProfile.Size = new System.Drawing.Size(52, 46);
+            this.PicDonProfile.Size = new System.Drawing.Size(69, 57);
             this.PicDonProfile.TabIndex = 7;
             this.PicDonProfile.TabStop = false;
             this.PicDonProfile.ContextMenuStripChanged += new System.EventHandler(this.PicDonProfile_MouseHover);
@@ -230,26 +240,27 @@
             this.gunaContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.gunaContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.gunaContextMenuStrip1.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.SystemDefault;
-            this.gunaContextMenuStrip1.Size = new System.Drawing.Size(166, 48);
+            this.gunaContextMenuStrip1.Size = new System.Drawing.Size(191, 52);
             // 
             // ManageAccToolStripMenuItem
             // 
             this.ManageAccToolStripMenuItem.Name = "ManageAccToolStripMenuItem";
-            this.ManageAccToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.ManageAccToolStripMenuItem.Size = new System.Drawing.Size(190, 24);
             this.ManageAccToolStripMenuItem.Text = "Manage Account";
             this.ManageAccToolStripMenuItem.Click += new System.EventHandler(this.ManageAccToolStripMenuItem_Click);
             // 
             // signOutToolStripMenuItem
             // 
             this.signOutToolStripMenuItem.Name = "signOutToolStripMenuItem";
-            this.signOutToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.signOutToolStripMenuItem.Size = new System.Drawing.Size(190, 24);
             this.signOutToolStripMenuItem.Text = "Sign Out";
             // 
             // lbl_hi
             // 
-            this.lbl_hi.Location = new System.Drawing.Point(814, 21);
+            this.lbl_hi.Location = new System.Drawing.Point(1085, 26);
+            this.lbl_hi.Margin = new System.Windows.Forms.Padding(4);
             this.lbl_hi.Name = "lbl_hi";
-            this.lbl_hi.Size = new System.Drawing.Size(110, 26);
+            this.lbl_hi.Size = new System.Drawing.Size(136, 32);
             this.lbl_hi.StateCommon.ShortText.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_hi.TabIndex = 6;
             this.lbl_hi.Values.Text = "AdminName";
@@ -259,38 +270,41 @@
             this.PanelAdmin.Controls.Add(this.panel2);
             this.PanelAdmin.Controls.Add(this.panel1);
             this.PanelAdmin.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelAdmin.Location = new System.Drawing.Point(0, 63);
+            this.PanelAdmin.Location = new System.Drawing.Point(0, 78);
+            this.PanelAdmin.Margin = new System.Windows.Forms.Padding(4);
             this.PanelAdmin.Name = "PanelAdmin";
-            this.PanelAdmin.Size = new System.Drawing.Size(984, 495);
+            this.PanelAdmin.Size = new System.Drawing.Size(1312, 609);
             this.PanelAdmin.TabIndex = 2;
             // 
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(240, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Location = new System.Drawing.Point(320, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(744, 495);
+            this.panel2.Size = new System.Drawing.Size(992, 609);
             this.panel2.TabIndex = 30;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Maroon;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(240, 495);
+            this.panel1.Size = new System.Drawing.Size(320, 609);
             this.panel1.TabIndex = 29;
             // 
             // AdminView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(984, 558);
+            this.ClientSize = new System.Drawing.Size(1312, 687);
             this.Controls.Add(this.PanelAdmin);
             this.Controls.Add(this.gunaPanel3);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdminView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminViews";
@@ -320,7 +334,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel PanelAdmin;
         private Guna.UI.WinForms.GunaLabel lbl_Branch;
-        private Guna.UI.WinForms.GunaLabel lbl_Hospital;
+        private Guna.UI.WinForms.GunaLabel lbl_transfer;
         private Guna.UI.WinForms.GunaContextMenuStrip gunaContextMenuStrip2;
         private System.Windows.Forms.ToolStripMenuItem aDDToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eDITToolStripMenuItem;

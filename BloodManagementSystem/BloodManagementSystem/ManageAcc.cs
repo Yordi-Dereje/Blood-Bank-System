@@ -25,39 +25,35 @@ namespace BloodManagementSystem
             this.p = p;
         }
 
-        private void kryptonTextBox9_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void kryptonTextBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void ManageDonorAcc_Load(object sender, EventArgs e)
         {
-            PanelChangeLogin.Visible = false;
-            PanelSave.Visible = false;
             if (val == 1)
             {
-
+                kryptonLabel1.Visible = false;
+                kryptonLabel4.Visible = false;
+                tbSalEmp.Visible = false;
+                tbStat.Visible = false;
                 var log = DonorClass.findDonor(id);
                 if (log == null)
                 {
-                    MessageBox.Show("You can rly lose rn unless you did something absolutely wrong");
+                    MessageBox.Show("You cant rly lose rn unless you did something absolutely wrong gn no donor ig");
                 }
                 else
                 {
-                    tbFN.Text = log.FirstName.ToString();
-                    tbLN.Text = log.LastName.ToString();
-                    tbDOB.Text = log.DOB.ToString();
-                    tbGEN.Text = log.Gender.ToString();
-                    tbPhone.Text = log.Phone.ToString();
-                    tbEmail.Text = log.Email.ToString();
-                    tbCou.Text = log.Country.ToString();
-                    tbCi.Text = log.City.ToString();
-                    tbRe.Text = log.Region.ToString();
+                    tbFNEmp.Text = log.FirstName.ToString();
+                    tbLNEmp.Text = log.LastName.ToString();
+                    dtpEmp.Value = DateTime.Parse(log.DOB.ToString());
+                    if (log.Gender.ToString() == "male")
+                        rbMEmp.Checked = true;
+                    else if (log.Gender.ToString() == "Female")
+                        rbFEmp.Checked = true;
+                    tbPhoneEmp.Text = log.Phone.ToString();
+                    tbEmailEmp.Text = log.Email.ToString();
+                    tbCoEmp.Text = log.Country.ToString();
+                    tbCiEmp.Text = log.City.ToString();
+                    tbRegEmp.Text = log.Region.ToString();
+                    tbUN.Text = log.UserName.ToString();
+                    tbPwO.Text = log.Password.ToString();
                 }
             }
             else if (val == 2)
@@ -65,58 +61,67 @@ namespace BloodManagementSystem
                 var log = EmployeeClass.findEmp(id);
                 if (log == null)
                 {
-                    MessageBox.Show("Employee  Doesnt exist");
+                    MessageBox.Show("You cant rly lose rn unless you did something absolutely wrong gn no employee ig");
                 }
                 else
                 {
-                    tbFN.Text = log.FirstName.ToString();
-                    tbLN.Text = log.LastName.ToString();
-                    tbDOB.Text = log.DOB.ToString();
-                    tbGEN.Text = log.Gender.ToString();
-                    tbPhone.Text = log.Phone.ToString();
-                    tbEmail.Text = log.Email.ToString();
-                    tbCou.Text = log.Country.ToString();
-                    tbCi.Text = log.City.ToString();
-                    tbRe.Text = log.Region.ToString();
+                    tbFNEmp.Text = log.FirstName.ToString();
+                    tbLNEmp.Text = log.LastName.ToString();
+                    dtpEmp.Value = DateTime.Parse(log.DOB.ToString());
+                    if (log.Gender.ToString() == "male")
+                        rbMEmp.Checked = true;
+                    else if (log.Gender.ToString() == "Female")
+                        rbFEmp.Checked = true;
+                    tbPhoneEmp.Text = log.Phone.ToString();
+                    tbEmailEmp.Text = log.Email.ToString();
+                    tbCoEmp.Text = log.Country.ToString();
+                    tbCiEmp.Text = log.City.ToString();
+                    tbRegEmp.Text = log.Region.ToString();
+                    tbSalEmp.Text = log.Salary.ToString();
+                    tbUN.Text = log.UserName.ToString();
+                    tbPwO.Text = log.Password.ToString();
                 }
             }
         }
 
-        private void btnChangeLogin_Click(object sender, EventArgs e)
+        private void btnChangeLogin_Click_1(object sender, EventArgs e)
         {
             PanelChangeLogin.Visible = true;
-            
         }
 
-        private void btn_Edit_Click(object sender, EventArgs e)
+        private void btnSignOut_Click(object sender, EventArgs e)
         {
-            PanelSave.Visible = true;
-            tbFN.ReadOnly = false;
-            tbLN.ReadOnly = false;
-            tbDOB.ReadOnly = false;
-            tbGEN.ReadOnly = false;
-            tbPhone.ReadOnly = false;
-            tbEmail.ReadOnly = false;
-            tbCou.ReadOnly = false;
-            tbCi.ReadOnly = false;
-            tbRe.ReadOnly = false;
+            MainWindow m = new MainWindow();
+            this.Hide();
+            m.Show();
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+        private void btnSave_Click_1(object sender, EventArgs e)
         {
             if (val == 1)
             {
                 DonorClass d = new DonorClass();
-                d.UpdateInfo(id, tbFN.Text, tbLN.Text, tbDOB.Text, tbGEN.Text, tbPhone.Text, tbEmail.Text, tbCou.Text, tbCi.Text, tbRe.Text);
+                string gen = null;
+                if (rbFEmp.Checked == true)
+                    gen = "Female";
+                else if (rbMEmp.Checked == true)
+                    gen = "Male";
+                d.UpdateInfo(id, tbFNEmp.Text, tbLNEmp.Text, dtpEmp.Value.ToString(), gen, tbPhoneEmp.Text, tbEmailEmp.Text, tbCoEmp.Text, tbCiEmp.Text, tbRegEmp.Text);
+                d.UpdateAcc(id, tbUN.Text, tbPW.Text);
                 MessageBox.Show("Updated Successfully");
             }
             else if (val == 2)
             {
                 var log = EmployeeClass.findEmp(id);
                 EmployeeClass s = new EmployeeClass();
-                s.UpdateInfo(id, tbFN.Text, tbLN.Text, tbDOB.Text, tbGEN.Text, tbPhone.Text, tbEmail.Text, tbCou.Text, tbCi.Text, tbRe.Text,int.Parse(tbSal.Text),Convert.ToBoolean(tbStat.Text));
+                string gen = null;
+                if (rbFEmp.Checked == true)
+                    gen = "Female";
+                else if (rbMEmp.Checked == true)
+                    gen = "Male";
+                s.UpdateInfo(id, tbFNEmp.Text, tbLNEmp.Text, dtpEmp.Value.ToString(), gen, tbPhoneEmp.Text, tbEmailEmp.Text, tbCoEmp.Text, tbCiEmp.Text, tbRegEmp.Text, int.Parse(tbSalEmp.Text), Convert.ToBoolean(tbStat.Text));
+                s.UpdateAcc(id, tbUN.Text, tbPW.Text);
                 MessageBox.Show("Updated Successfully");
-
             }
         }
     }

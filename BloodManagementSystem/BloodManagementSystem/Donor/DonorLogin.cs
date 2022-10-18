@@ -20,31 +20,39 @@ namespace BloodManagementSystem
             this.p = p;
             this.f = f;
         }
-        //login eskistekakel the click name
-        private void btn_CreateAcc_Click(object sender, EventArgs e)
+
+        private void btn_Login_Click_1(object sender, EventArgs e)
         {
-            try
+            if (txt_usDonor.Text == "" || txt_pwDonor.Text == "")
             {
-                var result = DonorClass.findUser(txt_usDonor.Text, txt_pwDonor.Text);
-                if (result == null)
-                {
-                    MessageBox.Show("cant be empty");
-                }
-                else
-                {
-                    DonorView dv = new DonorView(result.ID) { TopMost = true };
-                    dv.Show();
-                    f.Hide();
-                }
-            } 
-            catch(Exception ex)
+                MessageBox.Show("Please fill in the empty space");
+            }
+            else
             {
-                MessageBox.Show(ex.Message);
-            };
-            
-            
+                try
+                {
+                    var result = DonorClass.findUser(txt_usDonor.Text, txt_pwDonor.Text);
+                    if (result == null)
+                    {
+                        MessageBox.Show("Such user doesn't exist.");
+                        txt_usDonor.Text = "";
+                        txt_pwDonor.Text = "";
+                    }
+                    else
+                    {
+                        DonorView dv = new DonorView(result.ID) { TopMost = true };
+                        dv.Show();
+                        f.Hide();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                };
+            }
         }
-        private void btn_Login_Click(object sender, EventArgs e)
+
+        private void btn_CreateAcc_Click_1(object sender, EventArgs e)
         {
             p.Controls.Clear();
             DonorRegi dr = new DonorRegi(p, f) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
@@ -52,7 +60,7 @@ namespace BloodManagementSystem
             dr.Show();
         }
 
-        private void kryptonLinkLabel1_LinkClicked(object sender, EventArgs e)
+        private void btn_ForgotPassword_LinkClicked(object sender, EventArgs e)
         {
             p.Controls.Clear();
             DonorForgotPassword ad = new DonorForgotPassword(p, f) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };

@@ -45,6 +45,10 @@ namespace BloodManagementSystem
             else
             {
                 lbl_hi.Text = log.FirstName;
+                panel2.Controls.Clear();
+                DashBoard d = new DashBoard() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                panel2.Controls.Add(d);
+                d.Show();
             }
         }
 
@@ -84,12 +88,22 @@ namespace BloodManagementSystem
         private void lbl_Hospital_Click(object sender, EventArgs e)
         {
             panel2.Controls.Clear();
+            Transfer t = new Transfer(panel2) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            panel2.Controls.Add(t);
+            t.Show();
+
+            /*panel2.Controls.Clear();
             Hospital h = new Hospital() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             panel2.Controls.Add(h);
-            h.Show();
+            h.Show();*/
         }
 
         private void PicDonProfile_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }

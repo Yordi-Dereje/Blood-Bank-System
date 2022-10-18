@@ -14,18 +14,12 @@ namespace BloodManagementSystem.AdminEmp
     public partial class ListOfEmpDetailPage : Form
     {
         int id,sal;
-        string fn, ln, gen, phone, email, co, ci, reg,dob;
+        string fn, ln, gen, phone, email, co, ci, reg, dob;
+
         bool adstat;
         public ListOfEmpDetailPage(int id, string fn,string ln,string gen, string dob,string phone, string email, string co, string ci, string reg, int sal, bool adstat)
         {
             InitializeComponent();
-            tbname.Text = fn + " " + ln;
-            tbgen.Text = gen;
-            tbphone.Text = phone;
-            tbemail.Text = email;
-            tbadd.Text = co + ", " + ci +", " + reg;
-            tbsal.Text = sal.ToString();
-            switchstat.Checked = adstat;
             this.id = id;
             this.sal = sal;
             this.fn = fn;
@@ -42,7 +36,19 @@ namespace BloodManagementSystem.AdminEmp
 
         private void ListOfEmpDetailPage_Load(object sender, EventArgs e)
         {
-
+            tbfn.Text = fn;
+            tbln.Text = ln;
+            if (gen == "male")
+                rbMEmp.Checked = true;
+            else if (gen == "female")
+                rbFEmp.Checked = true;
+            dtpEmp.Value = DateTime.Parse(dob);
+            tbphone.Text = phone;
+            tbemail.Text = email;
+            tbco.Text = co;
+            tbci.Text = ci;
+            tbreg.Text = reg;
+            tbsal.Text = sal.ToString();
         }
 
         private void btn_Delete_Click(object sender, EventArgs e)
@@ -56,7 +62,7 @@ namespace BloodManagementSystem.AdminEmp
         private void btn_Edit_Click(object sender, EventArgs e)
         {
             EmployeeClass emp = new EmployeeClass();
-            emp.UpdateInfo(id, fn,ln, dob, gen, phone,email, co,  ci,reg,  sal, adstat);
+            emp.UpdateInfo(id, fn, ln, dob, gen, phone, email, co, ci, reg, sal, adstat);
         }
     }
 }

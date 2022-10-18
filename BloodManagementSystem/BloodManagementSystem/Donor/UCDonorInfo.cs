@@ -22,7 +22,7 @@ namespace BloodManagementSystem
         public int Id { get { return _id; } set { _id = value; label1.Text = _id.ToString(); } }
 
         private string _name;
-        public string Name { get { return _name; } set { _name = value; label3.Text = _name.ToString(); } }
+        public string name { get { return _name; } set { _name = value; label3.Text = _name.ToString(); } }
         //concate the name
         private string _gender;//disply only one letter f if female m if male
         public string Gender { get { return _gender; } set { _gender = value; label4.Text = _gender.ToString(); } }
