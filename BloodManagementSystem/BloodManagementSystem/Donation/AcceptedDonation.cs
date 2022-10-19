@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BloodManagementSystem;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,6 +31,9 @@ namespace BloodManagementSystem
             s.successInsert(id, dpt, cbVen.SelectedItem.ToString(), cbBT.SelectedItem.ToString());
             s.removePerson(id);
 
+            EmployeeClass emp = new EmployeeClass();
+            emp.DonationChart();
+
             EmployeeView ee = new EmployeeView(id);
             ee.Show();
             this.Close();
@@ -41,3 +45,5 @@ namespace BloodManagementSystem
         }
     }
 }
+
+

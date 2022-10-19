@@ -25,7 +25,7 @@ namespace BloodManagementSystem.AdminEmp
             get { return _id; }
             set { _id = value; lbl_ID.Text = _id.ToString(); }
         }
-        public string name
+        public string Name
         {
             get { return _name; }
             set { _name = value; lblName.Text = _name.ToString(); }

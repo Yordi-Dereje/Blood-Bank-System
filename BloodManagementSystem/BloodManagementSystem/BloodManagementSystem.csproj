@@ -67,6 +67,7 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -99,6 +100,12 @@
     <Compile Include="AdminEmp\UCEmp.Designer.cs">
       <DependentUpon>UCEmp.cs</DependentUpon>
     </Compile>
+    <Compile Include="BloodStockChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BloodStockChart.Designer.cs">
+      <DependentUpon>BloodStockChart.cs</DependentUpon>
+    </Compile>
     <Compile Include="Donation\AcceptedDonation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +130,12 @@
     </Compile>
     <Compile Include="Donation\BloodStock.Designer.cs">
       <DependentUpon>BloodStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Donation\DonationChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Donation\DonationChart.Designer.cs">
+      <DependentUpon>DonationChart.cs</DependentUpon>
     </Compile>
     <Compile Include="Donation\SuccessfulDonations.cs">
       <SubType>Form</SubType>
@@ -306,6 +319,12 @@
     <Compile Include="Transfer.Designer.cs">
       <DependentUpon>Transfer.cs</DependentUpon>
     </Compile>
+    <Compile Include="TransferChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransferChart.Designer.cs">
+      <DependentUpon>TransferChart.cs</DependentUpon>
+    </Compile>
     <Compile Include="TransferClass.cs" />
     <Compile Include="TransferList.cs">
       <SubType>Form</SubType>
@@ -346,6 +365,9 @@
     <EmbeddedResource Include="AdminEmp\UCEmp.resx">
       <DependentUpon>UCEmp.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BloodStockChart.resx">
+      <DependentUpon>BloodStockChart.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Donation\AcceptedDonation.resx">
       <DependentUpon>AcceptedDonation.cs</DependentUpon>
     </EmbeddedResource>
@@ -363,6 +385,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Donation\DonationInfo.resx">
       <DependentUpon>DonationInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Donation\DonationChart.resx">
+      <DependentUpon>DonationChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Donation\SuccessfulDonations.resx">
+      <DependentUpon>SuccessfulDonations.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Donor\DonorCreateAcc.resx">
       <DependentUpon>DonorCreateAcc.cs</DependentUpon>

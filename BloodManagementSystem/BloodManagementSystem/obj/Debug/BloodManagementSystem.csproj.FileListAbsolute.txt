@@ -666,3 +666,20 @@ C:\Users\USER\Desktop\Blood-Bank-System\BloodManagementSystem\BloodManagementSys
 C:\Users\USER\Desktop\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\obj\Debug\BloodManagementSystem.csproj.CopyComplete
 C:\Users\USER\Desktop\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\obj\Debug\BloodManagementSystem.exe
 C:\Users\USER\Desktop\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\obj\Debug\BloodManagementSystem.pdb
+C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\bin\Debug\LiveCharts.dll
+C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\bin\Debug\LiveCharts.pdb
+C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\bin\Debug\LiveCharts.xml
+C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\obj\Debug\BloodManagementSystem.HomePage.resources
+C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\obj\Debug\BloodManagementSystem.HospitalRegi.resources
+C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\obj\Debug\BloodManagementSystem.Transfer.resources
+C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\obj\Debug\BloodManagementSystem.TransferList.resources
+C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\obj\Debug\BloodManagementSystem.UCTransfer.resources
+C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\obj\Debug\BloodManagementSystem.BloodStockChart.resources
+C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\obj\Debug\BloodManagementSystem.Donation.DonationChart.resources
+C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\obj\Debug\BloodManagementSystem.Donation.SuccessfulDonations.resources

@@ -49,6 +49,8 @@ namespace BloodManagementSystem.AdminEmp
             tbci.Text = ci;
             tbreg.Text = reg;
             tbsal.Text = sal.ToString();
+            if (adstat == true)
+                switchstat.Checked = true;
         }
 
         private void btn_Delete_Click(object sender, EventArgs e)
@@ -62,7 +64,8 @@ namespace BloodManagementSystem.AdminEmp
         private void btn_Edit_Click(object sender, EventArgs e)
         {
             EmployeeClass emp = new EmployeeClass();
-            emp.UpdateInfo(id, fn, ln, dob, gen, phone, email, co, ci, reg, sal, adstat);
+            //emp.UpdateInfo(id, fn, ln, dob, gen, phone, email, co, ci, reg, sal, adstat);
+            emp.UpdateInfoAsAdmin(id, sal, adstat);
         }
     }
 }

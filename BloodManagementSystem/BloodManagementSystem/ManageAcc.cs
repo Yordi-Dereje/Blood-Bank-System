@@ -78,6 +78,7 @@ namespace BloodManagementSystem
                     tbCiEmp.Text = log.City.ToString();
                     tbRegEmp.Text = log.Region.ToString();
                     tbSalEmp.Text = log.Salary.ToString();
+                    tbStat.Text = log.AdminStatus.ToString();
                     tbUN.Text = log.UserName.ToString();
                     tbPwO.Text = log.Password.ToString();
                 }
@@ -119,7 +120,7 @@ namespace BloodManagementSystem
                     gen = "Female";
                 else if (rbMEmp.Checked == true)
                     gen = "Male";
-                s.UpdateInfo(id, tbFNEmp.Text, tbLNEmp.Text, dtpEmp.Value.ToString(), gen, tbPhoneEmp.Text, tbEmailEmp.Text, tbCoEmp.Text, tbCiEmp.Text, tbRegEmp.Text, int.Parse(tbSalEmp.Text), Convert.ToBoolean(tbStat.Text));
+                s.UpdateInfo(id, tbFNEmp.Text, tbLNEmp.Text, dtpEmp.Value.ToString(), gen, tbPhoneEmp.Text, tbEmailEmp.Text, tbCoEmp.Text, tbCiEmp.Text, tbRegEmp.Text);
                 s.UpdateAcc(id, tbUN.Text, tbPW.Text);
                 MessageBox.Show("Updated Successfully");
             }

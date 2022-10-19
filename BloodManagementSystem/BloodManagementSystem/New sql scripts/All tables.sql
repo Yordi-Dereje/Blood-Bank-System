@@ -17,6 +17,7 @@ City varchar(50),
 Region varchar(50),
 BloodType varchar(3)
 );
+select* from donor_info
 
 CREATE TABLE DONOR_ACCOUNTS
 (
@@ -50,7 +51,6 @@ UserName varchar(50),
 Password varchar(50),
 Foreign key(ID) references EMP_INFO(ID)
 );
-
 -- donation tables
 
 -- permanent illness
@@ -110,6 +110,14 @@ Venue varchar(50),
 BloodType varchar(3),
 Foreign key (ID) references DONOR_INFO(ID)
 );
+--chart for successfull donations
+CREATE TABLE DONATION_CHART
+(
+count int,
+YEARS int,
+MONTHS varchar(20)
+);
+ 
 
 -- Failed donations
 CREATE TABLE FAIL_HISTORY(

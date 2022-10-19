@@ -1,5 +1,5 @@
 -- donor stored procedures
-
+Use BloodBankSql;
 -- INSERT
 CREATE PROCEDURE spINSERT_DONOR_INFO
 @FirstName varchar(50),

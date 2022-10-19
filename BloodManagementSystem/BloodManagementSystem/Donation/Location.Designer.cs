@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Location));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnDonee = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.Menu_Panel = new System.Windows.Forms.Panel();
             this.SubMenu_Panel3 = new System.Windows.Forms.Panel();
@@ -38,44 +37,35 @@
             this.kryptonRadioButton11 = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
             this.kryptonRadioButton10 = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
             this.kryptonRadioButton9 = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
-            this.kryptonButton3 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btn_bahirdar = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.SubMenu_Panel2 = new System.Windows.Forms.Panel();
             this.kryptonRadioButton8 = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
             this.kryptonRadioButton7 = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
             this.kryptonRadioButton6 = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
             this.kryptonRadioButton5 = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
-            this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btn_adama = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.SubMenu_Panel1 = new System.Windows.Forms.Panel();
             this.kryptonRadioButton4 = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
             this.kryptonRadioButton3 = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
             this.kryptonRadioButton2 = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
             this.kryptonRadioButton1 = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
-            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btn_addisababa = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.panel1.SuspendLayout();
             this.Menu_Panel.SuspendLayout();
             this.SubMenu_Panel3.SuspendLayout();
             this.SubMenu_Panel2.SuspendLayout();
             this.SubMenu_Panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnDonee);
             this.panel1.Controls.Add(this.kryptonLabel1);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // btnDonee
-            // 
-            resources.ApplyResources(this.btnDonee, "btnDonee");
-            this.btnDonee.Name = "btnDonee";
-            this.btnDonee.Values.Text = resources.GetString("btnDonee.Values.Text");
-            this.btnDonee.Click += new System.EventHandler(this.btnDonee_Click);
             // 
             // kryptonLabel1
             // 
@@ -88,11 +78,11 @@
             // 
             resources.ApplyResources(this.Menu_Panel, "Menu_Panel");
             this.Menu_Panel.Controls.Add(this.SubMenu_Panel3);
-            this.Menu_Panel.Controls.Add(this.kryptonButton3);
+            this.Menu_Panel.Controls.Add(this.btn_bahirdar);
             this.Menu_Panel.Controls.Add(this.SubMenu_Panel2);
-            this.Menu_Panel.Controls.Add(this.kryptonButton2);
+            this.Menu_Panel.Controls.Add(this.btn_adama);
             this.Menu_Panel.Controls.Add(this.SubMenu_Panel1);
-            this.Menu_Panel.Controls.Add(this.kryptonButton1);
+            this.Menu_Panel.Controls.Add(this.btn_addisababa);
             this.Menu_Panel.Name = "Menu_Panel";
             // 
             // SubMenu_Panel3
@@ -128,11 +118,11 @@
             this.kryptonRadioButton9.Name = "kryptonRadioButton9";
             this.kryptonRadioButton9.Values.Text = resources.GetString("kryptonRadioButton9.Values.Text");
             // 
-            // kryptonButton3
+            // btn_bahirdar
             // 
-            resources.ApplyResources(this.kryptonButton3, "kryptonButton3");
-            this.kryptonButton3.Name = "kryptonButton3";
-            this.kryptonButton3.Values.Text = resources.GetString("kryptonButton3.Values.Text");
+            resources.ApplyResources(this.btn_bahirdar, "btn_bahirdar");
+            this.btn_bahirdar.Name = "btn_bahirdar";
+            this.btn_bahirdar.Values.Text = resources.GetString("kryptonButton3.Values.Text");
             // 
             // SubMenu_Panel2
             // 
@@ -167,11 +157,11 @@
             this.kryptonRadioButton5.Name = "kryptonRadioButton5";
             this.kryptonRadioButton5.Values.Text = resources.GetString("kryptonRadioButton5.Values.Text");
             // 
-            // kryptonButton2
+            // btn_adama
             // 
-            resources.ApplyResources(this.kryptonButton2, "kryptonButton2");
-            this.kryptonButton2.Name = "kryptonButton2";
-            this.kryptonButton2.Values.Text = resources.GetString("kryptonButton2.Values.Text");
+            resources.ApplyResources(this.btn_adama, "btn_adama");
+            this.btn_adama.Name = "btn_adama";
+            this.btn_adama.Values.Text = resources.GetString("kryptonButton2.Values.Text");
             // 
             // SubMenu_Panel1
             // 
@@ -206,24 +196,23 @@
             this.kryptonRadioButton1.Name = "kryptonRadioButton1";
             this.kryptonRadioButton1.Values.Text = resources.GetString("kryptonRadioButton1.Values.Text");
             // 
-            // kryptonButton1
+            // btn_addisababa
             // 
-            resources.ApplyResources(this.kryptonButton1, "kryptonButton1");
-            this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Values.Text = resources.GetString("kryptonButton1.Values.Text");
-            this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
+            resources.ApplyResources(this.btn_addisababa, "btn_addisababa");
+            this.btn_addisababa.Name = "btn_addisababa";
+            this.btn_addisababa.Values.Text = resources.GetString("kryptonButton1.Values.Text");
+            this.btn_addisababa.Click += new System.EventHandler(this.kryptonButton1_Click);
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Controls.Add(this.webBrowser1);
             resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
             // 
-            // pictureBox1
+            // webBrowser1
             // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
+            resources.ApplyResources(this.webBrowser1, "webBrowser1");
+            this.webBrowser1.Name = "webBrowser1";
             // 
             // Location
             // 
@@ -245,7 +234,6 @@
             this.SubMenu_Panel1.ResumeLayout(false);
             this.SubMenu_Panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -256,25 +244,24 @@
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel1;
         private System.Windows.Forms.Panel Menu_Panel;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btnDonee;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btn_addisababa;
         private System.Windows.Forms.Panel SubMenu_Panel3;
         private ComponentFactory.Krypton.Toolkit.KryptonRadioButton kryptonRadioButton12;
         private ComponentFactory.Krypton.Toolkit.KryptonRadioButton kryptonRadioButton11;
         private ComponentFactory.Krypton.Toolkit.KryptonRadioButton kryptonRadioButton10;
         private ComponentFactory.Krypton.Toolkit.KryptonRadioButton kryptonRadioButton9;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton3;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btn_bahirdar;
         private System.Windows.Forms.Panel SubMenu_Panel2;
         private ComponentFactory.Krypton.Toolkit.KryptonRadioButton kryptonRadioButton8;
         private ComponentFactory.Krypton.Toolkit.KryptonRadioButton kryptonRadioButton7;
         private ComponentFactory.Krypton.Toolkit.KryptonRadioButton kryptonRadioButton6;
         private ComponentFactory.Krypton.Toolkit.KryptonRadioButton kryptonRadioButton5;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btn_adama;
         private System.Windows.Forms.Panel SubMenu_Panel1;
         private ComponentFactory.Krypton.Toolkit.KryptonRadioButton kryptonRadioButton4;
         private ComponentFactory.Krypton.Toolkit.KryptonRadioButton kryptonRadioButton3;
         private ComponentFactory.Krypton.Toolkit.KryptonRadioButton kryptonRadioButton2;
         private ComponentFactory.Krypton.Toolkit.KryptonRadioButton kryptonRadioButton1;
+        private System.Windows.Forms.WebBrowser webBrowser1;
     }
 }

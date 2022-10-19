@@ -59,8 +59,7 @@
             // btn_Edit
             // 
             this.btn_Edit.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_Edit.Location = new System.Drawing.Point(366, 485);
-            this.btn_Edit.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Edit.Location = new System.Drawing.Point(424, 394);
             this.btn_Edit.Name = "btn_Edit";
             this.btn_Edit.OverrideDefault.Back.Color1 = System.Drawing.Color.Maroon;
             this.btn_Edit.OverrideDefault.Back.Color2 = System.Drawing.Color.Maroon;
@@ -75,7 +74,7 @@
             this.btn_Edit.OverrideDefault.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.btn_Edit.OverrideDefault.Border.Rounding = 20;
             this.btn_Edit.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btn_Edit.Size = new System.Drawing.Size(116, 47);
+            this.btn_Edit.Size = new System.Drawing.Size(87, 38);
             this.btn_Edit.StateCommon.Back.Color1 = System.Drawing.Color.Maroon;
             this.btn_Edit.StateCommon.Back.Color2 = System.Drawing.Color.Maroon;
             this.btn_Edit.StateCommon.Back.ColorAngle = 45F;
@@ -113,8 +112,7 @@
             // btn_Delete
             // 
             this.btn_Delete.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_Delete.Location = new System.Drawing.Point(531, 485);
-            this.btn_Delete.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Delete.Location = new System.Drawing.Point(558, 394);
             this.btn_Delete.Name = "btn_Delete";
             this.btn_Delete.OverrideDefault.Back.Color1 = System.Drawing.Color.Maroon;
             this.btn_Delete.OverrideDefault.Back.Color2 = System.Drawing.Color.Maroon;
@@ -129,7 +127,7 @@
             this.btn_Delete.OverrideDefault.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.btn_Delete.OverrideDefault.Border.Rounding = 20;
             this.btn_Delete.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btn_Delete.Size = new System.Drawing.Size(116, 47);
+            this.btn_Delete.Size = new System.Drawing.Size(87, 38);
             this.btn_Delete.StateCommon.Back.Color1 = System.Drawing.Color.Maroon;
             this.btn_Delete.StateCommon.Back.Color2 = System.Drawing.Color.Maroon;
             this.btn_Delete.StateCommon.Back.ColorAngle = 45F;
@@ -173,13 +171,12 @@
             this.tbfn.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.tbfn.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.tbfn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbfn.Location = new System.Drawing.Point(20, 39);
-            this.tbfn.Margin = new System.Windows.Forms.Padding(4);
+            this.tbfn.Location = new System.Drawing.Point(15, 32);
             this.tbfn.Name = "tbfn";
             this.tbfn.PasswordChar = '\0';
             this.tbfn.ReadOnly = true;
             this.tbfn.SelectedText = "";
-            this.tbfn.Size = new System.Drawing.Size(281, 37);
+            this.tbfn.Size = new System.Drawing.Size(211, 30);
             this.tbfn.TabIndex = 38;
             // 
             // tbln
@@ -191,13 +188,12 @@
             this.tbln.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.tbln.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.tbln.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbln.Location = new System.Drawing.Point(366, 39);
-            this.tbln.Margin = new System.Windows.Forms.Padding(4);
+            this.tbln.Location = new System.Drawing.Point(274, 32);
             this.tbln.Name = "tbln";
             this.tbln.PasswordChar = '\0';
             this.tbln.ReadOnly = true;
             this.tbln.SelectedText = "";
-            this.tbln.Size = new System.Drawing.Size(281, 37);
+            this.tbln.Size = new System.Drawing.Size(211, 30);
             this.tbln.TabIndex = 39;
             // 
             // tbphone
@@ -209,13 +205,12 @@
             this.tbphone.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.tbphone.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.tbphone.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbphone.Location = new System.Drawing.Point(363, 236);
-            this.tbphone.Margin = new System.Windows.Forms.Padding(4);
+            this.tbphone.Location = new System.Drawing.Point(272, 192);
             this.tbphone.Name = "tbphone";
             this.tbphone.PasswordChar = '\0';
             this.tbphone.ReadOnly = true;
             this.tbphone.SelectedText = "";
-            this.tbphone.Size = new System.Drawing.Size(281, 37);
+            this.tbphone.Size = new System.Drawing.Size(211, 30);
             this.tbphone.TabIndex = 40;
             // 
             // tbemail
@@ -227,13 +222,12 @@
             this.tbemail.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.tbemail.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.tbemail.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbemail.Location = new System.Drawing.Point(20, 233);
-            this.tbemail.Margin = new System.Windows.Forms.Padding(4);
+            this.tbemail.Location = new System.Drawing.Point(15, 189);
             this.tbemail.Name = "tbemail";
             this.tbemail.PasswordChar = '\0';
             this.tbemail.ReadOnly = true;
             this.tbemail.SelectedText = "";
-            this.tbemail.Size = new System.Drawing.Size(281, 37);
+            this.tbemail.Size = new System.Drawing.Size(211, 30);
             this.tbemail.TabIndex = 41;
             // 
             // tbco
@@ -245,13 +239,12 @@
             this.tbco.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.tbco.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.tbco.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbco.Location = new System.Drawing.Point(20, 328);
-            this.tbco.Margin = new System.Windows.Forms.Padding(4);
+            this.tbco.Location = new System.Drawing.Point(15, 266);
             this.tbco.Name = "tbco";
             this.tbco.PasswordChar = '\0';
             this.tbco.ReadOnly = true;
             this.tbco.SelectedText = "";
-            this.tbco.Size = new System.Drawing.Size(281, 37);
+            this.tbco.Size = new System.Drawing.Size(211, 30);
             this.tbco.TabIndex = 42;
             // 
             // tbsal
@@ -263,13 +256,11 @@
             this.tbsal.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.tbsal.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.tbsal.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbsal.Location = new System.Drawing.Point(366, 423);
-            this.tbsal.Margin = new System.Windows.Forms.Padding(4);
+            this.tbsal.Location = new System.Drawing.Point(274, 344);
             this.tbsal.Name = "tbsal";
             this.tbsal.PasswordChar = '\0';
-            this.tbsal.ReadOnly = true;
             this.tbsal.SelectedText = "";
-            this.tbsal.Size = new System.Drawing.Size(281, 37);
+            this.tbsal.Size = new System.Drawing.Size(211, 30);
             this.tbsal.TabIndex = 43;
             // 
             // switchstat
@@ -278,18 +269,16 @@
             this.switchstat.CheckedOffColor = System.Drawing.Color.DarkGray;
             this.switchstat.CheckedOnColor = System.Drawing.Color.Maroon;
             this.switchstat.FillColor = System.Drawing.Color.White;
-            this.switchstat.Location = new System.Drawing.Point(160, 490);
-            this.switchstat.Margin = new System.Windows.Forms.Padding(4);
+            this.switchstat.Location = new System.Drawing.Point(120, 398);
             this.switchstat.Name = "switchstat";
-            this.switchstat.Size = new System.Drawing.Size(37, 25);
+            this.switchstat.Size = new System.Drawing.Size(28, 20);
             this.switchstat.TabIndex = 44;
             // 
             // kryptonLabel15
             // 
-            this.kryptonLabel15.Location = new System.Drawing.Point(362, 5);
-            this.kryptonLabel15.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonLabel15.Location = new System.Drawing.Point(272, 4);
             this.kryptonLabel15.Name = "kryptonLabel15";
-            this.kryptonLabel15.Size = new System.Drawing.Size(111, 28);
+            this.kryptonLabel15.Size = new System.Drawing.Size(90, 23);
             this.kryptonLabel15.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonLabel15.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 12.25F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel15.TabIndex = 244;
@@ -297,11 +286,10 @@
             // 
             // kryptonLabel16
             // 
-            this.kryptonLabel16.Location = new System.Drawing.Point(20, 5);
-            this.kryptonLabel16.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonLabel16.Location = new System.Drawing.Point(15, 4);
             this.kryptonLabel16.Name = "kryptonLabel16";
             this.kryptonLabel16.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonLabel16.Size = new System.Drawing.Size(114, 30);
+            this.kryptonLabel16.Size = new System.Drawing.Size(93, 25);
             this.kryptonLabel16.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonLabel16.StateCommon.ShortText.Color2 = System.Drawing.Color.Black;
             this.kryptonLabel16.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 12.25F, System.Drawing.FontStyle.Bold);
@@ -317,10 +305,9 @@
             this.gunaGroupBox2.Controls.Add(this.rbFEmp);
             this.gunaGroupBox2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaGroupBox2.LineColor = System.Drawing.SystemColors.Window;
-            this.gunaGroupBox2.Location = new System.Drawing.Point(362, 95);
-            this.gunaGroupBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaGroupBox2.Location = new System.Drawing.Point(272, 77);
             this.gunaGroupBox2.Name = "gunaGroupBox2";
-            this.gunaGroupBox2.Size = new System.Drawing.Size(263, 89);
+            this.gunaGroupBox2.Size = new System.Drawing.Size(197, 72);
             this.gunaGroupBox2.TabIndex = 258;
             this.gunaGroupBox2.Text = "Gender";
             this.gunaGroupBox2.TextLocation = new System.Drawing.Point(10, 8);
@@ -332,10 +319,9 @@
             this.rbMEmp.CheckedOnColor = System.Drawing.Color.Maroon;
             this.rbMEmp.FillColor = System.Drawing.Color.White;
             this.rbMEmp.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbMEmp.Location = new System.Drawing.Point(151, 59);
-            this.rbMEmp.Margin = new System.Windows.Forms.Padding(4);
+            this.rbMEmp.Location = new System.Drawing.Point(113, 48);
             this.rbMEmp.Name = "rbMEmp";
-            this.rbMEmp.Size = new System.Drawing.Size(72, 25);
+            this.rbMEmp.Size = new System.Drawing.Size(63, 20);
             this.rbMEmp.TabIndex = 1;
             this.rbMEmp.Text = "Male";
             // 
@@ -346,10 +332,9 @@
             this.rbFEmp.CheckedOnColor = System.Drawing.Color.Maroon;
             this.rbFEmp.FillColor = System.Drawing.Color.White;
             this.rbFEmp.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbFEmp.Location = new System.Drawing.Point(4, 59);
-            this.rbFEmp.Margin = new System.Windows.Forms.Padding(4);
+            this.rbFEmp.Location = new System.Drawing.Point(3, 48);
             this.rbFEmp.Name = "rbFEmp";
-            this.rbFEmp.Size = new System.Drawing.Size(89, 25);
+            this.rbFEmp.Size = new System.Drawing.Size(76, 20);
             this.rbFEmp.TabIndex = 0;
             this.rbFEmp.Text = "Female";
             // 
@@ -363,8 +348,7 @@
             this.dtpEmp.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.dtpEmp.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtpEmp.ForeColor = System.Drawing.Color.Black;
-            this.dtpEmp.Location = new System.Drawing.Point(20, 143);
-            this.dtpEmp.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpEmp.Location = new System.Drawing.Point(15, 116);
             this.dtpEmp.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpEmp.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpEmp.Name = "dtpEmp";
@@ -372,18 +356,17 @@
             this.dtpEmp.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.dtpEmp.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.dtpEmp.OnPressedColor = System.Drawing.Color.Black;
-            this.dtpEmp.Size = new System.Drawing.Size(281, 36);
+            this.dtpEmp.Size = new System.Drawing.Size(211, 29);
             this.dtpEmp.TabIndex = 256;
             this.dtpEmp.Text = "Monday, October 3, 2022";
             this.dtpEmp.Value = new System.DateTime(2022, 10, 3, 11, 59, 47, 359);
             // 
             // kryptonLabel14
             // 
-            this.kryptonLabel14.Location = new System.Drawing.Point(20, 105);
-            this.kryptonLabel14.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonLabel14.Location = new System.Drawing.Point(15, 85);
             this.kryptonLabel14.Name = "kryptonLabel14";
             this.kryptonLabel14.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonLabel14.Size = new System.Drawing.Size(137, 30);
+            this.kryptonLabel14.Size = new System.Drawing.Size(111, 25);
             this.kryptonLabel14.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonLabel14.StateCommon.ShortText.Color2 = System.Drawing.Color.Black;
             this.kryptonLabel14.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 12.25F, System.Drawing.FontStyle.Bold);
@@ -392,11 +375,10 @@
             // 
             // kryptonLabel3
             // 
-            this.kryptonLabel3.Location = new System.Drawing.Point(362, 198);
-            this.kryptonLabel3.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonLabel3.Location = new System.Drawing.Point(272, 161);
             this.kryptonLabel3.Name = "kryptonLabel3";
             this.kryptonLabel3.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonLabel3.Size = new System.Drawing.Size(69, 30);
+            this.kryptonLabel3.Size = new System.Drawing.Size(57, 25);
             this.kryptonLabel3.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonLabel3.StateCommon.ShortText.Color2 = System.Drawing.Color.Black;
             this.kryptonLabel3.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 12.25F, System.Drawing.FontStyle.Bold);
@@ -405,11 +387,10 @@
             // 
             // kryptonLabel13
             // 
-            this.kryptonLabel13.Location = new System.Drawing.Point(20, 198);
-            this.kryptonLabel13.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonLabel13.Location = new System.Drawing.Point(15, 161);
             this.kryptonLabel13.Name = "kryptonLabel13";
             this.kryptonLabel13.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonLabel13.Size = new System.Drawing.Size(67, 30);
+            this.kryptonLabel13.Size = new System.Drawing.Size(55, 25);
             this.kryptonLabel13.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonLabel13.StateCommon.ShortText.Color2 = System.Drawing.Color.Black;
             this.kryptonLabel13.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 12.25F, System.Drawing.FontStyle.Bold);
@@ -418,11 +399,10 @@
             // 
             // kryptonLabel5
             // 
-            this.kryptonLabel5.Location = new System.Drawing.Point(20, 290);
-            this.kryptonLabel5.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonLabel5.Location = new System.Drawing.Point(15, 236);
             this.kryptonLabel5.Name = "kryptonLabel5";
             this.kryptonLabel5.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonLabel5.Size = new System.Drawing.Size(89, 30);
+            this.kryptonLabel5.Size = new System.Drawing.Size(73, 25);
             this.kryptonLabel5.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonLabel5.StateCommon.ShortText.Color2 = System.Drawing.Color.Black;
             this.kryptonLabel5.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 12.25F, System.Drawing.FontStyle.Bold);
@@ -431,11 +411,10 @@
             // 
             // kryptonLabel6
             // 
-            this.kryptonLabel6.Location = new System.Drawing.Point(362, 290);
-            this.kryptonLabel6.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonLabel6.Location = new System.Drawing.Point(272, 236);
             this.kryptonLabel6.Name = "kryptonLabel6";
             this.kryptonLabel6.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonLabel6.Size = new System.Drawing.Size(52, 30);
+            this.kryptonLabel6.Size = new System.Drawing.Size(43, 25);
             this.kryptonLabel6.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonLabel6.StateCommon.ShortText.Color2 = System.Drawing.Color.Black;
             this.kryptonLabel6.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 12.25F, System.Drawing.FontStyle.Bold);
@@ -444,11 +423,10 @@
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(365, 385);
-            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonLabel1.Location = new System.Drawing.Point(274, 313);
             this.kryptonLabel1.Name = "kryptonLabel1";
             this.kryptonLabel1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonLabel1.Size = new System.Drawing.Size(72, 30);
+            this.kryptonLabel1.Size = new System.Drawing.Size(59, 25);
             this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonLabel1.StateCommon.ShortText.Color2 = System.Drawing.Color.Black;
             this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 12.25F, System.Drawing.FontStyle.Bold);
@@ -457,11 +435,10 @@
             // 
             // kryptonLabel7
             // 
-            this.kryptonLabel7.Location = new System.Drawing.Point(21, 385);
-            this.kryptonLabel7.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonLabel7.Location = new System.Drawing.Point(16, 313);
             this.kryptonLabel7.Name = "kryptonLabel7";
             this.kryptonLabel7.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonLabel7.Size = new System.Drawing.Size(76, 30);
+            this.kryptonLabel7.Size = new System.Drawing.Size(62, 25);
             this.kryptonLabel7.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonLabel7.StateCommon.ShortText.Color2 = System.Drawing.Color.Black;
             this.kryptonLabel7.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 12.25F, System.Drawing.FontStyle.Bold);
@@ -477,13 +454,12 @@
             this.tbci.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.tbci.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.tbci.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbci.Location = new System.Drawing.Point(362, 328);
-            this.tbci.Margin = new System.Windows.Forms.Padding(4);
+            this.tbci.Location = new System.Drawing.Point(272, 266);
             this.tbci.Name = "tbci";
             this.tbci.PasswordChar = '\0';
             this.tbci.ReadOnly = true;
             this.tbci.SelectedText = "";
-            this.tbci.Size = new System.Drawing.Size(281, 37);
+            this.tbci.Size = new System.Drawing.Size(211, 30);
             this.tbci.TabIndex = 271;
             // 
             // tbreg
@@ -495,22 +471,20 @@
             this.tbreg.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.tbreg.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.tbreg.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbreg.Location = new System.Drawing.Point(21, 423);
-            this.tbreg.Margin = new System.Windows.Forms.Padding(4);
+            this.tbreg.Location = new System.Drawing.Point(16, 344);
             this.tbreg.Name = "tbreg";
             this.tbreg.PasswordChar = '\0';
             this.tbreg.ReadOnly = true;
             this.tbreg.SelectedText = "";
-            this.tbreg.Size = new System.Drawing.Size(281, 37);
+            this.tbreg.Size = new System.Drawing.Size(211, 30);
             this.tbreg.TabIndex = 272;
             // 
             // kryptonLabel2
             // 
-            this.kryptonLabel2.Location = new System.Drawing.Point(21, 485);
-            this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonLabel2.Location = new System.Drawing.Point(16, 394);
             this.kryptonLabel2.Name = "kryptonLabel2";
             this.kryptonLabel2.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonLabel2.Size = new System.Drawing.Size(131, 30);
+            this.kryptonLabel2.Size = new System.Drawing.Size(106, 25);
             this.kryptonLabel2.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonLabel2.StateCommon.ShortText.Color2 = System.Drawing.Color.Black;
             this.kryptonLabel2.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 12.25F, System.Drawing.FontStyle.Bold);
@@ -519,10 +493,10 @@
             // 
             // ListOfEmpDetailPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.kryptonLabel2);
             this.Controls.Add(this.tbreg);
             this.Controls.Add(this.tbci);
@@ -547,7 +521,6 @@
             this.Controls.Add(this.btn_Edit);
             this.Controls.Add(this.btn_Delete);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ListOfEmpDetailPage";
             this.Text = "ListOfEmpDetailPage";
             this.Load += new System.EventHandler(this.ListOfEmpDetailPage_Load);

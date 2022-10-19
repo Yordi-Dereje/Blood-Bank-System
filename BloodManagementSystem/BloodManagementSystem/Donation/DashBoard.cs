@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BloodManagementSystem.Donation;
 using LiveCharts;
 using LiveCharts.WinForms;
 using LiveCharts.Wpf;
@@ -22,67 +23,31 @@ namespace BloodManagementSystem
 
         private void DashBoard_Load(object sender, EventArgs e)
         {
-            Func<ChartPoint, string> labelPoint = chartPoint => String.Format("{0} ({1:P})", chartPoint.Y, chartPoint.Participation);
-            pieChart1.Series = new SeriesCollection
-            {
-                new PieSeries
-                {
-                    Title = "A+",
-                    Values = new ChartValues<double> {6450},
-                    DataLabels = true,
-                    LabelPoint = labelPoint,
-                },
-                new PieSeries
-                {
-                    Title = "A-",
-                    Values = new ChartValues<double> {6450},
-                    DataLabels = true,
-                    LabelPoint = labelPoint,
-                },
-                new PieSeries
-                {
-                    Title = "B+",
-                    Values = new ChartValues<double> {6450},
-                    DataLabels = true,
-                    LabelPoint = labelPoint,
-                },
-                new PieSeries
-                {
-                    Title = "B-",
-                    Values = new ChartValues<double> {6450},
-                    DataLabels = true,
-                    LabelPoint = labelPoint,
-                },
-                new PieSeries
-                {
-                    Title = "AB+",
-                    Values = new ChartValues<double> {6450},
-                    DataLabels = true,
-                    LabelPoint = labelPoint,
-                },
-                new PieSeries
-                {
-                    Title = "AB-",
-                    Values = new ChartValues<double> {6450},
-                    DataLabels = true,
-                    LabelPoint = labelPoint,
-                },
-                new PieSeries
-                {
-                    Title = "O+",
-                    Values = new ChartValues<double> {6450},
-                    DataLabels = true,
-                    LabelPoint = labelPoint,
-                },
-                new PieSeries
-                {
-                    Title = "O-",
-                    Values = new ChartValues<double> {6450},
-                    DataLabels = true,
-                    LabelPoint = labelPoint,
-                }
-            };
-            pieChart1.LegendLocation = LegendLocation.Bottom;
+            
+        }
+
+        private void gunaButton1_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            BloodStockChart bc = new BloodStockChart() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            panel1.Controls.Add(bc);
+            bc.Show();
+        }
+
+        private void btn_Transfer_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            TransferChart tc = new TransferChart() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            panel1.Controls.Add(tc);
+            tc.Show();
+        }
+
+        private void btn_Donations_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            DonationChart dc = new DonationChart() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            panel1.Controls.Add(dc);
+            dc.Show();
         }
     }
 }

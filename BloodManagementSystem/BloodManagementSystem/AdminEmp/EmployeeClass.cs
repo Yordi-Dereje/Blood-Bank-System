@@ -28,21 +28,103 @@ namespace BloodManagementSystem
         public string UserName { get; set; }
         public string Password { get; set; }
         public int Salary { get; set; }
-        public void Search(string tb)
+        public int year { get; set; }
+        public string month { get; set; }
+        public int total { get; set; }
+        public void DonationChart()
         {
             using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
                 try
                 {
                     con.Open();
-                    string query = "Select * from EMP_INFO where ID= @tb or Phone = @tb or CONCAT(FirstName, ' ', LastName) like @tb";
-                    SqlCommand cmd = new SqlCommand(query, con);
-                    cmd.Parameters.AddWithValue("@tb", tb);
-                    cmd.ExecuteNonQuery();
+                    string query1 = "Select DATENAME(MONTH,DateDonated) FROM SUCCESSFUL_DONATION;";
+                    string query2 = "Select DATEPART(YEAR,DateDonated) FROM SUCCESSFUL_DONATION;";
+                    string query4 = "Select count(*) from SUCCESSFUL_DONATION group by(DATENAME(MONTH,DateDonated));";
+                    string query3 = "Insert into DONATION_CHART values(@total,@years, @months);";
+
+                    SqlCommand cmd1 = new SqlCommand(query1, con);
+                    SqlCommand cmd2 = new SqlCommand(query2, con);
+                    SqlCommand cmd4 = new SqlCommand(query4, con);
+                    SqlCommand cmd3 = new SqlCommand(query3, con);
+
+                    month = cmd1.ExecuteScalar().ToString();
+                    year = Convert.ToInt32(cmd2.ExecuteScalar());
+                    total = Convert.ToInt32(cmd4.ExecuteScalar());
+
+                    cmd3.Parameters.AddWithValue("@total", total);
+                    cmd3.Parameters.AddWithValue("@years", year);
+                    cmd3.Parameters.AddWithValue("@months", month);
+
+                    cmd3.ExecuteNonQuery();
+
+                    cmd1.Dispose();
+                    cmd2.Dispose();
+                    cmd4.Dispose();
+                    con.Close();
                 }
                 catch(Exception ex)
                 {
                     MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    con.Close();
+                };
+            }
+        }
+        public List<EmployeeClass> displayDonationChart(int yrs)
+        {
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
+            {
+                try
+                {
+                    List<EmployeeClass> temp = new List<EmployeeClass>();
+                    string query = "select * from DONATION_CHART where @year = years";
+                    SqlCommand cmd = new SqlCommand(query, con);
+
+                    cmd.Parameters.AddWithValue("@year", yrs);
+                    con.Open();
+                    SqlDataReader sdr = cmd.ExecuteReader();
+                    while(sdr.Read())
+                    {
+                        EmployeeClass emp = new EmployeeClass();
+                        emp.month = (string)sdr["months"];
+                        emp.year = (int)sdr["years"];
+                        emp.total = (int)sdr["count"];
+                        temp.Add(emp);
+                    }
+                    return temp;
+                   
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    return null;
+                }
+                finally
+                {
+                    con.Close();
+                };
+            }
+        }
+        public int Search(string tb)
+        {
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
+            {
+                try
+                {
+                    con.Open();
+                    string query = "EXEC spLOAD_SEARCH_EMP_INFO @tb";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@tb", tb);
+                    int res = cmd.ExecuteNonQuery();
+                    return res;
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    return 0;
                 }
             }
         }
@@ -131,7 +213,7 @@ namespace BloodManagementSystem
                 };
             }
         }
-        public void UpdateInfo(int id, string fn, string ln, string dob, string gender, string phone, string email, string country, string city, string region, int sal,bool adstat)
+        public void UpdateInfo(int id, string fn, string ln, string dob, string gender, string phone, string email, string country, string city, string region)
         {
             using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
@@ -148,8 +230,6 @@ namespace BloodManagementSystem
                     cmd.Parameters.AddWithValue("@country", country);
                     cmd.Parameters.AddWithValue("@city", city);
                     cmd.Parameters.AddWithValue("@region", region);
-                    cmd.Parameters.AddWithValue("@sal", sal);
-                    cmd.Parameters.AddWithValue("@adstat", SqlDbType.Bit).Value = adstat;
                     cmd.Parameters.AddWithValue("@id", id);
 
                     con.Open();
@@ -165,7 +245,27 @@ namespace BloodManagementSystem
                 };
             }
         }
+        public void UpdateInfoAsAdmin(int id, int sal, bool adstat)
+        {
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
+            {
+                try
+                {
+                    string query = "EXEC spUPDATE_EMP_INFO_AS_ADMIN @id, @Salary,@Stat";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@id", id);
+                    cmd.Parameters.AddWithValue("@salary", sal);
+                    cmd.Parameters.AddWithValue("@stat",adstat);
 
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
         public static List<EmployeeClass> PopulateAcc()
         {
             using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
@@ -173,7 +273,7 @@ namespace BloodManagementSystem
                 try
                 {
                     List<EmployeeClass> temp = new List<EmployeeClass>();
-                    string query = "Select * from EMP_ACCOUNTS";
+                    string query = "EXEC spDISPLAY_EMP_ACCOUNTS";
                     SqlCommand cmd = new SqlCommand(query, con);
                     SqlDataReader sdr;
 
@@ -209,7 +309,7 @@ namespace BloodManagementSystem
                 try
                 {
                     List<EmployeeClass> temp = new List<EmployeeClass>();
-                    string query = "Select * from EMP_INFO";
+                    string query = "EXEC spDISPLAY_EMP_INFO";
                     SqlCommand cmd = new SqlCommand(query, con);
                     SqlDataReader sdr;
 
@@ -253,7 +353,7 @@ namespace BloodManagementSystem
                 try
                 {
                     int count = 0;
-                    List<DonorClass> temp = new List<DonorClass>();
+                    //List<DonorClass> temp = new List<DonorClass>();
                     string query = "Select count(*) from EMP_INFO";
                     SqlCommand cmd = new SqlCommand(query, con);
                     con.Open();

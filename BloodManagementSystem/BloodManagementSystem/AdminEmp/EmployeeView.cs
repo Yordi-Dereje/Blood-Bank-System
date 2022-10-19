@@ -29,6 +29,8 @@ namespace BloodManagementSystem
 
         private void EmployeeView_Load(object sender, EventArgs e)
         {
+
+            panel1.Visible = false;
             var log = EmployeeClass.findEmp(id);
             if (log == null)
             {
@@ -44,6 +46,7 @@ namespace BloodManagementSystem
 
         private void lbl_Home_Click(object sender, EventArgs e)
         {
+            panel1.Visible = false;
             panel2.Controls.Clear();
             DashBoard ed = new DashBoard() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             panel2.Controls.Add(ed);
@@ -57,15 +60,6 @@ namespace BloodManagementSystem
             panel2.Controls.Add(di);
             di.Show();
         }
-
-        /*private void manageAccountToolStripMenuItem_Click(object sender, EventArgs e) // where is this even
-        {
-            panel2.Controls.Clear();
-            ManageAcc md = new ManageAcc(id,2, panel2) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            panel2.Controls.Add(md);
-            md.Show();
-        }*/
-
         private void PicDonProfile_Click(object sender, EventArgs e)
         {
             // object not referenced error here
@@ -73,6 +67,27 @@ namespace BloodManagementSystem
             ManageAcc md = new ManageAcc(id, 2, panel2) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             panel2.Controls.Add(md);
             md.Show();
+        }
+
+        private void lbl_hi_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void manageAccountToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
+            panel2.Controls.Clear();
+            ManageAcc md = new ManageAcc(id, 2, panel2) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            panel2.Controls.Add(md);
+            md.Show();
+        }
+
+        private void signOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MainWindow m = new MainWindow();
+            m.Show();
         }
     }
 }

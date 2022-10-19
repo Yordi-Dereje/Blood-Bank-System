@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySqlX.XDevAPI.Common;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -48,6 +49,7 @@ namespace BloodManagementSystem.AdminEmp
                     flager = false;
                     emp.BackColor = Color.DarkGray;
                 }
+                
                 flowLayoutPanel1.Controls.Add(emp);
             }
         }
@@ -55,18 +57,34 @@ namespace BloodManagementSystem.AdminEmp
 
         private void btn_add_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        private void btn_Search_Click_1(object sender, EventArgs e)
+        {
+            EmployeeClass emp = new EmployeeClass();
+            var res = emp.Search(tbAp.Text);
+            
+            if (res >= 1)
+            {
+                int filtered = res;
+               // flowLayoutPanel1.Controls.Add(filtered);
+            }
+            //populate the table with only that value
+            //activate the edit and delete button
+        }
+
+        private void btn_register_Click(object sender, EventArgs e)
+        {
             p.Controls.Clear();
             EmployeeRegi emp = new EmployeeRegi(p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             p.Controls.Add(emp);
             emp.Show();
         }
 
-        private void btn_Search_Click_1(object sender, EventArgs e)
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
-            EmployeeClass emp = new EmployeeClass();
-            emp.Search(tbAp.Text);
-            //populate the table with only that value
-            //activate the edit and delete button
+
         }
     }
 }

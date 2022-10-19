@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BloodManagementSystem.Donation
+namespace BloodManagementSystem
 {
-    public partial class SuccessfulDonations : Form
+    public partial class TransferChart : Form
     {
-        public SuccessfulDonations()
+        public TransferChart()
         {
             InitializeComponent();
-        }
-
-        private void SuccessfulDonations_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

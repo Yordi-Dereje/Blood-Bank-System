@@ -20,26 +20,12 @@ namespace BloodManagementSystem
             this.p = p;
         }
 
-        private void btnDone_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void kryptonRadioButton14_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnDonee_Click(object sender, EventArgs e)
-        {
-            p.Controls.Clear();
-            MessageBox.Show("done");
-        }
         private void CustomizeDesign()
         {
             SubMenu_Panel1.Visible = false;
@@ -72,6 +58,19 @@ namespace BloodManagementSystem
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
             ShowSubMenu(SubMenu_Panel1);
+            string add = "addis ababa branches of blood bank";
+            try
+            {
+                StringBuilder queryaddress = new StringBuilder();
+                queryaddress.Append("http://maps.google.com/maps?q=");
+
+                queryaddress.Append(add + "," + "+");
+                webBrowser1.Navigate(queryaddress.ToString());
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
         //double click on the buttom n ShowSubMenu(SubMenu_Panel1);
 

@@ -1,5 +1,5 @@
 -- 72 hour checks
-
+Use BloodBankSql;
 --INSERT
 CREATE PROCEDURE spINSERT_DONOR_72CHECKS
 @ID int,

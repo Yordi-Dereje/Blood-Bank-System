@@ -37,6 +37,7 @@ namespace BloodManagementSystem
         private void AdminViews_Load(object sender, EventArgs e)
         {
             // lbl_Prof.Hide();
+            panel1.Visible = false;
             var log = EmployeeClass.findEmp(id);
             if (log == null)
             {
@@ -54,6 +55,7 @@ namespace BloodManagementSystem
 
         private void ManageAccToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            panel1.Visible = false;
             panel2.Controls.Clear();
             ManageAcc md = new ManageAcc(id,2, panel2) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             panel2.Controls.Add(md);
@@ -62,6 +64,7 @@ namespace BloodManagementSystem
 
         private void lbl_Home_Click(object sender, EventArgs e)
         {
+            panel1.Visible = false;
             panel2.Controls.Clear();
             DashBoard d = new DashBoard(){ Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             panel2.Controls.Add(d);
@@ -70,6 +73,7 @@ namespace BloodManagementSystem
 
         private void lbl_Employee_Click(object sender, EventArgs e)
         {
+            panel1.Visible = true;
             panel2.Controls.Clear();
             ListOfEmp emp = new ListOfEmp(panel2) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             panel2.Controls.Add(emp);
@@ -79,6 +83,7 @@ namespace BloodManagementSystem
 
         private void lbl_Donation_Click(object sender, EventArgs e)
         {
+            panel1.Visible = true;
             panel2.Controls.Clear();
             DonationInfo di = new DonationInfo(panel2, 0) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             panel2.Controls.Add(di);
@@ -87,6 +92,8 @@ namespace BloodManagementSystem
 
         private void lbl_Hospital_Click(object sender, EventArgs e)
         {
+
+            panel1.Visible = true;
             panel2.Controls.Clear();
             Transfer t = new Transfer(panel2) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             panel2.Controls.Add(t);
@@ -106,6 +113,22 @@ namespace BloodManagementSystem
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void lbl_Branch_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
+            panel2.Controls.Clear();
+            Location l = new Location(panel2) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            panel2.Controls.Add(l);
+            l.Show();
+        }
+
+        private void signOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MainWindow m = new MainWindow();
+            m.Show();
         }
     }
 }
