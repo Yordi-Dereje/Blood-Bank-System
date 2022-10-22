@@ -61,7 +61,7 @@ namespace BloodManagementSystem
                 };
             }
         }
-    
+
 
         public void UpdateInfo(int id, string fn, string ln, string dob, string gender, string phone, string email, string country, string city, string region)
         {
@@ -69,7 +69,7 @@ namespace BloodManagementSystem
             {
                 try
                 {
-
+                    con.Open();
                     string query = "EXEC spUPDATE_DONOR_INFO @id, @fn, @ln, @dob, @gender, @phone, @email, @country, @city, @region;";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@fn", fn);
@@ -82,10 +82,8 @@ namespace BloodManagementSystem
                     cmd.Parameters.AddWithValue("@city", city);
                     cmd.Parameters.AddWithValue("@region", region);
                     cmd.Parameters.AddWithValue("@id", id);
-
-                    con.Open();
+                    
                     cmd.ExecuteNonQuery();
-                    con.Close();
                 }
                 catch (Exception e)
                 {
@@ -101,6 +99,7 @@ namespace BloodManagementSystem
             {
                 try
                 {
+
                     string query = "EXEC spUPDATE_DONOR_ACCOUNTS @id, @un, @pw";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@un", un);
@@ -109,7 +108,6 @@ namespace BloodManagementSystem
 
                     con.Open();
                     cmd.ExecuteNonQuery();
-                    con.Close();
                 }
                 catch (Exception e)
                 {
@@ -130,16 +128,16 @@ namespace BloodManagementSystem
                     con.Open();
                     count = Convert.ToInt32(cmd.ExecuteScalar());
                     cmd.Dispose();
-                    return count;           
+                    return count;
                 }
                 catch (Exception e)
                 {
                     MessageBox.Show(e.Message);
                     return 0;
                 };
-               
+
             }
-            
+
         }
         public static List<DonorClass> PopulateAcc()
         {
@@ -173,7 +171,7 @@ namespace BloodManagementSystem
 
         public static List<DonorClass> PopulateAllDonor()
         {
-            using(SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
                 try
                 {
@@ -206,7 +204,7 @@ namespace BloodManagementSystem
                     return null;
                 };
             }
-           
+
         }
         public static DonorClass findUser(string un, string pw)
         {
@@ -228,7 +226,6 @@ namespace BloodManagementSystem
             List<DonorClass> temp = PopulateAllDonor();
             return temp.Find(a => a.Phone == phone && a.Email == email);
         }
-
     }
-
 }
+

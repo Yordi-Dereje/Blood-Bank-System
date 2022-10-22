@@ -44,10 +44,10 @@ namespace BloodManagementSystem
         }
 
         private void signOutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
+        { 
             MainWindow f = new MainWindow();
             f.Show();
+            this.Close();
         }
 
         private void lbl_Donor_Paint(object sender, PaintEventArgs e)
@@ -76,7 +76,7 @@ namespace BloodManagementSystem
         private void lbl_Medical_Click(object sender, EventArgs e)
         {
             panel3.Controls.Clear();
-            DonationDetailPage mf = new DonationDetailPage() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            MedicalPage mf = new MedicalPage() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             panel3.Controls.Add(mf);
             mf.Show();
         }

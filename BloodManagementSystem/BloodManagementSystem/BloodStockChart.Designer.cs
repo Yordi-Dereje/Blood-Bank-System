@@ -33,22 +33,23 @@
             // 
             // pieChart1
             // 
-            this.pieChart1.Location = new System.Drawing.Point(185, 66);
-            this.pieChart1.Margin = new System.Windows.Forms.Padding(2);
+            this.pieChart1.Location = new System.Drawing.Point(150, 57);
+            this.pieChart1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pieChart1.Name = "pieChart1";
-            this.pieChart1.Size = new System.Drawing.Size(326, 257);
+            this.pieChart1.Size = new System.Drawing.Size(616, 464);
             this.pieChart1.TabIndex = 16;
             this.pieChart1.Text = "pieChart1";
             this.pieChart1.ChildChanged += new System.EventHandler<System.Windows.Forms.Integration.ChildChangedEventArgs>(this.pieChart1_ChildChanged);
             // 
             // BloodStockChart
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(705, 450);
+            this.ClientSize = new System.Drawing.Size(940, 554);
             this.Controls.Add(this.pieChart1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "BloodStockChart";
             this.Text = "BloodStockChart";
             this.Load += new System.EventHandler(this.BloodStockChart_Load);

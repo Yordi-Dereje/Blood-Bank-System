@@ -143,6 +143,7 @@
             this.btn_back.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_back.TabIndex = 52;
             this.btn_back.Values.Text = "Back";
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // TransferList
             // 

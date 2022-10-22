@@ -31,14 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.Panel3 = new Guna.UI.WinForms.GunaPanel();
-            this.gunaPanel2 = new Guna.UI.WinForms.GunaPanel();
             this.gunaPanel3 = new Guna.UI.WinForms.GunaPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.lblHome = new Guna.UI.WinForms.GunaLabel();
             this.lblAboutUs = new Guna.UI.WinForms.GunaLabel();
             this.lblAdminView = new Guna.UI.WinForms.GunaLabel();
             this.lblDonor = new Guna.UI.WinForms.GunaLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.gunaPanel2 = new Guna.UI.WinForms.GunaPanel();
             this.Panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -67,16 +67,6 @@
             this.Panel3.Size = new System.Drawing.Size(1319, 687);
             this.Panel3.TabIndex = 2;
             // 
-            // gunaPanel2
-            // 
-            this.gunaPanel2.BackColor = System.Drawing.Color.Maroon;
-            this.gunaPanel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.gunaPanel2.Location = new System.Drawing.Point(0, 0);
-            this.gunaPanel2.Margin = new System.Windows.Forms.Padding(4);
-            this.gunaPanel2.Name = "gunaPanel2";
-            this.gunaPanel2.Size = new System.Drawing.Size(505, 687);
-            this.gunaPanel2.TabIndex = 2;
-            // 
             // gunaPanel3
             // 
             this.gunaPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -86,6 +76,30 @@
             this.gunaPanel3.Name = "gunaPanel3";
             this.gunaPanel3.Size = new System.Drawing.Size(809, 500);
             this.gunaPanel3.TabIndex = 12;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(1189, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(129, 99);
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
+            // 
+            // kryptonLabel1
+            // 
+            this.kryptonLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.kryptonLabel1.Location = new System.Drawing.Point(834, 13);
+            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonLabel1.Name = "kryptonLabel1";
+            this.kryptonLabel1.Size = new System.Drawing.Size(347, 52);
+            this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
+            this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Palatino Linotype", 20F, System.Drawing.FontStyle.Bold);
+            this.kryptonLabel1.TabIndex = 18;
+            this.kryptonLabel1.Values.Text = "National Blood Bank";
             // 
             // lblHome
             // 
@@ -149,29 +163,15 @@
             this.lblDonor.MouseLeave += new System.EventHandler(this.lblDonor_MouseLeave);
             this.lblDonor.MouseHover += new System.EventHandler(this.lblDonor_MouseHover);
             // 
-            // pictureBox1
+            // gunaPanel2
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(1189, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(129, 99);
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
-            // 
-            // kryptonLabel1
-            // 
-            this.kryptonLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonLabel1.Location = new System.Drawing.Point(834, 13);
-            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4);
-            this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(347, 52);
-            this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
-            this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Palatino Linotype", 20F, System.Drawing.FontStyle.Bold);
-            this.kryptonLabel1.TabIndex = 18;
-            this.kryptonLabel1.Values.Text = "National Blood Bank";
+            this.gunaPanel2.BackColor = System.Drawing.Color.Maroon;
+            this.gunaPanel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.gunaPanel2.Location = new System.Drawing.Point(0, 0);
+            this.gunaPanel2.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaPanel2.Name = "gunaPanel2";
+            this.gunaPanel2.Size = new System.Drawing.Size(505, 687);
+            this.gunaPanel2.TabIndex = 2;
             // 
             // MainWindow
             // 

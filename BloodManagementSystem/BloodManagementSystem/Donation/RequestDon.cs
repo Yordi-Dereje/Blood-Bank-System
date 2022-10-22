@@ -41,5 +41,10 @@ namespace BloodManagementSystem
             l.Show();
             */
         }
+
+        private void RequestDon_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

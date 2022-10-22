@@ -10,16 +10,14 @@ using System.Windows.Forms;
 
 namespace BloodManagementSystem
 {
-    public partial class DonorInfo : Form
+    public partial class MedicalPage : Form
     {
-        Panel p;
-        public DonorInfo(Panel p)
+        public MedicalPage()
         {
             InitializeComponent();
-            this.p = p;
         }
 
-        private void DonorInfo_Load(object sender, EventArgs e)
+        private void btn_Illness_LinkClicked(object sender, EventArgs e)
         {
 
         }

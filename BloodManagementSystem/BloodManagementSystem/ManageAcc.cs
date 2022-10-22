@@ -47,13 +47,16 @@ namespace BloodManagementSystem
                         rbMEmp.Checked = true;
                     else if (log.Gender.ToString() == "Female")
                         rbFEmp.Checked = true;
-                    tbPhoneEmp.Text = log.Phone.ToString();
+                    tbPhoneEmp.Text = log.Phone;
                     tbEmailEmp.Text = log.Email.ToString();
                     tbCoEmp.Text = log.Country.ToString();
                     tbCiEmp.Text = log.City.ToString();
                     tbRegEmp.Text = log.Region.ToString();
-                    tbUN.Text = log.UserName.ToString();
-                    tbPwO.Text = log.Password.ToString();
+                    var res = DonorClass.findPass(log.ID);
+                    tbUN.Text = res.UserName.ToString();
+                    tbPW.Text = res.Password.ToString();
+                    tbSalEmp.Text = "";
+                    tbStat.Text = "";
                 }
             }
             else if (val == 2)
@@ -79,8 +82,9 @@ namespace BloodManagementSystem
                     tbRegEmp.Text = log.Region.ToString();
                     tbSalEmp.Text = log.Salary.ToString();
                     tbStat.Text = log.AdminStatus.ToString();
-                    tbUN.Text = log.UserName.ToString();
-                    tbPwO.Text = log.Password.ToString();
+                    var res = EmployeeClass.findPass(log.ID);
+                    tbUN.Text = res.UserName.ToString();
+                    tbPW.Text = res.Password.ToString();
                 }
             }
         }
@@ -101,25 +105,25 @@ namespace BloodManagementSystem
         {
             if (val == 1)
             {
-                DonorClass d = new DonorClass();
                 string gen = null;
                 if (rbFEmp.Checked == true)
                     gen = "Female";
                 else if (rbMEmp.Checked == true)
                     gen = "Male";
+                DonorClass d = new DonorClass();
                 d.UpdateInfo(id, tbFNEmp.Text, tbLNEmp.Text, dtpEmp.Value.ToString(), gen, tbPhoneEmp.Text, tbEmailEmp.Text, tbCoEmp.Text, tbCiEmp.Text, tbRegEmp.Text);
                 d.UpdateAcc(id, tbUN.Text, tbPW.Text);
                 MessageBox.Show("Updated Successfully");
             }
             else if (val == 2)
             {
-                var log = EmployeeClass.findEmp(id);
-                EmployeeClass s = new EmployeeClass();
+                //var log = EmployeeClass.findEmp(id);
                 string gen = null;
                 if (rbFEmp.Checked == true)
                     gen = "Female";
                 else if (rbMEmp.Checked == true)
                     gen = "Male";
+                EmployeeClass s = new EmployeeClass();
                 s.UpdateInfo(id, tbFNEmp.Text, tbLNEmp.Text, dtpEmp.Value.ToString(), gen, tbPhoneEmp.Text, tbEmailEmp.Text, tbCoEmp.Text, tbCiEmp.Text, tbRegEmp.Text);
                 s.UpdateAcc(id, tbUN.Text, tbPW.Text);
                 MessageBox.Show("Updated Successfully");

@@ -126,9 +126,9 @@ namespace BloodManagementSystem
 
         private void signOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            MainWindow m = new MainWindow();
-            m.Show();
+            MainWindow f = new MainWindow();
+            f.Show();
+            this.Close();
         }
     }
 }

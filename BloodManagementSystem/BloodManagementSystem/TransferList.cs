@@ -40,5 +40,13 @@ namespace BloodManagementSystem
             TransferClass t = new TransferClass();
             t.TransferFormLoad(flp);
         }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            p.Controls.Clear();
+            Transfer t = new Transfer(p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            p.Controls.Add(t);
+            t.Show();
+        }
     }
 }

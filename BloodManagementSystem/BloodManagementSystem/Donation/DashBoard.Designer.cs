@@ -39,9 +39,10 @@
             // 
             // kryptonLabel5
             // 
-            this.kryptonLabel5.Location = new System.Drawing.Point(565, 12);
+            this.kryptonLabel5.Location = new System.Drawing.Point(753, 15);
+            this.kryptonLabel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonLabel5.Name = "kryptonLabel5";
-            this.kryptonLabel5.Size = new System.Drawing.Size(118, 28);
+            this.kryptonLabel5.Size = new System.Drawing.Size(146, 35);
             this.kryptonLabel5.StateCommon.ShortText.Color1 = System.Drawing.Color.Red;
             this.kryptonLabel5.StateCommon.ShortText.Color2 = System.Drawing.Color.Red;
             this.kryptonLabel5.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -50,9 +51,10 @@
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(291, 50);
+            this.panel1.Location = new System.Drawing.Point(388, 62);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(705, 450);
+            this.panel1.Size = new System.Drawing.Size(940, 554);
             this.panel1.TabIndex = 17;
             // 
             // gunaButton1
@@ -67,14 +69,15 @@
             this.gunaButton1.ForeColor = System.Drawing.Color.White;
             this.gunaButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton1.Image")));
             this.gunaButton1.ImageSize = new System.Drawing.Size(40, 40);
-            this.gunaButton1.Location = new System.Drawing.Point(28, 413);
+            this.gunaButton1.Location = new System.Drawing.Point(37, 508);
+            this.gunaButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaButton1.Name = "gunaButton1";
             this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.Firebrick;
             this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton1.OnHoverImage = null;
             this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton1.Size = new System.Drawing.Size(208, 103);
+            this.gunaButton1.Size = new System.Drawing.Size(277, 127);
             this.gunaButton1.TabIndex = 0;
             this.gunaButton1.Text = "Blood Stock";
             this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click);
@@ -91,16 +94,18 @@
             this.btn_Donor.ForeColor = System.Drawing.Color.White;
             this.btn_Donor.Image = ((System.Drawing.Image)(resources.GetObject("btn_Donor.Image")));
             this.btn_Donor.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_Donor.Location = new System.Drawing.Point(28, 36);
+            this.btn_Donor.Location = new System.Drawing.Point(37, 44);
+            this.btn_Donor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Donor.Name = "btn_Donor";
             this.btn_Donor.OnHoverBaseColor = System.Drawing.Color.Firebrick;
             this.btn_Donor.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btn_Donor.OnHoverForeColor = System.Drawing.Color.White;
             this.btn_Donor.OnHoverImage = null;
             this.btn_Donor.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_Donor.Size = new System.Drawing.Size(208, 103);
+            this.btn_Donor.Size = new System.Drawing.Size(277, 127);
             this.btn_Donor.TabIndex = 18;
             this.btn_Donor.Text = "Donor";
+            this.btn_Donor.Click += new System.EventHandler(this.btn_Donor_Click);
             // 
             // btn_Transfer
             // 
@@ -114,14 +119,15 @@
             this.btn_Transfer.ForeColor = System.Drawing.Color.White;
             this.btn_Transfer.Image = ((System.Drawing.Image)(resources.GetObject("btn_Transfer.Image")));
             this.btn_Transfer.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_Transfer.Location = new System.Drawing.Point(28, 163);
+            this.btn_Transfer.Location = new System.Drawing.Point(37, 201);
+            this.btn_Transfer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Transfer.Name = "btn_Transfer";
             this.btn_Transfer.OnHoverBaseColor = System.Drawing.Color.Firebrick;
             this.btn_Transfer.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btn_Transfer.OnHoverForeColor = System.Drawing.Color.White;
             this.btn_Transfer.OnHoverImage = null;
             this.btn_Transfer.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_Transfer.Size = new System.Drawing.Size(208, 103);
+            this.btn_Transfer.Size = new System.Drawing.Size(277, 127);
             this.btn_Transfer.TabIndex = 19;
             this.btn_Transfer.Text = "Transfer";
             this.btn_Transfer.Click += new System.EventHandler(this.btn_Transfer_Click);
@@ -138,24 +144,25 @@
             this.btn_Donations.ForeColor = System.Drawing.Color.White;
             this.btn_Donations.Image = ((System.Drawing.Image)(resources.GetObject("btn_Donations.Image")));
             this.btn_Donations.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_Donations.Location = new System.Drawing.Point(28, 289);
+            this.btn_Donations.Location = new System.Drawing.Point(37, 356);
+            this.btn_Donations.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Donations.Name = "btn_Donations";
             this.btn_Donations.OnHoverBaseColor = System.Drawing.Color.Firebrick;
             this.btn_Donations.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btn_Donations.OnHoverForeColor = System.Drawing.Color.White;
             this.btn_Donations.OnHoverImage = null;
             this.btn_Donations.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_Donations.Size = new System.Drawing.Size(208, 103);
+            this.btn_Donations.Size = new System.Drawing.Size(277, 127);
             this.btn_Donations.TabIndex = 20;
             this.btn_Donations.Text = "Donations";
             this.btn_Donations.Click += new System.EventHandler(this.btn_Donations_Click);
             // 
             // DashBoard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1034, 528);
+            this.ClientSize = new System.Drawing.Size(1379, 650);
             this.Controls.Add(this.btn_Donations);
             this.Controls.Add(this.btn_Transfer);
             this.Controls.Add(this.btn_Donor);
@@ -163,6 +170,7 @@
             this.Controls.Add(this.kryptonLabel5);
             this.Controls.Add(this.gunaButton1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DashBoard";
             this.Text = "DashBoard";
             this.Load += new System.EventHandler(this.DashBoard_Load);

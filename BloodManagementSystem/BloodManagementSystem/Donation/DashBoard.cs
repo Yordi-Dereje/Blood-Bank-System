@@ -49,5 +49,13 @@ namespace BloodManagementSystem
             panel1.Controls.Add(dc);
             dc.Show();
         }
+
+        private void btn_Donor_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            DonorInfo df = new DonorInfo(panel1) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            panel1.Controls.Add(df);
+            df.Show();
+        }
     }
 }

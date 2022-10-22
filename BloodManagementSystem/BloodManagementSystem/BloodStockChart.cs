@@ -24,62 +24,63 @@ namespace BloodManagementSystem
         private void BloodStockChart_Load(object sender, EventArgs e)
         {
             Func<ChartPoint, string> labelPoint = chartPoint => String.Format("{0} ({1:P})", chartPoint.Y, chartPoint.Participation);
+            // make sure hover only points specific pie
             pieChart1.Series = new SeriesCollection
             {
                 new PieSeries
                 {
                     Title = "A+",
-                    Values = new ChartValues<double> {6450},
-                    DataLabels = true,
+                    Values = new ChartValues<double> {SQLDonationClass.getSpecificCount("A+")},
+                    //DataLabels = true,
                     LabelPoint = labelPoint,
                 },
                 new PieSeries
                 {
                     Title = "A-",
-                    Values = new ChartValues<double> {6450},
-                    DataLabels = true,
+                    Values = new ChartValues<double> {SQLDonationClass.getSpecificCount("A-")},
+                    //DataLabels = true,
                     LabelPoint = labelPoint,
                 },
                 new PieSeries
                 {
                     Title = "B+",
-                    Values = new ChartValues<double> {6450},
-                    DataLabels = true,
+                    Values = new ChartValues<double> {SQLDonationClass.getSpecificCount("B+")},
+                    //DataLabels = true,
                     LabelPoint = labelPoint,
                 },
                 new PieSeries
                 {
                     Title = "B-",
-                    Values = new ChartValues<double> {6450},
-                    DataLabels = true,
+                    Values = new ChartValues<double> {SQLDonationClass.getSpecificCount("B-")},
+                    //DataLabels = true,
                     LabelPoint = labelPoint,
                 },
                 new PieSeries
                 {
                     Title = "AB+",
-                    Values = new ChartValues<double> {6450},
-                    DataLabels = true,
+                    Values = new ChartValues<double> {SQLDonationClass.getSpecificCount("AB+")},
+                    //DataLabels = true,
                     LabelPoint = labelPoint,
                 },
                 new PieSeries
                 {
                     Title = "AB-",
-                    Values = new ChartValues<double> {6450},
-                    DataLabels = true,
+                    Values = new ChartValues<double> {SQLDonationClass.getSpecificCount("AB-")},
+                    //DataLabels = true,
                     LabelPoint = labelPoint,
                 },
                 new PieSeries
                 {
                     Title = "O+",
-                    Values = new ChartValues<double> {6450},
-                    DataLabels = true,
+                    Values = new ChartValues<double> {SQLDonationClass.getSpecificCount("O+")},
+                    //DataLabels = true,
                     LabelPoint = labelPoint,
                 },
                 new PieSeries
                 {
                     Title = "O-",
-                    Values = new ChartValues<double> {6450},
-                    DataLabels = true,
+                    Values = new ChartValues<double> {SQLDonationClass.getSpecificCount("O-")},
+                    //DataLabels = true,
                     LabelPoint = labelPoint,
                 }
             };

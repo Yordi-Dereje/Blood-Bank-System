@@ -338,10 +338,6 @@ namespace BloodManagementSystem
                 {
                     MessageBox.Show(e.Message);
                     return null;
-                }
-                finally
-                {
-                    con.Close();
                 };
             }
             

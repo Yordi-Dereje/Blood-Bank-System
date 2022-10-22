@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BloodManagementSystem
 {
-    public partial class DonationDetailPage : Form
+    public partial class UCHaveIllness : UserControl
     {
-        public DonationDetailPage()
+        public UCHaveIllness()
         {
             InitializeComponent();
         }

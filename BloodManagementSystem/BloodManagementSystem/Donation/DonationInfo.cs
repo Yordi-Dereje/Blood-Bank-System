@@ -34,10 +34,11 @@ namespace BloodManagementSystem
             {
                 //pass an id so it's filter out the results
                 flowLayoutPanel1.Controls.Clear();
+                gunaLabel4.Text = "";
+                lbl_per.Text = "";
                 SQLDonationClass s = new SQLDonationClass();
-                s.successformLoad(flowLayoutPanel1);
+                s.successformLoadID(flowLayoutPanel1, id);
             }
-            
         }
 
         private void lbl_per_Click(object sender, EventArgs e)

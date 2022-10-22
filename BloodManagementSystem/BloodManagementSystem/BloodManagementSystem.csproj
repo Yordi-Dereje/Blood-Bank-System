@@ -285,11 +285,11 @@
     <Compile Include="ManageAcc.Designer.cs">
       <DependentUpon>ManageAcc.cs</DependentUpon>
     </Compile>
-    <Compile Include="Donation\DonationDetailPage.cs">
+    <Compile Include="Donation\MedicalPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Donation\DonationDetailPage.Designer.cs">
-      <DependentUpon>DonationDetailPage.cs</DependentUpon>
+    <Compile Include="Donation\MedicalPage.Designer.cs">
+      <DependentUpon>MedicalPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -331,6 +331,18 @@
     </Compile>
     <Compile Include="TransferList.Designer.cs">
       <DependentUpon>TransferList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCallIllness.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCallIllness.Designer.cs">
+      <DependentUpon>UCallIllness.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCHaveIllness.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCHaveIllness.Designer.cs">
+      <DependentUpon>UCHaveIllness.cs</DependentUpon>
     </Compile>
     <Compile Include="UCHospital.cs">
       <SubType>UserControl</SubType>
@@ -446,8 +458,8 @@
     <EmbeddedResource Include="ManageAcc.resx">
       <DependentUpon>ManageAcc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Donation\DonationDetailPage.resx">
-      <DependentUpon>DonationDetailPage.cs</DependentUpon>
+    <EmbeddedResource Include="Donation\MedicalPage.resx">
+      <DependentUpon>MedicalPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Donation\PrimaryChecks.resx">
       <DependentUpon>PrimaryChecks.cs</DependentUpon>
@@ -481,6 +493,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TransferList.resx">
       <DependentUpon>TransferList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCallIllness.resx">
+      <DependentUpon>UCallIllness.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCHaveIllness.resx">
+      <DependentUpon>UCHaveIllness.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCHospital.resx">
       <DependentUpon>UCHospital.cs</DependentUpon>

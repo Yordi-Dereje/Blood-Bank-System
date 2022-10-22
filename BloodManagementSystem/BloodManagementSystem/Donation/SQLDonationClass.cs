@@ -182,7 +182,8 @@ namespace BloodManagementSystem
                 try
                 {
                     con.Open();
-                    SqlDataAdapter da = new SqlDataAdapter("Select * from SUCCESSFUL_DONATION", con);
+                    SqlDataAdapter da = new SqlDataAdapter("spDISPLAY_SUCCESSFUL_DONATION", con);
+                    da.SelectCommand.CommandType = CommandType.StoredProcedure;
                     DataSet ds = new DataSet();
                     da.Fill(ds, "SUCCESSFUL_DONATION");
                     bool flager = false;
@@ -213,49 +214,87 @@ namespace BloodManagementSystem
                 };
             }
         }
-
+        public static int getTotalDonations()
+        {
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
+            {
+                try
+                {
+                    int count = 0;
+                    string query = "Select dbo.totalDonations()";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    con.Open();
+                    count = Convert.ToInt32(cmd.ExecuteScalar());
+                    cmd.Dispose();
+                    return count;
+                }
+                catch (Exception e)
+                {
+                    MessageBox.Show(e.Message);
+                    return 0;
+                };
+            }
+        }
+        public static int getSpecificCount(string val)
+        {
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
+            {
+                try
+                {
+                    int count = 0;
+                    string query = "Select dbo.specificBloodCount(@val)";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@val", val);
+                    con.Open();
+                    count = Convert.ToInt32(cmd.ExecuteScalar());
+                    cmd.Dispose();
+                    return count;
+                }
+                catch (Exception e)
+                {
+                    MessageBox.Show(e.Message);
+                    return 0;
+                };
+            }
+        }
         public void successformLoadID(FlowLayoutPanel flp, int id)
         {
-            /*using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
                 try
                 {
                     con.Open();
-                    string query = "Select * from SUCCESSFUL_DONATION where ID = @id";
+                    string query = "EXEC spLOAD_SEARCH_SUCCESSFUL_DONATION @id";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@id", id);
                     SqlDataReader r = cmd.ExecuteReader();
                     bool flager = false;
                     while(r.Read())
                     {
-                        foreach (var item in r)
+                        UCSuccDonations u = new UCSuccDonations();
+                        u.bid = (int)r["BloodID"];
+                        //u.id = (int)r["ID"];
+                        u.dondate = r["DateDonated"].ToString();
+                        u.venue = r["Venue"].ToString();
+                        //u.bloodtype = r["BloodType"].ToString();
+                        if (flager == false)
                         {
-                            UCSuccDonations u = new UCSuccDonations();
-                            u.bid = item.
-                            u.id = int.Parse(item["ID"].ToString());
-                            u.dondate = item["DateDonated"].ToString();
-                            u.venue = item["Venue"].ToString();
-                            u.bloodtype = item["BloodType"].ToString();
-                            if (flager == false)
-                            {
-                                flager = true;
-                                u.BackColor = Color.LightGray;
-                            }
-                            else if (flager == true)
-                            {
-                                flager = false;
-                                u.BackColor = Color.DarkGray;
-                            }
-                            flp.Controls.Add(u);
+                            flager = true;
+                            u.BackColor = Color.LightGray;
                         }
-                        
+                        else if (flager == true)
+                        {
+                            flager = false;
+                            u.BackColor = Color.DarkGray;
+                        }
+                        flp.Controls.Add(u);
                     }
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 };
-            }*/
+            }
         }
         public void failureformLoad(FlowLayoutPanel flp)
         {

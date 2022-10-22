@@ -92,6 +92,72 @@ namespace BloodManagementSystem
                 };
             }
         }
+        public static int getTotalTransfers()
+        {
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
+            {
+                try
+                {
+                    int count = 0;
+                    string query = "Select dbo.totalTransfers()";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    con.Open();
+                    count = Convert.ToInt32(cmd.ExecuteScalar());
+                    cmd.Dispose();
+                    return count;
+                }
+                catch (Exception e)
+                {
+                    MessageBox.Show(e.Message);
+                    return 0;
+                };
+            }
+        }
+
+        public static List<TransferClass> PopulateAll()
+        {
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
+            {
+                try
+                {
+                    List<TransferClass> temp = new List<TransferClass>();
+                    string query = "EXEC spDISPLAY_TRANSFER_INFO";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    SqlDataReader sdr;
+                    con.Open();
+                    sdr = cmd.ExecuteReader();
+                    while (sdr.Read())
+                    {
+                        TransferClass r = new TransferClass();
+                        r.ID = (int)sdr["ID"];
+                        r.HosName = (string)sdr["Hospital"];
+                        r.Date = (string)sdr["Date"];
+                        r.Ap = (int)sdr["Ap"];
+                        r.Am = (int)sdr["Am"];
+                        r.Bp = (int)sdr["Bp"];
+                        r.Bm = (int)sdr["Bm"];
+                        r.Abp = (int)sdr["Abp"];
+                        r.Abm = (int)sdr["Abm"];
+                        r.Op = (int)sdr["Op"];
+                        r.Om = (int)sdr["Om"];
+                        temp.Add(r);
+                    }
+                    return temp;
+                }
+                catch (Exception e)
+                {
+                    MessageBox.Show(e.Message);
+                    return null;
+                };
+            }
+
+        }
+
+        public static TransferClass findValue(int id)
+        {
+            List<TransferClass> temp = PopulateAll();
+            return temp.Find(a => a.ID == id);
+        }
 
     }
 }
