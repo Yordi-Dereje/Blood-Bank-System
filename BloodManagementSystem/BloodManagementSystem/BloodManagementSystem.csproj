@@ -191,6 +191,12 @@
     <Compile Include="AdminEmp\EmployeeView.Designer.cs">
       <DependentUpon>EmployeeView.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -281,12 +287,6 @@
     </Compile>
     <Compile Include="HospitalRequestPage.Designer.cs">
       <DependentUpon>HospitalRequestPage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MainWindow.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainWindow.Designer.cs">
-      <DependentUpon>MainWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="Donation\Location.cs">
       <SubType>Form</SubType>
@@ -452,6 +452,9 @@
     <EmbeddedResource Include="AdminEmp\EmployeeView.resx">
       <DependentUpon>EmployeeView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -469,9 +472,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HospitalRequestPage.resx">
       <DependentUpon>HospitalRequestPage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainWindow.resx">
-      <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Donation\Location.resx">
       <DependentUpon>Location.cs</DependentUpon>

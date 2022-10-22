@@ -55,7 +55,7 @@ namespace BloodManagementSystem
                 else
                     gen = "Male";
                 string dob = dtp.Value.ToString();
-                string bt = "-";
+                string bt = gunaComboBox1.SelectedItem.ToString();
                 DonorCreateAcc dc = new DonorCreateAcc(p,f, id.ToString(), tbFN.Text, tbLN.Text, gen, dob, tbPhone.Text, tbEmail.Text, tbCo.Text, tbCity.Text, tbReg.Text, bt) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
                 p.Controls.Add(dc);
                 dc.Show();

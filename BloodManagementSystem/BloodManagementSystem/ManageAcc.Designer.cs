@@ -72,7 +72,7 @@
             this.PanelChangeLogin.Controls.Add(this.kryptonLabel13);
             this.PanelChangeLogin.Controls.Add(this.tbUN);
             this.PanelChangeLogin.Controls.Add(this.lbl_UserName);
-            this.PanelChangeLogin.Location = new System.Drawing.Point(819, 55);
+            this.PanelChangeLogin.Location = new System.Drawing.Point(847, 53);
             this.PanelChangeLogin.Margin = new System.Windows.Forms.Padding(4);
             this.PanelChangeLogin.Name = "PanelChangeLogin";
             this.PanelChangeLogin.Size = new System.Drawing.Size(463, 486);

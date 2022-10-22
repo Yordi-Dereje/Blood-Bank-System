@@ -207,11 +207,7 @@
             this.gunaContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.gunaContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.gunaContextMenuStrip1.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.SystemDefault;
-<<<<<<< HEAD
-            this.gunaContextMenuStrip1.Size = new System.Drawing.Size(211, 80);
-=======
             this.gunaContextMenuStrip1.Size = new System.Drawing.Size(166, 48);
->>>>>>> 6c8045bb75e5fe5c16691cb1b7ce2b537a118c4d
             // 
             // ManageAccToolStripMenuItem
             // 
@@ -223,11 +219,7 @@
             // signOutToolStripMenuItem
             // 
             this.signOutToolStripMenuItem.Name = "signOutToolStripMenuItem";
-<<<<<<< HEAD
-            this.signOutToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
-=======
             this.signOutToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
->>>>>>> 6c8045bb75e5fe5c16691cb1b7ce2b537a118c4d
             this.signOutToolStripMenuItem.Text = "Sign Out";
             this.signOutToolStripMenuItem.Click += new System.EventHandler(this.signOutToolStripMenuItem_Click);
             // 
@@ -255,13 +247,8 @@
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-<<<<<<< HEAD
-            this.panel2.Location = new System.Drawing.Point(320, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
             this.panel2.Location = new System.Drawing.Point(240, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> 6c8045bb75e5fe5c16691cb1b7ce2b537a118c4d
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(992, 641);
             this.panel2.TabIndex = 30;
