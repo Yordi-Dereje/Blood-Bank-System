@@ -40,28 +40,35 @@ namespace BloodManagementSystem
 
         private void btnDone_Click(object sender, EventArgs e)
         {
-            EmployeeClass emp = new EmployeeClass
+            if (string.IsNullOrEmpty(tbUNEmp.Text))
+                errorProvider1.SetError(tbUNEmp, "email required");
+            else if (string.IsNullOrEmpty(tbPWEmp.Text))
+                errorProvider1.SetError(tbPWEmp, "password required");
+            else
             {
-                ID = int.Parse(id),
-                FirstName = fn,
-                LastName = ln,
-                Gender = gender,
-                DOB = dob,
-                Phone = phone,
-                Email = email,
-                Country = country,
-                City = city,
-                Region = region,
-                Salary = salary,
-                UserName = tbUNEmp.Text,
-                Password = tbPWEmp.Text
-            };
-            emp.Insert();
-            MessageBox.Show("Employee registered successfully!");
-            p.Controls.Clear();
-            EmployeeRegi em = new EmployeeRegi(p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            p.Controls.Add(em);
-            em.Show();
+                EmployeeClass emp = new EmployeeClass
+                {
+                    ID = int.Parse(id),
+                    FirstName = fn,
+                    LastName = ln,
+                    Gender = gender,
+                    DOB = dob,
+                    Phone = phone,
+                    Email = email,
+                    Country = country,
+                    City = city,
+                    Region = region,
+                    Salary = salary,
+                    UserName = tbUNEmp.Text,
+                    Password = tbPWEmp.Text
+                };
+                emp.Insert();
+                MessageBox.Show("Employee registered successfully!");
+                p.Controls.Clear();
+                EmployeeRegi em = new EmployeeRegi(p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                p.Controls.Add(em);
+                em.Show();
+            }
 
         }
     }

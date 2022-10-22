@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dtp = new Guna.UI.WinForms.GunaDateTimePicker();
             this.kryptonLabel9 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.cbHosp = new Guna.UI.WinForms.GunaComboBox();
@@ -51,6 +52,8 @@
             this.btn_confirm = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btn_history = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btn_HospitalList = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // dtp
@@ -62,7 +65,8 @@
             this.dtp.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.dtp.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtp.ForeColor = System.Drawing.Color.Black;
-            this.dtp.Location = new System.Drawing.Point(209, 477);
+            this.dtp.Location = new System.Drawing.Point(157, 388);
+            this.dtp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtp.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtp.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtp.Name = "dtp";
@@ -70,17 +74,16 @@
             this.dtp.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.dtp.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.dtp.OnPressedColor = System.Drawing.Color.Black;
-            this.dtp.Size = new System.Drawing.Size(223, 30);
+            this.dtp.Size = new System.Drawing.Size(167, 24);
             this.dtp.TabIndex = 73;
             this.dtp.Text = "Friday, October 14, 2022";
             this.dtp.Value = new System.DateTime(2022, 10, 14, 10, 0, 4, 283);
             // 
             // kryptonLabel9
             // 
-            this.kryptonLabel9.Location = new System.Drawing.Point(139, 477);
-            this.kryptonLabel9.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonLabel9.Location = new System.Drawing.Point(104, 388);
             this.kryptonLabel9.Name = "kryptonLabel9";
-            this.kryptonLabel9.Size = new System.Drawing.Size(62, 31);
+            this.kryptonLabel9.Size = new System.Drawing.Size(51, 26);
             this.kryptonLabel9.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
             this.kryptonLabel9.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel9.TabIndex = 72;
@@ -97,19 +100,19 @@
             this.cbHosp.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbHosp.ForeColor = System.Drawing.Color.Black;
             this.cbHosp.FormattingEnabled = true;
-            this.cbHosp.Location = new System.Drawing.Point(209, 411);
+            this.cbHosp.Location = new System.Drawing.Point(157, 334);
+            this.cbHosp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbHosp.Name = "cbHosp";
             this.cbHosp.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.cbHosp.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.cbHosp.Size = new System.Drawing.Size(225, 31);
+            this.cbHosp.Size = new System.Drawing.Size(170, 26);
             this.cbHosp.TabIndex = 71;
             // 
             // kryptonLabel8
             // 
-            this.kryptonLabel8.Location = new System.Drawing.Point(100, 411);
-            this.kryptonLabel8.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonLabel8.Location = new System.Drawing.Point(75, 334);
             this.kryptonLabel8.Name = "kryptonLabel8";
-            this.kryptonLabel8.Size = new System.Drawing.Size(101, 31);
+            this.kryptonLabel8.Size = new System.Drawing.Size(82, 26);
             this.kryptonLabel8.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
             this.kryptonLabel8.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel8.TabIndex = 70;
@@ -125,11 +128,12 @@
             this.tbOm.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.tbOm.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.tbOm.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbOm.Location = new System.Drawing.Point(345, 302);
+            this.tbOm.Location = new System.Drawing.Point(259, 245);
+            this.tbOm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbOm.Name = "tbOm";
             this.tbOm.PasswordChar = '\0';
             this.tbOm.SelectedText = "";
-            this.tbOm.Size = new System.Drawing.Size(89, 31);
+            this.tbOm.Size = new System.Drawing.Size(67, 26);
             this.tbOm.TabIndex = 69;
             // 
             // tbOp
@@ -142,11 +146,12 @@
             this.tbOp.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.tbOp.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.tbOp.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbOp.Location = new System.Drawing.Point(164, 302);
+            this.tbOp.Location = new System.Drawing.Point(123, 245);
+            this.tbOp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbOp.Name = "tbOp";
             this.tbOp.PasswordChar = '\0';
             this.tbOp.SelectedText = "";
-            this.tbOp.Size = new System.Drawing.Size(89, 31);
+            this.tbOp.Size = new System.Drawing.Size(67, 26);
             this.tbOp.TabIndex = 68;
             // 
             // tbAbm
@@ -159,11 +164,12 @@
             this.tbAbm.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.tbAbm.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.tbAbm.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbAbm.Location = new System.Drawing.Point(345, 228);
+            this.tbAbm.Location = new System.Drawing.Point(259, 185);
+            this.tbAbm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbAbm.Name = "tbAbm";
             this.tbAbm.PasswordChar = '\0';
             this.tbAbm.SelectedText = "";
-            this.tbAbm.Size = new System.Drawing.Size(89, 31);
+            this.tbAbm.Size = new System.Drawing.Size(67, 26);
             this.tbAbm.TabIndex = 67;
             // 
             // tbAbp
@@ -176,11 +182,12 @@
             this.tbAbp.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.tbAbp.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.tbAbp.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbAbp.Location = new System.Drawing.Point(164, 228);
+            this.tbAbp.Location = new System.Drawing.Point(123, 185);
+            this.tbAbp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbAbp.Name = "tbAbp";
             this.tbAbp.PasswordChar = '\0';
             this.tbAbp.SelectedText = "";
-            this.tbAbp.Size = new System.Drawing.Size(89, 31);
+            this.tbAbp.Size = new System.Drawing.Size(67, 26);
             this.tbAbp.TabIndex = 66;
             // 
             // tbBm
@@ -193,11 +200,12 @@
             this.tbBm.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.tbBm.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.tbBm.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbBm.Location = new System.Drawing.Point(345, 154);
+            this.tbBm.Location = new System.Drawing.Point(259, 125);
+            this.tbBm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbBm.Name = "tbBm";
             this.tbBm.PasswordChar = '\0';
             this.tbBm.SelectedText = "";
-            this.tbBm.Size = new System.Drawing.Size(89, 31);
+            this.tbBm.Size = new System.Drawing.Size(67, 26);
             this.tbBm.TabIndex = 65;
             // 
             // tbBp
@@ -210,11 +218,12 @@
             this.tbBp.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.tbBp.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.tbBp.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbBp.Location = new System.Drawing.Point(164, 154);
+            this.tbBp.Location = new System.Drawing.Point(123, 125);
+            this.tbBp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbBp.Name = "tbBp";
             this.tbBp.PasswordChar = '\0';
             this.tbBp.SelectedText = "";
-            this.tbBp.Size = new System.Drawing.Size(89, 31);
+            this.tbBp.Size = new System.Drawing.Size(67, 26);
             this.tbBp.TabIndex = 64;
             // 
             // tbAm
@@ -227,11 +236,12 @@
             this.tbAm.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.tbAm.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.tbAm.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbAm.Location = new System.Drawing.Point(345, 79);
+            this.tbAm.Location = new System.Drawing.Point(259, 64);
+            this.tbAm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbAm.Name = "tbAm";
             this.tbAm.PasswordChar = '\0';
             this.tbAm.SelectedText = "";
-            this.tbAm.Size = new System.Drawing.Size(89, 31);
+            this.tbAm.Size = new System.Drawing.Size(67, 26);
             this.tbAm.TabIndex = 63;
             // 
             // tbAp
@@ -244,19 +254,19 @@
             this.tbAp.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.tbAp.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.tbAp.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbAp.Location = new System.Drawing.Point(164, 79);
+            this.tbAp.Location = new System.Drawing.Point(123, 64);
+            this.tbAp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbAp.Name = "tbAp";
             this.tbAp.PasswordChar = '\0';
             this.tbAp.SelectedText = "";
-            this.tbAp.Size = new System.Drawing.Size(89, 31);
+            this.tbAp.Size = new System.Drawing.Size(67, 26);
             this.tbAp.TabIndex = 62;
             // 
             // kryptonLabel4
             // 
-            this.kryptonLabel4.Location = new System.Drawing.Point(287, 302);
-            this.kryptonLabel4.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonLabel4.Location = new System.Drawing.Point(215, 245);
             this.kryptonLabel4.Name = "kryptonLabel4";
-            this.kryptonLabel4.Size = new System.Drawing.Size(41, 31);
+            this.kryptonLabel4.Size = new System.Drawing.Size(34, 26);
             this.kryptonLabel4.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
             this.kryptonLabel4.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel4.TabIndex = 61;
@@ -264,10 +274,9 @@
             // 
             // kryptonLabel5
             // 
-            this.kryptonLabel5.Location = new System.Drawing.Point(287, 228);
-            this.kryptonLabel5.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonLabel5.Location = new System.Drawing.Point(215, 185);
             this.kryptonLabel5.Name = "kryptonLabel5";
-            this.kryptonLabel5.Size = new System.Drawing.Size(56, 31);
+            this.kryptonLabel5.Size = new System.Drawing.Size(46, 26);
             this.kryptonLabel5.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
             this.kryptonLabel5.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel5.TabIndex = 60;
@@ -275,10 +284,9 @@
             // 
             // kryptonLabel6
             // 
-            this.kryptonLabel6.Location = new System.Drawing.Point(287, 154);
-            this.kryptonLabel6.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonLabel6.Location = new System.Drawing.Point(215, 125);
             this.kryptonLabel6.Name = "kryptonLabel6";
-            this.kryptonLabel6.Size = new System.Drawing.Size(38, 31);
+            this.kryptonLabel6.Size = new System.Drawing.Size(32, 26);
             this.kryptonLabel6.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
             this.kryptonLabel6.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel6.TabIndex = 59;
@@ -286,10 +294,9 @@
             // 
             // kryptonLabel7
             // 
-            this.kryptonLabel7.Location = new System.Drawing.Point(287, 79);
-            this.kryptonLabel7.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonLabel7.Location = new System.Drawing.Point(215, 64);
             this.kryptonLabel7.Name = "kryptonLabel7";
-            this.kryptonLabel7.Size = new System.Drawing.Size(40, 31);
+            this.kryptonLabel7.Size = new System.Drawing.Size(33, 26);
             this.kryptonLabel7.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
             this.kryptonLabel7.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel7.TabIndex = 58;
@@ -297,10 +304,9 @@
             // 
             // kryptonLabel3
             // 
-            this.kryptonLabel3.Location = new System.Drawing.Point(100, 302);
-            this.kryptonLabel3.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonLabel3.Location = new System.Drawing.Point(75, 245);
             this.kryptonLabel3.Name = "kryptonLabel3";
-            this.kryptonLabel3.Size = new System.Drawing.Size(47, 31);
+            this.kryptonLabel3.Size = new System.Drawing.Size(39, 26);
             this.kryptonLabel3.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
             this.kryptonLabel3.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel3.TabIndex = 57;
@@ -308,10 +314,9 @@
             // 
             // kryptonLabel2
             // 
-            this.kryptonLabel2.Location = new System.Drawing.Point(100, 228);
-            this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonLabel2.Location = new System.Drawing.Point(75, 185);
             this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(61, 31);
+            this.kryptonLabel2.Size = new System.Drawing.Size(50, 26);
             this.kryptonLabel2.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
             this.kryptonLabel2.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel2.TabIndex = 56;
@@ -319,10 +324,9 @@
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(100, 154);
-            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonLabel1.Location = new System.Drawing.Point(75, 125);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(44, 31);
+            this.kryptonLabel1.Size = new System.Drawing.Size(37, 26);
             this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
             this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel1.TabIndex = 55;
@@ -330,10 +334,9 @@
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(100, 79);
-            this.label1.Margin = new System.Windows.Forms.Padding(4);
+            this.label1.Location = new System.Drawing.Point(75, 64);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 31);
+            this.label1.Size = new System.Drawing.Size(38, 26);
             this.label1.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
             this.label1.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
             this.label1.TabIndex = 54;
@@ -342,8 +345,7 @@
             // btn_confirm
             // 
             this.btn_confirm.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_confirm.Location = new System.Drawing.Point(623, 514);
-            this.btn_confirm.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_confirm.Location = new System.Drawing.Point(467, 418);
             this.btn_confirm.Name = "btn_confirm";
             this.btn_confirm.OverrideDefault.Back.Color1 = System.Drawing.Color.Maroon;
             this.btn_confirm.OverrideDefault.Back.Color2 = System.Drawing.Color.Maroon;
@@ -358,7 +360,7 @@
             this.btn_confirm.OverrideDefault.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.btn_confirm.OverrideDefault.Border.Rounding = 20;
             this.btn_confirm.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btn_confirm.Size = new System.Drawing.Size(270, 47);
+            this.btn_confirm.Size = new System.Drawing.Size(202, 38);
             this.btn_confirm.StateCommon.Back.Color1 = System.Drawing.Color.Maroon;
             this.btn_confirm.StateCommon.Back.Color2 = System.Drawing.Color.Maroon;
             this.btn_confirm.StateCommon.Back.ColorAngle = 45F;
@@ -396,11 +398,10 @@
             // btn_history
             // 
             this.btn_history.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_history.Location = new System.Drawing.Point(623, 119);
-            this.btn_history.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_history.Location = new System.Drawing.Point(467, 97);
             this.btn_history.Name = "btn_history";
             this.btn_history.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btn_history.Size = new System.Drawing.Size(270, 47);
+            this.btn_history.Size = new System.Drawing.Size(202, 38);
             this.btn_history.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.btn_history.StateCommon.Back.Color2 = System.Drawing.Color.White;
             this.btn_history.StateCommon.Back.ColorAngle = 45F;
@@ -425,8 +426,7 @@
             // btn_HospitalList
             // 
             this.btn_HospitalList.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_HospitalList.Location = new System.Drawing.Point(623, 48);
-            this.btn_HospitalList.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_HospitalList.Location = new System.Drawing.Point(467, 39);
             this.btn_HospitalList.Name = "btn_HospitalList";
             this.btn_HospitalList.OverrideDefault.Back.Color1 = System.Drawing.Color.Maroon;
             this.btn_HospitalList.OverrideDefault.Back.Color2 = System.Drawing.Color.Maroon;
@@ -441,7 +441,7 @@
             this.btn_HospitalList.OverrideDefault.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.btn_HospitalList.OverrideDefault.Border.Rounding = 20;
             this.btn_HospitalList.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btn_HospitalList.Size = new System.Drawing.Size(270, 47);
+            this.btn_HospitalList.Size = new System.Drawing.Size(202, 38);
             this.btn_HospitalList.StateCommon.Back.Color1 = System.Drawing.Color.Maroon;
             this.btn_HospitalList.StateCommon.Back.Color2 = System.Drawing.Color.Maroon;
             this.btn_HospitalList.StateCommon.Back.ColorAngle = 45F;
@@ -476,12 +476,16 @@
             this.btn_HospitalList.Values.Text = "Hospital List";
             this.btn_HospitalList.Click += new System.EventHandler(this.btn_HospitalList_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // Transfer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(992, 609);
+            this.ClientSize = new System.Drawing.Size(744, 495);
             this.Controls.Add(this.dtp);
             this.Controls.Add(this.kryptonLabel9);
             this.Controls.Add(this.cbHosp);
@@ -506,9 +510,11 @@
             this.Controls.Add(this.btn_history);
             this.Controls.Add(this.btn_HospitalList);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Transfer";
             this.Text = "Transfer";
             this.Load += new System.EventHandler(this.Transfer_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -539,5 +545,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonButton btn_confirm;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btn_history;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btn_HospitalList;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

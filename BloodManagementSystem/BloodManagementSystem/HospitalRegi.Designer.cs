@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tbEmail = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel3 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
@@ -44,14 +45,15 @@
             this.btnSave = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonLabel2 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.cbOwner = new Guna.UI.WinForms.GunaComboBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // tbEmail
             // 
-            this.tbEmail.Location = new System.Drawing.Point(483, 250);
-            this.tbEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.tbEmail.Location = new System.Drawing.Point(362, 203);
             this.tbEmail.Name = "tbEmail";
-            this.tbEmail.Size = new System.Drawing.Size(305, 32);
+            this.tbEmail.Size = new System.Drawing.Size(229, 28);
             this.tbEmail.StateCommon.Border.Color1 = System.Drawing.Color.Maroon;
             this.tbEmail.StateCommon.Border.Color2 = System.Drawing.Color.Maroon;
             this.tbEmail.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -63,11 +65,10 @@
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(482, 210);
-            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonLabel1.Location = new System.Drawing.Point(362, 171);
             this.kryptonLabel1.Name = "kryptonLabel1";
             this.kryptonLabel1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonLabel1.Size = new System.Drawing.Size(67, 30);
+            this.kryptonLabel1.Size = new System.Drawing.Size(55, 25);
             this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonLabel1.StateCommon.ShortText.Color2 = System.Drawing.Color.Black;
             this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 12.25F, System.Drawing.FontStyle.Bold);
@@ -76,11 +77,10 @@
             // 
             // kryptonLabel3
             // 
-            this.kryptonLabel3.Location = new System.Drawing.Point(154, 210);
-            this.kryptonLabel3.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonLabel3.Location = new System.Drawing.Point(116, 171);
             this.kryptonLabel3.Name = "kryptonLabel3";
             this.kryptonLabel3.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonLabel3.Size = new System.Drawing.Size(69, 30);
+            this.kryptonLabel3.Size = new System.Drawing.Size(57, 25);
             this.kryptonLabel3.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonLabel3.StateCommon.ShortText.Color2 = System.Drawing.Color.Black;
             this.kryptonLabel3.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 12.25F, System.Drawing.FontStyle.Bold);
@@ -89,11 +89,10 @@
             // 
             // kryptonLabel5
             // 
-            this.kryptonLabel5.Location = new System.Drawing.Point(154, 307);
-            this.kryptonLabel5.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonLabel5.Location = new System.Drawing.Point(116, 249);
             this.kryptonLabel5.Name = "kryptonLabel5";
             this.kryptonLabel5.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonLabel5.Size = new System.Drawing.Size(89, 30);
+            this.kryptonLabel5.Size = new System.Drawing.Size(73, 25);
             this.kryptonLabel5.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonLabel5.StateCommon.ShortText.Color2 = System.Drawing.Color.Black;
             this.kryptonLabel5.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 12.25F, System.Drawing.FontStyle.Bold);
@@ -102,11 +101,10 @@
             // 
             // kryptonLabel6
             // 
-            this.kryptonLabel6.Location = new System.Drawing.Point(483, 307);
-            this.kryptonLabel6.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonLabel6.Location = new System.Drawing.Point(362, 249);
             this.kryptonLabel6.Name = "kryptonLabel6";
             this.kryptonLabel6.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonLabel6.Size = new System.Drawing.Size(52, 30);
+            this.kryptonLabel6.Size = new System.Drawing.Size(43, 25);
             this.kryptonLabel6.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonLabel6.StateCommon.ShortText.Color2 = System.Drawing.Color.Black;
             this.kryptonLabel6.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 12.25F, System.Drawing.FontStyle.Bold);
@@ -115,11 +113,10 @@
             // 
             // kryptonLabel7
             // 
-            this.kryptonLabel7.Location = new System.Drawing.Point(160, 413);
-            this.kryptonLabel7.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonLabel7.Location = new System.Drawing.Point(120, 336);
             this.kryptonLabel7.Name = "kryptonLabel7";
             this.kryptonLabel7.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonLabel7.Size = new System.Drawing.Size(76, 30);
+            this.kryptonLabel7.Size = new System.Drawing.Size(62, 25);
             this.kryptonLabel7.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonLabel7.StateCommon.ShortText.Color2 = System.Drawing.Color.Black;
             this.kryptonLabel7.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 12.25F, System.Drawing.FontStyle.Bold);
@@ -128,11 +125,10 @@
             // 
             // kryptonLabel13
             // 
-            this.kryptonLabel13.Location = new System.Drawing.Point(156, 105);
-            this.kryptonLabel13.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonLabel13.Location = new System.Drawing.Point(117, 85);
             this.kryptonLabel13.Name = "kryptonLabel13";
             this.kryptonLabel13.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonLabel13.Size = new System.Drawing.Size(66, 30);
+            this.kryptonLabel13.Size = new System.Drawing.Size(54, 25);
             this.kryptonLabel13.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonLabel13.StateCommon.ShortText.Color2 = System.Drawing.Color.Black;
             this.kryptonLabel13.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 12.25F, System.Drawing.FontStyle.Bold);
@@ -141,10 +137,9 @@
             // 
             // tbReg
             // 
-            this.tbReg.Location = new System.Drawing.Point(154, 460);
-            this.tbReg.Margin = new System.Windows.Forms.Padding(4);
+            this.tbReg.Location = new System.Drawing.Point(116, 374);
             this.tbReg.Name = "tbReg";
-            this.tbReg.Size = new System.Drawing.Size(292, 32);
+            this.tbReg.Size = new System.Drawing.Size(219, 28);
             this.tbReg.StateCommon.Border.Color1 = System.Drawing.Color.Maroon;
             this.tbReg.StateCommon.Border.Color2 = System.Drawing.Color.Maroon;
             this.tbReg.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -156,10 +151,9 @@
             // 
             // tbCi
             // 
-            this.tbCi.Location = new System.Drawing.Point(483, 354);
-            this.tbCi.Margin = new System.Windows.Forms.Padding(4);
+            this.tbCi.Location = new System.Drawing.Point(362, 288);
             this.tbCi.Name = "tbCi";
-            this.tbCi.Size = new System.Drawing.Size(305, 32);
+            this.tbCi.Size = new System.Drawing.Size(229, 28);
             this.tbCi.StateCommon.Border.Color1 = System.Drawing.Color.Maroon;
             this.tbCi.StateCommon.Border.Color2 = System.Drawing.Color.Maroon;
             this.tbCi.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -171,10 +165,9 @@
             // 
             // tbCo
             // 
-            this.tbCo.Location = new System.Drawing.Point(154, 354);
-            this.tbCo.Margin = new System.Windows.Forms.Padding(4);
+            this.tbCo.Location = new System.Drawing.Point(116, 288);
             this.tbCo.Name = "tbCo";
-            this.tbCo.Size = new System.Drawing.Size(292, 32);
+            this.tbCo.Size = new System.Drawing.Size(219, 28);
             this.tbCo.StateCommon.Border.Color1 = System.Drawing.Color.Maroon;
             this.tbCo.StateCommon.Border.Color2 = System.Drawing.Color.Maroon;
             this.tbCo.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -186,10 +179,9 @@
             // 
             // tbPhone
             // 
-            this.tbPhone.Location = new System.Drawing.Point(154, 250);
-            this.tbPhone.Margin = new System.Windows.Forms.Padding(4);
+            this.tbPhone.Location = new System.Drawing.Point(116, 203);
             this.tbPhone.Name = "tbPhone";
-            this.tbPhone.Size = new System.Drawing.Size(292, 32);
+            this.tbPhone.Size = new System.Drawing.Size(219, 28);
             this.tbPhone.StateCommon.Border.Color1 = System.Drawing.Color.Maroon;
             this.tbPhone.StateCommon.Border.Color2 = System.Drawing.Color.Maroon;
             this.tbPhone.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -201,10 +193,9 @@
             // 
             // tbName
             // 
-            this.tbName.Location = new System.Drawing.Point(156, 145);
-            this.tbName.Margin = new System.Windows.Forms.Padding(4);
+            this.tbName.Location = new System.Drawing.Point(117, 118);
             this.tbName.Name = "tbName";
-            this.tbName.Size = new System.Drawing.Size(632, 32);
+            this.tbName.Size = new System.Drawing.Size(474, 28);
             this.tbName.StateCommon.Border.Color1 = System.Drawing.Color.Maroon;
             this.tbName.StateCommon.Border.Color2 = System.Drawing.Color.Maroon;
             this.tbName.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -219,17 +210,15 @@
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel4.ForeColor = System.Drawing.Color.Maroon;
-            this.gunaLabel4.Location = new System.Drawing.Point(332, 46);
-            this.gunaLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.gunaLabel4.Location = new System.Drawing.Point(249, 37);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(261, 32);
+            this.gunaLabel4.Size = new System.Drawing.Size(205, 25);
             this.gunaLabel4.TabIndex = 270;
             this.gunaLabel4.Text = "Hospital registration";
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(154, 540);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSave.Location = new System.Drawing.Point(116, 439);
             this.btnSave.Name = "btnSave";
             this.btnSave.OverrideDefault.Back.Color1 = System.Drawing.Color.Maroon;
             this.btnSave.OverrideDefault.Back.Color2 = System.Drawing.Color.Maroon;
@@ -244,7 +233,7 @@
             this.btnSave.OverrideDefault.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.btnSave.OverrideDefault.Border.Rounding = 20;
             this.btnSave.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnSave.Size = new System.Drawing.Size(634, 38);
+            this.btnSave.Size = new System.Drawing.Size(476, 31);
             this.btnSave.StateCommon.Back.Color1 = System.Drawing.Color.Maroon;
             this.btnSave.StateCommon.Back.Color2 = System.Drawing.Color.Maroon;
             this.btnSave.StateCommon.Back.ColorAngle = 45F;
@@ -281,11 +270,10 @@
             // 
             // kryptonLabel2
             // 
-            this.kryptonLabel2.Location = new System.Drawing.Point(483, 413);
-            this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonLabel2.Location = new System.Drawing.Point(362, 336);
             this.kryptonLabel2.Name = "kryptonLabel2";
             this.kryptonLabel2.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonLabel2.Size = new System.Drawing.Size(113, 30);
+            this.kryptonLabel2.Size = new System.Drawing.Size(91, 25);
             this.kryptonLabel2.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonLabel2.StateCommon.ShortText.Color2 = System.Drawing.Color.Black;
             this.kryptonLabel2.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 12.25F, System.Drawing.FontStyle.Bold);
@@ -308,19 +296,24 @@
             "Governmental",
             "Private",
             "Public"});
-            this.cbOwner.Location = new System.Drawing.Point(482, 460);
+            this.cbOwner.Location = new System.Drawing.Point(362, 374);
+            this.cbOwner.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbOwner.Name = "cbOwner";
             this.cbOwner.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.cbOwner.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.cbOwner.Size = new System.Drawing.Size(305, 31);
+            this.cbOwner.Size = new System.Drawing.Size(230, 27);
             this.cbOwner.TabIndex = 274;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // HospitalRegi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(992, 603);
+            this.ClientSize = new System.Drawing.Size(744, 490);
             this.Controls.Add(this.cbOwner);
             this.Controls.Add(this.kryptonLabel2);
             this.Controls.Add(this.btnSave);
@@ -338,8 +331,10 @@
             this.Controls.Add(this.tbPhone);
             this.Controls.Add(this.tbName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "HospitalRegi";
             this.Text = "HospitalRegi";
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -363,5 +358,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnSave;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel2;
         private Guna.UI.WinForms.GunaComboBox cbOwner;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
