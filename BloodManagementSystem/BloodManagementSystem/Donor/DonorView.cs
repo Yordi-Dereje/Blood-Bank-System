@@ -89,11 +89,5 @@ namespace BloodManagementSystem
             rd.Show();
         }
 
-        private void lbl_Home_Click(object sender, EventArgs e)
-        {
-            MainWindow m = new MainWindow();
-            this.Hide();
-            m.Show();
-        }
     }
 }

@@ -14,7 +14,7 @@ namespace BloodManagementSystem
     {
         Panel p;
         Form f;
-        public DonorLogin(Panel p, Form f)
+        public DonorLogin(Panel p,Form f)
         {
             InitializeComponent();
             this.p = p;

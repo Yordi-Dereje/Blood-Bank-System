@@ -28,7 +28,7 @@ namespace BloodManagementSystem
             {
                 MessageBox.Show("Invalid phone or email");
                 p.Controls.Clear();
-                DonorLogin d = new DonorLogin(p, f) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                DonorLogin d = new DonorLogin( p,f) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
                 p.Controls.Add(d);
                 d.Show();
             }
@@ -37,7 +37,7 @@ namespace BloodManagementSystem
                 var log = DonorClass.findPass(result.ID);
                 MessageBox.Show("Dear " + log.UserName + ", your password is " + log.Password + ".");
                 p.Controls.Clear();
-                DonorLogin d = new DonorLogin(p, f) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                DonorLogin d = new DonorLogin(p,f) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
                 p.Controls.Add(d);
                 d.Show();
             }

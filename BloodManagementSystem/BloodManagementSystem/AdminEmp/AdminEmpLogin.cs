@@ -14,7 +14,7 @@ namespace BloodManagementSystem
     {
         Panel p;
         Form f;
-        public AdminEmpLogin(Panel p, Form f)
+        public AdminEmpLogin(Panel p,Form f)
         {
             InitializeComponent();
             this.p = p;
@@ -60,6 +60,11 @@ namespace BloodManagementSystem
             EmpForgotPassword ad = new EmpForgotPassword(p, f) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             p.Controls.Add(ad);
             ad.Show();
+        }
+
+        private void AdminEmpLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

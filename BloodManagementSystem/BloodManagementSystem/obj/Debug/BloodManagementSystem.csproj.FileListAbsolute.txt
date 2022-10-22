@@ -683,3 +683,6 @@ C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSyste
 C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\obj\Debug\BloodManagementSystem.BloodStockChart.resources
 C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\obj\Debug\BloodManagementSystem.Donation.DonationChart.resources
 C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\obj\Debug\BloodManagementSystem.Donation.SuccessfulDonations.resources
+C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\bin\Debug\Guna.UI2.dll
+C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\obj\Debug\BloodManagementSystem.AboutUs.resources
+C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\obj\Debug\BloodManagementSystem.Form1.resources

@@ -28,7 +28,7 @@ namespace BloodManagementSystem
             {
                 MessageBox.Show("Invalid phone or email");
                 p.Controls.Clear();
-                AdminEmpLogin ad = new AdminEmpLogin(p, f) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                AdminEmpLogin ad = new AdminEmpLogin(p,f) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
                 p.Controls.Add(ad);
                 ad.Show();
             }

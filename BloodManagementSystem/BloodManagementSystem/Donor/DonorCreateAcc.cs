@@ -17,7 +17,7 @@ namespace BloodManagementSystem
         Panel p;
         Form f;
         string id,fn, ln, gen, dob, phone, email, country, city, region, bt;
-        public DonorCreateAcc(Panel p, Form f,string id, string fn, string ln,  string gen, string dob, string phone, string email, string country, string city, string region, string bt)
+        public DonorCreateAcc( Panel p,Form f,string id, string fn, string ln,  string gen, string dob, string phone, string email, string country, string city, string region, string bt)
         {
             InitializeComponent();
             this.p = p;
@@ -57,7 +57,7 @@ namespace BloodManagementSystem
             d.Insert();
 
             p.Controls.Clear();
-            DonorLogin dl = new DonorLogin(p, f) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true};
+            DonorLogin dl = new DonorLogin(p,f) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true};
             p.Controls.Add(dl);
             dl.Show();
         }
