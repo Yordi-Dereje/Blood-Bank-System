@@ -33,13 +33,13 @@
             this.kryptonLabel3 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.txt_phDon = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.lbl_UserName = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // btn_Submit
             // 
             this.btn_Submit.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_Submit.Location = new System.Drawing.Point(311, 359);
-            this.btn_Submit.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Submit.Location = new System.Drawing.Point(651, 307);
             this.btn_Submit.Name = "btn_Submit";
             this.btn_Submit.OverrideDefault.Back.Color1 = System.Drawing.Color.Maroon;
             this.btn_Submit.OverrideDefault.Back.Color2 = System.Drawing.Color.Maroon;
@@ -54,7 +54,7 @@
             this.btn_Submit.OverrideDefault.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.btn_Submit.OverrideDefault.Border.Rounding = 20;
             this.btn_Submit.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btn_Submit.Size = new System.Drawing.Size(177, 47);
+            this.btn_Submit.Size = new System.Drawing.Size(133, 38);
             this.btn_Submit.StateCommon.Back.Color1 = System.Drawing.Color.Maroon;
             this.btn_Submit.StateCommon.Back.Color2 = System.Drawing.Color.Maroon;
             this.btn_Submit.StateCommon.Back.ColorAngle = 45F;
@@ -91,10 +91,9 @@
             // 
             // txt_emDon
             // 
-            this.txt_emDon.Location = new System.Drawing.Point(228, 245);
-            this.txt_emDon.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_emDon.Location = new System.Drawing.Point(589, 214);
             this.txt_emDon.Name = "txt_emDon";
-            this.txt_emDon.Size = new System.Drawing.Size(335, 39);
+            this.txt_emDon.Size = new System.Drawing.Size(251, 35);
             this.txt_emDon.StateCommon.Border.Color1 = System.Drawing.Color.Maroon;
             this.txt_emDon.StateCommon.Border.Color2 = System.Drawing.Color.Black;
             this.txt_emDon.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -105,10 +104,9 @@
             // 
             // kryptonLabel3
             // 
-            this.kryptonLabel3.Location = new System.Drawing.Point(228, 206);
-            this.kryptonLabel3.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonLabel3.Location = new System.Drawing.Point(589, 182);
             this.kryptonLabel3.Name = "kryptonLabel3";
-            this.kryptonLabel3.Size = new System.Drawing.Size(77, 32);
+            this.kryptonLabel3.Size = new System.Drawing.Size(63, 26);
             this.kryptonLabel3.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
             this.kryptonLabel3.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel3.TabIndex = 47;
@@ -116,10 +114,9 @@
             // 
             // txt_phDon
             // 
-            this.txt_phDon.Location = new System.Drawing.Point(227, 126);
-            this.txt_phDon.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_phDon.Location = new System.Drawing.Point(588, 117);
             this.txt_phDon.Name = "txt_phDon";
-            this.txt_phDon.Size = new System.Drawing.Size(335, 39);
+            this.txt_phDon.Size = new System.Drawing.Size(251, 35);
             this.txt_phDon.StateCommon.Border.Color1 = System.Drawing.Color.Maroon;
             this.txt_phDon.StateCommon.Border.Color2 = System.Drawing.Color.Black;
             this.txt_phDon.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -130,27 +127,36 @@
             // 
             // lbl_UserName
             // 
-            this.lbl_UserName.Location = new System.Drawing.Point(227, 87);
-            this.lbl_UserName.Margin = new System.Windows.Forms.Padding(4);
+            this.lbl_UserName.Location = new System.Drawing.Point(588, 86);
             this.lbl_UserName.Name = "lbl_UserName";
-            this.lbl_UserName.Size = new System.Drawing.Size(78, 31);
+            this.lbl_UserName.Size = new System.Drawing.Size(64, 26);
             this.lbl_UserName.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
             this.lbl_UserName.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
             this.lbl_UserName.TabIndex = 45;
             this.lbl_UserName.Values.Text = "Phone";
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Maroon;
+            this.panel3.Location = new System.Drawing.Point(2, 1);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(379, 467);
+            this.panel3.TabIndex = 50;
+            // 
             // DonorForgotPassword
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(809, 500);
+            this.ClientSize = new System.Drawing.Size(1002, 469);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.btn_Submit);
             this.Controls.Add(this.txt_emDon);
             this.Controls.Add(this.kryptonLabel3);
             this.Controls.Add(this.txt_phDon);
             this.Controls.Add(this.lbl_UserName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "DonorForgotPassword";
             this.Text = "DonorForgotPassword";
             this.ResumeLayout(false);
@@ -165,5 +171,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel3;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txt_phDon;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel lbl_UserName;
+        private System.Windows.Forms.Panel panel3;
     }
 }

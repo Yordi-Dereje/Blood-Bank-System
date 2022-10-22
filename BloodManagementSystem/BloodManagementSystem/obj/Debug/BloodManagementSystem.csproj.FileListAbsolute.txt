@@ -683,6 +683,7 @@ C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSyste
 C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\obj\Debug\BloodManagementSystem.BloodStockChart.resources
 C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\obj\Debug\BloodManagementSystem.Donation.DonationChart.resources
 C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\obj\Debug\BloodManagementSystem.Donation.SuccessfulDonations.resources
+<<<<<<< HEAD
 C:\Users\hp\Desktop\Oct 20\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\bin\Debug\BloodManagementSystem.exe.config
 C:\Users\hp\Desktop\Oct 20\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\bin\Debug\BloodManagementSystem.exe
 C:\Users\hp\Desktop\Oct 20\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\bin\Debug\BloodManagementSystem.pdb
@@ -766,3 +767,8 @@ C:\Users\hp\Desktop\Oct 20\Blood-Bank-System\BloodManagementSystem\BloodManageme
 C:\Users\hp\Desktop\Oct 20\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\obj\Debug\BloodManagementSystem.MedicalPage.resources
 C:\Users\hp\Desktop\Oct 20\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\obj\Debug\BloodManagementSystem.UCallIllness.resources
 C:\Users\hp\Desktop\Oct 20\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\obj\Debug\BloodManagementSystem.UCHaveIllness.resources
+=======
+C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\bin\Debug\Guna.UI2.dll
+C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\obj\Debug\BloodManagementSystem.AboutUs.resources
+C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\obj\Debug\BloodManagementSystem.Form1.resources
+>>>>>>> 6c8045bb75e5fe5c16691cb1b7ce2b537a118c4d

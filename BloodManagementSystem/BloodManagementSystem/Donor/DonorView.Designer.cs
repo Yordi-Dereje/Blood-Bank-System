@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DonorView));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lbl_Home = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.lbl_ReqDonation = new Guna.UI.WinForms.GunaLabel();
             this.lbl_Medical = new Guna.UI.WinForms.GunaLabel();
@@ -42,8 +41,8 @@
             this.lbl_Donor = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PanelDisplay = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicDonProfile)).BeginInit();
             this.gunaContextMenuStrip1.SuspendLayout();
@@ -54,7 +53,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.lbl_Home);
             this.panel1.Controls.Add(this.gunaLabel4);
             this.panel1.Controls.Add(this.lbl_ReqDonation);
             this.panel1.Controls.Add(this.lbl_Medical);
@@ -64,33 +62,18 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1319, 78);
+            this.panel1.Size = new System.Drawing.Size(989, 63);
             this.panel1.TabIndex = 0;
-            // 
-            // lbl_Home
-            // 
-            this.lbl_Home.AutoSize = true;
-            this.lbl_Home.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Home.ForeColor = System.Drawing.Color.Red;
-            this.lbl_Home.Location = new System.Drawing.Point(559, 28);
-            this.lbl_Home.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_Home.Name = "lbl_Home";
-            this.lbl_Home.Size = new System.Drawing.Size(68, 25);
-            this.lbl_Home.TabIndex = 22;
-            this.lbl_Home.Text = "Home";
-            this.lbl_Home.Click += new System.EventHandler(this.lbl_Home_Click);
             // 
             // gunaLabel4
             // 
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.Font = new System.Drawing.Font("Times New Roman", 18.75F, System.Drawing.FontStyle.Bold);
             this.gunaLabel4.ForeColor = System.Drawing.Color.Maroon;
-            this.gunaLabel4.Location = new System.Drawing.Point(106, 0);
-            this.gunaLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.gunaLabel4.Location = new System.Drawing.Point(80, 0);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(177, 72);
+            this.gunaLabel4.Size = new System.Drawing.Size(138, 58);
             this.gunaLabel4.TabIndex = 14;
             this.gunaLabel4.Text = "National \r\nBlood Bank";
             this.gunaLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -100,10 +83,9 @@
             this.lbl_ReqDonation.AutoSize = true;
             this.lbl_ReqDonation.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_ReqDonation.ForeColor = System.Drawing.Color.Red;
-            this.lbl_ReqDonation.Location = new System.Drawing.Point(941, 28);
-            this.lbl_ReqDonation.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_ReqDonation.Location = new System.Drawing.Point(706, 23);
             this.lbl_ReqDonation.Name = "lbl_ReqDonation";
-            this.lbl_ReqDonation.Size = new System.Drawing.Size(175, 25);
+            this.lbl_ReqDonation.Size = new System.Drawing.Size(137, 19);
             this.lbl_ReqDonation.TabIndex = 13;
             this.lbl_ReqDonation.Text = "Request donation";
             this.lbl_ReqDonation.Click += new System.EventHandler(this.lbl_ReqDonation_Click);
@@ -113,10 +95,9 @@
             this.lbl_Medical.AutoSize = true;
             this.lbl_Medical.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Medical.ForeColor = System.Drawing.Color.Red;
-            this.lbl_Medical.Location = new System.Drawing.Point(815, 28);
-            this.lbl_Medical.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_Medical.Location = new System.Drawing.Point(611, 23);
             this.lbl_Medical.Name = "lbl_Medical";
-            this.lbl_Medical.Size = new System.Drawing.Size(87, 25);
+            this.lbl_Medical.Size = new System.Drawing.Size(70, 19);
             this.lbl_Medical.TabIndex = 12;
             this.lbl_Medical.Text = "Medical";
             this.lbl_Medical.Click += new System.EventHandler(this.lbl_Medical_Click);
@@ -126,10 +107,9 @@
             this.lbl_Donation.AutoSize = true;
             this.lbl_Donation.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Donation.ForeColor = System.Drawing.Color.Red;
-            this.lbl_Donation.Location = new System.Drawing.Point(674, 28);
-            this.lbl_Donation.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_Donation.Location = new System.Drawing.Point(506, 23);
             this.lbl_Donation.Name = "lbl_Donation";
-            this.lbl_Donation.Size = new System.Drawing.Size(98, 25);
+            this.lbl_Donation.Size = new System.Drawing.Size(77, 19);
             this.lbl_Donation.TabIndex = 11;
             this.lbl_Donation.Text = "Donation";
             this.lbl_Donation.Click += new System.EventHandler(this.lbl_Donation_Click);
@@ -140,10 +120,9 @@
             this.PicDonProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PicDonProfile.ContextMenuStrip = this.gunaContextMenuStrip1;
             this.PicDonProfile.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PicDonProfile.Location = new System.Drawing.Point(1242, 13);
-            this.PicDonProfile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PicDonProfile.Location = new System.Drawing.Point(932, 11);
             this.PicDonProfile.Name = "PicDonProfile";
-            this.PicDonProfile.Size = new System.Drawing.Size(64, 50);
+            this.PicDonProfile.Size = new System.Drawing.Size(48, 41);
             this.PicDonProfile.TabIndex = 4;
             this.PicDonProfile.TabStop = false;
             this.PicDonProfile.Click += new System.EventHandler(this.PicDonProfile_Click);
@@ -165,28 +144,27 @@
             this.gunaContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.gunaContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.gunaContextMenuStrip1.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.SystemDefault;
-            this.gunaContextMenuStrip1.Size = new System.Drawing.Size(191, 52);
+            this.gunaContextMenuStrip1.Size = new System.Drawing.Size(166, 48);
             // 
             // manageAccountToolStripMenuItem
             // 
             this.manageAccountToolStripMenuItem.Name = "manageAccountToolStripMenuItem";
-            this.manageAccountToolStripMenuItem.Size = new System.Drawing.Size(190, 24);
+            this.manageAccountToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.manageAccountToolStripMenuItem.Text = "Manage Account";
             this.manageAccountToolStripMenuItem.Click += new System.EventHandler(this.manageAccountToolStripMenuItem_Click);
             // 
             // signOutToolStripMenuItem
             // 
             this.signOutToolStripMenuItem.Name = "signOutToolStripMenuItem";
-            this.signOutToolStripMenuItem.Size = new System.Drawing.Size(190, 24);
+            this.signOutToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.signOutToolStripMenuItem.Text = "Sign Out";
             this.signOutToolStripMenuItem.Click += new System.EventHandler(this.signOutToolStripMenuItem_Click);
             // 
             // lbl_Donor
             // 
-            this.lbl_Donor.Location = new System.Drawing.Point(1159, 28);
-            this.lbl_Donor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lbl_Donor.Location = new System.Drawing.Point(869, 23);
             this.lbl_Donor.Name = "lbl_Donor";
-            this.lbl_Donor.Size = new System.Drawing.Size(57, 32);
+            this.lbl_Donor.Size = new System.Drawing.Size(47, 26);
             this.lbl_Donor.StateCommon.ShortText.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Donor.TabIndex = 3;
             this.lbl_Donor.Values.Text = "hi id";
@@ -198,9 +176,8 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(87, 78);
+            this.pictureBox1.Size = new System.Drawing.Size(65, 63);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -211,37 +188,37 @@
             this.PanelDisplay.Controls.Add(this.panel3);
             this.PanelDisplay.Controls.Add(this.panel2);
             this.PanelDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelDisplay.Location = new System.Drawing.Point(0, 78);
-            this.PanelDisplay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PanelDisplay.Location = new System.Drawing.Point(0, 63);
             this.PanelDisplay.Name = "PanelDisplay";
-            this.PanelDisplay.Size = new System.Drawing.Size(1319, 609);
+            this.PanelDisplay.Size = new System.Drawing.Size(989, 495);
             this.PanelDisplay.TabIndex = 4;
+            // 
+            // panel3
+            // 
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(240, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(749, 495);
+            this.panel3.TabIndex = 31;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Maroon;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(320, 609);
+            this.panel2.Size = new System.Drawing.Size(240, 495);
             this.panel2.TabIndex = 30;
-            // 
-            // panel3
-            // 
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(320, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(999, 609);
-            this.panel3.TabIndex = 31;
             // 
             // DonorView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1319, 687);
+            this.ClientSize = new System.Drawing.Size(989, 558);
             this.Controls.Add(this.PanelDisplay);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DonorView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DonorView";
@@ -270,7 +247,6 @@
         private Guna.UI.WinForms.GunaLabel lbl_Medical;
         private Guna.UI.WinForms.GunaLabel lbl_Donation;
         private Guna.UI.WinForms.GunaLabel gunaLabel4;
-        private Guna.UI.WinForms.GunaLabel lbl_Home;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
     }

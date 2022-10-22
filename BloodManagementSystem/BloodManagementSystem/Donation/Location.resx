@@ -117,14 +117,51 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;kryptonLabel1.Name" xml:space="preserve">
+    <value>kryptonLabel1</value>
+  </data>
+  <data name="&gt;&gt;kryptonLabel1.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonLabel, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;kryptonLabel1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;kryptonLabel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>775, 66</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="kryptonLabel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 20</value>
   </data>
   <data name="kryptonLabel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>286, 26</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="kryptonLabel1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -143,165 +180,8 @@
   <data name="&gt;&gt;kryptonLabel1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>775, 66</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="Menu_Panel.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="kryptonRadioButton12.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="kryptonRadioButton12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 60</value>
-  </data>
-  <data name="kryptonRadioButton12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 20</value>
-  </data>
-  <data name="kryptonRadioButton12.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="kryptonRadioButton12.Values.Text" xml:space="preserve">
-    <value>kryptonRadioButton12</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton12.Name" xml:space="preserve">
-    <value>kryptonRadioButton12</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton12.Type" xml:space="preserve">
-    <value>ComponentFactory.Krypton.Toolkit.KryptonRadioButton, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton12.Parent" xml:space="preserve">
-    <value>SubMenu_Panel3</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton12.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="kryptonRadioButton11.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="kryptonRadioButton11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 40</value>
-  </data>
-  <data name="kryptonRadioButton11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 20</value>
-  </data>
-  <data name="kryptonRadioButton11.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="kryptonRadioButton11.Values.Text" xml:space="preserve">
-    <value>kryptonRadioButton11</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton11.Name" xml:space="preserve">
-    <value>kryptonRadioButton11</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton11.Type" xml:space="preserve">
-    <value>ComponentFactory.Krypton.Toolkit.KryptonRadioButton, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton11.Parent" xml:space="preserve">
-    <value>SubMenu_Panel3</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton11.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="kryptonRadioButton10.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="kryptonRadioButton10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 20</value>
-  </data>
-  <data name="kryptonRadioButton10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 20</value>
-  </data>
-  <data name="kryptonRadioButton10.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="kryptonRadioButton10.Values.Text" xml:space="preserve">
-    <value>kryptonRadioButton10</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton10.Name" xml:space="preserve">
-    <value>kryptonRadioButton10</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton10.Type" xml:space="preserve">
-    <value>ComponentFactory.Krypton.Toolkit.KryptonRadioButton, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton10.Parent" xml:space="preserve">
-    <value>SubMenu_Panel3</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton10.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="kryptonRadioButton9.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="kryptonRadioButton9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="kryptonRadioButton9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 20</value>
-  </data>
-  <data name="kryptonRadioButton9.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="kryptonRadioButton9.Values.Text" xml:space="preserve">
-    <value>kryptonRadioButton9</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton9.Name" xml:space="preserve">
-    <value>kryptonRadioButton9</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton9.Type" xml:space="preserve">
-    <value>ComponentFactory.Krypton.Toolkit.KryptonRadioButton, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton9.Parent" xml:space="preserve">
-    <value>SubMenu_Panel3</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton9.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="SubMenu_Panel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="SubMenu_Panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 302</value>
-  </data>
-  <data name="SubMenu_Panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 102</value>
-  </data>
-  <data name="SubMenu_Panel3.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;SubMenu_Panel3.Name" xml:space="preserve">
-    <value>SubMenu_Panel3</value>
-  </data>
-  <data name="&gt;&gt;SubMenu_Panel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;SubMenu_Panel3.Parent" xml:space="preserve">
-    <value>Menu_Panel</value>
-  </data>
-  <data name="&gt;&gt;SubMenu_Panel3.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="btn_bahirdar.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -310,15 +190,15 @@
     <value>NoControl</value>
   </data>
   <data name="btn_bahirdar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 261</value>
+    <value>0, 128</value>
   </data>
   <data name="btn_bahirdar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 41</value>
+    <value>223, 41</value>
   </data>
   <data name="btn_bahirdar.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="kryptonButton3.Values.Text" xml:space="preserve">
+  <data name="btn_bahirdar.Values.Text" xml:space="preserve">
     <value>BAHIRDAR</value>
   </data>
   <data name="&gt;&gt;btn_bahirdar.Name" xml:space="preserve">
@@ -331,153 +211,21 @@
     <value>Menu_Panel</value>
   </data>
   <data name="&gt;&gt;btn_bahirdar.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="kryptonRadioButton8.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="kryptonRadioButton8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 60</value>
-  </data>
-  <data name="kryptonRadioButton8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 20</value>
-  </data>
-  <data name="kryptonRadioButton8.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="kryptonRadioButton8.Values.Text" xml:space="preserve">
-    <value>kryptonRadioButton8</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton8.Name" xml:space="preserve">
-    <value>kryptonRadioButton8</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton8.Type" xml:space="preserve">
-    <value>ComponentFactory.Krypton.Toolkit.KryptonRadioButton, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton8.Parent" xml:space="preserve">
-    <value>SubMenu_Panel2</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton8.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="kryptonRadioButton7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="kryptonRadioButton7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 40</value>
-  </data>
-  <data name="kryptonRadioButton7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 20</value>
-  </data>
-  <data name="kryptonRadioButton7.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="kryptonRadioButton7.Values.Text" xml:space="preserve">
-    <value>kryptonRadioButton7</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton7.Name" xml:space="preserve">
-    <value>kryptonRadioButton7</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton7.Type" xml:space="preserve">
-    <value>ComponentFactory.Krypton.Toolkit.KryptonRadioButton, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton7.Parent" xml:space="preserve">
-    <value>SubMenu_Panel2</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton7.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="kryptonRadioButton6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="kryptonRadioButton6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 20</value>
-  </data>
-  <data name="kryptonRadioButton6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 20</value>
-  </data>
-  <data name="kryptonRadioButton6.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="kryptonRadioButton6.Values.Text" xml:space="preserve">
-    <value>kryptonRadioButton6</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton6.Name" xml:space="preserve">
-    <value>kryptonRadioButton6</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton6.Type" xml:space="preserve">
-    <value>ComponentFactory.Krypton.Toolkit.KryptonRadioButton, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton6.Parent" xml:space="preserve">
-    <value>SubMenu_Panel2</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton6.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="kryptonRadioButton5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="kryptonRadioButton5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="kryptonRadioButton5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 20</value>
-  </data>
-  <data name="kryptonRadioButton5.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="kryptonRadioButton5.Values.Text" xml:space="preserve">
-    <value>kryptonRadioButton5</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton5.Name" xml:space="preserve">
-    <value>kryptonRadioButton5</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton5.Type" xml:space="preserve">
-    <value>ComponentFactory.Krypton.Toolkit.KryptonRadioButton, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton5.Parent" xml:space="preserve">
-    <value>SubMenu_Panel2</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton5.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="SubMenu_Panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="SubMenu_Panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 171</value>
-  </data>
-  <data name="SubMenu_Panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 90</value>
-  </data>
-  <data name="SubMenu_Panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;SubMenu_Panel2.Name" xml:space="preserve">
-    <value>SubMenu_Panel2</value>
-  </data>
-  <data name="&gt;&gt;SubMenu_Panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;SubMenu_Panel2.Parent" xml:space="preserve">
-    <value>Menu_Panel</value>
-  </data>
-  <data name="&gt;&gt;SubMenu_Panel2.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="btn_adama.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
   <data name="btn_adama.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 130</value>
+    <value>0, 87</value>
   </data>
   <data name="btn_adama.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 41</value>
+    <value>223, 41</value>
   </data>
   <data name="btn_adama.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="kryptonButton2.Values.Text" xml:space="preserve">
+  <data name="btn_adama.Values.Text" xml:space="preserve">
     <value>ADAMA</value>
   </data>
   <data name="&gt;&gt;btn_adama.Name" xml:space="preserve">
@@ -490,76 +238,7 @@
     <value>Menu_Panel</value>
   </data>
   <data name="&gt;&gt;btn_adama.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="kryptonRadioButton4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="kryptonRadioButton4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 60</value>
-  </data>
-  <data name="kryptonRadioButton4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 20</value>
-  </data>
-  <data name="kryptonRadioButton4.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="kryptonRadioButton4.Values.Text" xml:space="preserve">
-    <value>kryptonRadioButton4</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton4.Name" xml:space="preserve">
-    <value>kryptonRadioButton4</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton4.Type" xml:space="preserve">
-    <value>ComponentFactory.Krypton.Toolkit.KryptonRadioButton, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton4.Parent" xml:space="preserve">
-    <value>SubMenu_Panel1</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton4.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="kryptonRadioButton3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="kryptonRadioButton3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 40</value>
-  </data>
-  <data name="kryptonRadioButton3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 20</value>
-  </data>
-  <data name="kryptonRadioButton3.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="kryptonRadioButton3.Values.Text" xml:space="preserve">
-    <value>kryptonRadioButton3</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton3.Name" xml:space="preserve">
-    <value>kryptonRadioButton3</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton3.Type" xml:space="preserve">
-    <value>ComponentFactory.Krypton.Toolkit.KryptonRadioButton, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton3.Parent" xml:space="preserve">
-    <value>SubMenu_Panel1</value>
-  </data>
-  <data name="&gt;&gt;kryptonRadioButton3.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="kryptonRadioButton2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="kryptonRadioButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 20</value>
-  </data>
-  <data name="kryptonRadioButton2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 20</value>
-  </data>
-  <data name="kryptonRadioButton2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="kryptonRadioButton2.Values.Text" xml:space="preserve">
-    <value>kryptonRadioButton2</value>
   </data>
   <data name="&gt;&gt;kryptonRadioButton2.Name" xml:space="preserve">
     <value>kryptonRadioButton2</value>
@@ -571,22 +250,7 @@
     <value>SubMenu_Panel1</value>
   </data>
   <data name="&gt;&gt;kryptonRadioButton2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="kryptonRadioButton1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="kryptonRadioButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="kryptonRadioButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 20</value>
-  </data>
-  <data name="kryptonRadioButton1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
-  </data>
-  <data name="kryptonRadioButton1.Values.Text" xml:space="preserve">
-    <value>kryptonRadioButton1</value>
   </data>
   <data name="&gt;&gt;kryptonRadioButton1.Name" xml:space="preserve">
     <value>kryptonRadioButton1</value>
@@ -598,7 +262,7 @@
     <value>SubMenu_Panel1</value>
   </data>
   <data name="&gt;&gt;kryptonRadioButton1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>1</value>
   </data>
   <data name="SubMenu_Panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -607,7 +271,7 @@
     <value>0, 41</value>
   </data>
   <data name="SubMenu_Panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 89</value>
+    <value>223, 46</value>
   </data>
   <data name="SubMenu_Panel1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -622,7 +286,7 @@
     <value>Menu_Panel</value>
   </data>
   <data name="&gt;&gt;SubMenu_Panel1.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>2</value>
   </data>
   <data name="btn_addisababa.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -631,12 +295,12 @@
     <value>0, 0</value>
   </data>
   <data name="btn_addisababa.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 41</value>
+    <value>223, 41</value>
   </data>
   <data name="btn_addisababa.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="kryptonButton1.Values.Text" xml:space="preserve">
+  <data name="btn_addisababa.Values.Text" xml:space="preserve">
     <value>ADDIS ABABA</value>
   </data>
   <data name="&gt;&gt;btn_addisababa.Name" xml:space="preserve">
@@ -649,7 +313,7 @@
     <value>Menu_Panel</value>
   </data>
   <data name="&gt;&gt;btn_addisababa.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>3</value>
   </data>
   <data name="Menu_Panel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
@@ -675,20 +339,59 @@
   <data name="&gt;&gt;Menu_Panel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="webBrowser1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="kryptonRadioButton2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
   </data>
-  <data name="webBrowser1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="kryptonRadioButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 20</value>
+  </data>
+  <data name="kryptonRadioButton2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>223, 20</value>
+  </data>
+  <data name="kryptonRadioButton2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="kryptonRadioButton2.Values.Text" xml:space="preserve">
+    <value>CBE Messert Branch</value>
+  </data>
+  <data name="&gt;&gt;kryptonRadioButton2.Name" xml:space="preserve">
+    <value>kryptonRadioButton2</value>
+  </data>
+  <data name="&gt;&gt;kryptonRadioButton2.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonRadioButton, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;kryptonRadioButton2.Parent" xml:space="preserve">
+    <value>SubMenu_Panel1</value>
+  </data>
+  <data name="&gt;&gt;kryptonRadioButton2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="kryptonRadioButton1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="kryptonRadioButton1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="webBrowser1.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>20, 20</value>
+  <data name="kryptonRadioButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>223, 20</value>
   </data>
-  <data name="webBrowser1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>552, 398</value>
-  </data>
-  <data name="webBrowser1.TabIndex" type="System.Int32, mscorlib">
+  <data name="kryptonRadioButton1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
+  </data>
+  <data name="kryptonRadioButton1.Values.Text" xml:space="preserve">
+    <value>National Blood Bank </value>
+  </data>
+  <data name="&gt;&gt;kryptonRadioButton1.Name" xml:space="preserve">
+    <value>kryptonRadioButton1</value>
+  </data>
+  <data name="&gt;&gt;kryptonRadioButton1.Type" xml:space="preserve">
+    <value>ComponentFactory.Krypton.Toolkit.KryptonRadioButton, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="&gt;&gt;kryptonRadioButton1.Parent" xml:space="preserve">
+    <value>SubMenu_Panel1</value>
+  </data>
+  <data name="&gt;&gt;kryptonRadioButton1.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;webBrowser1.Name" xml:space="preserve">
     <value>webBrowser1</value>
@@ -724,6 +427,33 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="webBrowser1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="webBrowser1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="webBrowser1.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="webBrowser1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>552, 398</value>
+  </data>
+  <data name="webBrowser1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;webBrowser1.Name" xml:space="preserve">
+    <value>webBrowser1</value>
+  </data>
+  <data name="&gt;&gt;webBrowser1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.WebBrowser, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;webBrowser1.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;webBrowser1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

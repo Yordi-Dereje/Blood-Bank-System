@@ -29,17 +29,11 @@ namespace BloodManagementSystem
         private void CustomizeDesign()
         {
             SubMenu_Panel1.Visible = false;
-            SubMenu_Panel2.Visible = false;
-            SubMenu_Panel3.Visible = false;
         }
         private void HideSubMenu()
         {
             if(SubMenu_Panel1.Visible == true)
                 SubMenu_Panel1.Visible = false;
-            else if (SubMenu_Panel2.Visible == true)
-                SubMenu_Panel2.Visible = false;
-            else if (SubMenu_Panel3.Visible == true)
-                SubMenu_Panel3.Visible = false;
         }
         private void ShowSubMenu(Panel subMenu)
         {
@@ -63,7 +57,6 @@ namespace BloodManagementSystem
             {
                 StringBuilder queryaddress = new StringBuilder();
                 queryaddress.Append("http://maps.google.com/maps?q=");
-
                 queryaddress.Append(add + "," + "+");
                 webBrowser1.Navigate(queryaddress.ToString());
             }
@@ -72,7 +65,38 @@ namespace BloodManagementSystem
                 MessageBox.Show(ex.Message);
             }
         }
-        //double click on the buttom n ShowSubMenu(SubMenu_Panel1);
+
+        private void btn_adama_Click(object sender, EventArgs e)
+        {
+            string add = "adama blood bank";
+            try
+            {
+                StringBuilder queryaddress = new StringBuilder();
+                queryaddress.Append("http://maps.google.com/maps?q=");
+                queryaddress.Append(add + "," + "+");
+                webBrowser1.Navigate(queryaddress.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btn_bahirdar_Click(object sender, EventArgs e)
+        {
+            string add = "Bahirdar blood bank";
+            try
+            {
+                StringBuilder queryaddress = new StringBuilder();
+                queryaddress.Append("http://maps.google.com/maps?q=");
+                queryaddress.Append(add + "," + "+");
+                webBrowser1.Navigate(queryaddress.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
 
     }
 }
