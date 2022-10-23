@@ -1,12 +1,15 @@
-﻿using System;
+﻿using Guna.UI.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace BloodManagementSystem
 {
@@ -23,17 +26,19 @@ namespace BloodManagementSystem
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            /*for (int i = 0; i < GroupBox.Controls.Count; i++)
+            Regex re = new Regex("[+]{1} [2]{1} [5]{1} [1]{1} [0-9]{9}");
+            for (int i = 0; i < GroupBox.Controls.Count; i++)
             {
-                RadioButton rb = (RadioButton)GroupBox.Controls[i];
-                if (rb.Checked == false)
-                    errorProvider1.SetError(rb, "Gender required");//ayseram
-            }*/
-            if (string.IsNullOrEmpty(tbFN.Text))
+                GunaRadioButton rb = (GunaRadioButton)GroupBox.Controls[i];
+                if (rbF.Checked == false && rbM.Checked == false)
+                    errorProvider1.SetError(rb, "Gender required");
+            }
+            if(ComboBox.SelectedItem == null)
+                errorProvider1.SetError(ComboBox, "Field required");
+            else if (string.IsNullOrEmpty(tbFN.Text))
                 errorProvider1.SetError(tbFN, "First Name required");
             else if (string.IsNullOrEmpty(tbLN.Text))
                 errorProvider1.SetError(tbLN, "Last Name required");
-           
             else if (string.IsNullOrEmpty(tbEmail.Text))
                 errorProvider1.SetError(tbEmail, "Email required");
             else if (string.IsNullOrEmpty(tbPhone.Text))
@@ -44,6 +49,10 @@ namespace BloodManagementSystem
                 errorProvider1.SetError(tbCity, "City required");
             else if (string.IsNullOrEmpty(tbReg.Text))
                 errorProvider1.SetError(tbReg, "Region required");
+            /*else if (!re.IsMatch(tbPhone.Text))
+            {
+                errorProvider1.SetError(tbPhone, "Phone formate error");
+            }ayseram*/
             else
             {
                 p.Controls.Clear();
@@ -55,7 +64,7 @@ namespace BloodManagementSystem
                 else
                     gen = "Male";
                 string dob = dtp.Value.ToString();
-                string bt = gunaComboBox1.SelectedItem.ToString();
+                string bt = ComboBox.SelectedItem.ToString();
                 DonorCreateAcc dc = new DonorCreateAcc(p,f, id.ToString(), tbFN.Text, tbLN.Text, gen, dob, tbPhone.Text, tbEmail.Text, tbCo.Text, tbCity.Text, tbReg.Text, bt) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
                 p.Controls.Add(dc);
                 dc.Show();

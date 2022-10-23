@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btn_Submit = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.txt_emDon = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel3 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.txt_phDon = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.lbl_UserName = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_Submit
@@ -143,6 +146,10 @@
             this.panel3.Size = new System.Drawing.Size(379, 467);
             this.panel3.TabIndex = 50;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // DonorForgotPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -156,9 +163,11 @@
             this.Controls.Add(this.txt_phDon);
             this.Controls.Add(this.lbl_UserName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "DonorForgotPassword";
             this.Text = "DonorForgotPassword";
+            this.Load += new System.EventHandler(this.DonorForgotPassword_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -172,5 +181,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txt_phDon;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel lbl_UserName;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

@@ -23,32 +23,39 @@ namespace BloodManagementSystem
 
         private void btn_Login_Click_1(object sender, EventArgs e)
         {
-            var result = EmployeeClass.findUser(txt_usEmp.Text, txt_pwEmp.Text);
-            if (result == null)
-            {
-                MessageBox.Show("Username or password doesn't exist");
-            }
+            if (string.IsNullOrEmpty(txt_usEmp.Text))
+                errorProvider1.SetError(txt_usEmp, "username required");
+            else if (string.IsNullOrEmpty(txt_pwEmp.Text))
+                errorProvider1.SetError(txt_pwEmp, "Password required");
             else
             {
-                var log = EmployeeClass.findEmp(result.ID);
-                if (log == null)
+                var result = EmployeeClass.findUser(txt_usEmp.Text, txt_pwEmp.Text);
+                if (result == null)
                 {
-                    MessageBox.Show("You can rly lose rn unless you did something absolutely wrong in adminemplogin");
+                    MessageBox.Show("Username or password doesn't exist");
                 }
                 else
                 {
-                    if ((txt_usEmp.Text == "ADMIN" && txt_pwEmp.Text == "ADMIN") || log.AdminStatus)
+                    var log = EmployeeClass.findEmp(result.ID);
+                    if (log == null)
                     {
-                        AdminView av = new AdminView(log.ID);
-                        av.Show();
-                        f.Hide();
+                        MessageBox.Show("You can rly lose rn unless you did something absolutely wrong in adminemplogin");
                     }
                     else
                     {
+                        if ((txt_usEmp.Text == "ADMIN" && txt_pwEmp.Text == "ADMIN") || log.AdminStatus)
+                        {
+                            AdminView av = new AdminView(log.ID);
+                            av.Show();
+                            f.Hide();
+                        }
+                        else
+                        {
 
-                        EmployeeView ev = new EmployeeView(log.ID);
-                        ev.Show();
-                        f.Hide();
+                            EmployeeView ev = new EmployeeView(log.ID);
+                            ev.Show();
+                            f.Hide();
+                        }
                     }
                 }
             }

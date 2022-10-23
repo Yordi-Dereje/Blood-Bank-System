@@ -55,30 +55,51 @@ namespace BloodManagementSystem
 
         private void btn_confirm_Click(object sender, EventArgs e)
         {
-            p.Controls.Clear();
-            TransferClass tc = new TransferClass
+            if (string.IsNullOrEmpty(tbAp.Text))
+                errorProvider1.SetError(tbAp, "blood required");
+            else if (string.IsNullOrEmpty(tbAm.Text))
+                errorProvider1.SetError(tbAm, "blood required");
+            else if (string.IsNullOrEmpty(tbBp.Text))
+                errorProvider1.SetError(tbBp, "blood required");
+            else if (string.IsNullOrEmpty(tbBm.Text))
+                errorProvider1.SetError(tbBm, "blood required");
+            else if (string.IsNullOrEmpty(tbAbp.Text))
+                errorProvider1.SetError(tbAbp, "blood required");
+            else if (string.IsNullOrEmpty(tbAbm.Text))
+                errorProvider1.SetError(tbAbm, "blood required");
+            else if (string.IsNullOrEmpty(tbOp.Text))
+                errorProvider1.SetError(tbOp, "blood required");
+            else if (string.IsNullOrEmpty(tbOm.Text))
+                errorProvider1.SetError(tbOm, "blood required");
+            else if (cbHosp.SelectedItem == null)
+                errorProvider1.SetError(cbHosp, "field required");
+            else
             {
-                HosName = cbHosp.SelectedItem.ToString(),
-                Ap = int.Parse(tbAp.Text),
-                Am = int.Parse(tbAm.Text),
-                Bp = int.Parse(tbBp.Text),
-                Bm = int.Parse(tbBm.Text),
-                Abp = int.Parse(tbAbp.Text),
-                Abm = int.Parse(tbAbm.Text),
-                Op = int.Parse(tbOp.Text),
-                Om = int.Parse(tbOm.Text),
-                Date = dtp.Value.ToString()
-            };
-            tc.Insert();
-            MessageBox.Show("Saved");
-            tbAp.Text = "";
-            tbAm.Text = "";
-            tbBp.Text = "";
-            tbBm.Text = "";
-            tbAbp.Text = "";
-            tbAbm.Text = "";
-            tbOp.Text = "";
-            tbOm.Text = "";
+                p.Controls.Clear();
+                TransferClass tc = new TransferClass
+                {
+                    HosName = cbHosp.SelectedItem.ToString(),
+                    Ap = int.Parse(tbAp.Text),
+                    Am = int.Parse(tbAm.Text),
+                    Bp = int.Parse(tbBp.Text),
+                    Bm = int.Parse(tbBm.Text),
+                    Abp = int.Parse(tbAbp.Text),
+                    Abm = int.Parse(tbAbm.Text),
+                    Op = int.Parse(tbOp.Text),
+                    Om = int.Parse(tbOm.Text),
+                    Date = dtp.Value.ToString()
+                };
+                tc.Insert();
+                MessageBox.Show("Saved");
+                tbAp.Text = "";
+                tbAm.Text = "";
+                tbBp.Text = "";
+                tbBm.Text = "";
+                tbAbp.Text = "";
+                tbAbm.Text = "";
+                tbOp.Text = "";
+                tbOm.Text = "";
+            }
         }
     }
 }

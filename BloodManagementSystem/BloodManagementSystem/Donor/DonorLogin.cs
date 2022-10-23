@@ -23,32 +23,39 @@ namespace BloodManagementSystem
 
         private void btn_Login_Click_1(object sender, EventArgs e)
         {
-            if (txt_usDonor.Text == "" || txt_pwDonor.Text == "")
-            {
-                MessageBox.Show("Please fill in the empty space");
-            }
+            if (string.IsNullOrEmpty(txt_usDonor.Text))
+                errorProvider1.SetError(txt_usDonor, "username required");
+            else if (string.IsNullOrEmpty(txt_pwDonor.Text))
+                errorProvider1.SetError(txt_pwDonor, "Password required");
             else
             {
-                try
+                if (txt_usDonor.Text == "" || txt_pwDonor.Text == "")
                 {
-                    var result = DonorClass.findUser(txt_usDonor.Text, txt_pwDonor.Text);
-                    if (result == null)
-                    {
-                        MessageBox.Show("Such user doesn't exist.");
-                        txt_usDonor.Text = "";
-                        txt_pwDonor.Text = "";
-                    }
-                    else
-                    {
-                        DonorView dv = new DonorView(result.ID) { TopMost = true };
-                        dv.Show();
-                        f.Hide();
-                    }
+                    MessageBox.Show("Please fill in the empty space");
                 }
-                catch (Exception ex)
+                else
                 {
-                    MessageBox.Show(ex.Message);
-                };
+                    try
+                    {
+                        var result = DonorClass.findUser(txt_usDonor.Text, txt_pwDonor.Text);
+                        if (result == null)
+                        {
+                            MessageBox.Show("Such user doesn't exist.");
+                            txt_usDonor.Text = "";
+                            txt_pwDonor.Text = "";
+                        }
+                        else
+                        {
+                            DonorView dv = new DonorView(result.ID) { TopMost = true };
+                            dv.Show();
+                            f.Hide();
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    };
+                }
             }
         }
 

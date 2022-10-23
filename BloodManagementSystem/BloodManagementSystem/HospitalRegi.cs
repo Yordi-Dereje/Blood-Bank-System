@@ -21,22 +21,45 @@ namespace BloodManagementSystem
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            HospitalClass hc = new HospitalClass
+            
+            if (string.IsNullOrEmpty(tbName.Text))
+                errorProvider1.SetError(tbName, "Name required");
+            else if (string.IsNullOrEmpty(tbPhone.Text))
+                errorProvider1.SetError(tbPhone, "Phone required");
+            else if (string.IsNullOrEmpty(tbEmail.Text))
+                errorProvider1.SetError(tbEmail, "Email required");
+            else if (string.IsNullOrEmpty(tbCo.Text))
+                errorProvider1.SetError(tbCo, "Country required");
+            else if (string.IsNullOrEmpty(tbCi.Text))
+                errorProvider1.SetError(tbCi, "City required");
+            else if (string.IsNullOrEmpty(tbReg.Text))
+                errorProvider1.SetError(tbReg, "Region required");
+            else if (cbOwner.SelectedItem == null)
             {
-                Name = tbName.Text,
-                Phone = tbPhone.Text,
-                Email = tbEmail.Text,
-                Country = tbCo.Text,
-                City = tbCi.Text,
-                Region = tbReg.Text,
-                Ownership = cbOwner.SelectedItem.ToString()
-            };
-            hc.Insert();
+                errorProvider1.SetError(cbOwner, "Field required");
+            }
+            else
+            {
+                HospitalClass hc = new HospitalClass
+                {
+                    Name = tbName.Text,
+                    Phone = tbPhone.Text,
+                    Email = tbEmail.Text,
+                    Country = tbCo.Text,
+                    City = tbCi.Text,
+                    Region = tbReg.Text,
+                    Ownership = cbOwner.SelectedItem.ToString()
 
-            p.Controls.Clear();
-            Hospital h = new Hospital(p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            p.Controls.Add(h);
-            h.Show();
+                };
+
+                hc.Insert();
+
+                p.Controls.Clear();
+                Hospital h = new Hospital(p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                p.Controls.Add(h);
+                h.Show();
+            }
+            
         }
     }
 }

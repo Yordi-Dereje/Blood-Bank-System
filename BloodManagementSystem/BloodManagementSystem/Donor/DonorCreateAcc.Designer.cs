@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnSubmit = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.tbPW = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel3 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
@@ -36,6 +37,8 @@
             this.tbCPW = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSubmit
@@ -167,6 +170,10 @@
             this.panel3.Size = new System.Drawing.Size(379, 467);
             this.panel3.TabIndex = 181;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // DonorCreateAcc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -186,6 +193,8 @@
             this.Name = "DonorCreateAcc";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "DonorCreateAcc";
+            this.Load += new System.EventHandler(this.DonorCreateAcc_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,5 +210,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox tbCPW;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel1;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

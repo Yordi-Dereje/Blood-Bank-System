@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txt_usEmp = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.lbl_UserName = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.txt_pwEmp = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
@@ -36,7 +37,9 @@
             this.btn_ForgotPassword = new ComponentFactory.Krypton.Toolkit.KryptonLinkLabel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_usEmp
@@ -173,6 +176,10 @@
             this.panel1.Size = new System.Drawing.Size(603, 445);
             this.panel1.TabIndex = 45;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // AdminEmpLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -187,6 +194,7 @@
             this.Load += new System.EventHandler(this.AdminEmpLogin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -201,5 +209,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonLinkLabel btn_ForgotPassword;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
