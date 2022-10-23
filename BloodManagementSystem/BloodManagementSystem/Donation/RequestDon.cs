@@ -33,13 +33,8 @@ namespace BloodManagementSystem
             m.Insert3(id, CLB3m);
             m.InsertPer(id, CLBperm);
 
-            m.InsertFull(id, CLB72h, CLB3m, CLBperm);
-            MessageBox.Show("done");
-            /*p.Controls.Clear();
-            Location l = new Location(p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            p.Controls.Add(l);
-            l.Show();
-            */
+            m.InsertFull(id, DTP.Value.ToString(), CLB72h, CLB3m, CLBperm);
+            
         }
 
         private void RequestDon_Load(object sender, EventArgs e)

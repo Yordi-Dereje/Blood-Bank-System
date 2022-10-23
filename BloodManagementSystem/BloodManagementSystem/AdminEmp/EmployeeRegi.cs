@@ -35,8 +35,13 @@ namespace BloodManagementSystem
                 gender = "Female";
             else
                 gender = "Male";
+            string stat;
+            if (rbAd.Checked)
+                stat = "Admin";
+            else
+                stat = "Employee";
             string dob = dtpEmp.Value.ToString();
-            EmpAcc empac = new EmpAcc(p, id.ToString(), tbFNEmp.Text, tbLNEmp.Text, gender, dob, tbPhoneEmp.Text, tbEmailEmp.Text, tbCoEmp.Text, tbCiEmp.Text, tbRegEmp.Text,int.Parse(tbSalEmp.Text)) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            EmpAcc empac = new EmpAcc(p, id.ToString(), tbFNEmp.Text, tbLNEmp.Text, gender, dob, tbPhoneEmp.Text, tbEmailEmp.Text, tbCoEmp.Text, tbCiEmp.Text, tbRegEmp.Text,int.Parse(tbSalEmp.Text), stat) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             p.Controls.Add(empac);
             empac.Show();
         }

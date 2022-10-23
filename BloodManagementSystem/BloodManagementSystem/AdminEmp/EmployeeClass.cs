@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
 using System.Data.SqlTypes;
+using BloodManagementSystem.AdminEmp;
 
 namespace BloodManagementSystem
 {
@@ -342,6 +343,96 @@ namespace BloodManagementSystem
             }
             
         }
+
+        public static int getTotalEmployees()
+        {
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
+            {
+                try
+                {
+                    int count = 0;
+                    string query = "Select dbo.totalEmployees()";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    con.Open();
+                    count = Convert.ToInt32(cmd.ExecuteScalar());
+                    cmd.Dispose();
+                    return count;
+                }
+                catch (Exception e)
+                {
+                    MessageBox.Show(e.Message);
+                    return 0;
+                };
+            }
+        }
+
+        public void empInfoFormLoad(FlowLayoutPanel flp, Panel p)
+        {
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
+            {
+                try
+                {
+                    con.Open();
+                    SqlDataAdapter da = new SqlDataAdapter("spDISPLAY_EMP_INFO", con);
+                    da.SelectCommand.CommandType = CommandType.StoredProcedure;
+                    DataSet ds = new DataSet();
+                    da.Fill(ds, "EMP_INFO");
+                    bool flager = false;
+                    foreach (DataRow item in ds.Tables["EMP_INFO"].Rows)
+                    {
+                        UCEmp u = new UCEmp();
+                        string query = "Select dbo.concatName(@id)";
+                        string fullName;
+                        SqlCommand cmd = new SqlCommand(query, con);
+                        cmd.Parameters.AddWithValue("@id", item["ID"]);
+                        fullName = cmd.ExecuteScalar().ToString();
+                        u.Namee = fullName;
+                        u.Phone = item["Phone"].ToString();
+                        u.Email = item["Email"].ToString();
+                        string st = item["Stat"].ToString();
+                        if (st == "false")
+                            st = "Employee";
+                        else
+                            st = "Admin";
+                        u.Status = st;
+                        string query2 = "Select dbo.ageCalculateE(@id2)";
+                        int ageCal;
+                        SqlCommand cmd2 = new SqlCommand(query2, con);
+                        cmd2.Parameters.AddWithValue("@id2", item["ID"]);
+                        ageCal = int.Parse(cmd2.ExecuteScalar().ToString());
+                        u.Age = ageCal;
+                        u.Gender = item["Gender"].ToString();
+                        u.Click += (object P, EventArgs e2) =>
+                        {
+                            p.Controls.Clear();
+                            ListOfEmpDetailPage ld = new ListOfEmpDetailPage(int.Parse(item["ID"].ToString()), item["FirstName"].ToString(),
+                                item["LastName"].ToString(), item["Gender"].ToString(), item["DOB"].ToString(), item["Phone"].ToString(), 
+                                item["Email"].ToString(), item["Country"].ToString(), item["City"].ToString(), item["Region"].ToString(), 
+                                int.Parse(item["Salary"].ToString()), bool.Parse(item["Stat"].ToString()))
+                            { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                            p.Controls.Add(ld);
+                            ld.Show();
+                        };
+                        
+                        if (flager == false)
+                        {
+                            flager = true;
+                            u.BackColor = Color.LightGray;
+                        }
+                        else if (flager == true)
+                        {
+                            flager = false;
+                            u.BackColor = Color.DarkGray;
+                        }
+                        flp.Controls.Add(u);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                };
+            }
+        }
         public static int GetCount()
         {
             using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
@@ -350,7 +441,7 @@ namespace BloodManagementSystem
                 {
                     int count = 0;
                     //List<DonorClass> temp = new List<DonorClass>();
-                    string query = "Select count(*) from EMP_INFO";
+                    string query = "Select max(id) from EMP_INFO";
                     SqlCommand cmd = new SqlCommand(query, con);
                     con.Open();
                     count = Convert.ToInt32(cmd.ExecuteScalar());

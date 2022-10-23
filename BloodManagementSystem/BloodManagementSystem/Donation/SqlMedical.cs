@@ -16,13 +16,11 @@ namespace BloodManagementSystem
         
         public void Insert72(int id, CheckedListBox CLB72h)
         {
-            //convert this to a procedure
-            //and also one person can put in the request only once
             using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
                 try
                 {
-                    string query = "INSERT INTO DONOR_72CHECKS values (@id, @ab, @st, @as, @va, @al)";
+                    string query = "EXEC spINSERT_DONOR_72CHECKS @id, @ab, @st, @as, @va, @al";
                     SqlCommand cmd = new SqlCommand(query, con);
                     con.Open();
                     cmd.Parameters.AddWithValue("@id", id);
@@ -51,7 +49,7 @@ namespace BloodManagementSystem
             {
                 try
                 {
-                    string query = "INSERT INTO DONOR_3MON values (@id, @tat, @ep, @de, @mjs, @mns)";
+                    string query = "EXEC spINSERT_DONOR_3MON @id, @tat, @ep, @de, @mjs, @mns";
                     SqlCommand cmd = new SqlCommand(query, con);
                     con.Open();
                     cmd.Parameters.AddWithValue("@id", id);
@@ -80,7 +78,7 @@ namespace BloodManagementSystem
             {
                 try
                 { 
-                    string query = "INSERT INTO DONOR_PERCHECK values (@id, @hd, @hiv, @hb, @hc, @std, @c, @tb, @kd, @ab)";
+                    string query = "EXEC spINSERT_DONOR_PERCHECK @id, @hd, @hiv, @hb, @hc, @std, @c, @tb, @kd, @ab";
                     SqlCommand cmd = new SqlCommand(query, con);
                     con.Open();
                     cmd.Parameters.AddWithValue("@id", id);
@@ -107,26 +105,27 @@ namespace BloodManagementSystem
         }
 
 
-        public void InsertFull(int id, CheckedListBox CLB72h, CheckedListBox CLB3m, CheckedListBox CLBper)
+        public void InsertFull(int id, string datee, CheckedListBox CLB72h, CheckedListBox CLB3m, CheckedListBox CLBper)
         {
             using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
-                bool c72 = false, c3 = false, cp = false;
+                int c72 = 0, c3 = 0, cp = 0;
                 if (CLB72h.CheckedIndices.Count > 0)
-                    c72 = true;
+                    c72 = CLB72h.CheckedIndices.Count;
                 if (CLB3m.CheckedIndices.Count > 0)
-                    c3 = true;
+                    c3 = CLB3m.CheckedIndices.Count;
                 if (CLBper.CheckedIndices.Count > 0)
-                    cp = true;
+                    cp = CLBper.CheckedIndices.Count;
                 try
                 {
-                    string query = "INSERT INTO FULL_CHECK values (@id, @c72, @c3, @cp)";
+                    string query = "EXEC spINSERT_FULL_CHECK @id, @date, @c72, @c3, @cp";
                     SqlCommand cmd = new SqlCommand(query, con);
                     con.Open();
                     cmd.Parameters.AddWithValue("@id", id);
-                    cmd.Parameters.AddWithValue("@c72", SqlDbType.Bit).Value = c72;
-                    cmd.Parameters.AddWithValue("@c3", SqlDbType.Bit).Value = c3;
-                    cmd.Parameters.AddWithValue("@cp", SqlDbType.Bit).Value = cp;
+                    cmd.Parameters.AddWithValue("@date", datee);
+                    cmd.Parameters.AddWithValue("@c72", c72);
+                    cmd.Parameters.AddWithValue("@c3", c3);
+                    cmd.Parameters.AddWithValue("@cp", cp);
                     cmd.ExecuteNonQuery();
                 }
                 catch (Exception ee)

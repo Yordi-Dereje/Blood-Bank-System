@@ -50,7 +50,11 @@
             this.kryptonLabel15 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.tbFNEmp = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel16 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
+            this.rbEmp = new Guna.UI.WinForms.GunaRadioButton();
+            this.rbAd = new Guna.UI.WinForms.GunaRadioButton();
             this.gunaGroupBox2.SuspendLayout();
+            this.gunaGroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnNext
@@ -107,7 +111,7 @@
             // 
             // tbSalEmp
             // 
-            this.tbSalEmp.Location = new System.Drawing.Point(502, 474);
+            this.tbSalEmp.Location = new System.Drawing.Point(152, 473);
             this.tbSalEmp.Margin = new System.Windows.Forms.Padding(4);
             this.tbSalEmp.Name = "tbSalEmp";
             this.tbSalEmp.Size = new System.Drawing.Size(283, 44);
@@ -123,7 +127,7 @@
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(501, 427);
+            this.kryptonLabel1.Location = new System.Drawing.Point(151, 426);
             this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel1.Name = "kryptonLabel1";
             this.kryptonLabel1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
@@ -233,7 +237,7 @@
             // 
             // kryptonLabel6
             // 
-            this.kryptonLabel6.Location = new System.Drawing.Point(502, 321);
+            this.kryptonLabel6.Location = new System.Drawing.Point(364, 321);
             this.kryptonLabel6.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel6.Name = "kryptonLabel6";
             this.kryptonLabel6.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
@@ -246,7 +250,7 @@
             // 
             // kryptonLabel7
             // 
-            this.kryptonLabel7.Location = new System.Drawing.Point(153, 427);
+            this.kryptonLabel7.Location = new System.Drawing.Point(581, 321);
             this.kryptonLabel7.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel7.Name = "kryptonLabel7";
             this.kryptonLabel7.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
@@ -285,10 +289,10 @@
             // 
             // tbRegEmp
             // 
-            this.tbRegEmp.Location = new System.Drawing.Point(153, 474);
+            this.tbRegEmp.Location = new System.Drawing.Point(581, 370);
             this.tbRegEmp.Margin = new System.Windows.Forms.Padding(4);
             this.tbRegEmp.Name = "tbRegEmp";
-            this.tbRegEmp.Size = new System.Drawing.Size(270, 44);
+            this.tbRegEmp.Size = new System.Drawing.Size(204, 44);
             this.tbRegEmp.StateCommon.Border.Color1 = System.Drawing.Color.Maroon;
             this.tbRegEmp.StateCommon.Border.Color2 = System.Drawing.Color.Black;
             this.tbRegEmp.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -301,10 +305,10 @@
             // 
             // tbCiEmp
             // 
-            this.tbCiEmp.Location = new System.Drawing.Point(501, 370);
+            this.tbCiEmp.Location = new System.Drawing.Point(364, 370);
             this.tbCiEmp.Margin = new System.Windows.Forms.Padding(4);
             this.tbCiEmp.Name = "tbCiEmp";
-            this.tbCiEmp.Size = new System.Drawing.Size(284, 44);
+            this.tbCiEmp.Size = new System.Drawing.Size(206, 44);
             this.tbCiEmp.StateCommon.Border.Color1 = System.Drawing.Color.Maroon;
             this.tbCiEmp.StateCommon.Border.Color2 = System.Drawing.Color.Black;
             this.tbCiEmp.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -320,7 +324,7 @@
             this.tbCoEmp.Location = new System.Drawing.Point(153, 370);
             this.tbCoEmp.Margin = new System.Windows.Forms.Padding(4);
             this.tbCoEmp.Name = "tbCoEmp";
-            this.tbCoEmp.Size = new System.Drawing.Size(270, 44);
+            this.tbCoEmp.Size = new System.Drawing.Size(191, 44);
             this.tbCoEmp.StateCommon.Border.Color1 = System.Drawing.Color.Maroon;
             this.tbCoEmp.StateCommon.Border.Color2 = System.Drawing.Color.Black;
             this.tbCoEmp.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -419,12 +423,58 @@
             this.kryptonLabel16.TabIndex = 285;
             this.kryptonLabel16.Values.Text = "First Name";
             // 
+            // gunaGroupBox1
+            // 
+            this.gunaGroupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaGroupBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaGroupBox1.BorderColor = System.Drawing.Color.White;
+            this.gunaGroupBox1.Controls.Add(this.rbEmp);
+            this.gunaGroupBox1.Controls.Add(this.rbAd);
+            this.gunaGroupBox1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaGroupBox1.LineColor = System.Drawing.SystemColors.Window;
+            this.gunaGroupBox1.Location = new System.Drawing.Point(522, 428);
+            this.gunaGroupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaGroupBox1.Name = "gunaGroupBox1";
+            this.gunaGroupBox1.Size = new System.Drawing.Size(263, 89);
+            this.gunaGroupBox1.TabIndex = 296;
+            this.gunaGroupBox1.Text = "Status";
+            this.gunaGroupBox1.TextLocation = new System.Drawing.Point(10, 8);
+            // 
+            // rbEmp
+            // 
+            this.rbEmp.BaseColor = System.Drawing.SystemColors.Control;
+            this.rbEmp.CheckedOffColor = System.Drawing.Color.Gray;
+            this.rbEmp.CheckedOnColor = System.Drawing.Color.Maroon;
+            this.rbEmp.FillColor = System.Drawing.Color.White;
+            this.rbEmp.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbEmp.Location = new System.Drawing.Point(151, 59);
+            this.rbEmp.Margin = new System.Windows.Forms.Padding(4);
+            this.rbEmp.Name = "rbEmp";
+            this.rbEmp.Size = new System.Drawing.Size(111, 25);
+            this.rbEmp.TabIndex = 1;
+            this.rbEmp.Text = "Employee";
+            // 
+            // rbAd
+            // 
+            this.rbAd.BaseColor = System.Drawing.SystemColors.Control;
+            this.rbAd.CheckedOffColor = System.Drawing.Color.Gray;
+            this.rbAd.CheckedOnColor = System.Drawing.Color.Maroon;
+            this.rbAd.FillColor = System.Drawing.Color.White;
+            this.rbAd.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbAd.Location = new System.Drawing.Point(4, 59);
+            this.rbAd.Margin = new System.Windows.Forms.Padding(4);
+            this.rbAd.Name = "rbAd";
+            this.rbAd.Size = new System.Drawing.Size(86, 25);
+            this.rbAd.TabIndex = 0;
+            this.rbAd.Text = "Admin";
+            // 
             // EmployeeRegi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(992, 609);
+            this.Controls.Add(this.gunaGroupBox1);
             this.Controls.Add(this.tbSalEmp);
             this.Controls.Add(this.kryptonLabel1);
             this.Controls.Add(this.gunaGroupBox2);
@@ -452,6 +502,8 @@
             this.Load += new System.EventHandler(this.EmployeeRegi_Load);
             this.gunaGroupBox2.ResumeLayout(false);
             this.gunaGroupBox2.PerformLayout();
+            this.gunaGroupBox1.ResumeLayout(false);
+            this.gunaGroupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -480,5 +532,8 @@
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel15;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox tbFNEmp;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel16;
+        private Guna.UI.WinForms.GunaGroupBox gunaGroupBox1;
+        private Guna.UI.WinForms.GunaRadioButton rbEmp;
+        private Guna.UI.WinForms.GunaRadioButton rbAd;
     }
 }

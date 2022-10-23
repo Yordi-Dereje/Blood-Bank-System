@@ -38,7 +38,7 @@ namespace BloodManagementSystem
         {
             flp.Controls.Clear();
             TransferClass t = new TransferClass();
-            t.TransferFormLoad(flp);
+            t.TransferFormLoad(flp, p);
         }
 
         private void btn_back_Click(object sender, EventArgs e)

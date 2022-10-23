@@ -38,9 +38,9 @@ namespace BloodManagementSystem.AdminEmp
         {
             tbfn.Text = fn;
             tbln.Text = ln;
-            if (gen == "male")
+            if (gen == "Male")
                 rbMEmp.Checked = true;
-            else if (gen == "female")
+            else if (gen == "Female")
                 rbFEmp.Checked = true;
             dtpEmp.Value = DateTime.Parse(dob);
             tbphone.Text = phone;
@@ -64,7 +64,6 @@ namespace BloodManagementSystem.AdminEmp
         private void btn_Edit_Click(object sender, EventArgs e)
         {
             EmployeeClass emp = new EmployeeClass();
-            //emp.UpdateInfo(id, fn, ln, dob, gen, phone, email, co, ci, reg, sal, adstat);
             emp.UpdateInfoAsAdmin(id, sal, adstat);
         }
     }

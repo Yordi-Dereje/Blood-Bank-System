@@ -21,6 +21,7 @@ namespace BloodManagementSystem
 
         private void lbl_NewDon_Click(object sender, EventArgs e)
         {
+            panel1.Visible = true;
             panel2.Controls.Clear();
             RequestDonor r = new RequestDonor(panel2) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             panel2.Controls.Add(r);
@@ -29,19 +30,11 @@ namespace BloodManagementSystem
 
         private void EmployeeView_Load(object sender, EventArgs e)
         {
-
             panel1.Visible = false;
-            var log = EmployeeClass.findEmp(id);
-            if (log == null)
-            {
-                MessageBox.Show("You can rly lose rn unless you did something absolutely wrong");
-            }
-            else
-            {
-                lbl_hi.Text = log.FirstName;
-            }
-            //EmpDashBoard ed = new EmpDashBoard();
-            //ed.Show();
+            panel2.Controls.Clear();
+            DashBoard ed = new DashBoard() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            panel2.Controls.Add(ed);
+            ed.Show();
         }
 
         private void lbl_Home_Click(object sender, EventArgs e)
@@ -55,6 +48,7 @@ namespace BloodManagementSystem
 
         private void lbl_Donation_Click(object sender, EventArgs e)
         {
+            panel1.Visible = true;
             panel2.Controls.Clear();
             DonationInfo di = new DonationInfo(panel2, 0) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             panel2.Controls.Add(di);
@@ -62,7 +56,6 @@ namespace BloodManagementSystem
         }
         private void PicDonProfile_Click(object sender, EventArgs e)
         {
-            // object not referenced error here
             panel2.Controls.Clear();
             ManageAcc md = new ManageAcc(id, 2, panel2) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             panel2.Controls.Add(md);

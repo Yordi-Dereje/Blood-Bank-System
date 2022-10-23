@@ -51,7 +51,7 @@ namespace BloodManagementSystem
                 };
             }
         }
-        public void TransferFormLoad(FlowLayoutPanel flp)
+        public void TransferFormLoad(FlowLayoutPanel flp, Panel p)
         {
             using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
@@ -69,11 +69,21 @@ namespace BloodManagementSystem
                         u.id = item["ID"].ToString();
                         u.hospital = item["Hospital"].ToString();
                         u.date= item["Date"].ToString();
-                        // a function to calculate the total
-                        int tot = int.Parse(item["Ap"].ToString()) + int.Parse(item["Am"].ToString()) + int.Parse(item["Bp"].ToString()) + int.Parse(item["Bm"].ToString()) + int.Parse(item["Abp"].ToString()) + int.Parse(item["Abm"].ToString()) + int.Parse(item["Op"].ToString()) + int.Parse(item["Om"].ToString());
+                        string query2 = "Select dbo.totalBloodTransfer(@id2)";
+                        int tot;
+                        SqlCommand cmd2 = new SqlCommand(query2, con);
+                        cmd2.Parameters.AddWithValue("@id2", item["ID"]);
+                        tot = int.Parse(cmd2.ExecuteScalar().ToString());
                         u.total = tot.ToString();
-                        //click event on total
-                        if (flager == false)
+                        u.Click += (object P, EventArgs e2) =>
+                        {
+                            p.Controls.Clear();
+                            TransferDetails td = new TransferDetails(p, item["Ap"].ToString(), item["Am"].ToString(), item["Bp"].ToString(), item["Bm"].ToString(), item["Abp"].ToString(), item["Abm"].ToString(), item["Op"].ToString(), item["Om"].ToString()) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                            p.Controls.Add(td);
+                            td.Show();
+                        };
+
+                            if (flager == false)
                         {
                             flager = true;
                             u.BackColor = Color.LightGray;

@@ -28,6 +28,8 @@ namespace BloodManagementSystem
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            var log = DonorClass.findDonor(id);
+            string bt = log.BloodType;
             SQLDonationClass s = new SQLDonationClass();
             int bid = s.BID;
             if ((int.Parse(tbW.Text) > 46 && int.Parse(tbW.Text) < 149) &&
@@ -35,12 +37,13 @@ namespace BloodManagementSystem
                 (int.Parse(tbBPD.Text) > 61 && int.Parse(tbBPD.Text) < 89) &&
                 rbNA.Checked)
             {
-                MessageBox.Show("Healthy human bean.");
-
-                p.Controls.Clear();
-                AcceptedDonation a = new AcceptedDonation(bid, id, DateTimePicker1.Value.ToString(), p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-                p.Controls.Add(a);
-                a.Show();
+                s.successInsert(id, dtp.Value.ToString(), gunaComboBox1.SelectedItem.ToString(), bt);
+                s.removePerson(id);
+                EmployeeClass emp = new EmployeeClass();
+                emp.DonationChart();
+                EmployeeView ee = new EmployeeView(id);
+                ee.Show();
+                this.Close();
             }
             else
             {
@@ -56,7 +59,6 @@ namespace BloodManagementSystem
                     MessageBox.Show("Donor is anemic. He/She isn't able to donate.");
                 //another condition to check if the person has donated in the past 3 months
                 SQLDonationClass sd = new SQLDonationClass();
-                sd.failInsert(id, DateTimePicker1.Value.ToString(), int.Parse(tbW.Text), int.Parse(tbBPS.Text), int.Parse(tbBPD.Text), rbA.Checked);
                 sd.removePerson(id);
                 EmployeeView ee = new EmployeeView(id);
                 ee.Show();

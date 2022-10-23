@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.PanelChangeLogin = new System.Windows.Forms.Panel();
-            this.tbCPW = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonLabel12 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.tbPW = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel13 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.tbUN = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
@@ -66,8 +64,6 @@
             // 
             // PanelChangeLogin
             // 
-            this.PanelChangeLogin.Controls.Add(this.tbCPW);
-            this.PanelChangeLogin.Controls.Add(this.kryptonLabel12);
             this.PanelChangeLogin.Controls.Add(this.tbPW);
             this.PanelChangeLogin.Controls.Add(this.kryptonLabel13);
             this.PanelChangeLogin.Controls.Add(this.tbUN);
@@ -79,34 +75,9 @@
             this.PanelChangeLogin.TabIndex = 143;
             this.PanelChangeLogin.Visible = false;
             // 
-            // tbCPW
-            // 
-            this.tbCPW.Location = new System.Drawing.Point(96, 362);
-            this.tbCPW.Margin = new System.Windows.Forms.Padding(4);
-            this.tbCPW.Name = "tbCPW";
-            this.tbCPW.Size = new System.Drawing.Size(274, 39);
-            this.tbCPW.StateCommon.Border.Color1 = System.Drawing.Color.Maroon;
-            this.tbCPW.StateCommon.Border.Color2 = System.Drawing.Color.Black;
-            this.tbCPW.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.tbCPW.StateCommon.Border.Rounding = 20;
-            this.tbCPW.TabIndex = 186;
-            // 
-            // kryptonLabel12
-            // 
-            this.kryptonLabel12.Location = new System.Drawing.Point(136, 322);
-            this.kryptonLabel12.Margin = new System.Windows.Forms.Padding(4);
-            this.kryptonLabel12.Name = "kryptonLabel12";
-            this.kryptonLabel12.Size = new System.Drawing.Size(211, 32);
-            this.kryptonLabel12.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
-            this.kryptonLabel12.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel12.TabIndex = 185;
-            this.kryptonLabel12.Values.Text = "Confirm Password";
-            // 
             // tbPW
             // 
-            this.tbPW.Location = new System.Drawing.Point(96, 238);
+            this.tbPW.Location = new System.Drawing.Point(115, 294);
             this.tbPW.Margin = new System.Windows.Forms.Padding(4);
             this.tbPW.Name = "tbPW";
             this.tbPW.Size = new System.Drawing.Size(274, 39);
@@ -120,7 +91,7 @@
             // 
             // kryptonLabel13
             // 
-            this.kryptonLabel13.Location = new System.Drawing.Point(153, 202);
+            this.kryptonLabel13.Location = new System.Drawing.Point(172, 258);
             this.kryptonLabel13.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel13.Name = "kryptonLabel13";
             this.kryptonLabel13.Size = new System.Drawing.Size(167, 32);
@@ -131,7 +102,7 @@
             // 
             // tbUN
             // 
-            this.tbUN.Location = new System.Drawing.Point(96, 115);
+            this.tbUN.Location = new System.Drawing.Point(115, 171);
             this.tbUN.Margin = new System.Windows.Forms.Padding(4);
             this.tbUN.Name = "tbUN";
             this.tbUN.Size = new System.Drawing.Size(274, 39);
@@ -145,7 +116,7 @@
             // 
             // lbl_UserName
             // 
-            this.lbl_UserName.Location = new System.Drawing.Point(172, 76);
+            this.lbl_UserName.Location = new System.Drawing.Point(191, 132);
             this.lbl_UserName.Margin = new System.Windows.Forms.Padding(4);
             this.lbl_UserName.Name = "lbl_UserName";
             this.lbl_UserName.Size = new System.Drawing.Size(128, 31);
@@ -651,8 +622,6 @@
 
         #endregion
         private System.Windows.Forms.Panel PanelChangeLogin;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox tbCPW;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel12;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox tbPW;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel13;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox tbUN;

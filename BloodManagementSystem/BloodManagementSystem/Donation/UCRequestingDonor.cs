@@ -23,31 +23,40 @@ namespace BloodManagementSystem
         public int ID
         {
             get { return _id; }
-            set { _id = value; lbl_id.Text = _id.ToString(); }
+            set { _id = value; lbl_id.Text = value.ToString(); }
         }
 
-        private bool _72hr;
+        private string _Date;
 
-        public bool stat_72hr
+        public string Datee
+        {
+            get { return _Date; }
+            set { _Date = value; gunaLabel1.Text = value; }
+        }
+
+
+        private string _72hr;
+
+        public string stat_72hr
         {
             get { return _72hr; }
-            set { _72hr = value; lbl_72.Text = _72hr.ToString(); }
+            set { _72hr = value; lbl_72.Text = value; }
         }
 
-        private bool _3m;
+        private string _3m;
 
-        public bool stat_3m
+        public string stat_3m
         {
             get { return _3m; }
-            set { _3m = value; lbl_3.Text = _3m.ToString(); }
+            set { _3m = value; lbl_3.Text = value; }
         }
 
-        private bool _per;
+        private string _per;
 
-        public bool stat_per
+        public string stat_per
         {
             get { return _per; }
-            set { _per = value; lbl_per.Text = _per.ToString(); }
+            set { _per = value; lbl_per.Text = value; }
         }
         private void RequestingDonor_Load(object sender, EventArgs e)
         {

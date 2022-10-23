@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar;
 using System.Configuration;
+using System.Data;
 
 namespace BloodManagementSystem
 {
@@ -99,7 +100,6 @@ namespace BloodManagementSystem
             {
                 try
                 {
-
                     string query = "EXEC spUPDATE_DONOR_ACCOUNTS @id, @un, @pw";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@un", un);
@@ -115,15 +115,14 @@ namespace BloodManagementSystem
                 };
             }
         }
-        public static int GetCount()
+        public static int getTotalDonors()
         {
             using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
                 try
                 {
                     int count = 0;
-                    List<DonorClass> temp = new List<DonorClass>();
-                    string query = "Select count(*) from DONOR_INFO";
+                    string query = "Select dbo.totalDonors()";
                     SqlCommand cmd = new SqlCommand(query, con);
                     con.Open();
                     count = Convert.ToInt32(cmd.ExecuteScalar());
@@ -135,9 +134,29 @@ namespace BloodManagementSystem
                     MessageBox.Show(e.Message);
                     return 0;
                 };
-
             }
-
+        }
+        public static int GetCount()
+        {
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
+            {
+                try
+                {
+                    int count = 0;
+                    List<DonorClass> temp = new List<DonorClass>();
+                    string query = "Select max(id) from DONOR_INFO";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    con.Open();
+                    count = Convert.ToInt32(cmd.ExecuteScalar());
+                    cmd.Dispose();
+                    return count;
+                }
+                catch (Exception e)
+                {
+                    MessageBox.Show(e.Message);
+                    return 0;
+                };
+            }
         }
         public static List<DonorClass> PopulateAcc()
         {
@@ -169,6 +188,113 @@ namespace BloodManagementSystem
             }
         }
 
+        public void donorInfoFormLoad(FlowLayoutPanel flp)
+        {
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
+            {
+                try
+                {
+                    con.Open();
+                    SqlDataAdapter da = new SqlDataAdapter("spDISPLAY_DONOR_INFO", con);
+                    da.SelectCommand.CommandType = CommandType.StoredProcedure;
+                    DataSet ds = new DataSet();
+                    da.Fill(ds, "DONOR_INFO");
+                    bool flager = false;
+                    foreach (DataRow item in ds.Tables["DONOR_INFO"].Rows)
+                    {
+                        UCDonorInfo u = new UCDonorInfo();
+                        string query = "Select dbo.concatName(@id)";
+                        string fullName;
+                        SqlCommand cmd = new SqlCommand(query, con);
+                        cmd.Parameters.AddWithValue("@id", item["ID"]);
+                        fullName = cmd.ExecuteScalar().ToString();
+                        u.Namee = fullName;
+
+                        string query2 = "Select dbo.ageCalculate(@id2)";
+                        int ageCal;
+                        SqlCommand cmd2 = new SqlCommand(query2, con);
+                        cmd2.Parameters.AddWithValue("@id2", item["ID"]);
+                        ageCal = int.Parse(cmd2.ExecuteScalar().ToString());
+                        u.Age = ageCal;
+
+                        u.Gender = item["Gender"].ToString();
+                        u.Phone = item["Phone"].ToString();
+                        u.Email = item["Email"].ToString();
+                        u.Bloodtype = item["BloodType"].ToString();
+                        if (flager == false)
+                        {
+                            flager = true;
+                            u.BackColor = Color.LightGray;
+                        }
+                        else if (flager == true)
+                        {
+                            flager = false;
+                            u.BackColor = Color.DarkGray;
+                        }
+                        flp.Controls.Add(u);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                };
+            }
+        }
+
+        public void donorInfoSearchLoad(FlowLayoutPanel flp, string name)
+        {
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
+            {
+                try
+                {
+                    con.Open();
+                    string query0 = "EXEC spLOAD_SEARCH @name";
+                    SqlCommand cmd0 = new SqlCommand(query0, con);
+                    cmd0.Parameters.AddWithValue("@name", name);
+                    SqlDataReader sdr;
+                    sdr = cmd0.ExecuteReader();
+                    bool flager = false;
+                    while (sdr.Read())
+                    {
+                        UCDonorInfo u = new UCDonorInfo();
+                        string query = "Select dbo.concatName(@id)";
+                        string fullName;
+                        SqlCommand cmd = new SqlCommand(query, con);
+                        cmd.Parameters.AddWithValue("@id", (int)sdr["ID"]);
+                        fullName = cmd.ExecuteScalar().ToString();
+                        u.Namee = fullName;
+                        string query2 = "Select dbo.ageCalculate(@id2)";
+                        int ageCal;
+                        SqlCommand cmd2 = new SqlCommand(query2, con);
+                        cmd2.Parameters.AddWithValue("@id2", (int)sdr["ID"]);
+                        ageCal = int.Parse(cmd2.ExecuteScalar().ToString());
+                        u.Age = ageCal;
+
+                        u.Gender = (string)sdr["Gender"];
+                        u.Phone = (string)sdr["Phone"];
+                        u.Email = (string)sdr["Email"];
+                        u.Bloodtype = (string)sdr["BloodType"];
+                        if (flager == false)
+                        {
+                            flager = true;
+                            u.BackColor = Color.LightGray;
+                        }
+                        else if (flager == true)
+                        {
+                            flager = false;
+                            u.BackColor = Color.DarkGray;
+                        }
+                        flp.Controls.Add(u);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                };
+
+            }
+        }
+
         public static List<DonorClass> PopulateAllDonor()
         {
             using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
@@ -194,6 +320,7 @@ namespace BloodManagementSystem
                         r.Country = (string)sdr["Country"];
                         r.City = (string)sdr["City"];
                         r.Region = (string)sdr["Region"];
+                        r.BloodType = (string)sdr["BloodType"];
                         temp.Add(r);
                     }
                     return temp;

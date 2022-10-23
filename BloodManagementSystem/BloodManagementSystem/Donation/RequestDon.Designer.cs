@@ -62,33 +62,33 @@
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(233, 303);
-            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel1.Location = new System.Drawing.Point(228, 238);
+            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(418, 33);
+            this.kryptonLabel1.Size = new System.Drawing.Size(687, 32);
             this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel1.TabIndex = 130;
-            this.kryptonLabel1.Values.Text = "Had any of these in the past 3 months?\r\n";
+            this.kryptonLabel1.Values.Text = "Have you had any of these procedures done in the past 3 month?";
             // 
             // kryptonLabel2
             // 
-            this.kryptonLabel2.Location = new System.Drawing.Point(233, 528);
-            this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel2.Location = new System.Drawing.Point(228, 424);
+            this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(211, 33);
+            this.kryptonLabel2.Size = new System.Drawing.Size(458, 32);
             this.kryptonLabel2.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel2.TabIndex = 131;
-            this.kryptonLabel2.Values.Text = "Have any of these?\r\n";
+            this.kryptonLabel2.Values.Text = "Do you have any of the following illnesses?";
             // 
             // kryptonLabel3
             // 
-            this.kryptonLabel3.Location = new System.Drawing.Point(233, 87);
-            this.kryptonLabel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel3.Location = new System.Drawing.Point(228, 61);
+            this.kryptonLabel3.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel3.Name = "kryptonLabel3";
-            this.kryptonLabel3.Size = new System.Drawing.Size(420, 33);
+            this.kryptonLabel3.Size = new System.Drawing.Size(531, 32);
             this.kryptonLabel3.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel3.TabIndex = 132;
-            this.kryptonLabel3.Values.Text = "Took any of these in the past 72 hours?\r\n";
+            this.kryptonLabel3.Values.Text = "Have you taken any of these in the past 72 hours?";
             // 
             // CLB72h
             // 
@@ -102,10 +102,10 @@
             "Asprin",
             "Vaccination",
             "Alcohol"});
-            this.CLB72h.Location = new System.Drawing.Point(253, 140);
-            this.CLB72h.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CLB72h.Location = new System.Drawing.Point(248, 92);
+            this.CLB72h.Margin = new System.Windows.Forms.Padding(4);
             this.CLB72h.Name = "CLB72h";
-            this.CLB72h.Size = new System.Drawing.Size(392, 115);
+            this.CLB72h.Size = new System.Drawing.Size(392, 138);
             this.CLB72h.TabIndex = 168;
             // 
             // CLB3m
@@ -120,10 +120,10 @@
             "Dental Extraction",
             "Major Surgery",
             "Minor Surgery"});
-            this.CLB3m.Location = new System.Drawing.Point(253, 343);
-            this.CLB3m.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CLB3m.Location = new System.Drawing.Point(248, 278);
+            this.CLB3m.Margin = new System.Windows.Forms.Padding(4);
             this.CLB3m.Name = "CLB3m";
-            this.CLB3m.Size = new System.Drawing.Size(347, 115);
+            this.CLB3m.Size = new System.Drawing.Size(347, 138);
             this.CLB3m.TabIndex = 169;
             this.CLB3m.SelectedIndexChanged += new System.EventHandler(this.checkedListBox2_SelectedIndexChanged);
             // 
@@ -143,17 +143,17 @@
             "TuberCulosis",
             "Kidney Disease",
             "Abnormal Bleeding"});
-            this.CLBperm.Location = new System.Drawing.Point(253, 591);
-            this.CLBperm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CLBperm.Location = new System.Drawing.Point(248, 465);
+            this.CLBperm.Margin = new System.Windows.Forms.Padding(4);
             this.CLBperm.Name = "CLBperm";
-            this.CLBperm.Size = new System.Drawing.Size(411, 207);
+            this.CLBperm.Size = new System.Drawing.Size(411, 230);
             this.CLBperm.TabIndex = 170;
             // 
             // btnSubmit
             // 
             this.btnSubmit.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnSubmit.Location = new System.Drawing.Point(816, 779);
-            this.btnSubmit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSubmit.Location = new System.Drawing.Point(866, 644);
+            this.btnSubmit.Margin = new System.Windows.Forms.Padding(4);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.OverrideDefault.Back.Color1 = System.Drawing.Color.Maroon;
             this.btnSubmit.OverrideDefault.Back.Color2 = System.Drawing.Color.Maroon;
@@ -168,7 +168,7 @@
             this.btnSubmit.OverrideDefault.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.btnSubmit.OverrideDefault.Border.Rounding = 20;
             this.btnSubmit.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnSubmit.Size = new System.Drawing.Size(147, 53);
+            this.btnSubmit.Size = new System.Drawing.Size(147, 51);
             this.btnSubmit.StateCommon.Back.Color1 = System.Drawing.Color.Maroon;
             this.btnSubmit.StateCommon.Back.Color2 = System.Drawing.Color.Maroon;
             this.btnSubmit.StateCommon.Back.ColorAngle = 45F;
@@ -179,7 +179,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btnSubmit.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnSubmit.StateCommon.Border.Rounding = 20;
+            this.btnSubmit.StateCommon.Border.Rounding = 25;
             this.btnSubmit.StateCommon.Border.Width = 1;
             this.btnSubmit.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnSubmit.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.Maroon;
@@ -220,7 +220,7 @@
             this.Controls.Add(this.DTP);
             this.Controls.Add(this.label5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "RequestDon";
             this.Text = "RequestDon";
             this.Load += new System.EventHandler(this.RequestDon_Load);

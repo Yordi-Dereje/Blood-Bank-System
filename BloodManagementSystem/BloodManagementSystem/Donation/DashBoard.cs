@@ -23,7 +23,10 @@ namespace BloodManagementSystem
 
         private void DashBoard_Load(object sender, EventArgs e)
         {
-            
+            label1.Text = DonorClass.getTotalDonors().ToString();
+            label2.Text = TransferClass.getTotalTransfers().ToString();
+            label3.Text = SQLDonationClass.getTotalDonations().ToString();
+            label4.Text = EmployeeClass.getTotalEmployees().ToString();
         }
 
         private void gunaButton1_Click(object sender, EventArgs e)

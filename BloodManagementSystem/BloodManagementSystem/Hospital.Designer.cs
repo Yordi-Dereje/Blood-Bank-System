@@ -33,6 +33,13 @@
             this.btn_back = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btn_add = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.flp = new System.Windows.Forms.FlowLayoutPanel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // kryptonButton1
@@ -193,10 +200,87 @@
             // flp
             // 
             this.flp.AutoScroll = true;
-            this.flp.Location = new System.Drawing.Point(10, 72);
+            this.flp.Location = new System.Drawing.Point(10, 108);
             this.flp.Name = "flp";
-            this.flp.Size = new System.Drawing.Size(970, 470);
+            this.flp.Size = new System.Drawing.Size(970, 434);
             this.flp.TabIndex = 42;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Maroon;
+            this.label8.Location = new System.Drawing.Point(841, 72);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(113, 26);
+            this.label8.TabIndex = 55;
+            this.label8.Text = "Ownership";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Maroon;
+            this.label7.Location = new System.Drawing.Point(723, 72);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(78, 26);
+            this.label7.TabIndex = 54;
+            this.label7.Text = "Region";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Maroon;
+            this.label6.Location = new System.Drawing.Point(627, 72);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(50, 26);
+            this.label6.TabIndex = 53;
+            this.label6.Text = "City";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Maroon;
+            this.label5.Location = new System.Drawing.Point(487, 72);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(89, 26);
+            this.label5.TabIndex = 52;
+            this.label5.Text = "Country";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Maroon;
+            this.label4.Location = new System.Drawing.Point(310, 72);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(68, 26);
+            this.label4.TabIndex = 51;
+            this.label4.Text = "Email";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Maroon;
+            this.label3.Location = new System.Drawing.Point(157, 72);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(72, 26);
+            this.label3.TabIndex = 50;
+            this.label3.Text = "Phone";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Maroon;
+            this.label2.Location = new System.Drawing.Point(26, 72);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(66, 26);
+            this.label2.TabIndex = 49;
+            this.label2.Text = "Name";
             // 
             // Hospital
             // 
@@ -204,6 +288,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(992, 609);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.kryptonButton1);
             this.Controls.Add(this.tbAp);
             this.Controls.Add(this.btn_back);
@@ -215,6 +306,7 @@
             this.Text = "Hospital";
             this.Load += new System.EventHandler(this.Hospital_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -224,5 +316,12 @@
         private ComponentFactory.Krypton.Toolkit.KryptonButton btn_back;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btn_add;
         private System.Windows.Forms.FlowLayoutPanel flp;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -16,25 +16,55 @@ namespace BloodManagementSystem.AdminEmp
         {
             InitializeComponent();
         }
-        private int _id;
-        private string _name;
-        private string _phone;
 
-        public int ID
-        {
-            get { return _id; }
-            set { _id = value; lbl_ID.Text = _id.ToString(); }
-        }
-        public string Name
+        private string _name;
+
+        public string Namee
         {
             get { return _name; }
-            set { _name = value; lblName.Text = _name.ToString(); }
+            set { _name = value; label1.Text = value; }
         }
+
+        private string _phone;
+
         public string Phone
         {
             get { return _phone; }
-            set { _phone = value; lbl_Phone.Text = _phone.ToString(); }
+            set { _phone = value; label2.Text = value; }
         }
+
+        private string _email;
+
+        public string Email
+        {
+            get { return _email; }
+            set { _email = value; label3.Text = value; }
+        }
+
+        private string _stat;
+
+        public string Status
+        {
+            get { return _stat; }
+            set { _stat = value; label4.Text = value; }
+        }
+        private int _Age;
+
+        public int Age
+        {
+            get { return _Age; }
+            set { _Age = value; label5.Text = value.ToString(); }
+        }
+
+        private string _Gender;
+
+        public string Gender
+        {
+            get { return _Gender; }
+            set { _Gender = value; label6.Text = value; }
+        }
+
+
         private void UCEmp_Load(object sender, EventArgs e)
         {
 

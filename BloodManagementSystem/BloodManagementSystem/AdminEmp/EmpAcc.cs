@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BloodManagementSystem.AdminEmp;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,8 +16,8 @@ namespace BloodManagementSystem
     {
         Panel p;
         int salary;
-        string id, fn, ln, gender, dob, phone, email, country, city, region;
-        public EmpAcc(Panel p, string id, string fn, string ln, string gender, string dob, string phone, string email, string country, string city, string region,int salary)
+        string id, fn, ln, gender, dob, phone, email, country, city, region, stat;
+        public EmpAcc(Panel p, string id, string fn, string ln, string gender, string dob, string phone, string email, string country, string city, string region,int salary, string stat)
         {
             InitializeComponent();
             this.p = p;
@@ -31,6 +32,7 @@ namespace BloodManagementSystem
             this.city = city;
             this.region = region;
             this.salary = salary;
+            this.stat = stat;
         }
 
         private void EmpAcc_Load(object sender, EventArgs e)
@@ -40,6 +42,11 @@ namespace BloodManagementSystem
 
         private void btnDone_Click(object sender, EventArgs e)
         {
+            bool st;
+            if (stat == "Admin")
+                st = true;
+            else
+                st = false;
             EmployeeClass emp = new EmployeeClass
             {
                 ID = int.Parse(id),
@@ -53,16 +60,16 @@ namespace BloodManagementSystem
                 City = city,
                 Region = region,
                 Salary = salary,
+                AdminStatus = st,
                 UserName = tbUNEmp.Text,
                 Password = tbPWEmp.Text
             };
             emp.Insert();
             MessageBox.Show("Employee registered successfully!");
             p.Controls.Clear();
-            EmployeeRegi em = new EmployeeRegi(p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            ListOfEmp em = new ListOfEmp(p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             p.Controls.Add(em);
             em.Show();
-
         }
     }
 }

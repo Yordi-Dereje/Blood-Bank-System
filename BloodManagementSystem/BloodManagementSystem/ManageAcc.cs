@@ -11,7 +11,19 @@ using System.Windows.Forms;
 
 namespace BloodManagementSystem
 {
-    
+    /*string gen;
+            if (rbMEmp.Checked == true)
+                gen = "Female";
+            else
+                gen = "Male";
+            string stat;
+            if (switchstat.Checked == true)
+                stat = "Admin";
+            else
+                stat = "Employee";
+
+            emp.UpdateInfo(id, tbfn.Text, tbln.Text, dtpEmp.Value.ToString(), gen, tbphone.Text, tbemail.Text, tbco.Text, tbci.Text, tbreg.Text, tbsal.Text, adstat);
+            */
     public partial class ManageAcc : Form
     {
         int id;
@@ -43,7 +55,7 @@ namespace BloodManagementSystem
                     tbFNEmp.Text = log.FirstName.ToString();
                     tbLNEmp.Text = log.LastName.ToString();
                     dtpEmp.Value = DateTime.Parse(log.DOB.ToString());
-                    if (log.Gender.ToString() == "male")
+                    if (log.Gender.ToString() == "Male")
                         rbMEmp.Checked = true;
                     else if (log.Gender.ToString() == "Female")
                         rbFEmp.Checked = true;
@@ -61,6 +73,8 @@ namespace BloodManagementSystem
             }
             else if (val == 2)
             {
+                tbSalEmp.ReadOnly = true;
+                tbStat.ReadOnly = true;
                 var log = EmployeeClass.findEmp(id);
                 if (log == null)
                 {
@@ -71,7 +85,7 @@ namespace BloodManagementSystem
                     tbFNEmp.Text = log.FirstName.ToString();
                     tbLNEmp.Text = log.LastName.ToString();
                     dtpEmp.Value = DateTime.Parse(log.DOB.ToString());
-                    if (log.Gender.ToString() == "male")
+                    if (log.Gender.ToString() == "Male")
                         rbMEmp.Checked = true;
                     else if (log.Gender.ToString() == "Female")
                         rbFEmp.Checked = true;
@@ -110,10 +124,17 @@ namespace BloodManagementSystem
                     gen = "Female";
                 else if (rbMEmp.Checked == true)
                     gen = "Male";
-                DonorClass d = new DonorClass();
-                d.UpdateInfo(id, tbFNEmp.Text, tbLNEmp.Text, dtpEmp.Value.ToString(), gen, tbPhoneEmp.Text, tbEmailEmp.Text, tbCoEmp.Text, tbCiEmp.Text, tbRegEmp.Text);
-                d.UpdateAcc(id, tbUN.Text, tbPW.Text);
-                MessageBox.Show("Updated Successfully");
+                try
+                {
+                    DonorClass d = new DonorClass();
+                    d.UpdateInfo(id, tbFNEmp.Text, tbLNEmp.Text, dtpEmp.Value.ToString(), gen, tbPhoneEmp.Text, tbEmailEmp.Text, tbCoEmp.Text, tbCiEmp.Text, tbRegEmp.Text);
+                    d.UpdateAcc(id, tbUN.Text, tbPW.Text);
+                    MessageBox.Show("Updated Successfully");
+                }
+                catch(Exception ee)
+                {
+                    MessageBox.Show(ee.Message);
+                }
             }
             else if (val == 2)
             {

@@ -57,7 +57,7 @@ namespace BloodManagementSystem
         {
             panel1.Visible = false;
             panel2.Controls.Clear();
-            ManageAcc md = new ManageAcc(id,2, panel2) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            ManageAcc md = new ManageAcc(id,3, panel2) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             panel2.Controls.Add(md);
             md.Show();
         }

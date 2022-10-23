@@ -37,40 +37,40 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(14, 18);
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(25, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 26);
+            this.label1.Size = new System.Drawing.Size(61, 22);
             this.label1.TabIndex = 1;
             this.label1.Text = "label1";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(115, 18);
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(126, 12);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 26);
+            this.label2.Size = new System.Drawing.Size(61, 22);
             this.label2.TabIndex = 2;
             this.label2.Text = "label2";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(421, 18);
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(465, 12);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 26);
+            this.label3.Size = new System.Drawing.Size(61, 22);
             this.label3.TabIndex = 3;
             this.label3.Text = "label3";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(716, 18);
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(813, 12);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 26);
+            this.label4.Size = new System.Drawing.Size(61, 22);
             this.label4.TabIndex = 4;
             this.label4.Text = "label4";
             // 
@@ -83,7 +83,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "UCTransfer";
-            this.Size = new System.Drawing.Size(820, 61);
+            this.Size = new System.Drawing.Size(963, 46);
             this.Load += new System.EventHandler(this.UCTransfer_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

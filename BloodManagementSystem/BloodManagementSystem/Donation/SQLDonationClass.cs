@@ -17,66 +17,6 @@ namespace BloodManagementSystem
     {
         public int BID { get; set; }
 
-        public List<SQLDonationClass> BloodID(int id)
-        {
-            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
-            {
-                try
-                {
-                    List<SQLDonationClass> temp = new List<SQLDonationClass>();
-                    string query = "EXEC spDISPLAY_BLOODID @id";
-                    SqlCommand cmd = new SqlCommand(query, con);
-                    cmd.Parameters.AddWithValue("@id", id);
-                    SqlDataReader sdr;
-
-                    con.Open();
-                    sdr = cmd.ExecuteReader();
-                    while (sdr.Read())
-                    {
-                        SQLDonationClass s = new SQLDonationClass();
-                        s.BID = (int)sdr["BloodID"];
-                        temp.Add(s);
-
-                    }
-                    return temp;
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                    return null;
-                };
-            }
-        }
-        public void failInsert(int id, string date, int weight, int bpS, int bpD, bool anem)
-        {
-            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
-            {
-                try
-                {
-                    string query = "INSERT INTO FAIL_HISTORY values(@id, @d, @w, @bps, @bpd, @anem)";
-                    SqlCommand cmd = new SqlCommand(query, con);
-                    cmd.Parameters.AddWithValue("@id", id);
-                    cmd.Parameters.AddWithValue("@d", date);
-                    cmd.Parameters.AddWithValue("@w", weight);
-                    cmd.Parameters.AddWithValue("@bpS", bpS);
-                    cmd.Parameters.AddWithValue("@bpD", bpD);
-                    cmd.Parameters.AddWithValue("@anem", SqlDbType.Bit).Value = anem;
-
-                    con.Open();
-                    cmd.ExecuteNonQuery();
-                }
-                catch (Exception e)
-                {
-                    MessageBox.Show(e.Message);
-                }
-                finally
-                {
-                    con.Close();
-                };
-            }
-
-        }
-
         public void successInsert(int id, string date, string venue, string bloodType)
         {
             using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
@@ -84,7 +24,7 @@ namespace BloodManagementSystem
                 try
                 {
                     con.Open();
-                    string query = "INSERT INTO SUCCESSFUL_DONATION values (@id, @d, @v, @bt)";
+                    string query = "EXEC spINSERT_SUCCESSFUL_DONATION @id, @d, @v, @bt";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@id", id);
                     cmd.Parameters.AddWithValue("@d", date);
@@ -106,7 +46,7 @@ namespace BloodManagementSystem
             {
                 try
                 {
-                    string query = "Delete from FULL_CHECK where ID = @id;";
+                    string query = "EXEC spDELETE_FULL_CHECK @id;";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@id", id);
 
@@ -123,21 +63,7 @@ namespace BloodManagementSystem
                 };
             }
         }
-        public void donorInfoFormLoad(FlowLayoutPanel flp)
-        {
-            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
-            {
-                try
-                {
-                    //SqlDataAdapter da = new SqlDataAdapter("Select ");
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                };
-
-            }
-        }
+        
         public void requestFormLoad(FlowLayoutPanel flp, Panel p)
         {
             using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
@@ -145,7 +71,7 @@ namespace BloodManagementSystem
                 try
                 {
                     con.Open();
-                    SqlDataAdapter da = new SqlDataAdapter("Select * from FULL_CHECK", con);
+                    SqlDataAdapter da = new SqlDataAdapter("EXEC spDISPLAY_FULL_CHECK", con);
                     DataSet ds = new DataSet();
                     da.Fill(ds, "FULL_CHECK");
                     bool flager = false;
@@ -153,10 +79,33 @@ namespace BloodManagementSystem
                     {
                         UCRequestingDonor r = new UCRequestingDonor(p);
                         r.ID = int.Parse(item["ID"].ToString());
-                        r.stat_72hr = Convert.ToBoolean(item["Check72"]);
-                        r.stat_3m = Convert.ToBoolean(item["Check3"]);
-                        r.stat_per = Convert.ToBoolean(item["CheckPer"]);
-                        if (flager == false)
+                        r.Datee = item["Datee"].ToString();
+                        int ch72 = int.Parse(item["Check72"].ToString());
+                        if (ch72 > 0)
+                            r.stat_72hr = "Checked: " + ch72.ToString();
+                        else
+                            r.stat_72hr = "Unchecked";
+
+                        int ch3 = int.Parse(item["Check3"].ToString());
+                        if (ch3 > 0)
+                            r.stat_3m = "Checked: " + ch3.ToString();
+                        else
+                            r.stat_3m = "Unchecked";
+
+                        int chp = int.Parse(item["CheckPer"].ToString());
+                        if (chp > 0)
+                            r.stat_per = "Checked: " + chp.ToString();
+                        else
+                            r.stat_per = "Unchecked";
+
+                        //if (r.stat_per == "Unchecked")
+                        //disable the accept
+                        r.Click += (object P, EventArgs e2) =>
+                        {
+                            p.Controls.Clear();
+
+                        };
+                            if (flager == false)
                         {
                             flager = true;
                             r.BackColor = Color.LightGray;

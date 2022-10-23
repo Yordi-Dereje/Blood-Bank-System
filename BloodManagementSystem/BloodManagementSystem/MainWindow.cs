@@ -31,7 +31,7 @@ namespace BloodManagementSystem
         private void lblAdminView_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
-            DonorLogin dl = new DonorLogin(panel1, this) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            AdminEmpLogin dl = new AdminEmpLogin(panel1, this) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             panel1.Controls.Add(dl);
             dl.Show();
         }
@@ -41,6 +41,11 @@ namespace BloodManagementSystem
             AboutUs ab = new AboutUs() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             panel1.Controls.Add(ab);
             ab.Show();
+        }
+
+        private void MainWindow_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
