@@ -40,12 +40,9 @@
             // 
             // tbPWEmp
             // 
-<<<<<<< HEAD
             this.tbPWEmp.Location = new System.Drawing.Point(229, 263);
             this.tbPWEmp.Margin = new System.Windows.Forms.Padding(4);
-=======
-            this.tbPWEmp.Location = new System.Drawing.Point(172, 214);
->>>>>>> 1fa4ab70554a5434e4268549a66d4917de2253f8
+            //this.tbPWEmp.Location = new System.Drawing.Point(172, 214);
             this.tbPWEmp.Name = "tbPWEmp";
             this.tbPWEmp.Size = new System.Drawing.Size(251, 35);
             this.tbPWEmp.StateCommon.Border.Color1 = System.Drawing.Color.Maroon;
@@ -58,12 +55,9 @@
             // 
             // kryptonLabel3
             // 
-<<<<<<< HEAD
             this.kryptonLabel3.Location = new System.Drawing.Point(229, 224);
             this.kryptonLabel3.Margin = new System.Windows.Forms.Padding(4);
-=======
-            this.kryptonLabel3.Location = new System.Drawing.Point(172, 182);
->>>>>>> 1fa4ab70554a5434e4268549a66d4917de2253f8
+            //this.kryptonLabel3.Location = new System.Drawing.Point(172, 182);
             this.kryptonLabel3.Name = "kryptonLabel3";
             this.kryptonLabel3.Size = new System.Drawing.Size(93, 26);
             this.kryptonLabel3.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
@@ -73,12 +67,9 @@
             // 
             // tbUNEmp
             // 
-<<<<<<< HEAD
             this.tbUNEmp.Location = new System.Drawing.Point(229, 134);
             this.tbUNEmp.Margin = new System.Windows.Forms.Padding(4);
-=======
-            this.tbUNEmp.Location = new System.Drawing.Point(172, 109);
->>>>>>> 1fa4ab70554a5434e4268549a66d4917de2253f8
+            //this.tbUNEmp.Location = new System.Drawing.Point(172, 109);
             this.tbUNEmp.Name = "tbUNEmp";
             this.tbUNEmp.Size = new System.Drawing.Size(251, 35);
             this.tbUNEmp.StateCommon.Border.Color1 = System.Drawing.Color.Maroon;
@@ -91,12 +82,9 @@
             // 
             // lbl_UserName
             // 
-<<<<<<< HEAD
             this.lbl_UserName.Location = new System.Drawing.Point(229, 95);
             this.lbl_UserName.Margin = new System.Windows.Forms.Padding(4);
-=======
-            this.lbl_UserName.Location = new System.Drawing.Point(172, 77);
->>>>>>> 1fa4ab70554a5434e4268549a66d4917de2253f8
+            //this.lbl_UserName.Location = new System.Drawing.Point(172, 77);
             this.lbl_UserName.Name = "lbl_UserName";
             this.lbl_UserName.Size = new System.Drawing.Size(104, 26);
             this.lbl_UserName.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
@@ -106,12 +94,9 @@
             // 
             // btnDone
             // 
-<<<<<<< HEAD
             this.btnDone.Location = new System.Drawing.Point(327, 359);
             this.btnDone.Margin = new System.Windows.Forms.Padding(4);
-=======
-            this.btnDone.Location = new System.Drawing.Point(245, 292);
->>>>>>> 1fa4ab70554a5434e4268549a66d4917de2253f8
+            //this.btnDone.Location = new System.Drawing.Point(245, 292);
             this.btnDone.Name = "btnDone";
             this.btnDone.OverrideDefault.Back.Color1 = System.Drawing.Color.Maroon;
             this.btnDone.OverrideDefault.Back.Color2 = System.Drawing.Color.Maroon;
@@ -177,17 +162,13 @@
             this.Controls.Add(this.tbUNEmp);
             this.Controls.Add(this.lbl_UserName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-<<<<<<< HEAD
             this.Margin = new System.Windows.Forms.Padding(4);
-=======
->>>>>>> 1fa4ab70554a5434e4268549a66d4917de2253f8
             this.Name = "EmpAcc";
             this.Text = "EmpAcc";
             this.Load += new System.EventHandler(this.EmpAcc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion

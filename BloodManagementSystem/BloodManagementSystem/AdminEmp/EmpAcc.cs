@@ -42,42 +42,16 @@ namespace BloodManagementSystem
 
         private void btnDone_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-            bool st;
-            if (stat == "Admin")
-                st = true;
-            else
-                st = false;
-            EmployeeClass emp = new EmployeeClass
-            {
-                ID = int.Parse(id),
-                FirstName = fn,
-                LastName = ln,
-                Gender = gender,
-                DOB = dob,
-                Phone = phone,
-                Email = email,
-                Country = country,
-                City = city,
-                Region = region,
-                Salary = salary,
-                AdminStatus = st,
-                UserName = tbUNEmp.Text,
-                Password = tbPWEmp.Text
-            };
-            emp.Insert();
-            MessageBox.Show("Employee registered successfully!");
-            p.Controls.Clear();
-            ListOfEmp em = new ListOfEmp(p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            p.Controls.Add(em);
-            em.Show();
-=======
             if (string.IsNullOrEmpty(tbUNEmp.Text))
-                errorProvider1.SetError(tbUNEmp, "email required");
+                errorProvider1.SetError(tbUNEmp, "Name required");
             else if (string.IsNullOrEmpty(tbPWEmp.Text))
-                errorProvider1.SetError(tbPWEmp, "password required");
-            else
-            {
+                errorProvider1.SetError(tbPWEmp, "Password required");
+            else {
+                bool st;
+                if (stat == "Admin")
+                    st = true;
+                else
+                    st = false;
                 EmployeeClass emp = new EmployeeClass
                 {
                     ID = int.Parse(id),
@@ -91,18 +65,17 @@ namespace BloodManagementSystem
                     City = city,
                     Region = region,
                     Salary = salary,
+                    AdminStatus = st,
                     UserName = tbUNEmp.Text,
                     Password = tbPWEmp.Text
                 };
                 emp.Insert();
                 MessageBox.Show("Employee registered successfully!");
                 p.Controls.Clear();
-                EmployeeRegi em = new EmployeeRegi(p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                ListOfEmp em = new ListOfEmp(p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
                 p.Controls.Add(em);
                 em.Show();
             }
-
->>>>>>> 1fa4ab70554a5434e4268549a66d4917de2253f8
         }
     }
 }

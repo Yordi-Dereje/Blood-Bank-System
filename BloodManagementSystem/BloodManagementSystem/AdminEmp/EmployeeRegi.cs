@@ -37,7 +37,6 @@ namespace BloodManagementSystem
                 if (rbFEmp.Checked == false && rbMEmp.Checked == false)
                     errorProvider1.SetError(rbs, "Gender required");
             }
-
             if (string.IsNullOrEmpty(tbFNEmp.Text))
                 errorProvider1.SetError(tbFNEmp, "First Name required");
             else if (string.IsNullOrEmpty(tbLNEmp.Text))
@@ -57,18 +56,6 @@ namespace BloodManagementSystem
                 errorProvider1.SetError(tbPhoneEmp, "Phone formate error");
             }*/ //alseram
             else
-<<<<<<< HEAD
-                gender = "Male";
-            string stat;
-            if (rbAd.Checked)
-                stat = "Admin";
-            else
-                stat = "Employee";
-            string dob = dtpEmp.Value.ToString();
-            EmpAcc empac = new EmpAcc(p, id.ToString(), tbFNEmp.Text, tbLNEmp.Text, gender, dob, tbPhoneEmp.Text, tbEmailEmp.Text, tbCoEmp.Text, tbCiEmp.Text, tbRegEmp.Text,int.Parse(tbSalEmp.Text), stat) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            p.Controls.Add(empac);
-            empac.Show();
-=======
             {
                 p.Controls.Clear();
                 int id = EmployeeClass.GetCount();
@@ -78,12 +65,16 @@ namespace BloodManagementSystem
                     gender = "Female";
                 else
                     gender = "Male";
+                string stat;
+                if (rbAd.Checked)
+                    stat = "Admin";
+                else
+                    stat = "Employee";
                 string dob = dtpEmp.Value.ToString();
-                EmpAcc empac = new EmpAcc(p, id.ToString(), tbFNEmp.Text, tbLNEmp.Text, gender, dob, tbPhoneEmp.Text, tbEmailEmp.Text, tbCoEmp.Text, tbCiEmp.Text, tbRegEmp.Text, int.Parse(tbSalEmp.Text)) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                EmpAcc empac = new EmpAcc(p, id.ToString(), tbFNEmp.Text, tbLNEmp.Text, gender, dob, tbPhoneEmp.Text, tbEmailEmp.Text, tbCoEmp.Text, tbCiEmp.Text, tbRegEmp.Text, int.Parse(tbSalEmp.Text), stat) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
                 p.Controls.Add(empac);
                 empac.Show();
             }
->>>>>>> 1fa4ab70554a5434e4268549a66d4917de2253f8
         }
     }
 }

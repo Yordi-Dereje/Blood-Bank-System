@@ -1,6 +1,8 @@
 -- 72 hour checks
-Use BloodBankSql;
+
 --INSERT
+Use BloodBankSql;
+
 CREATE PROCEDURE spINSERT_DONOR_72CHECKS
 @ID int,
 @Antibiotics bit,
@@ -76,13 +78,16 @@ END
 --INSERT
 CREATE PROCEDURE spINSERT_FULL_CHECK
 @ID int,
-@Check72 bit,
-@Check3 bit,
-@CheckPer bit
+@Datee varchar(50),
+@Check72 int,
+@Check3 int,
+@CheckPer int
 AS
 BEGIN
-        INSERT INTO FULL_CHECK VALUES(@ID,@CHECK72,@CHECK3,@CHECKPER);
+        INSERT INTO FULL_CHECK VALUES(@ID,@Datee, @CHECK72,@CHECK3,@CHECKPER);
 END
+
+drop procedure spINSERT_FULL_CHECK;
 
 -- DISPLAY
 CREATE PROCEDURE spDISPLAY_FULL_CHECK

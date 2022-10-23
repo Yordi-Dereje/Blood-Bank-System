@@ -1,5 +1,6 @@
--- donor stored procedures
 Use BloodBankSql;
+-- donor stored procedures
+
 -- INSERT
 CREATE PROCEDURE spINSERT_DONOR_INFO
 @FirstName varchar(50),
@@ -53,11 +54,13 @@ END
 
 -- SEARCH
 CREATE PROCEDURE spLOAD_SEARCH
-@ID INT
+@name varchar(50)
 AS
 BEGIN
-        SELECT * FROM DONOR_INFO WHERE ID = @ID;
+        SELECT * FROM DONOR_INFO WHERE FirstName = @name or LastName = @name or concat(FirstName,' ',LastName) = @name;
 END
+
+drop procedure spLOAD_SEARCH;
 
 -- DISPLAY
 CREATE PROCEDURE spDISPLAY_DONOR_INFO

@@ -776,10 +776,8 @@ C:\Users\hp\Desktop\Oct 20\Blood-Bank-System\BloodManagementSystem\BloodManageme
 C:\Users\hp\Desktop\Oct 20\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\obj\Debug\BloodManagementSystem.Form1.resources
 C:\Users\hp\Desktop\Oct 20\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\obj\Debug\BloodManagementSystem.FirstWindow.resources
 C:\Users\hp\Desktop\Oct 20\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\bin\Debug\Guna.UI2.dll
-<<<<<<< HEAD
 C:\Users\hp\Desktop\Oct 20\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\obj\Debug\BloodManagementSystem.TransferDetails.resources
 C:\Users\hp\Desktop\Oct 20\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\obj\Debug\BloodManagementSystem.RequestDonDetails.resources
-=======
 C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\obj\Debug\BloodManagementSystem.MedicalPage.resources
 C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\obj\Debug\BloodManagementSystem.UCallIllness.resources
 C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSystem\BloodManagementSystem\obj\Debug\BloodManagementSystem.UCHaveIllness.resources

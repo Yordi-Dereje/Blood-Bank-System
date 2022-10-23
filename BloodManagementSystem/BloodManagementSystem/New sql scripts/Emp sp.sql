@@ -1,6 +1,5 @@
 -- employee stored procedures
 
-Use BloodBankSql;
 --INSERT
 CREATE PROCEDURE spINSERT_EMP_INFO
 @FirstName varchar(50),
@@ -18,14 +17,7 @@ AS
 BEGIN
         INSERT INTO EMP_INFO( FirstName, LastName, Dob, Gender, Phone, Email, Country, City, Region, Salary, Stat) VALUES (@FirstName, @LastName, @Dob, @Gender, @Phone, @Email, @Country, @City, @Region, @Sal, @Stat);
 END
-SELECT *FROM EMP_INFO
-Select *from emp_accounts
-INSERT INTO EMP_INFO( FirstName, LastName, Dob, Gender, Phone, Email, Country, City, Region, Salary, Stat) VALUES ('bb', 'ABE', '12/12/00', 'male', '0910091919', 'B@GMAIL.COM', 'ETH', 'ADD', 'ADD', 1000, 1);
-INSERT INTO EMP_INFO( FirstName, LastName, Dob, Gender, Phone, Email, Country, City, Region, Salary, Stat) VALUES ('cc', 'KEBE', '12/12/00', 'female', '0987654321', 'C@GMAIL.COM', 'ETH', 'ADD', 'ADD', 2000, 0);
-INSERT INTO EMP_ACCOUNTS VALUES(1,'ADMIN','ADMIN');
-INSERT INTO EMP_ACCOUNTS VALUES(3,'CC','CC');
-	DELETE FROM EMP_ACCOUNTS;
-	DELETE FROM EMP_INFO
+
 
 --UPDATE
 CREATE PROCEDURE spUPDATE_EMP_INFO_AS_EMP
@@ -61,11 +53,11 @@ BEGIN
 END
 
 --SEARCH
-ALTER PROCEDURE spLOAD_SEARCH_EMP_INFO
-@TB INT
+CREATE PROCEDURE spLOAD_SEARCH_EMP_INFO
+@ID INT
 AS
 BEGIN
-        Select * from EMP_INFO where ID= @TB or Phone = @TB or CONCAT(FirstName, ' ', LastName) like @TB;
+        SELECT * FROM EMP_INFO WHERE ID = @ID
 END
 
 --DISPLAY

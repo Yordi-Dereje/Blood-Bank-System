@@ -1,4 +1,46 @@
 -- functions used
+Use BloodBankSql;
+-- total donations
+-- total transfers
+-- total donors
+
+CREATE FUNCTION totalDonations()
+RETURNS int
+AS
+BEGIN
+	DECLARE @count int;
+	SELECT @count = count(*) from SUCCESSFUL_DONATION;
+	RETURN @count;
+END
+
+select dbo.totalDonations();
+
+CREATE FUNCTION totalDonors()
+RETURNS int
+AS
+BEGIN
+	DECLARE @count int;
+	SELECT @count = count(*) from DONOR_INFO;
+	RETURN @count;
+END
+
+CREATE FUNCTION totalTransfers()
+RETURNS int
+AS
+BEGIN
+	DECLARE @count int;
+	SELECT @count = count(*) from TRANSFER_INFO;
+	RETURN @count;
+END
+
+CREATE FUNCTION totalEmployees()
+RETURNS int
+AS
+BEGIN
+	DECLARE @count int;
+	SELECT @count = count(*) from EMP_INFO;
+	RETURN @count;
+END
 
 -- age calculator
 CREATE FUNCTION ageCalculate(@id int)
@@ -7,6 +49,15 @@ AS
 BEGIN
         DECLARE @age int;
         SELECT @age = datediff(YEAR, Dob, GetDate()) from DONOR_INFO where ID = @id;
+        RETURN @age;
+END
+
+CREATE FUNCTION ageCalculateE(@id int)
+RETURNS int
+AS
+BEGIN
+        DECLARE @age int;
+        SELECT @age = datediff(YEAR, Dob, GetDate()) from EMP_INFO where ID = @id;
         RETURN @age;
 END
 
@@ -20,9 +71,28 @@ BEGIN
         RETURN @fullName;
 END
 
--- date calculator
--- suggested username
--- address concat
--- transfer count
--- blood count enough for transfer ... esti echignawan
+CREATE FUNCTION totalBloodTransfer(@id int)
+RETURNS int
+AS
+BEGIN
+	DECLARE @sum int = 0;
+	SELECT @sum += Ap,@sum += Am, @sum += Bp, @sum += Bm, @sum += Abp, @sum += Abm, @sum += Op, @sum += Om from TRANSFER_INFO where ID = @id;
+	RETURN @sum;
+END
 
+
+CREATE FUNCTION specificBloodCount(@type varchar(3))
+RETURNS int
+AS
+BEGIN
+	DECLARE @count int;
+	SELECT @count = bloodcount from BLOOD_COUNT where bloodtype = @type;
+	RETURN @count;
+END
+
+CREATE FUNCTION totalBloodTransfer(@id int)
+RETURNS int
+AS
+BEGIN
+	DECLARE @total int;
+	SELECT @total += 
