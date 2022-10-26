@@ -28,22 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnSubmit = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.tbW = new Guna.UI.WinForms.GunaTextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.GroupBox1 = new System.Windows.Forms.GroupBox();
             this.rbNA = new System.Windows.Forms.RadioButton();
             this.rbA = new System.Windows.Forms.RadioButton();
             this.tbBPS = new Guna.UI.WinForms.GunaTextBox();
             this.tbBPD = new Guna.UI.WinForms.GunaTextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.gunaComboBox1 = new Guna.UI.WinForms.GunaComboBox();
+            this.cbVenue = new Guna.UI.WinForms.GunaComboBox();
             this.dtp = new Guna.UI.WinForms.GunaDateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.GroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -51,10 +54,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(796, 215);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(597, 175);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(23, 34);
+            this.label1.Size = new System.Drawing.Size(19, 28);
             this.label1.TabIndex = 154;
             this.label1.Text = "/";
             // 
@@ -62,10 +64,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label3.Location = new System.Drawing.Point(611, 224);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(458, 182);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 24);
+            this.label3.Size = new System.Drawing.Size(30, 20);
             this.label3.TabIndex = 148;
             this.label3.Text = "BP";
             // 
@@ -73,17 +74,15 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label4.Location = new System.Drawing.Point(601, 133);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(451, 108);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 24);
+            this.label4.Size = new System.Drawing.Size(59, 20);
             this.label4.TabIndex = 147;
             this.label4.Text = "Weight";
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(739, 472);
-            this.btnSubmit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSubmit.Location = new System.Drawing.Point(554, 384);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.OverrideDefault.Back.Color1 = System.Drawing.Color.Maroon;
             this.btnSubmit.OverrideDefault.Back.Color2 = System.Drawing.Color.Maroon;
@@ -98,7 +97,7 @@
             this.btnSubmit.OverrideDefault.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.btnSubmit.OverrideDefault.Border.Rounding = 20;
             this.btnSubmit.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnSubmit.Size = new System.Drawing.Size(135, 47);
+            this.btnSubmit.Size = new System.Drawing.Size(101, 38);
             this.btnSubmit.StateCommon.Back.Color1 = System.Drawing.Color.Maroon;
             this.btnSubmit.StateCommon.Back.Color2 = System.Drawing.Color.Maroon;
             this.btnSubmit.StateCommon.Back.ColorAngle = 45F;
@@ -145,35 +144,34 @@
             this.tbW.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.tbW.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.tbW.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbW.Location = new System.Drawing.Point(739, 127);
-            this.tbW.Margin = new System.Windows.Forms.Padding(4);
+            this.tbW.Location = new System.Drawing.Point(554, 103);
             this.tbW.Name = "tbW";
             this.tbW.PasswordChar = '\0';
             this.tbW.SelectedText = "";
-            this.tbW.Size = new System.Drawing.Size(135, 30);
+            this.tbW.Size = new System.Drawing.Size(101, 26);
             this.tbW.TabIndex = 177;
             // 
-            // groupBox1
+            // GroupBox1
             // 
-            this.groupBox1.Controls.Add(this.rbNA);
-            this.groupBox1.Controls.Add(this.rbA);
-            this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(382, 324);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(347, 81);
-            this.groupBox1.TabIndex = 178;
-            this.groupBox1.TabStop = false;
+            this.GroupBox1.Controls.Add(this.rbNA);
+            this.GroupBox1.Controls.Add(this.rbA);
+            this.GroupBox1.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GroupBox1.Location = new System.Drawing.Point(286, 263);
+            this.GroupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GroupBox1.Name = "GroupBox1";
+            this.GroupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GroupBox1.Size = new System.Drawing.Size(260, 66);
+            this.GroupBox1.TabIndex = 178;
+            this.GroupBox1.TabStop = false;
             // 
             // rbNA
             // 
             this.rbNA.AutoSize = true;
             this.rbNA.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbNA.Location = new System.Drawing.Point(203, 31);
-            this.rbNA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rbNA.Location = new System.Drawing.Point(152, 25);
+            this.rbNA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rbNA.Name = "rbNA";
-            this.rbNA.Size = new System.Drawing.Size(124, 26);
+            this.rbNA.Size = new System.Drawing.Size(103, 23);
             this.rbNA.TabIndex = 139;
             this.rbNA.TabStop = true;
             this.rbNA.Text = "Not Anemic";
@@ -183,10 +181,10 @@
             // 
             this.rbA.AutoSize = true;
             this.rbA.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbA.Location = new System.Drawing.Point(36, 31);
-            this.rbA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rbA.Location = new System.Drawing.Point(27, 25);
+            this.rbA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rbA.Name = "rbA";
-            this.rbA.Size = new System.Drawing.Size(90, 26);
+            this.rbA.Size = new System.Drawing.Size(75, 23);
             this.rbA.TabIndex = 138;
             this.rbA.TabStop = true;
             this.rbA.Text = "Anemic";
@@ -201,12 +199,11 @@
             this.tbBPS.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.tbBPS.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.tbBPS.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbBPS.Location = new System.Drawing.Point(739, 219);
-            this.tbBPS.Margin = new System.Windows.Forms.Padding(4);
+            this.tbBPS.Location = new System.Drawing.Point(554, 178);
             this.tbBPS.Name = "tbBPS";
             this.tbBPS.PasswordChar = '\0';
             this.tbBPS.SelectedText = "";
-            this.tbBPS.Size = new System.Drawing.Size(45, 30);
+            this.tbBPS.Size = new System.Drawing.Size(34, 26);
             this.tbBPS.TabIndex = 179;
             // 
             // tbBPD
@@ -218,22 +215,20 @@
             this.tbBPD.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.tbBPD.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.tbBPD.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbBPD.Location = new System.Drawing.Point(827, 219);
-            this.tbBPD.Margin = new System.Windows.Forms.Padding(4);
+            this.tbBPD.Location = new System.Drawing.Point(620, 178);
             this.tbBPD.Name = "tbBPD";
             this.tbBPD.PasswordChar = '\0';
             this.tbBPD.SelectedText = "";
-            this.tbBPD.Size = new System.Drawing.Size(47, 30);
+            this.tbBPD.Size = new System.Drawing.Size(35, 26);
             this.tbBPD.TabIndex = 180;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 12.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label8.Location = new System.Drawing.Point(435, 25);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(326, 20);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(149, 24);
+            this.label8.Size = new System.Drawing.Size(123, 20);
             this.label8.TabIndex = 151;
             this.label8.Text = "Primary Checks";
             // 
@@ -241,13 +236,13 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 12.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label6.Location = new System.Drawing.Point(160, 225);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(120, 183);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 24);
+            this.label6.Size = new System.Drawing.Size(52, 20);
             this.label6.TabIndex = 181;
             this.label6.Text = "Venue";
             // 
+<<<<<<< Updated upstream
             // gunaComboBox1
             // 
             this.gunaComboBox1.BackColor = System.Drawing.Color.Transparent;
@@ -270,6 +265,30 @@
             this.gunaComboBox1.OnHoverItemForeColor = System.Drawing.Color.White;
             this.gunaComboBox1.Size = new System.Drawing.Size(223, 31);
             this.gunaComboBox1.TabIndex = 182;
+=======
+            // cbVenue
+            // 
+            this.cbVenue.BackColor = System.Drawing.Color.Transparent;
+            this.cbVenue.BaseColor = System.Drawing.Color.White;
+            this.cbVenue.BorderColor = System.Drawing.Color.Maroon;
+            this.cbVenue.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbVenue.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbVenue.FocusedColor = System.Drawing.Color.Empty;
+            this.cbVenue.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbVenue.ForeColor = System.Drawing.Color.Black;
+            this.cbVenue.FormattingEnabled = true;
+            this.cbVenue.Items.AddRange(new object[] {
+            "Mexico",
+            "Arada ",
+            "Yeka"});
+            this.cbVenue.Location = new System.Drawing.Point(218, 177);
+            this.cbVenue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbVenue.Name = "cbVenue";
+            this.cbVenue.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cbVenue.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cbVenue.Size = new System.Drawing.Size(168, 27);
+            this.cbVenue.TabIndex = 182;
+>>>>>>> Stashed changes
             // 
             // dtp
             // 
@@ -280,7 +299,8 @@
             this.dtp.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.dtp.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtp.ForeColor = System.Drawing.Color.Black;
-            this.dtp.Location = new System.Drawing.Point(291, 127);
+            this.dtp.Location = new System.Drawing.Point(218, 103);
+            this.dtp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtp.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtp.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtp.Name = "dtp";
@@ -288,7 +308,7 @@
             this.dtp.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.dtp.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.dtp.OnPressedColor = System.Drawing.Color.Black;
-            this.dtp.Size = new System.Drawing.Size(223, 30);
+            this.dtp.Size = new System.Drawing.Size(167, 24);
             this.dtp.TabIndex = 183;
             this.dtp.Text = "Sunday, October 23, 2022";
             this.dtp.Value = new System.DateTime(2022, 10, 23, 10, 50, 24, 164);
@@ -297,26 +317,29 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label2.Location = new System.Drawing.Point(163, 133);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(122, 108);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 24);
+            this.label2.Size = new System.Drawing.Size(43, 20);
             this.label2.TabIndex = 184;
             this.label2.Text = "Date";
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // PrimaryChecks
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dtp);
-            this.Controls.Add(this.gunaComboBox1);
+            this.Controls.Add(this.cbVenue);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.tbBPD);
             this.Controls.Add(this.tbBPS);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.GroupBox1);
             this.Controls.Add(this.tbW);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.label1);
@@ -324,13 +347,13 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PrimaryChecks";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PrimaryChecks";
             this.Load += new System.EventHandler(this.PrimaryChecks_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.GroupBox1.ResumeLayout(false);
+            this.GroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -342,15 +365,16 @@
         private System.Windows.Forms.Label label4;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnSubmit;
         private Guna.UI.WinForms.GunaTextBox tbW;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox GroupBox1;
         private System.Windows.Forms.RadioButton rbNA;
         private System.Windows.Forms.RadioButton rbA;
         private Guna.UI.WinForms.GunaTextBox tbBPS;
         private Guna.UI.WinForms.GunaTextBox tbBPD;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
-        private Guna.UI.WinForms.GunaComboBox gunaComboBox1;
+        private Guna.UI.WinForms.GunaComboBox cbVenue;
         private Guna.UI.WinForms.GunaDateTimePicker dtp;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
