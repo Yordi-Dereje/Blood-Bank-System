@@ -102,6 +102,49 @@ namespace BloodManagementSystem
                 };
             }
         }
+
+        public void TransferSingleFormLoad(FlowLayoutPanel flp, string Name)
+        {
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
+            {
+                try
+                {
+                    //sp_searchHospByName
+                    string query = "EXEC sp_searchHospByName @Name";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@Name", Name);
+                    SqlDataReader sdr;
+                    con.Open();
+                    sdr = cmd.ExecuteReader();
+                    bool flager = false;
+                    while (sdr.Read())
+                    {
+                        UCTransfer u = new UCTransfer();
+                        u.id = (string)sdr["ID"];
+                        u.hospital = (string)sdr["Hospital"];
+                        u.date = (string)sdr["Date"];
+                        int tot = (int)sdr["Ap"] + (int)sdr["Am"] + (int)sdr["Bp"] + (int)sdr["Bm"] +
+                            (int)sdr["Abp"] + (int)sdr["Abm"] + (int)sdr["Op"] + (int)sdr["Om"];
+                        u.total = tot.ToString();
+                        if (flager == false)
+                        {
+                            flager = true;
+                            u.BackColor = Color.LightGray;
+                        }
+                        else if (flager == true)
+                        {
+                            flager = false;
+                            u.BackColor = Color.DarkGray;
+                        }
+                        flp.Controls.Add(u);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                };
+            }
+        }
         public static int getTotalTransfers()
         {
             using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))

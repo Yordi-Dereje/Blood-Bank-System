@@ -16,5 +16,18 @@ namespace BloodManagementSystem
         {
             InitializeComponent();
         }
+        private string _myVar;
+
+        public string MyVar
+        {
+            get { return _myVar; }
+            set { _myVar = value; label1.Text = value; }
+        }
+
+
+        private void UCHaveIllness_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

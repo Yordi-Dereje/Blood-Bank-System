@@ -1,4 +1,5 @@
 -- employee stored procedures
+Use BloodBankSql;
 
 --INSERT
 CREATE PROCEDURE spINSERT_EMP_INFO
@@ -58,6 +59,14 @@ CREATE PROCEDURE spLOAD_SEARCH_EMP_INFO
 AS
 BEGIN
         SELECT * FROM EMP_INFO WHERE ID = @ID
+END
+
+-- search by name
+CREATE PROCEDURE sp_searchEmpByName
+@Name varchar(100)
+AS
+BEGIN
+	SELECT * FROM EMP_INFO WHERE FirstName like '%' + @Name + '%' or LastName like '%' + @Name + '%' or concat(FirstName,' ',LastName) like '%' + @Name + '%';
 END
 
 --DISPLAY

@@ -62,7 +62,7 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1319, 78);
             this.panel1.TabIndex = 0;
@@ -126,7 +126,7 @@
             this.PicDonProfile.ContextMenuStrip = this.gunaContextMenuStrip1;
             this.PicDonProfile.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PicDonProfile.Location = new System.Drawing.Point(1243, 14);
-            this.PicDonProfile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PicDonProfile.Margin = new System.Windows.Forms.Padding(4);
             this.PicDonProfile.Name = "PicDonProfile";
             this.PicDonProfile.Size = new System.Drawing.Size(64, 50);
             this.PicDonProfile.TabIndex = 4;
@@ -169,7 +169,7 @@
             // lbl_Donor
             // 
             this.lbl_Donor.Location = new System.Drawing.Point(1159, 28);
-            this.lbl_Donor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lbl_Donor.Margin = new System.Windows.Forms.Padding(4);
             this.lbl_Donor.Name = "lbl_Donor";
             this.lbl_Donor.Size = new System.Drawing.Size(57, 32);
             this.lbl_Donor.StateCommon.ShortText.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -183,7 +183,7 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(87, 78);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -197,7 +197,7 @@
             this.PanelDisplay.Controls.Add(this.panel2);
             this.PanelDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelDisplay.Location = new System.Drawing.Point(0, 78);
-            this.PanelDisplay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PanelDisplay.Margin = new System.Windows.Forms.Padding(4);
             this.PanelDisplay.Name = "PanelDisplay";
             this.PanelDisplay.Size = new System.Drawing.Size(1319, 609);
             this.PanelDisplay.TabIndex = 4;
@@ -205,10 +205,10 @@
             // panel3
             // 
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(320, 0);
+            this.panel3.Location = new System.Drawing.Point(314, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(999, 609);
+            this.panel3.Size = new System.Drawing.Size(1005, 609);
             this.panel3.TabIndex = 31;
             // 
             // panel2
@@ -218,7 +218,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(320, 609);
+            this.panel2.Size = new System.Drawing.Size(314, 609);
             this.panel2.TabIndex = 30;
             // 
             // DonorView
@@ -228,7 +228,7 @@
             this.ClientSize = new System.Drawing.Size(1319, 687);
             this.Controls.Add(this.PanelDisplay);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DonorView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DonorView";

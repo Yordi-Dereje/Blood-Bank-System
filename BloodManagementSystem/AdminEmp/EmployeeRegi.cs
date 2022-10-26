@@ -29,7 +29,7 @@ namespace BloodManagementSystem
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            Regex re = new Regex("[+]{1} [2]{1} [5]{1} [1]{1} [0-9]{9}");
+            Regex re = new Regex("[+]{1}[2]{1}[5]{1}[1]{1}[0-9]{9}");
 
             for (int i = 0; i < GroupBox1.Controls.Count; i++)
             {
@@ -51,22 +51,22 @@ namespace BloodManagementSystem
                 errorProvider1.SetError(tbCiEmp, "City required");
             else if (string.IsNullOrEmpty(tbRegEmp.Text))
                 errorProvider1.SetError(tbRegEmp, "Region required");
-            /*else if(!re.IsMatch(tbPhoneEmp.Text))
+            else if(!re.IsMatch(tbPhoneEmp.Text))
             {
                 errorProvider1.SetError(tbPhoneEmp, "Phone formate error");
-            }*/ //alseram
+            }
             else
             {
                 p.Controls.Clear();
                 int id = EmployeeClass.GetCount();
                 id = id + 1;
                 string gender;
-                if (rbFEmp.Checked)
+                if (rbFEmp.Checked == true)
                     gender = "Female";
                 else
                     gender = "Male";
                 string stat;
-                if (rbAd.Checked)
+                if (rbAd.Checked == true)
                     stat = "Admin";
                 else
                     stat = "Employee";

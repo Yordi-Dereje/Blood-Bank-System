@@ -207,6 +207,7 @@
             this.btn_Search.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Search.TabIndex = 58;
             this.btn_Search.Values.Text = "Search";
+            this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
             // 
             // tbAp
             // 

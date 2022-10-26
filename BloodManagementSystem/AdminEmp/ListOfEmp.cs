@@ -74,5 +74,12 @@ namespace BloodManagementSystem.AdminEmp
         {
 
         }
+
+        private void btn_Search_Click(object sender, EventArgs e)
+        {
+            flowLayoutPanel1.Controls.Clear();
+            EmployeeClass s = new EmployeeClass();
+            s.empSearchLoad(flowLayoutPanel1, panel1, tbAp.Text);
+        }
     }
 }

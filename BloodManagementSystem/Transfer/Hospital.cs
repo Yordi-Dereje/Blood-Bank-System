@@ -46,7 +46,7 @@ namespace BloodManagementSystem
         {
             flp.Controls.Clear();
             HospitalClass h = new HospitalClass();
-            h.HospitalSingleFormLoad(flp);
+            h.HospitalSingleFormLoad(flp, tbAp.Text);
         }
     }
 }

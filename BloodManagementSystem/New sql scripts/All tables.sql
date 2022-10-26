@@ -18,6 +18,8 @@ Region varchar(50),
 BloodType varchar(3)
 );
 
+
+
 drop table donor_info;
 
 CREATE TABLE DONOR_ACCOUNTS
@@ -47,7 +49,7 @@ Region varchar(50),
 Salary int,
 Stat bit
 );
-select * from donor_info;
+select * from emp_info;
 
 CREATE TABLE EMP_ACCOUNTS
 (
@@ -223,20 +225,3 @@ Insert into ILLNESS_INFO values('Kidney problems', 'Kidney disease means your ki
 Insert into ILLNESS_INFO values('Abnormal Bleeding', 'Abnormal uterine bleeding is a menstrual cycle disorder. Any bleeding that is outside of your regular cyclic menstruation is considered abnormal uterine bleeding. Any change in the amount or duration of your period is also considered abnormal uterine bleeding.');
 
 
-
-create table justcheckinfo(
-id int primary key identity,
-name varchar(40)
-);
-
-create table justcheckacc(
-id int,
-valuee int,
-foreign key (id) references justcheckinfo(id)
-);
-
-insert into justcheckinfo (name) values ('ebe');
-insert into justcheckacc values (4, 4);
-
-delete from justcheckinfo where id = 2;
-drop table justcheckinfo;

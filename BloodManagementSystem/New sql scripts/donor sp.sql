@@ -18,6 +18,8 @@ BEGIN
         INSERT INTO DONOR_INFO(FirstName, LastName, Dob, Gender, Phone, Email, Country, City, Region, BloodType) VALUES (@FirstName, @LastName, @Dob, @Gender, @Phone, @Email, @Country, @City, @Region, @BT);
 END
 
+EXEC spINSERT_DONOR_INFO 'bbb', 'bbb','12/12/12', 'Male', '0911', 'bbb', 'bbb', 'bbb', 'bbb', 'B+';
+select * from DONOR_INFO;
 
 -- UPDATE
 CREATE PROCEDURE spUPDATE_DONOR_INFO
@@ -112,4 +114,11 @@ CREATE PROCEDURE spDISPLAY_DONOR_ACCOUNTS
 AS
 BEGIN
         SELECT * FROM DONOR_ACCOUNTS;
+END
+
+CREATE PROCEDURE sp_searchDonorByName
+@Name varchar(100)
+AS
+BEGIN
+	SELECT * FROM DONOR_INFO WHERE FirstName like '%' + @Name + '%' or LastName like '%' + @Name + '%' or concat(FirstName,' ',LastName) like '%' + @Name + '%';
 END

@@ -45,12 +45,14 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(60, 53);
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(64, 54);
+            this.label2.MaximumSize = new System.Drawing.Size(700, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(181, 26);
+            this.label2.Size = new System.Drawing.Size(156, 22);
             this.label2.TabIndex = 11;
             this.label2.Text = "Illness description";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // UCallIllness
             // 
@@ -60,7 +62,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "UCallIllness";
-            this.Size = new System.Drawing.Size(980, 189);
+            this.Size = new System.Drawing.Size(800, 189);
             this.Load += new System.EventHandler(this.UCallIllness_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

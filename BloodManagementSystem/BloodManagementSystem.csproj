@@ -328,16 +328,16 @@
     <Compile Include="Transfer\TransferList.Designer.cs">
       <DependentUpon>TransferList.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCallIllness.cs">
+    <Compile Include="Donation\UCallIllness.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCallIllness.Designer.cs">
+    <Compile Include="Donation\UCallIllness.Designer.cs">
       <DependentUpon>UCallIllness.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCHaveIllness.cs">
+    <Compile Include="Donation\UCHaveIllness.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCHaveIllness.Designer.cs">
+    <Compile Include="Donation\UCHaveIllness.Designer.cs">
       <DependentUpon>UCHaveIllness.cs</DependentUpon>
     </Compile>
     <Compile Include="Transfer\UCHospital.cs">
@@ -475,10 +475,10 @@
     <EmbeddedResource Include="Transfer\TransferList.resx">
       <DependentUpon>TransferList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCallIllness.resx">
+    <EmbeddedResource Include="Donation\UCallIllness.resx">
       <DependentUpon>UCallIllness.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCHaveIllness.resx">
+    <EmbeddedResource Include="Donation\UCHaveIllness.resx">
       <DependentUpon>UCHaveIllness.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Transfer\UCHospital.resx">

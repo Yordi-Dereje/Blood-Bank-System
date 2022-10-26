@@ -103,17 +103,6 @@ namespace BloodManagementSystem
             }
         }
 
-        private void btnChangeLogin_Click_1(object sender, EventArgs e)
-        {
-            PanelChangeLogin.Visible = true;
-        }
-
-        private void btnSignOut_Click(object sender, EventArgs e)
-        {
-            MainWindow m = new MainWindow();
-            this.Hide();
-            m.Show();
-        }
 
         private void btnSave_Click_1(object sender, EventArgs e)
         {

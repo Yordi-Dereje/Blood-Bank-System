@@ -69,7 +69,6 @@ namespace BloodManagementSystem
                 p.Controls.Add(dc);
                 dc.Show();
             }
-           
         }
 
         private void gunaPanel2_Paint(object sender, PaintEventArgs e)

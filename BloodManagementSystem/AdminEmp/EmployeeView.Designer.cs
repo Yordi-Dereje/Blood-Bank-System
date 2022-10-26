@@ -63,7 +63,7 @@
             this.Panel_Emp.Controls.Add(this.pictureBox2);
             this.Panel_Emp.Dock = System.Windows.Forms.DockStyle.Top;
             this.Panel_Emp.Location = new System.Drawing.Point(0, 0);
-            this.Panel_Emp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Panel_Emp.Margin = new System.Windows.Forms.Padding(4);
             this.Panel_Emp.Name = "Panel_Emp";
             this.Panel_Emp.Size = new System.Drawing.Size(1312, 84);
             this.Panel_Emp.TabIndex = 1;
@@ -71,7 +71,7 @@
             // kryptonLabel1
             // 
             this.kryptonLabel1.Location = new System.Drawing.Point(343, 30);
-            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel1.Name = "kryptonLabel1";
             this.kryptonLabel1.Size = new System.Drawing.Size(107, 32);
             this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -85,7 +85,7 @@
             this.PicDonProfile.ContextMenuStrip = this.gunaContextMenuStrip1;
             this.PicDonProfile.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PicDonProfile.Location = new System.Drawing.Point(1224, 18);
-            this.PicDonProfile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PicDonProfile.Margin = new System.Windows.Forms.Padding(4);
             this.PicDonProfile.Name = "PicDonProfile";
             this.PicDonProfile.Size = new System.Drawing.Size(75, 57);
             this.PicDonProfile.TabIndex = 26;
@@ -127,7 +127,7 @@
             // lbl_hi
             // 
             this.lbl_hi.Location = new System.Drawing.Point(1103, 30);
-            this.lbl_hi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lbl_hi.Margin = new System.Windows.Forms.Padding(4);
             this.lbl_hi.Name = "lbl_hi";
             this.lbl_hi.Size = new System.Drawing.Size(113, 32);
             this.lbl_hi.StateCommon.ShortText.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -193,7 +193,7 @@
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(111, 84);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -206,7 +206,7 @@
             this.Panel_EmpDisplay.Controls.Add(this.panel1);
             this.Panel_EmpDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Panel_EmpDisplay.Location = new System.Drawing.Point(0, 84);
-            this.Panel_EmpDisplay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Panel_EmpDisplay.Margin = new System.Windows.Forms.Padding(4);
             this.Panel_EmpDisplay.Name = "Panel_EmpDisplay";
             this.Panel_EmpDisplay.Size = new System.Drawing.Size(1312, 603);
             this.Panel_EmpDisplay.TabIndex = 2;
@@ -238,7 +238,7 @@
             this.ClientSize = new System.Drawing.Size(1312, 687);
             this.Controls.Add(this.Panel_EmpDisplay);
             this.Controls.Add(this.Panel_Emp);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "EmployeeView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EmployeeView";

@@ -93,15 +93,15 @@
             this.gunaPanel.Controls.Add(this.lbl_hi);
             this.gunaPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaPanel.Location = new System.Drawing.Point(0, 0);
-            this.gunaPanel.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.gunaPanel.Margin = new System.Windows.Forms.Padding(5);
             this.gunaPanel.Name = "gunaPanel";
             this.gunaPanel.Size = new System.Drawing.Size(1312, 78);
             this.gunaPanel.TabIndex = 1;
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(320, 19);
-            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.kryptonLabel1.Location = new System.Drawing.Point(302, 14);
+            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(5);
             this.kryptonLabel1.Name = "kryptonLabel1";
             this.kryptonLabel1.Size = new System.Drawing.Size(80, 32);
             this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -154,7 +154,7 @@
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(104, 78);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -180,8 +180,8 @@
             this.PicDonProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PicDonProfile.ContextMenuStrip = this.gunaContextMenuStrip1;
             this.PicDonProfile.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PicDonProfile.Location = new System.Drawing.Point(1639, 17);
-            this.PicDonProfile.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.PicDonProfile.Location = new System.Drawing.Point(1220, 14);
+            this.PicDonProfile.Margin = new System.Windows.Forms.Padding(5);
             this.PicDonProfile.Name = "PicDonProfile";
             this.PicDonProfile.Size = new System.Drawing.Size(52, 46);
             this.PicDonProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -225,8 +225,8 @@
             // 
             // lbl_hi
             // 
-            this.lbl_hi.Location = new System.Drawing.Point(1447, 32);
-            this.lbl_hi.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.lbl_hi.Location = new System.Drawing.Point(1083, 26);
+            this.lbl_hi.Margin = new System.Windows.Forms.Padding(5);
             this.lbl_hi.Name = "lbl_hi";
             this.lbl_hi.Size = new System.Drawing.Size(136, 32);
             this.lbl_hi.StateCommon.ShortText.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -239,7 +239,7 @@
             this.PanelAdmin.Controls.Add(this.panel1);
             this.PanelAdmin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelAdmin.Location = new System.Drawing.Point(0, 78);
-            this.PanelAdmin.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.PanelAdmin.Margin = new System.Windows.Forms.Padding(5);
             this.PanelAdmin.Name = "PanelAdmin";
             this.PanelAdmin.Size = new System.Drawing.Size(1312, 641);
             this.PanelAdmin.TabIndex = 2;
@@ -272,7 +272,7 @@
             this.ClientSize = new System.Drawing.Size(1312, 719);
             this.Controls.Add(this.PanelAdmin);
             this.Controls.Add(this.gunaPanel);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "AdminView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminViews";

@@ -30,7 +30,7 @@ namespace BloodManagementSystem
         {
             flowLayoutPanel2.Controls.Clear();
             SqlMedical s = new SqlMedical();
-            s.illnessFormLoad(flowLayoutPanel2, p, id);
+            s.illnessFormLoad(flowLayoutPanel2, p);
         }
     }
 }

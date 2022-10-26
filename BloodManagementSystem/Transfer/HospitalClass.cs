@@ -87,29 +87,30 @@ namespace BloodManagementSystem
                 };
             }
         }
-        public void HospitalSingleFormLoad(FlowLayoutPanel flp)
+        public void HospitalSingleFormLoad(FlowLayoutPanel flp, string Name)
         {
             using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
                 try
                 {
+                    //sp_searchHospByName
+                    string query = "EXEC sp_searchHospByName @Name";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@Name", Name);
+                    SqlDataReader sdr;
                     con.Open();
-                    //Stored procedure with parameter
-                    SqlDataAdapter da = new SqlDataAdapter("spDISPLAY_HOSPITAL_INFO", con);
-                    da.SelectCommand.CommandType = CommandType.StoredProcedure;
-                    DataSet ds = new DataSet();
-                    da.Fill(ds, "HOSPITAL_INFO");
+                    sdr = cmd.ExecuteReader();
                     bool flager = false;
-                    foreach (DataRow item in ds.Tables["HOSPITAL_INFO"].Rows)
+                    while(sdr.Read())
                     {
                         UCHospital u = new UCHospital();
-                        u.name = item["Name"].ToString();
-                        u.Phone = item["Phone"].ToString();
-                        u.Email = item["Email"].ToString();
-                        u.Country = item["Country"].ToString();
-                        u.City = item["City"].ToString();
-                        u.region = item["Region"].ToString();
-                        u.owner = item["Ownership"].ToString();
+                        u.name = (string)sdr["Name"];
+                        u.Phone = (string)sdr["Phone"];
+                        u.Email = (string)sdr["Email"];
+                        u.Country = (string)sdr["Country"];
+                        u.City = (string)sdr["City"];
+                        u.region = (string)sdr["Region"];
+                        u.owner = (string)sdr["Ownership"];
                         if (flager == false)
                         {
                             flager = true;

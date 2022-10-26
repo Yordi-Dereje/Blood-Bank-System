@@ -48,6 +48,7 @@
             this.Controls.Add(this.label1);
             this.Name = "UCHaveIllness";
             this.Size = new System.Drawing.Size(812, 51);
+            this.Load += new System.EventHandler(this.UCHaveIllness_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

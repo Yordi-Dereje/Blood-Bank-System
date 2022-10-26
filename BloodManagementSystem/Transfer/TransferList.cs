@@ -48,5 +48,12 @@ namespace BloodManagementSystem
             p.Controls.Add(t);
             t.Show();
         }
+
+        private void kryptonButton1_Click_1(object sender, EventArgs e)
+        {
+            flp.Controls.Clear();
+            TransferClass t = new TransferClass();
+            t.TransferSingleFormLoad(flp, tbAp.ToString());
+        }
     }
 }

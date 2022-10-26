@@ -1,5 +1,5 @@
 -- functions used
-Use BloodBankSql;
+ ]]
 -- total donations
 -- total transfers
 -- total donors
@@ -68,6 +68,15 @@ AS
 BEGIN
         DECLARE @fullName varchar(100);
         SELECT @fullName = concat(FirstName, ' ', LastName) from DONOR_INFO where ID = @id;
+        RETURN @fullName;
+END
+
+CREATE FUNCTION concatNameE(@id int)
+RETURNS varchar(100)
+AS
+BEGIN
+        DECLARE @fullName varchar(100);
+        SELECT @fullName = concat(FirstName, ' ', LastName) from EMP_INFO where ID = @id;
         RETURN @fullName;
 END
 
