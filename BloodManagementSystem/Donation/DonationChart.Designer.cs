@@ -31,29 +31,11 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            this.chart_Donation = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.tbyears = new Guna.UI.WinForms.GunaTextBox();
+            this.chart_Donation = new System.Windows.Forms.DataVisualization.Charting.Chart();
             ((System.ComponentModel.ISupportInitialize)(this.chart_Donation)).BeginInit();
             this.SuspendLayout();
-            // 
-            // chart_Donation
-            // 
-            chartArea1.Name = "ChartArea1";
-            this.chart_Donation.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart_Donation.Legends.Add(legend1);
-            this.chart_Donation.Location = new System.Drawing.Point(99, 100);
-            this.chart_Donation.Name = "chart_Donation";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series1.Legend = "Legend1";
-            series1.Name = "year";
-            this.chart_Donation.Series.Add(series1);
-            this.chart_Donation.Size = new System.Drawing.Size(523, 326);
-            this.chart_Donation.TabIndex = 0;
-            this.chart_Donation.Text = "chart1";
-            this.chart_Donation.Click += new System.EventHandler(this.chart_Donation_Click);
             // 
             // gunaLabel1
             // 
@@ -80,7 +62,29 @@
             this.tbyears.SelectedText = "";
             this.tbyears.Size = new System.Drawing.Size(91, 30);
             this.tbyears.TabIndex = 5;
+            this.tbyears.TextChanged += new System.EventHandler(this.tbyears_TextChanged);
             this.tbyears.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbyears_keydown);
+            // 
+            // chart_Donation
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chart_Donation.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart_Donation.Legends.Add(legend1);
+            this.chart_Donation.Location = new System.Drawing.Point(99, 100);
+            this.chart_Donation.Name = "chart_Donation";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.SplineArea;
+            series1.Color = System.Drawing.Color.Maroon;
+            series1.Legend = "Legend1";
+            series1.MarkerColor = System.Drawing.Color.Maroon;
+            series1.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Diamond;
+            series1.Name = "year";
+            this.chart_Donation.Series.Add(series1);
+            this.chart_Donation.Size = new System.Drawing.Size(523, 326);
+            this.chart_Donation.TabIndex = 0;
+            this.chart_Donation.Text = "chart1";
+            this.chart_Donation.Click += new System.EventHandler(this.chart_Donation_Click);
             // 
             // DonationChart
             // 
@@ -103,9 +107,8 @@
 
         #endregion
 
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart_Donation;
-       // private Guna.UI.WinForms.GunaTextBox tbyears;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaTextBox tbyears;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart_Donation;
     }
 }

@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminEmpLogin));
             this.txt_usEmp = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.lbl_UserName = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.txt_pwEmp = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel3 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.btn_Login = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btn_ForgotPassword = new ComponentFactory.Krypton.Toolkit.KryptonLinkLabel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.panel1.SuspendLayout();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_usEmp
             // 
-            this.txt_usEmp.Location = new System.Drawing.Point(215, 108);
+            this.txt_usEmp.Location = new System.Drawing.Point(358, 104);
             this.txt_usEmp.Name = "txt_usEmp";
             this.txt_usEmp.Size = new System.Drawing.Size(251, 35);
             this.txt_usEmp.StateCommon.Border.Color1 = System.Drawing.Color.Maroon;
@@ -57,7 +57,7 @@
             // 
             // lbl_UserName
             // 
-            this.lbl_UserName.Location = new System.Drawing.Point(215, 77);
+            this.lbl_UserName.Location = new System.Drawing.Point(358, 73);
             this.lbl_UserName.Name = "lbl_UserName";
             this.lbl_UserName.Size = new System.Drawing.Size(104, 26);
             this.lbl_UserName.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
@@ -67,7 +67,7 @@
             // 
             // txt_pwEmp
             // 
-            this.txt_pwEmp.Location = new System.Drawing.Point(215, 206);
+            this.txt_pwEmp.Location = new System.Drawing.Point(358, 202);
             this.txt_pwEmp.Name = "txt_pwEmp";
             this.txt_pwEmp.Size = new System.Drawing.Size(251, 35);
             this.txt_pwEmp.StateCommon.Border.Color1 = System.Drawing.Color.Maroon;
@@ -80,7 +80,7 @@
             // 
             // kryptonLabel3
             // 
-            this.kryptonLabel3.Location = new System.Drawing.Point(215, 174);
+            this.kryptonLabel3.Location = new System.Drawing.Point(358, 170);
             this.kryptonLabel3.Name = "kryptonLabel3";
             this.kryptonLabel3.Size = new System.Drawing.Size(93, 26);
             this.kryptonLabel3.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
@@ -91,7 +91,7 @@
             // btn_Login
             // 
             this.btn_Login.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_Login.Location = new System.Drawing.Point(273, 305);
+            this.btn_Login.Location = new System.Drawing.Point(416, 301);
             this.btn_Login.Name = "btn_Login";
             this.btn_Login.OverrideDefault.Back.Color1 = System.Drawing.Color.Maroon;
             this.btn_Login.OverrideDefault.Back.Color2 = System.Drawing.Color.Maroon;
@@ -143,7 +143,7 @@
             // 
             // btn_ForgotPassword
             // 
-            this.btn_ForgotPassword.Location = new System.Drawing.Point(374, 244);
+            this.btn_ForgotPassword.Location = new System.Drawing.Point(517, 240);
             this.btn_ForgotPassword.Name = "btn_ForgotPassword";
             this.btn_ForgotPassword.Size = new System.Drawing.Size(99, 17);
             this.btn_ForgotPassword.StateCommon.LongText.Color1 = System.Drawing.SystemColors.Control;
@@ -155,47 +155,48 @@
             this.btn_ForgotPassword.Values.Text = "Forgot Password?";
             this.btn_ForgotPassword.LinkClicked += new System.EventHandler(this.btn_ForgotPassword_LinkClicked);
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Maroon;
-            this.panel3.Location = new System.Drawing.Point(2, 1);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(379, 467);
-            this.panel3.TabIndex = 44;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btn_ForgotPassword);
-            this.panel1.Controls.Add(this.btn_Login);
-            this.panel1.Controls.Add(this.kryptonLabel3);
-            this.panel1.Controls.Add(this.lbl_UserName);
-            this.panel1.Controls.Add(this.txt_usEmp);
-            this.panel1.Controls.Add(this.txt_pwEmp);
-            this.panel1.Location = new System.Drawing.Point(387, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(603, 445);
-            this.panel1.TabIndex = 45;
-            // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.gunaLabel1.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel1.Location = new System.Drawing.Point(369, 19);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(180, 23);
+            this.gunaLabel1.TabIndex = 45;
+            this.gunaLabel1.Text = "Employee Login";
+            // 
+            // guna2AnimateWindow1
+            // 
+            this.guna2AnimateWindow1.AnimationType = Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_BLEND;
+            this.guna2AnimateWindow1.Interval = 1000;
+            this.guna2AnimateWindow1.TargetForm = this;
             // 
             // AdminEmpLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1002, 469);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.gunaLabel1);
+            this.Controls.Add(this.btn_ForgotPassword);
+            this.Controls.Add(this.btn_Login);
+            this.Controls.Add(this.kryptonLabel3);
+            this.Controls.Add(this.txt_pwEmp);
+            this.Controls.Add(this.lbl_UserName);
+            this.Controls.Add(this.txt_usEmp);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AdminEmpLogin";
             this.Text = "AdminEmpLogin";
             this.Load += new System.EventHandler(this.AdminEmpLogin_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -207,8 +208,8 @@
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel3;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btn_Login;
         private ComponentFactory.Krypton.Toolkit.KryptonLinkLabel btn_ForgotPassword;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private Guna.UI.WinForms.GunaLabel gunaLabel1;
+        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
     }
 }

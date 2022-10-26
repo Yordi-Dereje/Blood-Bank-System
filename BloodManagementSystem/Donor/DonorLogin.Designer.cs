@@ -37,10 +37,8 @@
             this.btn_Login = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btn_CreateAcc = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btn_ForgotPassword = new ComponentFactory.Krypton.Toolkit.KryptonLinkLabel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.panel1.SuspendLayout();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -169,41 +167,34 @@
             this.btn_ForgotPassword.Values.Text = resources.GetString("btn_ForgotPassword.Values.Text");
             this.btn_ForgotPassword.LinkClicked += new System.EventHandler(this.btn_ForgotPassword_LinkClicked);
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Maroon;
-            resources.ApplyResources(this.panel3, "panel3");
-            this.panel3.Name = "panel3";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btn_ForgotPassword);
-            this.panel1.Controls.Add(this.btn_CreateAcc);
-            this.panel1.Controls.Add(this.btn_Login);
-            this.panel1.Controls.Add(this.kryptonLabel3);
-            this.panel1.Controls.Add(this.txt_pwDonor);
-            this.panel1.Controls.Add(this.lbl_UserName);
-            this.panel1.Controls.Add(this.txt_usDonor);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
-            // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
+            // 
+            // gunaLabel1
+            // 
+            resources.ApplyResources(this.gunaLabel1, "gunaLabel1");
+            this.gunaLabel1.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.gunaLabel1.Name = "gunaLabel1";
             // 
             // DonorLogin
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.gunaLabel1);
+            this.Controls.Add(this.btn_ForgotPassword);
+            this.Controls.Add(this.btn_CreateAcc);
+            this.Controls.Add(this.txt_usDonor);
+            this.Controls.Add(this.btn_Login);
+            this.Controls.Add(this.lbl_UserName);
+            this.Controls.Add(this.kryptonLabel3);
+            this.Controls.Add(this.txt_pwDonor);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DonorLogin";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -215,8 +206,7 @@
         private ComponentFactory.Krypton.Toolkit.KryptonButton btn_Login;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btn_CreateAcc;
         private ComponentFactory.Krypton.Toolkit.KryptonLinkLabel btn_ForgotPassword;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private Guna.UI.WinForms.GunaLabel gunaLabel1;
     }
 }

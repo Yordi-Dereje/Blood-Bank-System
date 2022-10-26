@@ -26,24 +26,31 @@ namespace BloodManagementSystem.Donation
         {
 
         }
-       
-       
-        private void tbyear(object sender, KeyEventArgs e)
-        {
-        }
+
+
 
         private void tbyears_keydown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
-                EmployeeClass emp = new EmployeeClass();
-                emp.displayDonationChart(int.Parse(tbyears.Text));
-                //check if the year exists
-                //lbl_year = emp.year; mb idk
-                chart_Donation.Series["year"].XValueMember = "month";
-                chart_Donation.Series["year"].YValueMembers = "total";
-                chart_Donation.Titles.Add("Donation Report");
+                if (int.Parse(tbyears.Text) != 2022)
+                {
+                    MessageBox.Show("Specific year doesn't exist!");
+                }
+                else
+                {
+                    EmployeeClass emp = new EmployeeClass();
+                    chart_Donation.DataSource = emp.displayDonationChart(int.Parse(tbyears.Text));
+                    chart_Donation.Series["year"].XValueMember = "month";
+                    chart_Donation.Series["year"].YValueMembers = "total";
+                    chart_Donation.Titles.Add("Donation Report");
+                }
             }
+        }
+
+        private void tbyears_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

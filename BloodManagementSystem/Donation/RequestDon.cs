@@ -28,6 +28,8 @@ namespace BloodManagementSystem
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            CustomMessageBox c = new CustomMessageBox(p,1) {TopMost = true };
+            c.Show();
             SqlMedical m = new SqlMedical();
             m.Insert72(id, CLB72h);
             m.Insert3(id, CLB3m);

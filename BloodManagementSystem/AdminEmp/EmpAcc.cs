@@ -70,11 +70,9 @@ namespace BloodManagementSystem
                     Password = tbPWEmp.Text
                 };
                 emp.Insert();
-                MessageBox.Show("Employee registered successfully!");
-                p.Controls.Clear();
-                ListOfEmp em = new ListOfEmp(p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-                p.Controls.Add(em);
-                em.Show();
+                CustomMessageBox c = new CustomMessageBox(p,2){TopMost = true };
+                c.Show();
+                
             }
         }
     }

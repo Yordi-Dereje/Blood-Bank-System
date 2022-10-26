@@ -45,10 +45,9 @@
             this.lblHome.AutoSize = true;
             this.lblHome.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHome.ForeColor = System.Drawing.Color.Red;
-            this.lblHome.Location = new System.Drawing.Point(695, 40);
-            this.lblHome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblHome.Location = new System.Drawing.Point(521, 32);
             this.lblHome.Name = "lblHome";
-            this.lblHome.Size = new System.Drawing.Size(68, 25);
+            this.lblHome.Size = new System.Drawing.Size(53, 19);
             this.lblHome.TabIndex = 22;
             this.lblHome.Text = "Home";
             this.lblHome.Click += new System.EventHandler(this.lblHome_Click);
@@ -59,10 +58,9 @@
             this.lblDonor.AutoSize = true;
             this.lblDonor.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDonor.ForeColor = System.Drawing.Color.Red;
-            this.lblDonor.Location = new System.Drawing.Point(880, 40);
-            this.lblDonor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDonor.Location = new System.Drawing.Point(660, 32);
             this.lblDonor.Name = "lblDonor";
-            this.lblDonor.Size = new System.Drawing.Size(71, 25);
+            this.lblDonor.Size = new System.Drawing.Size(56, 19);
             this.lblDonor.TabIndex = 19;
             this.lblDonor.Text = "Donor";
             this.lblDonor.Click += new System.EventHandler(this.lblDonor_Click_1);
@@ -72,9 +70,8 @@
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(0, 2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(109, 83);
+            this.pictureBox1.Size = new System.Drawing.Size(82, 67);
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
             // 
@@ -84,10 +81,9 @@
             this.lblAboutUs.AutoSize = true;
             this.lblAboutUs.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAboutUs.ForeColor = System.Drawing.Color.Red;
-            this.lblAboutUs.Location = new System.Drawing.Point(1218, 40);
-            this.lblAboutUs.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAboutUs.Location = new System.Drawing.Point(914, 32);
             this.lblAboutUs.Name = "lblAboutUs";
-            this.lblAboutUs.Size = new System.Drawing.Size(100, 25);
+            this.lblAboutUs.Size = new System.Drawing.Size(76, 19);
             this.lblAboutUs.TabIndex = 20;
             this.lblAboutUs.Text = "About Us";
             this.lblAboutUs.Click += new System.EventHandler(this.lblAboutUs_Click_1);
@@ -95,10 +91,9 @@
             // kryptonLabel1
             // 
             this.kryptonLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonLabel1.Location = new System.Drawing.Point(117, 13);
-            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonLabel1.Location = new System.Drawing.Point(88, 12);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(347, 52);
+            this.kryptonLabel1.Size = new System.Drawing.Size(279, 42);
             this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
             this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Palatino Linotype", 20F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel1.TabIndex = 24;
@@ -110,28 +105,26 @@
             this.lblAdminView.AutoSize = true;
             this.lblAdminView.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAdminView.ForeColor = System.Drawing.Color.Red;
-            this.lblAdminView.Location = new System.Drawing.Point(1056, 40);
-            this.lblAdminView.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAdminView.Location = new System.Drawing.Point(792, 32);
             this.lblAdminView.Name = "lblAdminView";
-            this.lblAdminView.Size = new System.Drawing.Size(75, 25);
+            this.lblAdminView.Size = new System.Drawing.Size(58, 19);
             this.lblAdminView.TabIndex = 21;
             this.lblAdminView.Text = "Admin";
             this.lblAdminView.Click += new System.EventHandler(this.lblAdminView_Click);
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(3, 93);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(2, 76);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1340, 564);
+            this.panel1.Size = new System.Drawing.Size(1005, 458);
             this.panel1.TabIndex = 25;
             // 
             // MainWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1350, 664);
+            this.ClientSize = new System.Drawing.Size(1012, 540);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblHome);
             this.Controls.Add(this.lblDonor);
@@ -140,6 +133,7 @@
             this.Controls.Add(this.kryptonLabel1);
             this.Controls.Add(this.lblAdminView);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MainWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FirstWindow";

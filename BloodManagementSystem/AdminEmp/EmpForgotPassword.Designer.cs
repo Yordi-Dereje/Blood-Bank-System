@@ -29,20 +29,21 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmpForgotPassword));
             this.btn_Submit = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.txt_emEmp = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel3 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.txt_phEmp = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.lbl_UserName = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_Submit
             // 
             this.btn_Submit.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_Submit.Location = new System.Drawing.Point(653, 313);
+            this.btn_Submit.Location = new System.Drawing.Point(460, 304);
             this.btn_Submit.Name = "btn_Submit";
             this.btn_Submit.OverrideDefault.Back.Color1 = System.Drawing.Color.Maroon;
             this.btn_Submit.OverrideDefault.Back.Color2 = System.Drawing.Color.Maroon;
@@ -94,7 +95,7 @@
             // 
             // txt_emEmp
             // 
-            this.txt_emEmp.Location = new System.Drawing.Point(591, 220);
+            this.txt_emEmp.Location = new System.Drawing.Point(398, 211);
             this.txt_emEmp.Name = "txt_emEmp";
             this.txt_emEmp.Size = new System.Drawing.Size(251, 35);
             this.txt_emEmp.StateCommon.Border.Color1 = System.Drawing.Color.Maroon;
@@ -107,7 +108,7 @@
             // 
             // kryptonLabel3
             // 
-            this.kryptonLabel3.Location = new System.Drawing.Point(591, 189);
+            this.kryptonLabel3.Location = new System.Drawing.Point(398, 180);
             this.kryptonLabel3.Name = "kryptonLabel3";
             this.kryptonLabel3.Size = new System.Drawing.Size(63, 26);
             this.kryptonLabel3.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
@@ -117,7 +118,7 @@
             // 
             // txt_phEmp
             // 
-            this.txt_phEmp.Location = new System.Drawing.Point(590, 124);
+            this.txt_phEmp.Location = new System.Drawing.Point(397, 115);
             this.txt_phEmp.Name = "txt_phEmp";
             this.txt_phEmp.Size = new System.Drawing.Size(251, 35);
             this.txt_phEmp.StateCommon.Border.Color1 = System.Drawing.Color.Maroon;
@@ -130,7 +131,7 @@
             // 
             // lbl_UserName
             // 
-            this.lbl_UserName.Location = new System.Drawing.Point(590, 92);
+            this.lbl_UserName.Location = new System.Drawing.Point(397, 83);
             this.lbl_UserName.Name = "lbl_UserName";
             this.lbl_UserName.Size = new System.Drawing.Size(64, 26);
             this.lbl_UserName.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
@@ -138,25 +139,29 @@
             this.lbl_UserName.TabIndex = 39;
             this.lbl_UserName.Values.Text = "Phone";
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Maroon;
-            this.panel3.Location = new System.Drawing.Point(2, 2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(379, 467);
-            this.panel3.TabIndex = 47;
-            // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.gunaLabel1.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel1.Location = new System.Drawing.Point(393, 18);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(288, 46);
+            this.gunaLabel1.TabIndex = 46;
+            this.gunaLabel1.Text = "Please Enter Your Info \r\nTo Retrive Your Password";
             // 
             // EmpForgotPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1002, 469);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.btn_Submit);
             this.Controls.Add(this.txt_emEmp);
             this.Controls.Add(this.kryptonLabel3);
@@ -179,7 +184,7 @@
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel3;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txt_phEmp;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel lbl_UserName;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private Guna.UI.WinForms.GunaLabel gunaLabel1;
     }
 }

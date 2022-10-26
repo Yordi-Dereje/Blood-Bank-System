@@ -109,6 +109,12 @@
     <Compile Include="AdminEmp\UCEmp.Designer.cs">
       <DependentUpon>UCEmp.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomMessageBox.Designer.cs">
+      <DependentUpon>CustomMessageBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Donation\BloodStockChart.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -364,6 +370,9 @@
     <EmbeddedResource Include="AdminEmp\UCEmp.resx">
       <DependentUpon>UCEmp.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CustomMessageBox.resx">
+      <DependentUpon>CustomMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Donation\BloodStockChart.resx">
       <DependentUpon>BloodStockChart.cs</DependentUpon>
     </EmbeddedResource>
@@ -447,6 +456,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Donation\RequestDon.resx">
       <DependentUpon>RequestDon.cs</DependentUpon>
@@ -501,6 +511,13 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\search %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\bloodfact2.jpg" />
+    <Content Include="Images\bloodfact4.jpg" />
+    <Content Include="Images\bloodfact5.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

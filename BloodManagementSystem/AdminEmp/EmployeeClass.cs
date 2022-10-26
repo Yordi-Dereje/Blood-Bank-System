@@ -41,7 +41,8 @@ namespace BloodManagementSystem
                     con.Open();
                     string query1 = "Select DATENAME(MONTH,DateDonated) FROM SUCCESSFUL_DONATION;";
                     string query2 = "Select DATEPART(YEAR,DateDonated) FROM SUCCESSFUL_DONATION;";
-                    string query4 = "Select count(*) from SUCCESSFUL_DONATION group by(DATENAME(MONTH,DateDonated));";
+                    string query4 = "select dbo.totalDonationsBY_MONTH();";
+                    //string query4 = "Select count(*) from SUCCESSFUL_DONATION group by(DATENAME(MONTH,DateDonated));";
                     string query3 = "Insert into DONATION_CHART values(@total,@years, @months);";
 
                     SqlCommand cmd1 = new SqlCommand(query1, con);
@@ -141,7 +142,7 @@ namespace BloodManagementSystem
                     cmd.Parameters.AddWithValue("@ln", LastName);
                     cmd.Parameters.AddWithValue("@dob", DOB);
                     cmd.Parameters.AddWithValue("@gender", Gender);
-                    MessageBox.Show("inside sql connection");
+                    //MessageBox.Show("inside sql connection");
                     cmd.Parameters.AddWithValue("@phone", Phone);
                     cmd.Parameters.AddWithValue("@email", Email);
                     cmd.Parameters.AddWithValue("@country", Country);

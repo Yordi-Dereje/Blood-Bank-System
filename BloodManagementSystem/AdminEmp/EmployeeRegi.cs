@@ -37,6 +37,12 @@ namespace BloodManagementSystem
                 if (rbFEmp.Checked == false && rbMEmp.Checked == false)
                     errorProvider1.SetError(rbs, "Gender required");
             }
+            for (int i = 0; i < GroupBox2.Controls.Count; i++)
+            {
+                GunaRadioButton rbs = (GunaRadioButton)GroupBox2.Controls[i];
+                if (rbEmp.Checked == false && rbAd.Checked == false)
+                    errorProvider1.SetError(rbs, "Status required");
+            }
             if (string.IsNullOrEmpty(tbFNEmp.Text))
                 errorProvider1.SetError(tbFNEmp, "First Name required");
             else if (string.IsNullOrEmpty(tbLNEmp.Text))
@@ -55,6 +61,7 @@ namespace BloodManagementSystem
             {
                 errorProvider1.SetError(tbPhoneEmp, "Phone formate error");
             }
+            
             else
             {
                 p.Controls.Clear();

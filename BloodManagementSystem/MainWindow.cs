@@ -20,6 +20,10 @@ namespace BloodManagementSystem
         private void lblHome_Click(object sender, EventArgs e)
         {
             //legizew nothing
+            panel1.Controls.Clear();
+            HomePage hp = new HomePage() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            panel1.Controls.Add(hp);
+            hp.Show();
         }
         private void lblDonor_Click_1(object sender, EventArgs e)
         {

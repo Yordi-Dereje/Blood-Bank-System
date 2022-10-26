@@ -1,10 +1,10 @@
 -- functions used
- ]]
+
 -- total donations
 -- total transfers
 -- total donors
 
-CREATE FUNCTION totalDonations()
+ALTER FUNCTION totalDonations()
 RETURNS int
 AS
 BEGIN
@@ -15,7 +15,7 @@ END
 
 select dbo.totalDonations();
 
-CREATE FUNCTION totalDonors()
+ALTER FUNCTION totalDonors()
 RETURNS int
 AS
 BEGIN
@@ -24,7 +24,7 @@ BEGIN
 	RETURN @count;
 END
 
-CREATE FUNCTION totalTransfers()
+ALTER FUNCTION totalTransfers()
 RETURNS int
 AS
 BEGIN
@@ -33,7 +33,7 @@ BEGIN
 	RETURN @count;
 END
 
-CREATE FUNCTION totalEmployees()
+ALTER FUNCTION totalEmployees()
 RETURNS int
 AS
 BEGIN
@@ -43,7 +43,7 @@ BEGIN
 END
 
 -- age calculator
-CREATE FUNCTION ageCalculate(@id int)
+ALTER FUNCTION ageCalculate(@id int)
 RETURNS int
 AS
 BEGIN
@@ -52,7 +52,7 @@ BEGIN
         RETURN @age;
 END
 
-CREATE FUNCTION ageCalculateE(@id int)
+ALTER FUNCTION ageCalculateE(@id int)
 RETURNS int
 AS
 BEGIN
@@ -62,7 +62,7 @@ BEGIN
 END
 
 -- name concatenation
-CREATE FUNCTION concatName(@id int)
+ALTER FUNCTION concatName(@id int)
 RETURNS varchar(100)
 AS
 BEGIN
@@ -71,7 +71,7 @@ BEGIN
         RETURN @fullName;
 END
 
-CREATE FUNCTION concatNameE(@id int)
+ALTER FUNCTION concatNameE(@id int)
 RETURNS varchar(100)
 AS
 BEGIN
@@ -80,7 +80,7 @@ BEGIN
         RETURN @fullName;
 END
 
-CREATE FUNCTION totalBloodTransfer(@id int)
+ALTER FUNCTION totalBloodTransfer(@id int)
 RETURNS int
 AS
 BEGIN
@@ -90,7 +90,7 @@ BEGIN
 END
 
 
-CREATE FUNCTION specificBloodCount(@type varchar(3))
+ALTER FUNCTION specificBloodCount(@type varchar(3))
 RETURNS int
 AS
 BEGIN

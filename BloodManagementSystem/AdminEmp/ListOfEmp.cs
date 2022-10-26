@@ -27,41 +27,11 @@ namespace BloodManagementSystem.AdminEmp
             s.empInfoFormLoad(flowLayoutPanel1, panel1);
         }
 
-
-        private void btn_add_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void btn_Search_Click_1(object sender, EventArgs e)
-        {
-            EmployeeClass emp = new EmployeeClass();
-            var res = emp.Search(tbAp.Text);
-            
-            if (res >= 1)
-            {
-                int filtered = res;
-               // flowLayoutPanel1.Controls.Add(filtered);
-            }
-            //populate the table with only that value
-        }
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void tbAp_Click(object sender, EventArgs e)
         {
             if (tbAp.Text == "Enter name to filter")
                 tbAp.Text = "";
         }
-
-        private void ListOfEmp_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_register_Click_1(object sender, EventArgs e)
         {
             p.Controls.Clear();
@@ -70,16 +40,22 @@ namespace BloodManagementSystem.AdminEmp
             emp.Show();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btn_Search_Click(object sender, EventArgs e)
+        private void pic_Search_Click(object sender, EventArgs e)
         {
             flowLayoutPanel1.Controls.Clear();
             EmployeeClass s = new EmployeeClass();
             s.empSearchLoad(flowLayoutPanel1, panel1, tbAp.Text);
         }
+
+        private void search(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                flowLayoutPanel1.Controls.Clear();
+                EmployeeClass s = new EmployeeClass();
+                s.empSearchLoad(flowLayoutPanel1, panel1, tbAp.Text);
+            }
+        }
+
     }
 }

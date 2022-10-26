@@ -43,13 +43,13 @@ namespace BloodManagementSystem
                 tbAp.Text = "Enter name to filter";
             }
         }
-
+        /*
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
             flowLayoutPanel1.Controls.Clear();
             DonorClass s = new DonorClass();
             s.donorInfoSearchLoad(flowLayoutPanel1, tbAp.Text);
-        }
+        }*/
 
         private void DonorInfo_Click(object sender, EventArgs e)
         {
@@ -65,6 +65,23 @@ namespace BloodManagementSystem
             {
                 tbAp.Text = "Enter name to filter";
             }
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pic_Search_Click(object sender, EventArgs e)
+        {
+            flowLayoutPanel1.Controls.Clear();
+            DonorClass s = new DonorClass();
+            s.donorInfoSearchLoad(flowLayoutPanel1, tbAp.Text);
+        }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
