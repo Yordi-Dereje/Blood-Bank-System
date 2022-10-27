@@ -26,7 +26,7 @@ namespace BloodManagementSystem
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            Regex re = new Regex("[+]{1} [2]{1} [5]{1} [1]{1} [0-9]{9}");
+            Regex re = new Regex("[+]{1}[2]{1}[5]{1}[1]{1}[0-9]{9}");
             for (int i = 0; i < GroupBox.Controls.Count; i++)
             {
                 GunaRadioButton rb = (GunaRadioButton)GroupBox.Controls[i];
@@ -49,10 +49,10 @@ namespace BloodManagementSystem
                 errorProvider1.SetError(tbCity, "City required");
             else if (string.IsNullOrEmpty(tbReg.Text))
                 errorProvider1.SetError(tbReg, "Region required");
-            /*else if (!re.IsMatch(tbPhone.Text))
+            else if (!re.IsMatch(tbPhone.Text))
             {
                 errorProvider1.SetError(tbPhone, "Phone formate error");
-            }ayseram*/
+            }
             else
             {
                 p.Controls.Clear();

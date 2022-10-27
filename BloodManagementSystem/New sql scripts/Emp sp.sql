@@ -21,7 +21,7 @@ END
 
 
 --UPDATE
-CREATE PROCEDURE spUPDATE_EMP_INFO_AS_EMP
+ALTER PROCEDURE spUPDATE_EMP_INFO_AS_EMP
 @id int,
 @FirstName varchar(50),
 @LastName varchar(50),
@@ -36,7 +36,7 @@ BEGIN
         UPDATE EMP_INFO SET FirstName = @FirstName, LastName = @LastName, Gender = @Gender, Phone = @Phone,Email = @Email, Country = @Country, City = @City, Region = @Region where ID = @id;
 END
 
-CREATE PROCEDURE spUPDATE_EMP_INFO_AS_ADMIN
+ALTER PROCEDURE spUPDATE_EMP_INFO_AS_ADMIN
 @id int,
 @Salary int,
 @Stat bit

@@ -14,6 +14,32 @@ namespace BloodManagementSystem
     internal class SqlMedical
     {
 
+        public bool SingleCheck(int id)
+        {
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
+            {
+                try
+                {
+                    string query = "select count(*) from FULL_CHECK where ID = @id";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@id", id);
+                    con.Open();
+                    int count = Convert.ToInt32(cmd.ExecuteScalar());
+                    cmd.Dispose();
+                    if (count == 0)
+                        return true;
+                    else
+                        return false;
+                }
+                catch (Exception ee)
+                {
+                    MessageBox.Show(ee.Message);
+                    return false;
+                };
+            }
+        }
+
+
         public void Insert72(int id, CheckedListBox CLB72h)
         {
             using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
@@ -35,10 +61,6 @@ namespace BloodManagementSystem
                 catch (Exception ee)
                 {
                     MessageBox.Show(ee.Message);
-                }
-                finally
-                {
-                    con.Close();
                 };
             }
 
@@ -64,10 +86,6 @@ namespace BloodManagementSystem
                 catch (Exception ee)
                 {
                     MessageBox.Show(ee.Message);
-                }
-                finally
-                {
-                    con.Close();
                 };
             }
         }
@@ -96,10 +114,6 @@ namespace BloodManagementSystem
                 catch (Exception ee)
                 {
                     MessageBox.Show(ee.Message);
-                }
-                finally
-                {
-                    con.Close();
                 };
             }
         }
@@ -131,10 +145,6 @@ namespace BloodManagementSystem
                 catch (Exception ee)
                 {
                     MessageBox.Show(ee.Message);
-                }
-                finally
-                {
-                    con.Close();
                 };
             }
         }

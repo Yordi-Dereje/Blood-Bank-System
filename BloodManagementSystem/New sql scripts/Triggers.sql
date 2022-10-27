@@ -12,20 +12,6 @@ BEGIN
         -- UPDATE BLOOD_COUNT set bloodcount += 1 where bloodtype = @type;	
 END
 
-
-CREATE TRIGGER PHONE_EMAIL_VERIFICATION
-ON DONOR_INFO
-AFTER INSERT
-AS
-BEGIN
-        DECLARE @phone varchar(30), @email varchar(50);
-        SELECT @phone = Phone, @email = Email from INSERTED;
-        IF EXISTS(SELECT * from DONOR_INFO where Phone = @phone or Email = @email)
-                BEGIN
-                        -- delete sp
-                END
-END
-
 CREATE TRIGGER TRANSFER_DECREMENT
 ON TRANSFER_INFO
 AFTER INSERT

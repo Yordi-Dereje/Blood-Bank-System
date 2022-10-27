@@ -223,6 +223,7 @@ namespace BloodManagementSystem
                 {
                     string query = "EXEC spUPDATE_EMP_INFO_AS_EMP @id, @fn, @ln, @dob, @gender, @phone, @email, @country, @city, @region";
                     SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@id", id);
                     cmd.Parameters.AddWithValue("@fn", fn);
                     cmd.Parameters.AddWithValue("@ln", ln);
                     cmd.Parameters.AddWithValue("@dob", dob);
@@ -232,7 +233,6 @@ namespace BloodManagementSystem
                     cmd.Parameters.AddWithValue("@country", country);
                     cmd.Parameters.AddWithValue("@city", city);
                     cmd.Parameters.AddWithValue("@region", region);
-                    cmd.Parameters.AddWithValue("@id", id);
 
                     con.Open();
                     cmd.ExecuteNonQuery();

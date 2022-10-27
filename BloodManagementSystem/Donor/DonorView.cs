@@ -83,10 +83,19 @@ namespace BloodManagementSystem
 
         private void lbl_ReqDonation_Click(object sender, EventArgs e)
         {
-            panel3.Controls.Clear();
-            RequestDon rd = new RequestDon(panel3, id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            panel3.Controls.Add(rd);
-            rd.Show();
+            SqlMedical m = new SqlMedical();
+            bool b = m.SingleCheck(id);
+            if (b == true)
+            {
+                panel3.Controls.Clear();
+                RequestDon rd = new RequestDon(panel3, id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                panel3.Controls.Add(rd);
+                rd.Show();
+            }
+            else
+            {
+                MessageBox.Show("Your prior request is being processed. You can not put in a new request.");
+            }
         }
     }
 }

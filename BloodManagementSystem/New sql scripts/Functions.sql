@@ -104,4 +104,15 @@ RETURNS int
 AS
 BEGIN
 	DECLARE @total int;
-	SELECT @total += 
+	SELECT @total += 1; -- finish this some other time
+	RETURN @total;
+END
+
+CREATE FUNCTION SingleRequestCheck(@id int)
+RETURNS int
+AS
+BEGIN
+	DECLARE @c int;
+	SELECT @c = count(*) from FULL_CHECK where ID = @id;
+	RETURN @c;
+END
