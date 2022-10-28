@@ -61,9 +61,9 @@ namespace BloodManagementSystem
 
         private void tbAp_Click(object sender, EventArgs e)
         {
-            if (tbAp.Text == "")
+            if (tbAp.Text == "Enter name to filter")
             {
-                tbAp.Text = "Enter name to filter";
+                tbAp.Text = "";
             }
         }
 
@@ -82,6 +82,21 @@ namespace BloodManagementSystem
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void tbAp_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (tbAp.Text == "Enter name to filter")
+            {
+                tbAp.Text = "";
+            }
+        }
+
+        private void btn_loadAll_Click(object sender, EventArgs e)
+        {
+            flowLayoutPanel1.Controls.Clear();
+            DonorClass s = new DonorClass();
+            s.donorInfoFormLoad(flowLayoutPanel1);
         }
     }
 }

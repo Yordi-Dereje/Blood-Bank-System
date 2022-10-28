@@ -85,7 +85,7 @@
             this.lbl_ReqDonation.AutoSize = true;
             this.lbl_ReqDonation.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_ReqDonation.ForeColor = System.Drawing.Color.Red;
-            this.lbl_ReqDonation.Location = new System.Drawing.Point(967, 28);
+            this.lbl_ReqDonation.Location = new System.Drawing.Point(922, 28);
             this.lbl_ReqDonation.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_ReqDonation.Name = "lbl_ReqDonation";
             this.lbl_ReqDonation.Size = new System.Drawing.Size(133, 25);
@@ -98,7 +98,7 @@
             this.lbl_Medical.AutoSize = true;
             this.lbl_Medical.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Medical.ForeColor = System.Drawing.Color.Red;
-            this.lbl_Medical.Location = new System.Drawing.Point(815, 28);
+            this.lbl_Medical.Location = new System.Drawing.Point(726, 28);
             this.lbl_Medical.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Medical.Name = "lbl_Medical";
             this.lbl_Medical.Size = new System.Drawing.Size(87, 25);
@@ -111,7 +111,7 @@
             this.lbl_Donation.AutoSize = true;
             this.lbl_Donation.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Donation.ForeColor = System.Drawing.Color.Red;
-            this.lbl_Donation.Location = new System.Drawing.Point(675, 28);
+            this.lbl_Donation.Location = new System.Drawing.Point(502, 28);
             this.lbl_Donation.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Donation.Name = "lbl_Donation";
             this.lbl_Donation.Size = new System.Drawing.Size(98, 25);
@@ -185,7 +185,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(87, 78);
+            this.pictureBox1.Size = new System.Drawing.Size(99, 78);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -210,6 +210,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1005, 609);
             this.panel3.TabIndex = 31;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // panel2
             // 

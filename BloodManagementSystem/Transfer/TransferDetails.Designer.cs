@@ -28,14 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tbOm = new Guna.UI.WinForms.GunaTextBox();
-            this.tbOp = new Guna.UI.WinForms.GunaTextBox();
-            this.tbAbm = new Guna.UI.WinForms.GunaTextBox();
-            this.tbAbp = new Guna.UI.WinForms.GunaTextBox();
-            this.tbBm = new Guna.UI.WinForms.GunaTextBox();
-            this.tbBp = new Guna.UI.WinForms.GunaTextBox();
-            this.tbAm = new Guna.UI.WinForms.GunaTextBox();
-            this.tbAp = new Guna.UI.WinForms.GunaTextBox();
             this.kryptonLabel4 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel5 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel6 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
@@ -45,159 +37,15 @@
             this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.label1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.btn_back = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.tbAp = new Guna.UI.WinForms.GunaLabel();
+            this.tbBp = new Guna.UI.WinForms.GunaLabel();
+            this.tbAbp = new Guna.UI.WinForms.GunaLabel();
+            this.tbOp = new Guna.UI.WinForms.GunaLabel();
+            this.tbOm = new Guna.UI.WinForms.GunaLabel();
+            this.tbAbm = new Guna.UI.WinForms.GunaLabel();
+            this.tbBm = new Guna.UI.WinForms.GunaLabel();
+            this.tbAm = new Guna.UI.WinForms.GunaLabel();
             this.SuspendLayout();
-            // 
-            // tbOm
-            // 
-            this.tbOm.BackColor = System.Drawing.Color.Transparent;
-            this.tbOm.BaseColor = System.Drawing.Color.White;
-            this.tbOm.BorderColor = System.Drawing.Color.Maroon;
-            this.tbOm.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbOm.FocusedBaseColor = System.Drawing.Color.White;
-            this.tbOm.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.tbOm.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.tbOm.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbOm.Location = new System.Drawing.Point(646, 425);
-            this.tbOm.Name = "tbOm";
-            this.tbOm.PasswordChar = '\0';
-            this.tbOm.ReadOnly = true;
-            this.tbOm.SelectedText = "";
-            this.tbOm.Size = new System.Drawing.Size(110, 31);
-            this.tbOm.TabIndex = 85;
-            this.tbOm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // tbOp
-            // 
-            this.tbOp.BackColor = System.Drawing.Color.Transparent;
-            this.tbOp.BaseColor = System.Drawing.Color.White;
-            this.tbOp.BorderColor = System.Drawing.Color.Maroon;
-            this.tbOp.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbOp.FocusedBaseColor = System.Drawing.Color.White;
-            this.tbOp.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.tbOp.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.tbOp.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbOp.Location = new System.Drawing.Point(290, 425);
-            this.tbOp.Name = "tbOp";
-            this.tbOp.PasswordChar = '\0';
-            this.tbOp.ReadOnly = true;
-            this.tbOp.SelectedText = "";
-            this.tbOp.Size = new System.Drawing.Size(114, 31);
-            this.tbOp.TabIndex = 84;
-            this.tbOp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // tbAbm
-            // 
-            this.tbAbm.BackColor = System.Drawing.Color.Transparent;
-            this.tbAbm.BaseColor = System.Drawing.Color.White;
-            this.tbAbm.BorderColor = System.Drawing.Color.Maroon;
-            this.tbAbm.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbAbm.FocusedBaseColor = System.Drawing.Color.White;
-            this.tbAbm.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.tbAbm.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.tbAbm.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbAbm.Location = new System.Drawing.Point(646, 334);
-            this.tbAbm.Name = "tbAbm";
-            this.tbAbm.PasswordChar = '\0';
-            this.tbAbm.ReadOnly = true;
-            this.tbAbm.SelectedText = "";
-            this.tbAbm.Size = new System.Drawing.Size(110, 31);
-            this.tbAbm.TabIndex = 83;
-            this.tbAbm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // tbAbp
-            // 
-            this.tbAbp.BackColor = System.Drawing.Color.Transparent;
-            this.tbAbp.BaseColor = System.Drawing.Color.White;
-            this.tbAbp.BorderColor = System.Drawing.Color.Maroon;
-            this.tbAbp.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbAbp.FocusedBaseColor = System.Drawing.Color.White;
-            this.tbAbp.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.tbAbp.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.tbAbp.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbAbp.Location = new System.Drawing.Point(290, 334);
-            this.tbAbp.Name = "tbAbp";
-            this.tbAbp.PasswordChar = '\0';
-            this.tbAbp.ReadOnly = true;
-            this.tbAbp.SelectedText = "";
-            this.tbAbp.Size = new System.Drawing.Size(114, 31);
-            this.tbAbp.TabIndex = 82;
-            this.tbAbp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // tbBm
-            // 
-            this.tbBm.BackColor = System.Drawing.Color.Transparent;
-            this.tbBm.BaseColor = System.Drawing.Color.White;
-            this.tbBm.BorderColor = System.Drawing.Color.Maroon;
-            this.tbBm.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbBm.FocusedBaseColor = System.Drawing.Color.White;
-            this.tbBm.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.tbBm.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.tbBm.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbBm.Location = new System.Drawing.Point(646, 240);
-            this.tbBm.Name = "tbBm";
-            this.tbBm.PasswordChar = '\0';
-            this.tbBm.ReadOnly = true;
-            this.tbBm.SelectedText = "";
-            this.tbBm.Size = new System.Drawing.Size(110, 31);
-            this.tbBm.TabIndex = 81;
-            this.tbBm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // tbBp
-            // 
-            this.tbBp.BackColor = System.Drawing.Color.Transparent;
-            this.tbBp.BaseColor = System.Drawing.Color.White;
-            this.tbBp.BorderColor = System.Drawing.Color.Maroon;
-            this.tbBp.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbBp.FocusedBaseColor = System.Drawing.Color.White;
-            this.tbBp.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.tbBp.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.tbBp.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbBp.Location = new System.Drawing.Point(290, 240);
-            this.tbBp.Name = "tbBp";
-            this.tbBp.PasswordChar = '\0';
-            this.tbBp.ReadOnly = true;
-            this.tbBp.SelectedText = "";
-            this.tbBp.Size = new System.Drawing.Size(114, 31);
-            this.tbBp.TabIndex = 80;
-            this.tbBp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // tbAm
-            // 
-            this.tbAm.BackColor = System.Drawing.Color.Transparent;
-            this.tbAm.BaseColor = System.Drawing.Color.White;
-            this.tbAm.BorderColor = System.Drawing.Color.Maroon;
-            this.tbAm.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbAm.FocusedBaseColor = System.Drawing.Color.White;
-            this.tbAm.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.tbAm.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.tbAm.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbAm.Location = new System.Drawing.Point(648, 150);
-            this.tbAm.Name = "tbAm";
-            this.tbAm.PasswordChar = '\0';
-            this.tbAm.ReadOnly = true;
-            this.tbAm.SelectedText = "";
-            this.tbAm.Size = new System.Drawing.Size(110, 31);
-            this.tbAm.TabIndex = 79;
-            this.tbAm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // tbAp
-            // 
-            this.tbAp.BackColor = System.Drawing.Color.Transparent;
-            this.tbAp.BaseColor = System.Drawing.Color.White;
-            this.tbAp.BorderColor = System.Drawing.Color.Maroon;
-            this.tbAp.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbAp.FocusedBaseColor = System.Drawing.Color.White;
-            this.tbAp.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.tbAp.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.tbAp.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbAp.Location = new System.Drawing.Point(292, 150);
-            this.tbAp.Name = "tbAp";
-            this.tbAp.PasswordChar = '\0';
-            this.tbAp.ReadOnly = true;
-            this.tbAp.SelectedText = "";
-            this.tbAp.Size = new System.Drawing.Size(114, 31);
-            this.tbAp.TabIndex = 78;
-            this.tbAp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // kryptonLabel4
             // 
@@ -316,21 +164,109 @@
             this.btn_back.Values.Text = "Back";
             this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
+            // tbAp
+            // 
+            this.tbAp.AutoSize = true;
+            this.tbAp.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbAp.ForeColor = System.Drawing.Color.Maroon;
+            this.tbAp.Location = new System.Drawing.Point(333, 150);
+            this.tbAp.Name = "tbAp";
+            this.tbAp.Size = new System.Drawing.Size(24, 26);
+            this.tbAp.TabIndex = 87;
+            this.tbAp.Text = "0";
+            // 
+            // tbBp
+            // 
+            this.tbBp.AutoSize = true;
+            this.tbBp.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbBp.ForeColor = System.Drawing.Color.Maroon;
+            this.tbBp.Location = new System.Drawing.Point(333, 240);
+            this.tbBp.Name = "tbBp";
+            this.tbBp.Size = new System.Drawing.Size(24, 26);
+            this.tbBp.TabIndex = 88;
+            this.tbBp.Text = "0";
+            // 
+            // tbAbp
+            // 
+            this.tbAbp.AutoSize = true;
+            this.tbAbp.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbAbp.ForeColor = System.Drawing.Color.Maroon;
+            this.tbAbp.Location = new System.Drawing.Point(333, 334);
+            this.tbAbp.Name = "tbAbp";
+            this.tbAbp.Size = new System.Drawing.Size(24, 26);
+            this.tbAbp.TabIndex = 89;
+            this.tbAbp.Text = "0";
+            // 
+            // tbOp
+            // 
+            this.tbOp.AutoSize = true;
+            this.tbOp.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbOp.ForeColor = System.Drawing.Color.Maroon;
+            this.tbOp.Location = new System.Drawing.Point(333, 430);
+            this.tbOp.Name = "tbOp";
+            this.tbOp.Size = new System.Drawing.Size(24, 26);
+            this.tbOp.TabIndex = 90;
+            this.tbOp.Text = "0";
+            // 
+            // tbOm
+            // 
+            this.tbOm.AutoSize = true;
+            this.tbOm.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbOm.ForeColor = System.Drawing.Color.Maroon;
+            this.tbOm.Location = new System.Drawing.Point(719, 430);
+            this.tbOm.Name = "tbOm";
+            this.tbOm.Size = new System.Drawing.Size(24, 26);
+            this.tbOm.TabIndex = 94;
+            this.tbOm.Text = "0";
+            // 
+            // tbAbm
+            // 
+            this.tbAbm.AutoSize = true;
+            this.tbAbm.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbAbm.ForeColor = System.Drawing.Color.Maroon;
+            this.tbAbm.Location = new System.Drawing.Point(719, 334);
+            this.tbAbm.Name = "tbAbm";
+            this.tbAbm.Size = new System.Drawing.Size(24, 26);
+            this.tbAbm.TabIndex = 93;
+            this.tbAbm.Text = "0";
+            // 
+            // tbBm
+            // 
+            this.tbBm.AutoSize = true;
+            this.tbBm.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbBm.ForeColor = System.Drawing.Color.Maroon;
+            this.tbBm.Location = new System.Drawing.Point(719, 240);
+            this.tbBm.Name = "tbBm";
+            this.tbBm.Size = new System.Drawing.Size(24, 26);
+            this.tbBm.TabIndex = 92;
+            this.tbBm.Text = "0";
+            // 
+            // tbAm
+            // 
+            this.tbAm.AutoSize = true;
+            this.tbAm.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbAm.ForeColor = System.Drawing.Color.Maroon;
+            this.tbAm.Location = new System.Drawing.Point(719, 150);
+            this.tbAm.Name = "tbAm";
+            this.tbAm.Size = new System.Drawing.Size(24, 26);
+            this.tbAm.TabIndex = 91;
+            this.tbAm.Text = "0";
+            // 
             // TransferDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(992, 609);
-            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.tbOm);
-            this.Controls.Add(this.tbOp);
             this.Controls.Add(this.tbAbm);
-            this.Controls.Add(this.tbAbp);
             this.Controls.Add(this.tbBm);
-            this.Controls.Add(this.tbBp);
             this.Controls.Add(this.tbAm);
+            this.Controls.Add(this.tbOp);
+            this.Controls.Add(this.tbAbp);
+            this.Controls.Add(this.tbBp);
             this.Controls.Add(this.tbAp);
+            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.kryptonLabel4);
             this.Controls.Add(this.kryptonLabel5);
             this.Controls.Add(this.kryptonLabel6);
@@ -349,15 +285,6 @@
         }
 
         #endregion
-
-        private Guna.UI.WinForms.GunaTextBox tbOm;
-        private Guna.UI.WinForms.GunaTextBox tbOp;
-        private Guna.UI.WinForms.GunaTextBox tbAbm;
-        private Guna.UI.WinForms.GunaTextBox tbAbp;
-        private Guna.UI.WinForms.GunaTextBox tbBm;
-        private Guna.UI.WinForms.GunaTextBox tbBp;
-        private Guna.UI.WinForms.GunaTextBox tbAm;
-        private Guna.UI.WinForms.GunaTextBox tbAp;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel4;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel5;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel6;
@@ -367,5 +294,13 @@
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel1;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel label1;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btn_back;
+        private Guna.UI.WinForms.GunaLabel tbAp;
+        private Guna.UI.WinForms.GunaLabel tbBp;
+        private Guna.UI.WinForms.GunaLabel tbAbp;
+        private Guna.UI.WinForms.GunaLabel tbOp;
+        private Guna.UI.WinForms.GunaLabel tbOm;
+        private Guna.UI.WinForms.GunaLabel tbAbm;
+        private Guna.UI.WinForms.GunaLabel tbBm;
+        private Guna.UI.WinForms.GunaLabel tbAm;
     }
 }

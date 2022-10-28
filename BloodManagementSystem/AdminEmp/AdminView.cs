@@ -20,11 +20,6 @@ namespace BloodManagementSystem
             this.id = id;
         }
 
-        private void gunaPanel2_MouseHover(object sender, EventArgs e)
-        {
-
-        }
-
         private void PicDonProfile_MouseHover(object sender, EventArgs e)
         {
 
@@ -57,7 +52,7 @@ namespace BloodManagementSystem
         {
             panel1.Visible = false;
             panel2.Controls.Clear();
-            ManageAcc md = new ManageAcc(id,3, panel2) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            ManageAcc md = new ManageAcc(id,3, panel2, this) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             panel2.Controls.Add(md);
             md.Show();
         }
@@ -129,6 +124,11 @@ namespace BloodManagementSystem
             MainWindow f = new MainWindow();
             f.Show();
             this.Close();
+        }
+
+        private void gunaPanel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

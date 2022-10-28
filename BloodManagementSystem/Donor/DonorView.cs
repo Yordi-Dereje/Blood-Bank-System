@@ -22,10 +22,10 @@ namespace BloodManagementSystem
 
         private void PicDonProfile_Click(object sender, EventArgs e)
         {
-            panel3.Controls.Clear(); // brings an error object not referened or sth along those lines
+            /*panel3.Controls.Clear(); // brings an error object not referened or sth along those lines
             ManageAcc md = new ManageAcc(id, 1, panel3) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             panel3.Controls.Add(md);
-            md.Show();
+            md.Show();*/
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -38,7 +38,7 @@ namespace BloodManagementSystem
         private void manageAccountToolStripMenuItem_Click(object sender, EventArgs e) // I can't even access this
         {
             panel3.Controls.Clear();
-            ManageAcc md = new ManageAcc(id,1, panel3) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            ManageAcc md = new ManageAcc(id,1, panel3, this) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             panel3.Controls.Add(md);
             md.Show();
         }
@@ -57,7 +57,8 @@ namespace BloodManagementSystem
 
         private void DonorView_Load(object sender, EventArgs e)
         {
-            lbl_Donor.Text = id.ToString();
+            var log = DonorClass.findDonor(id);
+            lbl_Donor.Text = log.FirstName.ToString();
         }
 
         private void PicDonProfile_MouseHover(object sender, EventArgs e)
@@ -96,6 +97,11 @@ namespace BloodManagementSystem
             {
                 MessageBox.Show("Your prior request is being processed. You can not put in a new request.");
             }
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

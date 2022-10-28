@@ -43,45 +43,49 @@
             // 
             this.DTP.CalendarFont = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DTP.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DTP.Location = new System.Drawing.Point(11, 20);
-            this.DTP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DTP.Location = new System.Drawing.Point(12, 11);
+            this.DTP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DTP.Name = "DTP";
-            this.DTP.Size = new System.Drawing.Size(238, 26);
+            this.DTP.Size = new System.Drawing.Size(316, 30);
             this.DTP.TabIndex = 129;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label5.Location = new System.Drawing.Point(259, -32);
+            this.label5.Location = new System.Drawing.Point(345, -39);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(283, 20);
+            this.label5.Size = new System.Drawing.Size(349, 24);
             this.label5.TabIndex = 128;
             this.label5.Text = "Took any of these in the past 72 hours?";
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(171, 193);
+            this.kryptonLabel1.Location = new System.Drawing.Point(228, 210);
+            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(551, 26);
+            this.kryptonLabel1.Size = new System.Drawing.Size(687, 32);
             this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel1.TabIndex = 130;
             this.kryptonLabel1.Values.Text = "Have you had any of these procedures done in the past 3 month?";
             // 
             // kryptonLabel2
             // 
-            this.kryptonLabel2.Location = new System.Drawing.Point(171, 344);
+            this.kryptonLabel2.Location = new System.Drawing.Point(228, 396);
+            this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(368, 26);
+            this.kryptonLabel2.Size = new System.Drawing.Size(458, 32);
             this.kryptonLabel2.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel2.TabIndex = 131;
             this.kryptonLabel2.Values.Text = "Do you have any of the following illnesses?";
             // 
             // kryptonLabel3
             // 
-            this.kryptonLabel3.Location = new System.Drawing.Point(171, 50);
+            this.kryptonLabel3.Location = new System.Drawing.Point(228, 47);
+            this.kryptonLabel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonLabel3.Name = "kryptonLabel3";
-            this.kryptonLabel3.Size = new System.Drawing.Size(426, 26);
+            this.kryptonLabel3.Size = new System.Drawing.Size(531, 32);
             this.kryptonLabel3.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel3.TabIndex = 132;
             this.kryptonLabel3.Values.Text = "Have you taken any of these in the past 72 hours?";
@@ -98,9 +102,10 @@
             "Asprin",
             "Vaccination",
             "Alcohol"});
-            this.CLB72h.Location = new System.Drawing.Point(186, 75);
+            this.CLB72h.Location = new System.Drawing.Point(248, 77);
+            this.CLB72h.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CLB72h.Name = "CLB72h";
-            this.CLB72h.Size = new System.Drawing.Size(294, 95);
+            this.CLB72h.Size = new System.Drawing.Size(392, 138);
             this.CLB72h.TabIndex = 168;
             // 
             // CLB3m
@@ -115,9 +120,10 @@
             "Dental Extraction",
             "Major Surgery",
             "Minor Surgery"});
-            this.CLB3m.Location = new System.Drawing.Point(186, 226);
+            this.CLB3m.Location = new System.Drawing.Point(248, 250);
+            this.CLB3m.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CLB3m.Name = "CLB3m";
-            this.CLB3m.Size = new System.Drawing.Size(260, 95);
+            this.CLB3m.Size = new System.Drawing.Size(347, 138);
             this.CLB3m.TabIndex = 169;
             this.CLB3m.SelectedIndexChanged += new System.EventHandler(this.checkedListBox2_SelectedIndexChanged);
             // 
@@ -137,15 +143,17 @@
             "TuberCulosis",
             "Kidney Disease",
             "Abnormal Bleeding"});
-            this.CLBperm.Location = new System.Drawing.Point(186, 378);
+            this.CLBperm.Location = new System.Drawing.Point(248, 438);
+            this.CLBperm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CLBperm.Name = "CLBperm";
-            this.CLBperm.Size = new System.Drawing.Size(308, 171);
+            this.CLBperm.Size = new System.Drawing.Size(411, 230);
             this.CLBperm.TabIndex = 170;
             // 
             // btnSubmit
             // 
             this.btnSubmit.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnSubmit.Location = new System.Drawing.Point(650, 516);
+            this.btnSubmit.Location = new System.Drawing.Point(853, 621);
+            this.btnSubmit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.OverrideDefault.Back.Color1 = System.Drawing.Color.Maroon;
             this.btnSubmit.OverrideDefault.Back.Color2 = System.Drawing.Color.Maroon;
@@ -160,7 +168,7 @@
             this.btnSubmit.OverrideDefault.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.btnSubmit.OverrideDefault.Border.Rounding = 20;
             this.btnSubmit.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnSubmit.Size = new System.Drawing.Size(110, 48);
+            this.btnSubmit.Size = new System.Drawing.Size(147, 47);
             this.btnSubmit.StateCommon.Back.Color1 = System.Drawing.Color.Maroon;
             this.btnSubmit.StateCommon.Back.Color2 = System.Drawing.Color.Maroon;
             this.btnSubmit.StateCommon.Back.ColorAngle = 45F;
@@ -197,15 +205,11 @@
             // 
             // RequestDon
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-<<<<<<< Updated upstream
-            this.ClientSize = new System.Drawing.Size(1043, 655);
-=======
-            this.ClientSize = new System.Drawing.Size(797, 464);
->>>>>>> Stashed changes
+            this.ClientSize = new System.Drawing.Size(1063, 625);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.CLBperm);
             this.Controls.Add(this.CLB3m);
@@ -216,6 +220,7 @@
             this.Controls.Add(this.DTP);
             this.Controls.Add(this.label5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "RequestDon";
             this.Text = "RequestDon";
             this.Load += new System.EventHandler(this.RequestDon_Load);

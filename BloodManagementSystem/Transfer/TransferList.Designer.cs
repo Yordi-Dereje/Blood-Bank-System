@@ -36,6 +36,7 @@
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.tbAp = new Guna.UI.WinForms.GunaTextBox();
             this.flp = new System.Windows.Forms.FlowLayoutPanel();
+            this.btn_loadAll = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.SuspendLayout();
             // 
             // label4
@@ -85,7 +86,7 @@
             // btn_back
             // 
             this.btn_back.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_back.Location = new System.Drawing.Point(838, 549);
+            this.btn_back.Location = new System.Drawing.Point(780, 532);
             this.btn_back.Margin = new System.Windows.Forms.Padding(4);
             this.btn_back.Name = "btn_back";
             this.btn_back.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
@@ -130,7 +131,7 @@
             this.kryptonButton1.OverrideDefault.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.kryptonButton1.OverrideDefault.Border.Rounding = 20;
             this.kryptonButton1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton1.Size = new System.Drawing.Size(95, 43);
+            this.kryptonButton1.Size = new System.Drawing.Size(116, 43);
             this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.Maroon;
             this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.Maroon;
             this.kryptonButton1.StateCommon.Back.ColorAngle = 45F;
@@ -188,8 +189,37 @@
             this.flp.AutoScroll = true;
             this.flp.Location = new System.Drawing.Point(12, 116);
             this.flp.Name = "flp";
-            this.flp.Size = new System.Drawing.Size(968, 426);
+            this.flp.Size = new System.Drawing.Size(944, 409);
             this.flp.TabIndex = 65;
+            // 
+            // btn_loadAll
+            // 
+            this.btn_loadAll.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_loadAll.Location = new System.Drawing.Point(780, 13);
+            this.btn_loadAll.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_loadAll.Name = "btn_loadAll";
+            this.btn_loadAll.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.btn_loadAll.Size = new System.Drawing.Size(141, 47);
+            this.btn_loadAll.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.btn_loadAll.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.btn_loadAll.StateCommon.Back.ColorAngle = 45F;
+            this.btn_loadAll.StateCommon.Border.Color1 = System.Drawing.Color.Maroon;
+            this.btn_loadAll.StateCommon.Border.Color2 = System.Drawing.Color.Maroon;
+            this.btn_loadAll.StateCommon.Border.ColorAngle = 45F;
+            this.btn_loadAll.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btn_loadAll.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btn_loadAll.StateCommon.Border.Rounding = 20;
+            this.btn_loadAll.StateCommon.Border.Width = 1;
+            this.btn_loadAll.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Maroon;
+            this.btn_loadAll.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_loadAll.StatePressed.Content.ShortText.ColorAngle = 45F;
+            this.btn_loadAll.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_loadAll.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_loadAll.TabIndex = 73;
+            this.btn_loadAll.Values.Text = "Load all";
+            this.btn_loadAll.Click += new System.EventHandler(this.btn_loadAll_Click);
             // 
             // TransferList
             // 
@@ -197,6 +227,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(992, 609);
+            this.Controls.Add(this.btn_loadAll);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -224,5 +255,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
         private Guna.UI.WinForms.GunaTextBox tbAp;
         private System.Windows.Forms.FlowLayoutPanel flp;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btn_loadAll;
     }
 }

@@ -29,12 +29,14 @@ namespace BloodManagementSystem
         int id;
         int val;
         Panel p;
-        public ManageAcc(int id, int val, Panel p)
+        Form f;
+        public ManageAcc(int id, int val, Panel p, Form f)
         {
             InitializeComponent();
             this.id = id;
             this.val = val;
             this.p = p;
+            this.f = f;
         }
 
         private void ManageDonorAcc_Load(object sender, EventArgs e)
@@ -101,6 +103,36 @@ namespace BloodManagementSystem
                     tbPW.Text = res.Password.ToString();
                 }
             }
+            else if (val == 3)
+            {
+                tbSalEmp.ReadOnly = false;
+                tbStat.ReadOnly = false;
+                var log = EmployeeClass.findEmp(id);
+                if (log == null)
+                {
+                    MessageBox.Show("You cant rly lose rn unless you did something absolutely wrong gn no employee ig");
+                }
+                else
+                {
+                    tbFNEmp.Text = log.FirstName.ToString();
+                    tbLNEmp.Text = log.LastName.ToString();
+                    dtpEmp.Value = DateTime.Parse(log.DOB.ToString());
+                    if (log.Gender.ToString() == "Male")
+                        rbMEmp.Checked = true;
+                    else if (log.Gender.ToString() == "Female")
+                        rbFEmp.Checked = true;
+                    tbPhoneEmp.Text = log.Phone.ToString();
+                    tbEmailEmp.Text = log.Email.ToString();
+                    tbCoEmp.Text = log.Country.ToString();
+                    tbCiEmp.Text = log.City.ToString();
+                    tbRegEmp.Text = log.Region.ToString();
+                    tbSalEmp.Text = log.Salary.ToString();
+                    tbStat.Text = log.AdminStatus.ToString();
+                    var res = EmployeeClass.findPass(log.ID);
+                    tbUN.Text = res.UserName.ToString();
+                    tbPW.Text = res.Password.ToString();
+                }
+            }
         }
 
 
@@ -124,10 +156,13 @@ namespace BloodManagementSystem
                 {
                     MessageBox.Show(ee.Message);
                 }
+                DonorView dv = new DonorView(id);
+                dv.Show();
+                f.Close();
+
             }
             else if (val == 2)
             {
-                //var log = EmployeeClass.findEmp(id);
                 string gen = null;
                 if (rbFEmp.Checked == true)
                     gen = "Female";
@@ -137,7 +172,35 @@ namespace BloodManagementSystem
                 s.UpdateInfo(id, tbFNEmp.Text, tbLNEmp.Text, dtpEmp.Value.ToString(), gen, tbPhoneEmp.Text, tbEmailEmp.Text, tbCoEmp.Text, tbCiEmp.Text, tbRegEmp.Text);
                 s.UpdateAcc(id, tbUN.Text, tbPW.Text);
                 MessageBox.Show("Updated Successfully");
+                EmployeeView ev = new EmployeeView(id);
+                ev.Show();
+                f.Close();
             }
+            else if (val == 3)
+            {
+                string gen = null;
+                if (rbFEmp.Checked == true)
+                    gen = "Female";
+                else if (rbMEmp.Checked == true)
+                    gen = "Male";
+                EmployeeClass s = new EmployeeClass();
+                s.UpdateInfo(id, tbFNEmp.Text, tbLNEmp.Text, dtpEmp.Value.ToString(), gen, tbPhoneEmp.Text, tbEmailEmp.Text, tbCoEmp.Text, tbCiEmp.Text, tbRegEmp.Text);
+                bool st;
+                if (tbStat.Text == "Admin")
+                    st = true;
+                else// if(tbStat.Text == "Employee")
+                        st = false;
+                s.UpdateInfoAsAdmin(id, int.Parse(tbSalEmp.Text), st);
+                s.UpdateAcc(id, tbUN.Text, tbPW.Text);
+                MessageBox.Show("Updated Successfully");
+                EmployeeView ev = new EmployeeView(id);
+                ev.Show();
+                f.Close();
+                AdminView av = new AdminView(id);
+                av.Show();
+                f.Close();
+            }
+
         }
     }
 }

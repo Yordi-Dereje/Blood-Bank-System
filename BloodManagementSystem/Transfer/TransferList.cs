@@ -55,5 +55,12 @@ namespace BloodManagementSystem
             TransferClass t = new TransferClass();
             t.TransferSingleFormLoad(flp, tbAp.ToString());
         }
+
+        private void btn_loadAll_Click(object sender, EventArgs e)
+        {
+            flp.Controls.Clear();
+            TransferClass t = new TransferClass();
+            t.TransferFormLoad(flp, p);
+        }
     }
 }

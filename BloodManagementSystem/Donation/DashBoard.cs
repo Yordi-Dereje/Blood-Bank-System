@@ -40,9 +40,10 @@ namespace BloodManagementSystem
         private void btn_Transfer_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
-            TransferChart tc = new TransferChart() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            panel1.Controls.Add(tc);
-            tc.Show();
+            TransferList tl = new TransferList(panel1) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            panel1.Controls.Add(tl);
+            tl.Show();
+
         }
 
         private void btn_Donations_Click(object sender, EventArgs e)

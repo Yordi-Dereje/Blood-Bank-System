@@ -30,6 +30,7 @@ namespace BloodManagementSystem
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            errorProvider1.Clear();
             for (int i = 0; i < GroupBox1.Controls.Count; i++)
             {
                 RadioButton rbs = (RadioButton)GroupBox1.Controls[i];
@@ -46,23 +47,23 @@ namespace BloodManagementSystem
                     errorProvider1.SetError(cbVenue, "Field required");
             else
             {
-
                 var log = DonorClass.findDonor(id);
                 string bt = log.BloodType;
-                SQLDonationClass s = new SQLDonationClass();
-                int bid = s.BID;
+                //SQLDonationClass s = new SQLDonationClass();
+                //int bid = s.BID;
                 if ((int.Parse(tbW.Text) > 46 && int.Parse(tbW.Text) < 149) &&
                     (int.Parse(tbBPS.Text) > 91 && int.Parse(tbBPD.Text) < 139) &&
                     (int.Parse(tbBPD.Text) > 61 && int.Parse(tbBPD.Text) < 89) &&
                     rbNA.Checked)
                 {
+                    SQLDonationClass s = new SQLDonationClass();
                     s.successInsert(id, dtp.Value.ToString(), cbVenue.SelectedItem.ToString(), bt);
                     s.removePerson(id);
-                    EmployeeClass emp = new EmployeeClass();
-                    emp.DonationChart();
+                    /*EmployeeClass emp = new EmployeeClass();
+                    emp.DonationChart();*/
                     EmployeeView ee = new EmployeeView(id);
                     ee.Show();
-                    this.Close();
+                    //this.Close();
                 }
                 else
                 {

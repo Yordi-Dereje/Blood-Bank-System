@@ -35,5 +35,10 @@ namespace BloodManagementSystem
         {
 
         }
+
+        private void gunaSwitch1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

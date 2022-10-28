@@ -65,8 +65,9 @@
             this.Panel_Emp.Location = new System.Drawing.Point(0, 0);
             this.Panel_Emp.Margin = new System.Windows.Forms.Padding(4);
             this.Panel_Emp.Name = "Panel_Emp";
-            this.Panel_Emp.Size = new System.Drawing.Size(1312, 84);
+            this.Panel_Emp.Size = new System.Drawing.Size(1319, 78);
             this.Panel_Emp.TabIndex = 1;
+            this.Panel_Emp.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Emp_Paint);
             // 
             // kryptonLabel1
             // 
@@ -84,10 +85,10 @@
             this.PicDonProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.PicDonProfile.ContextMenuStrip = this.gunaContextMenuStrip1;
             this.PicDonProfile.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PicDonProfile.Location = new System.Drawing.Point(1224, 18);
+            this.PicDonProfile.Location = new System.Drawing.Point(1224, 5);
             this.PicDonProfile.Margin = new System.Windows.Forms.Padding(4);
             this.PicDonProfile.Name = "PicDonProfile";
-            this.PicDonProfile.Size = new System.Drawing.Size(75, 57);
+            this.PicDonProfile.Size = new System.Drawing.Size(91, 69);
             this.PicDonProfile.TabIndex = 26;
             this.PicDonProfile.TabStop = false;
             this.PicDonProfile.Click += new System.EventHandler(this.PicDonProfile_Click);
@@ -179,7 +180,7 @@
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Times New Roman", 18.75F, System.Drawing.FontStyle.Bold);
             this.gunaLabel2.ForeColor = System.Drawing.Color.Maroon;
-            this.gunaLabel2.Location = new System.Drawing.Point(119, 7);
+            this.gunaLabel2.Location = new System.Drawing.Point(109, 4);
             this.gunaLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel2.Name = "gunaLabel2";
             this.gunaLabel2.Size = new System.Drawing.Size(177, 72);
@@ -195,7 +196,7 @@
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(111, 84);
+            this.pictureBox2.Size = new System.Drawing.Size(101, 78);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 17;
             this.pictureBox2.TabStop = false;
@@ -205,19 +206,19 @@
             this.Panel_EmpDisplay.Controls.Add(this.panel2);
             this.Panel_EmpDisplay.Controls.Add(this.panel1);
             this.Panel_EmpDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Panel_EmpDisplay.Location = new System.Drawing.Point(0, 84);
+            this.Panel_EmpDisplay.Location = new System.Drawing.Point(0, 78);
             this.Panel_EmpDisplay.Margin = new System.Windows.Forms.Padding(4);
             this.Panel_EmpDisplay.Name = "Panel_EmpDisplay";
-            this.Panel_EmpDisplay.Size = new System.Drawing.Size(1312, 603);
+            this.Panel_EmpDisplay.Size = new System.Drawing.Size(1319, 609);
             this.Panel_EmpDisplay.TabIndex = 2;
             // 
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(296, 0);
+            this.panel2.Location = new System.Drawing.Point(314, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1016, 603);
+            this.panel2.Size = new System.Drawing.Size(1005, 609);
             this.panel2.TabIndex = 29;
             // 
             // panel1
@@ -227,7 +228,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(296, 603);
+            this.panel1.Size = new System.Drawing.Size(314, 609);
             this.panel1.TabIndex = 28;
             // 
             // EmployeeView
@@ -235,7 +236,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1312, 687);
+            this.ClientSize = new System.Drawing.Size(1319, 687);
             this.Controls.Add(this.Panel_EmpDisplay);
             this.Controls.Add(this.Panel_Emp);
             this.Margin = new System.Windows.Forms.Padding(4);

@@ -34,9 +34,6 @@
             this.lbl_3 = new Guna.UI.WinForms.GunaLabel();
             this.lbl_72 = new Guna.UI.WinForms.GunaLabel();
             this.lbl_id = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaSwitch1 = new Guna.UI.WinForms.GunaSwitch();
             this.SuspendLayout();
             // 
             // FlowPanelRequests
@@ -108,50 +105,12 @@
             this.lbl_id.TabIndex = 15;
             this.lbl_id.Text = "ID";
             // 
-            // gunaLabel2
-            // 
-            this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.ForeColor = System.Drawing.Color.Maroon;
-            this.gunaLabel2.Location = new System.Drawing.Point(884, 23);
-            this.gunaLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(120, 26);
-            this.gunaLabel2.TabIndex = 20;
-            this.gunaLabel2.Text = "Descending";
-            // 
-            // gunaLabel3
-            // 
-            this.gunaLabel3.AutoSize = true;
-            this.gunaLabel3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.ForeColor = System.Drawing.Color.Maroon;
-            this.gunaLabel3.Location = new System.Drawing.Point(727, 23);
-            this.gunaLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(110, 26);
-            this.gunaLabel3.TabIndex = 21;
-            this.gunaLabel3.Text = "Ascending";
-            // 
-            // gunaSwitch1
-            // 
-            this.gunaSwitch1.BaseColor = System.Drawing.SystemColors.Control;
-            this.gunaSwitch1.CheckedOffColor = System.Drawing.Color.DarkGray;
-            this.gunaSwitch1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaSwitch1.FillColor = System.Drawing.Color.White;
-            this.gunaSwitch1.Location = new System.Drawing.Point(845, 28);
-            this.gunaSwitch1.Name = "gunaSwitch1";
-            this.gunaSwitch1.Size = new System.Drawing.Size(28, 20);
-            this.gunaSwitch1.TabIndex = 22;
-            // 
             // RequestDonor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1016, 603);
-            this.Controls.Add(this.gunaSwitch1);
-            this.Controls.Add(this.gunaLabel3);
-            this.Controls.Add(this.gunaLabel2);
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.lbl_per);
             this.Controls.Add(this.lbl_3);
@@ -175,8 +134,5 @@
         private Guna.UI.WinForms.GunaLabel lbl_3;
         private Guna.UI.WinForms.GunaLabel lbl_72;
         private Guna.UI.WinForms.GunaLabel lbl_id;
-        private Guna.UI.WinForms.GunaLabel gunaLabel2;
-        private Guna.UI.WinForms.GunaLabel gunaLabel3;
-        private Guna.UI.WinForms.GunaSwitch gunaSwitch1;
     }
 }

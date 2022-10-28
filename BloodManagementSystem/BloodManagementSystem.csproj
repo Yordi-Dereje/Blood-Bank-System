@@ -315,12 +315,6 @@
     <Compile Include="Transfer\Transfer.Designer.cs">
       <DependentUpon>Transfer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Transfer\TransferChart.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Transfer\TransferChart.Designer.cs">
-      <DependentUpon>TransferChart.cs</DependentUpon>
-    </Compile>
     <Compile Include="Transfer\TransferClass.cs" />
     <Compile Include="Transfer\TransferDetails.cs">
       <SubType>Form</SubType>

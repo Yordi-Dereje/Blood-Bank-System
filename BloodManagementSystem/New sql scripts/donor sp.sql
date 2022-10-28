@@ -26,6 +26,7 @@ CREATE PROCEDURE spUPDATE_DONOR_INFO
 @id int,
 @FirstName varchar(50),
 @LastName varchar(50),
+@Dob varchar(50),
 @Gender varchar(6),
 @Phone varchar(50),
 @Email varchar(50),
@@ -34,8 +35,10 @@ CREATE PROCEDURE spUPDATE_DONOR_INFO
 @Region varchar(50)
 AS
 BEGIN
-        UPDATE DONOR_INFO SET FirstName = @FirstName,LastName = @LastName,Gender = @Gender,Phone = @Phone,Email = @Email,Country = @Country,City = @City,Region = @Region where id = @id;
+        UPDATE DONOR_INFO SET FirstName = @FirstName,LastName = @LastName, Dob = @Dob, Gender = @Gender,Phone = @Phone,Email = @Email,Country = @Country,City = @City,Region = @Region where id = @id;
 END
+
+drop procedure spUPDATE_DONOR_INFO;
 
 -- UPDATE BLOOD TYPE
 CREATE PROCEDURE spUPDATE_DONOR_BLOODTYPE
@@ -122,3 +125,16 @@ AS
 BEGIN
 	SELECT * FROM DONOR_INFO WHERE FirstName like '%' + @Name + '%' or LastName like '%' + @Name + '%' or concat(FirstName,' ',LastName) like '%' + @Name + '%';
 END
+
+
+-- new procedures
+CREATE PROCEDURE editDonor
+@id int,
+@fn varchar(50),
+@ln varchar(50),
+@gen varchar(6),
+@Phone varchar(50),
+@Email varchar(50),
+@Country varchar(50),
+@City varchar(50),
+@Region varchar(50)

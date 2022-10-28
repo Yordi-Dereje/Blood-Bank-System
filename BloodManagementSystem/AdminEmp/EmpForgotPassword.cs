@@ -49,5 +49,10 @@ namespace BloodManagementSystem
                 }
             }
         }
+
+        private void gunaLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

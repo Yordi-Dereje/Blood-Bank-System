@@ -142,7 +142,6 @@ namespace BloodManagementSystem
                     cmd.Parameters.AddWithValue("@ln", LastName);
                     cmd.Parameters.AddWithValue("@dob", DOB);
                     cmd.Parameters.AddWithValue("@gender", Gender);
-                    //MessageBox.Show("inside sql connection");
                     cmd.Parameters.AddWithValue("@phone", Phone);
                     cmd.Parameters.AddWithValue("@email", Email);
                     cmd.Parameters.AddWithValue("@country", Country);
@@ -222,7 +221,7 @@ namespace BloodManagementSystem
             {
                 try
                 {
-                    string query = "EXEC spUPDATE_EMP_INFO_AS_EMP @id, @fn, @ln, @dob, @gender, @phone, @email, @country, @city, @region";
+                    string query = "EXEC spUPDATE_EMP_INFO @id, @fn, @ln, @dob, @gender, @phone, @email, @country, @city, @region";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@id", id);
                     cmd.Parameters.AddWithValue("@fn", fn);

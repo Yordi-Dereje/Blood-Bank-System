@@ -57,5 +57,11 @@ namespace BloodManagementSystem.AdminEmp
             }
         }
 
+        private void btn_loadAll_Click(object sender, EventArgs e)
+        {
+            flowLayoutPanel1.Controls.Clear();
+            EmployeeClass s = new EmployeeClass();
+            s.empInfoFormLoad(flowLayoutPanel1, panel1);
+        }
     }
 }

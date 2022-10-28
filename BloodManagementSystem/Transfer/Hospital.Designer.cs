@@ -61,7 +61,7 @@
             this.kryptonButton1.OverrideDefault.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.kryptonButton1.OverrideDefault.Border.Rounding = 20;
             this.kryptonButton1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton1.Size = new System.Drawing.Size(95, 43);
+            this.kryptonButton1.Size = new System.Drawing.Size(115, 43);
             this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.Maroon;
             this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.Maroon;
             this.kryptonButton1.StateCommon.Back.ColorAngle = 45F;

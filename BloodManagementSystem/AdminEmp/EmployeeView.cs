@@ -30,6 +30,8 @@ namespace BloodManagementSystem
 
         private void EmployeeView_Load(object sender, EventArgs e)
         {
+            var log = EmployeeClass.findEmp(id);
+            lbl_hi.Text = log.FirstName.ToString();
             panel1.Visible = false;
             panel2.Controls.Clear();
             DashBoard ed = new DashBoard() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
@@ -56,10 +58,10 @@ namespace BloodManagementSystem
         }
         private void PicDonProfile_Click(object sender, EventArgs e)
         {
-            panel2.Controls.Clear();
+            /*panel2.Controls.Clear();
             ManageAcc md = new ManageAcc(id, 2, panel2) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             panel2.Controls.Add(md);
-            md.Show();
+            md.Show();*/
         }
 
         private void lbl_hi_Paint(object sender, PaintEventArgs e)
@@ -71,7 +73,7 @@ namespace BloodManagementSystem
         {
             panel1.Visible = false;
             panel2.Controls.Clear();
-            ManageAcc md = new ManageAcc(id, 2, panel2) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            ManageAcc md = new ManageAcc(id, 2, panel2, this) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             panel2.Controls.Add(md);
             md.Show();
         }
@@ -81,6 +83,11 @@ namespace BloodManagementSystem
             MainWindow f = new MainWindow();
             f.Show();
             this.Close();
+        }
+
+        private void Panel_Emp_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

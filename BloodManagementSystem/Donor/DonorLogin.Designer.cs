@@ -174,7 +174,8 @@
             // gunaLabel1
             // 
             resources.ApplyResources(this.gunaLabel1, "gunaLabel1");
-            this.gunaLabel1.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.gunaLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel1.ForeColor = System.Drawing.Color.Maroon;
             this.gunaLabel1.Name = "gunaLabel1";
             // 
             // DonorLogin

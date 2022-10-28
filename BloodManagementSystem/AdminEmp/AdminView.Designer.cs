@@ -95,8 +95,9 @@
             this.gunaPanel.Location = new System.Drawing.Point(0, 0);
             this.gunaPanel.Margin = new System.Windows.Forms.Padding(5);
             this.gunaPanel.Name = "gunaPanel";
-            this.gunaPanel.Size = new System.Drawing.Size(1312, 78);
+            this.gunaPanel.Size = new System.Drawing.Size(1319, 78);
             this.gunaPanel.TabIndex = 1;
+            this.gunaPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.gunaPanel_Paint);
             // 
             // kryptonLabel1
             // 
@@ -127,7 +128,7 @@
             this.gunaLabel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.gunaLabel2.Font = new System.Drawing.Font("Times New Roman", 18.75F, System.Drawing.FontStyle.Bold);
             this.gunaLabel2.ForeColor = System.Drawing.Color.Maroon;
-            this.gunaLabel2.Location = new System.Drawing.Point(104, 0);
+            this.gunaLabel2.Location = new System.Drawing.Point(95, 0);
             this.gunaLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel2.Name = "gunaLabel2";
             this.gunaLabel2.Size = new System.Drawing.Size(177, 72);
@@ -156,7 +157,7 @@
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(104, 78);
+            this.pictureBox2.Size = new System.Drawing.Size(95, 78);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 15;
             this.pictureBox2.TabStop = false;
@@ -241,16 +242,16 @@
             this.PanelAdmin.Location = new System.Drawing.Point(0, 78);
             this.PanelAdmin.Margin = new System.Windows.Forms.Padding(5);
             this.PanelAdmin.Name = "PanelAdmin";
-            this.PanelAdmin.Size = new System.Drawing.Size(1312, 641);
+            this.PanelAdmin.Size = new System.Drawing.Size(1319, 609);
             this.PanelAdmin.TabIndex = 2;
             // 
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(320, 0);
+            this.panel2.Location = new System.Drawing.Point(314, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(992, 641);
+            this.panel2.Size = new System.Drawing.Size(1005, 609);
             this.panel2.TabIndex = 30;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -261,7 +262,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(320, 641);
+            this.panel1.Size = new System.Drawing.Size(314, 609);
             this.panel1.TabIndex = 29;
             // 
             // AdminView
@@ -269,7 +270,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1312, 719);
+            this.ClientSize = new System.Drawing.Size(1319, 687);
             this.Controls.Add(this.PanelAdmin);
             this.Controls.Add(this.gunaPanel);
             this.Margin = new System.Windows.Forms.Padding(5);

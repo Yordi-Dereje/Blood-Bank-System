@@ -100,6 +100,10 @@ namespace BloodManagementSystem
                 tbOp.Text = "";
                 tbOm.Text = "";
             }
+            p.Controls.Clear();
+            TransferList tl = new TransferList(p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            p.Controls.Add(tl);
+            tl.Show();
         }
     }
 }

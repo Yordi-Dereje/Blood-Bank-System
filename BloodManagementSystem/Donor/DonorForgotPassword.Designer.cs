@@ -43,7 +43,8 @@
             // btn_Submit
             // 
             this.btn_Submit.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_Submit.Location = new System.Drawing.Point(468, 308);
+            this.btn_Submit.Location = new System.Drawing.Point(624, 379);
+            this.btn_Submit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Submit.Name = "btn_Submit";
             this.btn_Submit.OverrideDefault.Back.Color1 = System.Drawing.Color.Maroon;
             this.btn_Submit.OverrideDefault.Back.Color2 = System.Drawing.Color.Maroon;
@@ -58,7 +59,7 @@
             this.btn_Submit.OverrideDefault.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.btn_Submit.OverrideDefault.Border.Rounding = 20;
             this.btn_Submit.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btn_Submit.Size = new System.Drawing.Size(133, 38);
+            this.btn_Submit.Size = new System.Drawing.Size(177, 47);
             this.btn_Submit.StateCommon.Back.Color1 = System.Drawing.Color.Maroon;
             this.btn_Submit.StateCommon.Back.Color2 = System.Drawing.Color.Maroon;
             this.btn_Submit.StateCommon.Back.ColorAngle = 45F;
@@ -95,9 +96,10 @@
             // 
             // txt_emDon
             // 
-            this.txt_emDon.Location = new System.Drawing.Point(406, 215);
+            this.txt_emDon.Location = new System.Drawing.Point(541, 265);
+            this.txt_emDon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_emDon.Name = "txt_emDon";
-            this.txt_emDon.Size = new System.Drawing.Size(251, 35);
+            this.txt_emDon.Size = new System.Drawing.Size(335, 39);
             this.txt_emDon.StateCommon.Border.Color1 = System.Drawing.Color.Maroon;
             this.txt_emDon.StateCommon.Border.Color2 = System.Drawing.Color.Black;
             this.txt_emDon.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -108,9 +110,10 @@
             // 
             // kryptonLabel3
             // 
-            this.kryptonLabel3.Location = new System.Drawing.Point(406, 183);
+            this.kryptonLabel3.Location = new System.Drawing.Point(541, 225);
+            this.kryptonLabel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonLabel3.Name = "kryptonLabel3";
-            this.kryptonLabel3.Size = new System.Drawing.Size(63, 26);
+            this.kryptonLabel3.Size = new System.Drawing.Size(77, 32);
             this.kryptonLabel3.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
             this.kryptonLabel3.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel3.TabIndex = 47;
@@ -118,9 +121,10 @@
             // 
             // txt_phDon
             // 
-            this.txt_phDon.Location = new System.Drawing.Point(405, 118);
+            this.txt_phDon.Location = new System.Drawing.Point(540, 145);
+            this.txt_phDon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_phDon.Name = "txt_phDon";
-            this.txt_phDon.Size = new System.Drawing.Size(251, 35);
+            this.txt_phDon.Size = new System.Drawing.Size(335, 39);
             this.txt_phDon.StateCommon.Border.Color1 = System.Drawing.Color.Maroon;
             this.txt_phDon.StateCommon.Border.Color2 = System.Drawing.Color.Black;
             this.txt_phDon.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -131,9 +135,10 @@
             // 
             // lbl_UserName
             // 
-            this.lbl_UserName.Location = new System.Drawing.Point(405, 87);
+            this.lbl_UserName.Location = new System.Drawing.Point(540, 107);
+            this.lbl_UserName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbl_UserName.Name = "lbl_UserName";
-            this.lbl_UserName.Size = new System.Drawing.Size(64, 26);
+            this.lbl_UserName.Size = new System.Drawing.Size(78, 31);
             this.lbl_UserName.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
             this.lbl_UserName.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
             this.lbl_UserName.TabIndex = 45;
@@ -146,21 +151,24 @@
             // gunaLabel1
             // 
             this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.gunaLabel1.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel1.Location = new System.Drawing.Point(402, 28);
+            this.gunaLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel1.ForeColor = System.Drawing.Color.Maroon;
+            this.gunaLabel1.Location = new System.Drawing.Point(553, 54);
+            this.gunaLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(288, 46);
-            this.gunaLabel1.TabIndex = 50;
-            this.gunaLabel1.Text = "Please Enter Your Info \r\nTo Retrive Your Password";
+            this.gunaLabel1.Size = new System.Drawing.Size(322, 25);
+            this.gunaLabel1.TabIndex = 51;
+            this.gunaLabel1.Text = "Enter the required information";
             // 
             // DonorForgotPassword
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1002, 469);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1336, 577);
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.btn_Submit);
             this.Controls.Add(this.txt_emDon);
@@ -168,7 +176,7 @@
             this.Controls.Add(this.txt_phDon);
             this.Controls.Add(this.lbl_UserName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "DonorForgotPassword";
             this.Text = "DonorForgotPassword";
             this.Load += new System.EventHandler(this.DonorForgotPassword_Load);

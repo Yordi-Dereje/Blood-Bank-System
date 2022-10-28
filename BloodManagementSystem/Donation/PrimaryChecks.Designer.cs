@@ -242,10 +242,9 @@
             this.label6.TabIndex = 181;
             this.label6.Text = "Venue";
             // 
-<<<<<<< Updated upstream
             // gunaComboBox1
             // 
-            this.gunaComboBox1.BackColor = System.Drawing.Color.Transparent;
+            /*this.gunaComboBox1.BackColor = System.Drawing.Color.Transparent;
             this.gunaComboBox1.BaseColor = System.Drawing.Color.White;
             this.gunaComboBox1.BorderColor = System.Drawing.Color.Maroon;
             this.gunaComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
@@ -264,8 +263,7 @@
             this.gunaComboBox1.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaComboBox1.OnHoverItemForeColor = System.Drawing.Color.White;
             this.gunaComboBox1.Size = new System.Drawing.Size(223, 31);
-            this.gunaComboBox1.TabIndex = 182;
-=======
+            this.gunaComboBox1.TabIndex = 182;*/
             // cbVenue
             // 
             this.cbVenue.BackColor = System.Drawing.Color.Transparent;
@@ -288,7 +286,6 @@
             this.cbVenue.OnHoverItemForeColor = System.Drawing.Color.White;
             this.cbVenue.Size = new System.Drawing.Size(168, 27);
             this.cbVenue.TabIndex = 182;
->>>>>>> Stashed changes
             // 
             // dtp
             // 
