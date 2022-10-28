@@ -64,7 +64,7 @@ namespace BloodManagementSystem
             }
         }
         
-        public void requestFormLoad(FlowLayoutPanel flp, Panel p)
+        public void requestFormLoad(FlowLayoutPanel flp, Panel p,int id)
         {
             using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
@@ -77,7 +77,7 @@ namespace BloodManagementSystem
                     bool flager = false;
                     foreach (DataRow item in ds.Tables["FULL_CHECK"].Rows)
                     {
-                        UCRequestingDonor r = new UCRequestingDonor(p);
+                        UCRequestingDonor r = new UCRequestingDonor(p,id);
                         r.ID = int.Parse(item["ID"].ToString());
                         r.Datee = item["Datee"].ToString();
                         int ch72 = int.Parse(item["Check72"].ToString());
@@ -172,6 +172,28 @@ namespace BloodManagementSystem
                     int count = 0;
                     string query = "Select dbo.totalDonations()";
                     SqlCommand cmd = new SqlCommand(query, con);
+                    con.Open();
+                    count = Convert.ToInt32(cmd.ExecuteScalar());
+                    cmd.Dispose();
+                    return count;
+                }
+                catch (Exception e)
+                {
+                    MessageBox.Show(e.Message);
+                    return 0;
+                };
+            }
+        }
+        public int getDate(int id)
+        {
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
+            {
+                try
+                {
+                    int count = -1;
+                    string query = "Select dbo.dateCalculate(@id)";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@id", id);
                     con.Open();
                     count = Convert.ToInt32(cmd.ExecuteScalar());
                     cmd.Dispose();

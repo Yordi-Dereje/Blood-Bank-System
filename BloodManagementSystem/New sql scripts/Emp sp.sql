@@ -37,6 +37,8 @@ BEGIN
         UPDATE EMP_INFO SET FirstName = @FirstName, LastName = @LastName, Dob = @Dob, Gender = @Gender, Phone = @Phone,Email = @Email, Country = @Country, City = @City, Region = @Region where ID = @id;
 END
 
+
+
 CREATE PROCEDURE spUPDATE_EMP_INFO_AS_ADMIN
 @id int,
 @Salary int,

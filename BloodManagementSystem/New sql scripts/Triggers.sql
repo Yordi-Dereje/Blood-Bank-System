@@ -28,3 +28,13 @@ BEGIN
 	EXEC spDECREMENT_BLOODCOUNT @valop, 'O+';
 	EXEC spDECREMENT_BLOODCOUNT @valom, 'O-';
 END
+
+CREATE TRIGGER donationChart_Inc
+ON SUCCESSFUL_DONATION
+AFTER INSERT
+AS
+BEGIN
+	DECLARE @month varchar(30);
+	SELECT @month = DATENAME(MONTH,DateDonated) from inserted;
+	EXEC sp_IncDonationChart @month;
+END

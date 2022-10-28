@@ -23,7 +23,7 @@ namespace BloodManagementSystem
         {
             panel1.Visible = true;
             panel2.Controls.Clear();
-            RequestDonor r = new RequestDonor(panel2) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            RequestDonor r = new RequestDonor(panel2,id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             panel2.Controls.Add(r);
             r.Show();
         }
@@ -34,7 +34,7 @@ namespace BloodManagementSystem
             lbl_hi.Text = log.FirstName.ToString();
             panel1.Visible = false;
             panel2.Controls.Clear();
-            DashBoard ed = new DashBoard() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            DashBoard ed = new DashBoard(id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             panel2.Controls.Add(ed);
             ed.Show();
         }
@@ -43,7 +43,7 @@ namespace BloodManagementSystem
         {
             panel1.Visible = false;
             panel2.Controls.Clear();
-            DashBoard ed = new DashBoard() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            DashBoard ed = new DashBoard(id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             panel2.Controls.Add(ed);
             ed.Show();
         }

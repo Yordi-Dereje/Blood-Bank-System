@@ -75,8 +75,7 @@ namespace BloodManagementSystem
             }
             else if (val == 2)
             {
-                tbSalEmp.ReadOnly = true;
-                tbStat.ReadOnly = true;
+                
                 var log = EmployeeClass.findEmp(id);
                 if (log == null)
                 {
@@ -105,12 +104,10 @@ namespace BloodManagementSystem
             }
             else if (val == 3)
             {
-                tbSalEmp.ReadOnly = false;
-                tbStat.ReadOnly = false;
                 var log = EmployeeClass.findEmp(id);
                 if (log == null)
                 {
-                    MessageBox.Show("You cant rly lose rn unless you did something absolutely wrong gn no employee ig");
+                    MessageBox.Show("No Employee Found");
                 }
                 else
                 {
@@ -138,67 +135,91 @@ namespace BloodManagementSystem
 
         private void btnSave_Click_1(object sender, EventArgs e)
         {
-            if (val == 1)
+            if (string.IsNullOrEmpty(tbFNEmp.Text))
+                errorProvider1.SetError(tbFNEmp, "Employee name required");
+            else if (string.IsNullOrEmpty(tbLNEmp.Text))
+                errorProvider1.SetError(tbLNEmp, "Employee name required");
+            else if (string.IsNullOrEmpty(tbEmailEmp.Text))
+                errorProvider1.SetError(tbEmailEmp, "Employee Email required");
+            else if (string.IsNullOrEmpty(tbPhoneEmp.Text))
+                errorProvider1.SetError(tbPhoneEmp, "Employee Phone required");
+            else if (string.IsNullOrEmpty(tbCoEmp.Text))
+                errorProvider1.SetError(tbCoEmp, "Employee country required");
+            else if (string.IsNullOrEmpty(tbCiEmp.Text))
+                errorProvider1.SetError(tbCiEmp, "Employee city required");
+            else if (string.IsNullOrEmpty(tbRegEmp.Text))
+                errorProvider1.SetError(tbRegEmp, "Employee region required");
+            else if (string.IsNullOrEmpty(tbCiEmp.Text))
+                errorProvider1.SetError(tbCiEmp, "Employee city required");
+            else if (string.IsNullOrEmpty(tbUN.Text))
+                errorProvider1.SetError(tbUN, "Employee username required");
+            else if (string.IsNullOrEmpty(tbPW.Text))
+                errorProvider1.SetError(tbPW, "Employee password required");
+            else
             {
-                string gen = null;
-                if (rbFEmp.Checked == true)
-                    gen = "Female";
-                else if (rbMEmp.Checked == true)
-                    gen = "Male";
-                try
+                if (val == 1)
                 {
-                    DonorClass d = new DonorClass();
-                    d.UpdateInfo(id, tbFNEmp.Text, tbLNEmp.Text, dtpEmp.Value.ToString(), gen, tbPhoneEmp.Text, tbEmailEmp.Text, tbCoEmp.Text, tbCiEmp.Text, tbRegEmp.Text);
-                    d.UpdateAcc(id, tbUN.Text, tbPW.Text);
-                    MessageBox.Show("Updated Successfully");
-                }
-                catch(Exception ee)
-                {
-                    MessageBox.Show(ee.Message);
-                }
-                DonorView dv = new DonorView(id);
-                dv.Show();
-                f.Close();
+                    string gen = null;
+                    if (rbFEmp.Checked == true)
+                        gen = "Female";
+                    else if (rbMEmp.Checked == true)
+                        gen = "Male";
+                    try
+                    {
+                        DonorClass d = new DonorClass();
+                        d.UpdateInfo(id, tbFNEmp.Text, tbLNEmp.Text, dtpEmp.Value.ToString(), gen, tbPhoneEmp.Text, tbEmailEmp.Text, tbCoEmp.Text, tbCiEmp.Text, tbRegEmp.Text);
+                        d.UpdateAcc(id, tbUN.Text, tbPW.Text);
+                        MessageBox.Show("Updated Successfully");
+                    }
+                    catch (Exception ee)
+                    {
+                        MessageBox.Show(ee.Message);
+                    }
+                    DonorView dv = new DonorView(id);
+                    dv.Show();
+                    f.Close();
 
-            }
-            else if (val == 2)
-            {
-                string gen = null;
-                if (rbFEmp.Checked == true)
-                    gen = "Female";
-                else if (rbMEmp.Checked == true)
-                    gen = "Male";
-                EmployeeClass s = new EmployeeClass();
-                s.UpdateInfo(id, tbFNEmp.Text, tbLNEmp.Text, dtpEmp.Value.ToString(), gen, tbPhoneEmp.Text, tbEmailEmp.Text, tbCoEmp.Text, tbCiEmp.Text, tbRegEmp.Text);
-                s.UpdateAcc(id, tbUN.Text, tbPW.Text);
-                MessageBox.Show("Updated Successfully");
-                EmployeeView ev = new EmployeeView(id);
-                ev.Show();
-                f.Close();
-            }
-            else if (val == 3)
-            {
-                string gen = null;
-                if (rbFEmp.Checked == true)
-                    gen = "Female";
-                else if (rbMEmp.Checked == true)
-                    gen = "Male";
-                EmployeeClass s = new EmployeeClass();
-                s.UpdateInfo(id, tbFNEmp.Text, tbLNEmp.Text, dtpEmp.Value.ToString(), gen, tbPhoneEmp.Text, tbEmailEmp.Text, tbCoEmp.Text, tbCiEmp.Text, tbRegEmp.Text);
-                bool st;
-                if (tbStat.Text == "Admin")
-                    st = true;
-                else// if(tbStat.Text == "Employee")
+                }
+                else if (val == 2)
+                {
+                    string gen = null;
+                    if (rbFEmp.Checked == true)
+                        gen = "Female";
+                    else if (rbMEmp.Checked == true)
+                        gen = "Male";
+                    EmployeeClass s = new EmployeeClass();
+                    s.UpdateInfo(id, tbFNEmp.Text, tbLNEmp.Text, dtpEmp.Value.ToString(), gen, tbPhoneEmp.Text, tbEmailEmp.Text, tbCoEmp.Text, tbCiEmp.Text, tbRegEmp.Text);
+                    s.UpdateAcc(id, tbUN.Text, tbPW.Text);
+                    MessageBox.Show("Updated Successfully");
+                    EmployeeView ev = new EmployeeView(id);
+                    ev.Show();
+                    f.Close();
+                }
+                else if (val == 3)
+                {
+                    string gen = null;
+                    if (rbFEmp.Checked == true)
+                        gen = "Female";
+                    else if (rbMEmp.Checked == true)
+                        gen = "Male";
+                    EmployeeClass s = new EmployeeClass();
+                    s.UpdateInfo(id, tbFNEmp.Text, tbLNEmp.Text, dtpEmp.Value.ToString(), gen, tbPhoneEmp.Text, tbEmailEmp.Text, tbCoEmp.Text, tbCiEmp.Text, tbRegEmp.Text);
+                   /* bool st;
+                    if (tbStat.Text == "Admin")
+                        st = true;
+                    else// if(tbStat.Text == "Employee")
                         st = false;
-                s.UpdateInfoAsAdmin(id, int.Parse(tbSalEmp.Text), st);
-                s.UpdateAcc(id, tbUN.Text, tbPW.Text);
-                MessageBox.Show("Updated Successfully");
-                EmployeeView ev = new EmployeeView(id);
-                ev.Show();
-                f.Close();
-                AdminView av = new AdminView(id);
-                av.Show();
-                f.Close();
+                    s.UpdateInfoAsAdmin(id, int.Parse(tbSalEmp.Text), st);
+                   */
+                    s.UpdateAcc(id, tbUN.Text, tbPW.Text);
+                    MessageBox.Show("Updated Successfully");
+                    EmployeeView ev = new EmployeeView(id);
+                    ev.Show();
+                    f.Close();
+                    AdminView av = new AdminView(id);
+                    av.Show();
+                    f.Close();
+                }
             }
 
         }

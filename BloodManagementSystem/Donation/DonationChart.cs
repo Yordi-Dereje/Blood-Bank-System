@@ -19,7 +19,10 @@ namespace BloodManagementSystem.Donation
 
         private void chart_Donation_Click(object sender, EventArgs e)
         {
-
+            panel1.Controls.Clear();
+            DonationInfo di = new DonationInfo(panel1, 0) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            panel1.Controls.Add(di);
+            di.Show();
         }
 
         private void DonationChart_Load(object sender, EventArgs e)
@@ -49,6 +52,11 @@ namespace BloodManagementSystem.Donation
         }
 
         private void tbyears_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

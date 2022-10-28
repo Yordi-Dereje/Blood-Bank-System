@@ -13,10 +13,12 @@ namespace BloodManagementSystem
     public partial class HospitalRegi : Form
     {
         Panel p;
-        public HospitalRegi(Panel p)
+        int id;
+        public HospitalRegi(Panel p, int id)
         {
             InitializeComponent();
             this.p = p;
+            this.id = id;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -55,7 +57,7 @@ namespace BloodManagementSystem
                 hc.Insert();
 
                 p.Controls.Clear();
-                Hospital h = new Hospital(p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                Hospital h = new Hospital(p,id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
                 p.Controls.Add(h);
                 h.Show();
             }

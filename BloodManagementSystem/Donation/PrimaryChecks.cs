@@ -15,12 +15,13 @@ namespace BloodManagementSystem
 {
     public partial class PrimaryChecks : Form
     {
-        int id;
+        int id,id2;
         Panel p;
-        public PrimaryChecks(int id, Panel p)
+        public PrimaryChecks(int id, int id2,Panel p)
         {
             InitializeComponent();
             this.id = id;
+            this.id2 = id2;
             this.p = p;
         }
         private void PrimaryChecks_Load(object sender, EventArgs e)
@@ -61,7 +62,7 @@ namespace BloodManagementSystem
                     s.removePerson(id);
                     /*EmployeeClass emp = new EmployeeClass();
                     emp.DonationChart();*/
-                    EmployeeView ee = new EmployeeView(id);
+                    EmployeeView ee = new EmployeeView(id2);
                     ee.Show();
                     //this.Close();
                 }
@@ -80,7 +81,7 @@ namespace BloodManagementSystem
                     //another condition to check if the person has donated in the past 3 months
                     SQLDonationClass sd = new SQLDonationClass();
                     sd.removePerson(id);
-                    EmployeeView ee = new EmployeeView(id);
+                    EmployeeView ee = new EmployeeView(id2);
                     ee.Show();
                     MessageBox.Show("Inserted into failure table");
                     this.Hide();

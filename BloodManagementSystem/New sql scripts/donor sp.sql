@@ -22,7 +22,7 @@ EXEC spINSERT_DONOR_INFO 'bbb', 'bbb','12/12/12', 'Male', '0911', 'bbb', 'bbb', 
 select * from DONOR_INFO;
 
 -- UPDATE
-CREATE PROCEDURE spUPDATE_DONOR_INFO
+ALTER PROCEDURE spUPDATE_DONOR_INFO
 @id int,
 @FirstName varchar(50),
 @LastName varchar(50),

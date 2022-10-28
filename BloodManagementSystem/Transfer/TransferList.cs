@@ -13,10 +13,12 @@ namespace BloodManagementSystem
     public partial class TransferList : Form
     {
         Panel p;
-        public TransferList(Panel p)
+        int id;
+        public TransferList(Panel p, int id)
         {
             InitializeComponent();
             this.p = p;
+            this.id = id;
         }
 
         private void tbAp_Click(object sender, EventArgs e)
@@ -37,14 +39,24 @@ namespace BloodManagementSystem
         private void TransferList_Load(object sender, EventArgs e)
         {
             flp.Controls.Clear();
-            TransferClass t = new TransferClass();
-            t.TransferFormLoad(flp, p);
+            var log = EmployeeClass.findEmp(id);
+            if (log == null)
+            {
+                MessageBox.Show("You can rly lose rn unless you did something absolutely wrong in adminemplogin");
+            }
+            else
+            {
+                TransferClass t = new TransferClass();
+                t.TransferFormLoad(flp, p,id);
+                btn_back.Visible = false;
+                
+            }
         }
 
         private void btn_back_Click(object sender, EventArgs e)
         {
             p.Controls.Clear();
-            Transfer t = new Transfer(p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            Transfer t = new Transfer(p,id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             p.Controls.Add(t);
             t.Show();
         }
@@ -58,9 +70,35 @@ namespace BloodManagementSystem
 
         private void btn_loadAll_Click(object sender, EventArgs e)
         {
+        }
+
+        private void pic_Search_Click(object sender, EventArgs e)
+        {
+
             flp.Controls.Clear();
             TransferClass t = new TransferClass();
-            t.TransferFormLoad(flp, p);
+            t.TransferFormLoad(flp, p,id);
+        }
+
+        private void TransferList_MouseEnter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbAp_Enter(object sender, EventArgs e)
+        {
+            if (tbAp.Text == "Enter name to filter")
+            {
+                tbAp.Text = "";
+            }
+        }
+
+        private void tbAp_Leave(object sender, EventArgs e)
+        {
+            if (tbAp.Text == "")
+            {
+                tbAp.Text = "Enter name to filter";
+            }
         }
     }
 }

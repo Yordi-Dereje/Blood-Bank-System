@@ -29,8 +29,6 @@ namespace BloodManagementSystem
         private void MedicalPage_Load(object sender, EventArgs e)
         {
             flowLayoutPanel1.Controls.Clear();
-
-
             flowLayoutPanel2.Controls.Clear();
             SqlMedical s = new SqlMedical();
             s.illnessFormLoad(flowLayoutPanel2, p);

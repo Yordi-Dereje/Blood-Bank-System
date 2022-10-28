@@ -15,6 +15,26 @@ END
 
 select dbo.totalDonations();
 
+
+CREATE FUNCTION totalDonationsBY_MONTH()
+RETURNS int
+AS
+BEGIN
+	DECLARE @count int;
+	SELECT @count = count(*) from SUCCESSFUL_DONATION GROUP BY(DateDonated);
+	RETURN @count;
+END
+
+Select * FROM DONATION_CHART
+Select DATENAME(MONTH,DateDonated) FROM SUCCESSFUL_DONATION;
+Select DATEPART(YEAR,DateDonated) FROM SUCCESSFUL_DONATION;
+select dbo.totalDonationsBY_MONTH();
+
+
+
+
+
+
 ALTER FUNCTION totalDonors()
 RETURNS int
 AS
@@ -52,6 +72,16 @@ BEGIN
         RETURN @age;
 END
 
+Alter FUNCTION dateCalculate(@id int)
+RETURNS INT
+AS
+BEGIN
+	DECLARE @datee int;
+	SELECT @datee = min(datediff(DAY,DateDonated, GetDate())) from SUCCESSFUL_DONATION WHERE ID = @id;
+	RETURN @datee;
+END
+
+SELECT min(datediff(DAY,DateDonated, GetDate())) from SUCCESSFUL_DONATION ;
 ALTER FUNCTION ageCalculateE(@id int)
 RETURNS int
 AS

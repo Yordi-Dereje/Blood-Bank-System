@@ -40,9 +40,9 @@
             // 
             // tbPWEmp
             // 
+            this.tbPWEmp.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tbPWEmp.Location = new System.Drawing.Point(229, 263);
             this.tbPWEmp.Margin = new System.Windows.Forms.Padding(4);
-            //this.tbPWEmp.Location = new System.Drawing.Point(172, 214);
             this.tbPWEmp.Name = "tbPWEmp";
             this.tbPWEmp.Size = new System.Drawing.Size(251, 35);
             this.tbPWEmp.StateCommon.Border.Color1 = System.Drawing.Color.Maroon;
@@ -55,9 +55,9 @@
             // 
             // kryptonLabel3
             // 
+            this.kryptonLabel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.kryptonLabel3.Location = new System.Drawing.Point(229, 224);
             this.kryptonLabel3.Margin = new System.Windows.Forms.Padding(4);
-            //this.kryptonLabel3.Location = new System.Drawing.Point(172, 182);
             this.kryptonLabel3.Name = "kryptonLabel3";
             this.kryptonLabel3.Size = new System.Drawing.Size(93, 26);
             this.kryptonLabel3.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
@@ -67,9 +67,9 @@
             // 
             // tbUNEmp
             // 
+            this.tbUNEmp.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tbUNEmp.Location = new System.Drawing.Point(229, 134);
             this.tbUNEmp.Margin = new System.Windows.Forms.Padding(4);
-            //this.tbUNEmp.Location = new System.Drawing.Point(172, 109);
             this.tbUNEmp.Name = "tbUNEmp";
             this.tbUNEmp.Size = new System.Drawing.Size(251, 35);
             this.tbUNEmp.StateCommon.Border.Color1 = System.Drawing.Color.Maroon;
@@ -82,9 +82,9 @@
             // 
             // lbl_UserName
             // 
+            this.lbl_UserName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_UserName.Location = new System.Drawing.Point(229, 95);
             this.lbl_UserName.Margin = new System.Windows.Forms.Padding(4);
-            //this.lbl_UserName.Location = new System.Drawing.Point(172, 77);
             this.lbl_UserName.Name = "lbl_UserName";
             this.lbl_UserName.Size = new System.Drawing.Size(104, 26);
             this.lbl_UserName.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
@@ -94,9 +94,9 @@
             // 
             // btnDone
             // 
+            this.btnDone.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnDone.Location = new System.Drawing.Point(327, 359);
             this.btnDone.Margin = new System.Windows.Forms.Padding(4);
-            //this.btnDone.Location = new System.Drawing.Point(245, 292);
             this.btnDone.Name = "btnDone";
             this.btnDone.OverrideDefault.Back.Color1 = System.Drawing.Color.Maroon;
             this.btnDone.OverrideDefault.Back.Color2 = System.Drawing.Color.Maroon;
@@ -155,6 +155,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(607, 406);
             this.Controls.Add(this.btnDone);
             this.Controls.Add(this.tbPWEmp);
@@ -169,6 +170,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion

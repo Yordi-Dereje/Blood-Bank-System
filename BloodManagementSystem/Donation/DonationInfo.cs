@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
+using BloodManagementSystem.Donation;
 
 namespace BloodManagementSystem
 {
@@ -38,12 +39,21 @@ namespace BloodManagementSystem
                 lbl_per.Text = "";
                 SQLDonationClass s = new SQLDonationClass();
                 s.successformLoadID(flowLayoutPanel1, id);
+                gunaLabel5.Visible = false;
             }
         }
 
         private void lbl_per_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void gunaLabel5_Click(object sender, EventArgs e)
+        {
+            p.Controls.Clear();
+            DonationChart dc = new DonationChart() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            p.Controls.Add(dc);
+            dc.Show();
         }
     }
 }

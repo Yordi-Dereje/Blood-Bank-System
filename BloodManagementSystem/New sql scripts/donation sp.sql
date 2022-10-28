@@ -258,3 +258,9 @@ BEGIN
 	SELECT * FROM HOSPITAL_INFO WHERE Name like '%' + @Name + '%';
 END
 
+CREATE PROCEDURE sp_IncDonationChart
+@mon varchar(30)
+AS
+BEGIN
+	UPDATE DONATION_CHART set COUNT = COUNT + 1 WHERE MONTHS = @mon;
+END

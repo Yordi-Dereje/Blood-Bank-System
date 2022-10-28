@@ -21,27 +21,23 @@ namespace BloodManagementSystem
         {
             try
             {
-                timerChangeImage.Start();
-                ImageNumber++;
-                if (ImageNumber > 3)
-                {
-                    ImageNumber = 1;
-                }
-                pictureBox.ImageLocation = string.Format(@"C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSystem\Images\" + ImageNumber + ".jpg");
+              // timerChangeImage.Start();
+               
+               
             }
             catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
-
+        /*
         private void LoadPreviousImages()
         {
             timerChangeImage.Start();
             ImageNumber--;
-            if (ImageNumber < 1)
+            if (ImageNumber == 1)
             {
-                ImageNumber = 3;
+                ImageNumber = 5;
             }
             pictureBox.ImageLocation = string.Format(@"C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSystem\Images\" + ImageNumber + ".jpg");
         }
@@ -49,13 +45,18 @@ namespace BloodManagementSystem
         {
             pictureBox.ImageLocation = string.Format(@"C:\Users\hp\Documents\GitHub\lab projects\Blood-Bank-System\BloodManagementSystem\Images\" + ImageNumber + ".jpg");
 
-        }
+        }*/
 
         private void timerChangeImage_Tick(object sender, EventArgs e)
         {
-            LoadNextImages();
+            if (ImageNumber == 3)
+            {
+                ImageNumber = 1;
+            }
+           this.pictureBox.ImageLocation = string.Format(@"BloodFact\{0}.jpg", ImageNumber);
+            ImageNumber++;
         }
-
+        /*
         private void btn_Prev_Click(object sender, EventArgs e)
         {
             timerChangeImage.Stop();
@@ -67,5 +68,11 @@ namespace BloodManagementSystem
             timerChangeImage.Stop();
             LoadNextImages();
         }
+
+        private void pictureBox_Click(object sender, EventArgs e)
+        {
+
+        }
+        */
     }
 }

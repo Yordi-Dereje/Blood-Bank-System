@@ -13,10 +13,12 @@ namespace BloodManagementSystem
     public partial class Hospital : Form
     {
         Panel p;
-        public Hospital(Panel p)
+        int id;
+        public Hospital(Panel p, int id)
         {
             InitializeComponent();
             this.p = p;
+            this.id = id;
         }
 
         private void Hospital_Load(object sender, EventArgs e)
@@ -29,17 +31,14 @@ namespace BloodManagementSystem
         private void btn_add_Click(object sender, EventArgs e)
         {
             p.Controls.Clear();
-            HospitalRegi hr = new HospitalRegi(p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            HospitalRegi hr = new HospitalRegi(p,id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             p.Controls.Add(hr);
             hr.Show();
         }
 
         private void btn_back_Click(object sender, EventArgs e)
         {
-            p.Controls.Clear();
-            Transfer t = new Transfer(p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            p.Controls.Add(t);
-            t.Show();
+           
         }
 
         private void kryptonButton1_Click(object sender, EventArgs e)
@@ -47,6 +46,14 @@ namespace BloodManagementSystem
             flp.Controls.Clear();
             HospitalClass h = new HospitalClass();
             h.HospitalSingleFormLoad(flp, tbAp.Text);
+        }
+
+        private void gunaLabel5_Click(object sender, EventArgs e)
+        {
+            p.Controls.Clear();
+            Transfer t = new Transfer(p,id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            p.Controls.Add(t);
+            t.Show();
         }
     }
 }

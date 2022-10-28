@@ -32,7 +32,7 @@ namespace BloodManagementSystem
         private void AdminViews_Load(object sender, EventArgs e)
         {
             // lbl_Prof.Hide();
-            panel1.Visible = false;
+            //panel1.Visible = false;
             var log = EmployeeClass.findEmp(id);
             if (log == null)
             {
@@ -42,7 +42,7 @@ namespace BloodManagementSystem
             {
                 lbl_hi.Text = log.FirstName;
                 panel2.Controls.Clear();
-                DashBoard d = new DashBoard() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                DashBoard d = new DashBoard(id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
                 panel2.Controls.Add(d);
                 d.Show();
             }
@@ -50,8 +50,9 @@ namespace BloodManagementSystem
 
         private void ManageAccToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            panel1.Visible = false;
+            
             panel2.Controls.Clear();
+            //panel1.Visible = false;
             ManageAcc md = new ManageAcc(id,3, panel2, this) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             panel2.Controls.Add(md);
             md.Show();
@@ -59,39 +60,46 @@ namespace BloodManagementSystem
 
         private void lbl_Home_Click(object sender, EventArgs e)
         {
-            panel1.Visible = false;
             panel2.Controls.Clear();
-            DashBoard d = new DashBoard(){ Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+           // panel1.Visible = false;
+            DashBoard d = new DashBoard(id){ Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             panel2.Controls.Add(d);
             d.Show();
         }
 
         private void lbl_Employee_Click(object sender, EventArgs e)
         {
-            panel1.Visible = true;
             panel2.Controls.Clear();
+           // panel1.Visible = true;
             ListOfEmp emp = new ListOfEmp(panel2) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             panel2.Controls.Add(emp);
+            panel2.Controls.Add(panel1);
+            panel1.Show();
             emp.Show();
             
         }
 
         private void lbl_Donation_Click(object sender, EventArgs e)
         {
-            panel1.Visible = true;
             panel2.Controls.Clear();
+           // panel1.Visible = true;
             DonationInfo di = new DonationInfo(panel2, 0) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             panel2.Controls.Add(di);
+            panel2.Controls.Add(panel1);
+            panel1.Show();
             di.Show();
         }
 
         private void lbl_Hospital_Click(object sender, EventArgs e)
         {
 
-            panel1.Visible = true;
+            
             panel2.Controls.Clear();
-            Transfer t = new Transfer(panel2) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+           // panel1.Visible = true;
+            Transfer t = new Transfer(panel2,id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             panel2.Controls.Add(t);
+            panel2.Controls.Add(panel1);
+            panel1.Show();
             t.Show();
 
             /*panel2.Controls.Clear();

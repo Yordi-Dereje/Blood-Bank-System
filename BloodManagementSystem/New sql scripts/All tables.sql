@@ -49,7 +49,8 @@ Region varchar(50),
 Salary int,
 Stat bit
 );
-select * from emp_info;
+
+DELETE from EMP_INFO;
 
 CREATE TABLE EMP_ACCOUNTS
 (
@@ -63,7 +64,7 @@ Foreign key(ID) references EMP_INFO(ID)
 
 insert into EMP_INFO(FirstName, LastName, Dob, Gender, Phone, Email, Country, City, Region, Salary, Stat) values('abe', 'kebe', '12/12/2000', 'Male', 'phone', 'email', 'bb','bb','bb', 10000, 1);
 insert into EMP_ACCOUNTS values (1, 'abe', 'kebe');
-select * from emp_info;
+select * from DONOR_ACCOUNTS;
 
 
 -- donation tables

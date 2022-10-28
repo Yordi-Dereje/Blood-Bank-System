@@ -86,16 +86,22 @@ namespace BloodManagementSystem
         {
             SqlMedical m = new SqlMedical();
             bool b = m.SingleCheck(id);
-            if (b == true)
+            SQLDonationClass c = new SQLDonationClass();
+            int d = c.getDate(id);
+            if (b == true && d > 90 )
             {
                 panel3.Controls.Clear();
                 RequestDon rd = new RequestDon(panel3, id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
                 panel3.Controls.Add(rd);
                 rd.Show();
             }
-            else
+            else if (b == false)
             {
                 MessageBox.Show("Your prior request is being processed. You can not put in a new request.");
+            }
+            else
+            {
+                MessageBox.Show("Less than 3 months");
             }
         }
 

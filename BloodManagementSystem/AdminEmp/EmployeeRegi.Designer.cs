@@ -64,7 +64,8 @@ namespace BloodManagementSystem
             // 
             // btnNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(56, 474);
+            this.btnNext.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnNext.Location = new System.Drawing.Point(128, 428);
             this.btnNext.Name = "btnNext";
             this.btnNext.OverrideDefault.Back.Color1 = System.Drawing.Color.Maroon;
             this.btnNext.OverrideDefault.Back.Color2 = System.Drawing.Color.Maroon;
@@ -115,8 +116,9 @@ namespace BloodManagementSystem
             // 
             // tbSalEmp
             // 
-            this.tbSalEmp.Location = new System.Drawing.Point(57, 412);
-            this.tbSalEmp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbSalEmp.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbSalEmp.Location = new System.Drawing.Point(129, 368);
+            this.tbSalEmp.Margin = new System.Windows.Forms.Padding(4);
             this.tbSalEmp.Name = "tbSalEmp";
             this.tbSalEmp.Size = new System.Drawing.Size(212, 40);
             this.tbSalEmp.StateCommon.Border.Color1 = System.Drawing.Color.Maroon;
@@ -131,8 +133,9 @@ namespace BloodManagementSystem
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(56, 364);
-            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.kryptonLabel1.Location = new System.Drawing.Point(139, 335);
+            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel1.Name = "kryptonLabel1";
             this.kryptonLabel1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.kryptonLabel1.Size = new System.Drawing.Size(59, 25);
@@ -144,6 +147,7 @@ namespace BloodManagementSystem
             // 
             // GroupBox1
             // 
+            this.GroupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.GroupBox1.BackColor = System.Drawing.Color.Transparent;
             this.GroupBox1.BaseColor = System.Drawing.Color.White;
             this.GroupBox1.BorderColor = System.Drawing.Color.White;
@@ -151,9 +155,9 @@ namespace BloodManagementSystem
             this.GroupBox1.Controls.Add(this.rbFEmp);
             this.GroupBox1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GroupBox1.LineColor = System.Drawing.SystemColors.Window;
-            this.GroupBox1.Location = new System.Drawing.Point(319, 86);
+            this.GroupBox1.Location = new System.Drawing.Point(391, 81);
             this.GroupBox1.Name = "GroupBox1";
-            this.GroupBox1.Size = new System.Drawing.Size(197, 72);
+            this.GroupBox1.Size = new System.Drawing.Size(197, 57);
             this.GroupBox1.TabIndex = 293;
             this.GroupBox1.Text = "Gender";
             this.GroupBox1.TextLocation = new System.Drawing.Point(10, 8);
@@ -165,7 +169,7 @@ namespace BloodManagementSystem
             this.rbMEmp.CheckedOnColor = System.Drawing.Color.Maroon;
             this.rbMEmp.FillColor = System.Drawing.Color.White;
             this.rbMEmp.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbMEmp.Location = new System.Drawing.Point(122, 39);
+            this.rbMEmp.Location = new System.Drawing.Point(110, 33);
             this.rbMEmp.Name = "rbMEmp";
             this.rbMEmp.Size = new System.Drawing.Size(63, 20);
             this.rbMEmp.TabIndex = 1;
@@ -178,7 +182,7 @@ namespace BloodManagementSystem
             this.rbFEmp.CheckedOnColor = System.Drawing.Color.Maroon;
             this.rbFEmp.FillColor = System.Drawing.Color.White;
             this.rbFEmp.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbFEmp.Location = new System.Drawing.Point(14, 39);
+            this.rbFEmp.Location = new System.Drawing.Point(14, 33);
             this.rbFEmp.Name = "rbFEmp";
             this.rbFEmp.Size = new System.Drawing.Size(76, 20);
             this.rbFEmp.TabIndex = 0;
@@ -186,6 +190,7 @@ namespace BloodManagementSystem
             // 
             // dtpEmp
             // 
+            this.dtpEmp.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dtpEmp.BackColor = System.Drawing.Color.Transparent;
             this.dtpEmp.BaseColor = System.Drawing.Color.White;
             this.dtpEmp.BorderColor = System.Drawing.Color.Maroon;
@@ -195,7 +200,7 @@ namespace BloodManagementSystem
             this.dtpEmp.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.dtpEmp.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtpEmp.ForeColor = System.Drawing.Color.Black;
-            this.dtpEmp.Location = new System.Drawing.Point(57, 125);
+            this.dtpEmp.Location = new System.Drawing.Point(129, 114);
             this.dtpEmp.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpEmp.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpEmp.Name = "dtpEmp";
@@ -211,7 +216,8 @@ namespace BloodManagementSystem
             // 
             // kryptonLabel3
             // 
-            this.kryptonLabel3.Location = new System.Drawing.Point(319, 179);
+            this.kryptonLabel3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.kryptonLabel3.Location = new System.Drawing.Point(391, 154);
             this.kryptonLabel3.Name = "kryptonLabel3";
             this.kryptonLabel3.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.kryptonLabel3.Size = new System.Drawing.Size(57, 25);
@@ -223,7 +229,8 @@ namespace BloodManagementSystem
             // 
             // kryptonLabel5
             // 
-            this.kryptonLabel5.Location = new System.Drawing.Point(53, 257);
+            this.kryptonLabel5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.kryptonLabel5.Location = new System.Drawing.Point(125, 236);
             this.kryptonLabel5.Name = "kryptonLabel5";
             this.kryptonLabel5.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.kryptonLabel5.Size = new System.Drawing.Size(73, 25);
@@ -235,8 +242,9 @@ namespace BloodManagementSystem
             // 
             // kryptonLabel6
             // 
-            this.kryptonLabel6.Location = new System.Drawing.Point(211, 257);
-            this.kryptonLabel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.kryptonLabel6.Location = new System.Drawing.Point(283, 236);
+            this.kryptonLabel6.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel6.Name = "kryptonLabel6";
             this.kryptonLabel6.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.kryptonLabel6.Size = new System.Drawing.Size(43, 25);
@@ -248,8 +256,9 @@ namespace BloodManagementSystem
             // 
             // kryptonLabel7
             // 
-            this.kryptonLabel7.Location = new System.Drawing.Point(381, 255);
-            this.kryptonLabel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.kryptonLabel7.Location = new System.Drawing.Point(453, 234);
+            this.kryptonLabel7.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel7.Name = "kryptonLabel7";
             this.kryptonLabel7.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.kryptonLabel7.Size = new System.Drawing.Size(62, 25);
@@ -261,7 +270,8 @@ namespace BloodManagementSystem
             // 
             // kryptonLabel2
             // 
-            this.kryptonLabel2.Location = new System.Drawing.Point(57, 179);
+            this.kryptonLabel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.kryptonLabel2.Location = new System.Drawing.Point(129, 154);
             this.kryptonLabel2.Name = "kryptonLabel2";
             this.kryptonLabel2.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.kryptonLabel2.Size = new System.Drawing.Size(55, 25);
@@ -273,7 +283,8 @@ namespace BloodManagementSystem
             // 
             // kryptonLabel14
             // 
-            this.kryptonLabel14.Location = new System.Drawing.Point(57, 95);
+            this.kryptonLabel14.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.kryptonLabel14.Location = new System.Drawing.Point(129, 81);
             this.kryptonLabel14.Name = "kryptonLabel14";
             this.kryptonLabel14.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.kryptonLabel14.Size = new System.Drawing.Size(111, 25);
@@ -285,8 +296,9 @@ namespace BloodManagementSystem
             // 
             // tbRegEmp
             // 
-            this.tbRegEmp.Location = new System.Drawing.Point(381, 297);
-            this.tbRegEmp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbRegEmp.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbRegEmp.Location = new System.Drawing.Point(453, 276);
+            this.tbRegEmp.Margin = new System.Windows.Forms.Padding(4);
             this.tbRegEmp.Name = "tbRegEmp";
             this.tbRegEmp.Size = new System.Drawing.Size(146, 40);
             this.tbRegEmp.StateCommon.Border.Color1 = System.Drawing.Color.Maroon;
@@ -301,8 +313,9 @@ namespace BloodManagementSystem
             // 
             // tbCiEmp
             // 
-            this.tbCiEmp.Location = new System.Drawing.Point(211, 297);
-            this.tbCiEmp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbCiEmp.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbCiEmp.Location = new System.Drawing.Point(283, 276);
+            this.tbCiEmp.Margin = new System.Windows.Forms.Padding(4);
             this.tbCiEmp.Name = "tbCiEmp";
             this.tbCiEmp.Size = new System.Drawing.Size(148, 40);
             this.tbCiEmp.StateCommon.Border.Color1 = System.Drawing.Color.Maroon;
@@ -317,7 +330,8 @@ namespace BloodManagementSystem
             // 
             // tbCoEmp
             // 
-            this.tbCoEmp.Location = new System.Drawing.Point(57, 297);
+            this.tbCoEmp.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbCoEmp.Location = new System.Drawing.Point(125, 276);
             this.tbCoEmp.Name = "tbCoEmp";
             this.tbCoEmp.Size = new System.Drawing.Size(137, 40);
             this.tbCoEmp.StateCommon.Border.Color1 = System.Drawing.Color.Maroon;
@@ -332,7 +346,8 @@ namespace BloodManagementSystem
             // 
             // tbPhoneEmp
             // 
-            this.tbPhoneEmp.Location = new System.Drawing.Point(319, 212);
+            this.tbPhoneEmp.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbPhoneEmp.Location = new System.Drawing.Point(391, 187);
             this.tbPhoneEmp.Name = "tbPhoneEmp";
             this.tbPhoneEmp.Size = new System.Drawing.Size(208, 40);
             this.tbPhoneEmp.StateCommon.Border.Color1 = System.Drawing.Color.Maroon;
@@ -347,7 +362,8 @@ namespace BloodManagementSystem
             // 
             // tbEmailEmp
             // 
-            this.tbEmailEmp.Location = new System.Drawing.Point(57, 212);
+            this.tbEmailEmp.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbEmailEmp.Location = new System.Drawing.Point(129, 187);
             this.tbEmailEmp.Name = "tbEmailEmp";
             this.tbEmailEmp.Size = new System.Drawing.Size(201, 40);
             this.tbEmailEmp.StateCommon.Border.Color1 = System.Drawing.Color.Maroon;
@@ -362,7 +378,8 @@ namespace BloodManagementSystem
             // 
             // tbLNEmp
             // 
-            this.tbLNEmp.Location = new System.Drawing.Point(319, 37);
+            this.tbLNEmp.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbLNEmp.Location = new System.Drawing.Point(391, 35);
             this.tbLNEmp.Name = "tbLNEmp";
             this.tbLNEmp.Size = new System.Drawing.Size(208, 40);
             this.tbLNEmp.StateCommon.Border.Color1 = System.Drawing.Color.Maroon;
@@ -377,7 +394,8 @@ namespace BloodManagementSystem
             // 
             // kryptonLabel15
             // 
-            this.kryptonLabel15.Location = new System.Drawing.Point(319, 8);
+            this.kryptonLabel15.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.kryptonLabel15.Location = new System.Drawing.Point(391, 6);
             this.kryptonLabel15.Name = "kryptonLabel15";
             this.kryptonLabel15.Size = new System.Drawing.Size(90, 23);
             this.kryptonLabel15.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
@@ -387,7 +405,8 @@ namespace BloodManagementSystem
             // 
             // tbFNEmp
             // 
-            this.tbFNEmp.Location = new System.Drawing.Point(57, 37);
+            this.tbFNEmp.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbFNEmp.Location = new System.Drawing.Point(129, 35);
             this.tbFNEmp.Name = "tbFNEmp";
             this.tbFNEmp.Size = new System.Drawing.Size(197, 40);
             this.tbFNEmp.StateCommon.Border.Color1 = System.Drawing.Color.Maroon;
@@ -402,7 +421,8 @@ namespace BloodManagementSystem
             // 
             // kryptonLabel16
             // 
-            this.kryptonLabel16.Location = new System.Drawing.Point(57, 8);
+            this.kryptonLabel16.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.kryptonLabel16.Location = new System.Drawing.Point(129, 6);
             this.kryptonLabel16.Name = "kryptonLabel16";
             this.kryptonLabel16.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.kryptonLabel16.Size = new System.Drawing.Size(93, 25);
@@ -414,6 +434,7 @@ namespace BloodManagementSystem
             // 
             // GroupBox2
             // 
+            this.GroupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.GroupBox2.BackColor = System.Drawing.Color.Transparent;
             this.GroupBox2.BaseColor = System.Drawing.Color.White;
             this.GroupBox2.BorderColor = System.Drawing.Color.White;
@@ -421,10 +442,10 @@ namespace BloodManagementSystem
             this.GroupBox2.Controls.Add(this.rbAd);
             this.GroupBox2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GroupBox2.LineColor = System.Drawing.SystemColors.Window;
-            this.GroupBox2.Location = new System.Drawing.Point(318, 364);
-            this.GroupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBox2.Location = new System.Drawing.Point(390, 340);
+            this.GroupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.GroupBox2.Name = "GroupBox2";
-            this.GroupBox2.Size = new System.Drawing.Size(209, 89);
+            this.GroupBox2.Size = new System.Drawing.Size(209, 68);
             this.GroupBox2.TabIndex = 296;
             this.GroupBox2.Text = "Status";
             this.GroupBox2.TextLocation = new System.Drawing.Point(10, 8);
@@ -437,7 +458,7 @@ namespace BloodManagementSystem
             this.rbEmp.FillColor = System.Drawing.Color.White;
             this.rbEmp.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbEmp.Location = new System.Drawing.Point(111, 48);
-            this.rbEmp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbEmp.Margin = new System.Windows.Forms.Padding(4);
             this.rbEmp.Name = "rbEmp";
             this.rbEmp.Size = new System.Drawing.Size(94, 20);
             this.rbEmp.TabIndex = 1;
@@ -451,7 +472,7 @@ namespace BloodManagementSystem
             this.rbAd.FillColor = System.Drawing.Color.White;
             this.rbAd.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbAd.Location = new System.Drawing.Point(15, 48);
-            this.rbAd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbAd.Margin = new System.Windows.Forms.Padding(4);
             this.rbAd.Name = "rbAd";
             this.rbAd.Size = new System.Drawing.Size(74, 20);
             this.rbAd.TabIndex = 0;
@@ -466,7 +487,8 @@ namespace BloodManagementSystem
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(635, 529);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(779, 478);
             this.Controls.Add(this.GroupBox2);
             this.Controls.Add(this.tbSalEmp);
             this.Controls.Add(this.kryptonLabel1);

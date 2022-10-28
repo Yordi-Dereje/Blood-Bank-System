@@ -191,6 +191,7 @@
             this.Controls.Add(this.lbl_UserName);
             this.Controls.Add(this.kryptonLabel3);
             this.Controls.Add(this.txt_pwDonor);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DonorLogin";
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();

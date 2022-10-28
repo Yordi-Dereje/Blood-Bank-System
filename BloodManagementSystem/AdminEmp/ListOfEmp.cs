@@ -62,6 +62,12 @@ namespace BloodManagementSystem.AdminEmp
             flowLayoutPanel1.Controls.Clear();
             EmployeeClass s = new EmployeeClass();
             s.empInfoFormLoad(flowLayoutPanel1, panel1);
+            tbAp.Text = "Enter name to filter";
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
