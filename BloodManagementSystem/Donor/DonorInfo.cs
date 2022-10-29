@@ -52,5 +52,21 @@ namespace BloodManagementSystem
             s.donorInfoFormLoad(flowLayoutPanel1);
             tbAp.Text = "Enter name to filter";
         }
+
+        private void tbAp_Enter(object sender, EventArgs e)
+        {
+            if (tbAp.Text == "Enter name to filter")
+            {
+                tbAp.Text = "";
+            }
+        }
+
+        private void tbAp_Leave(object sender, EventArgs e)
+        {
+            if (tbAp.Text == "")
+            {
+                tbAp.Text = "Enter name to filter";
+            }
+        }
     }
 }

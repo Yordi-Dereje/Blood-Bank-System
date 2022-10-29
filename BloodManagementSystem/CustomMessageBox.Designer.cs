@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Guna.UI.Animation.Animation animation1 = new Guna.UI.Animation.Animation();
+            Guna.UI.Animation.Animation animation2 = new Guna.UI.Animation.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomMessageBox));
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
@@ -62,22 +62,22 @@
             // 
             this.gunaTransition1.AnimationType = Guna.UI.Animation.AnimationType.Rotate;
             this.gunaTransition1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(50);
-            animation1.RotateCoeff = 1F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 1F;
-            this.gunaTransition1.DefaultAnimation = animation1;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(50);
+            animation2.RotateCoeff = 1F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 1F;
+            this.gunaTransition1.DefaultAnimation = animation2;
             this.gunaTransition1.Interval = 6000;
             this.gunaTransition1.MaxAnimationTime = 2000;
             this.gunaTransition1.TimeStep = 1000F;
@@ -87,10 +87,11 @@
             // 
             this.gunaTransition1.SetDecoration(this.btn_OK, Guna.UI.Animation.DecorationType.None);
             this.btn_OK.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_OK.Location = new System.Drawing.Point(110, 163);
+            this.btn_OK.Location = new System.Drawing.Point(147, 201);
+            this.btn_OK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_OK.Name = "btn_OK";
             this.btn_OK.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btn_OK.Size = new System.Drawing.Size(96, 38);
+            this.btn_OK.Size = new System.Drawing.Size(128, 47);
             this.btn_OK.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.btn_OK.StateCommon.Back.Color2 = System.Drawing.Color.White;
             this.btn_OK.StateCommon.Back.ColorAngle = 45F;
@@ -118,9 +119,10 @@
             this.gunaTransition1.SetDecoration(this.label1, Guna.UI.Animation.DecorationType.None);
             this.label1.Font = new System.Drawing.Font("Times New Roman", 17F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(12, 122);
+            this.label1.Location = new System.Drawing.Point(16, 150);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(285, 38);
+            this.label1.Size = new System.Drawing.Size(380, 47);
             this.label1.TabIndex = 37;
             this.label1.Text = "Awesome!!";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -130,24 +132,26 @@
             this.gunaTransition1.SetDecoration(this.icon, Guna.UI.Animation.DecorationType.None);
             this.icon.Enabled = false;
             this.icon.Image = ((System.Drawing.Image)(resources.GetObject("icon.Image")));
-            this.icon.Location = new System.Drawing.Point(12, 12);
+            this.icon.Location = new System.Drawing.Point(16, 15);
+            this.icon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.icon.Name = "icon";
-            this.icon.Size = new System.Drawing.Size(285, 148);
+            this.icon.Size = new System.Drawing.Size(380, 182);
             this.icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.icon.TabIndex = 36;
             this.icon.TabStop = false;
             // 
             // CustomMessageBox
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(304, 217);
+            this.ClientSize = new System.Drawing.Size(405, 267);
             this.Controls.Add(this.btn_OK);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.icon);
             this.gunaTransition1.SetDecoration(this, Guna.UI.Animation.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "CustomMessageBox";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CustomMessageBox";

@@ -1,7 +1,5 @@
--- all tables
-
-CREATE DATABASE BloodBankSql;
-Use BloodBankSql;
+CREATE DATABASE BBSql;
+Use BBSql;
 
 -- donor table
 Create table DONOR_INFO(
@@ -18,10 +16,6 @@ Region varchar(50),
 BloodType varchar(3)
 );
 
-
-
-drop table donor_info;
-
 CREATE TABLE DONOR_ACCOUNTS
 (
 ID int,
@@ -30,8 +24,6 @@ Password varchar(50),
 Foreign key(ID) references DONOR_INFO(ID)
 );
 
-drop table donor_accounts;
-select * from DONOR_INFO;
 
 -- employee
 CREATE TABLE EMP_INFO
@@ -50,8 +42,6 @@ Salary int,
 Stat bit
 );
 
-DELETE from EMP_INFO;
-
 CREATE TABLE EMP_ACCOUNTS
 (
 ID int,
@@ -60,16 +50,7 @@ Password varchar(50),
 Foreign key(ID) references EMP_INFO(ID)
 );
 
-
-
-insert into EMP_INFO(FirstName, LastName, Dob, Gender, Phone, Email, Country, City, Region, Salary, Stat) values('abe', 'kebe', '12/12/2000', 'Male', 'phone', 'email', 'bb','bb','bb', 10000, 1);
-insert into EMP_ACCOUNTS values (1, 'abe', 'kebe');
-select * from DONOR_ACCOUNTS;
-
-
 -- donation tables
-
--- permanent illness
 CREATE TABLE DONOR_PERCHECK
 (
 ID int,
@@ -85,9 +66,6 @@ AbnormalBleeding bit,
 Foreign key (ID) references DONOR_INFO(ID)
 );
 
-drop table donor_percheck;
-
---Procedures done within 72 hours before donation
 CREATE TABLE DONOR_72CHECKS
 (
 ID int,
@@ -99,9 +77,6 @@ Alcohol bit,
 Foreign key (ID) references DONOR_INFO(ID)
 );
 
-drop table donor_72checks;
-
--- Procedures done within 3 months before donation
 CREATE TABLE DONOR_3MON(
 ID int,
 Tattoo bit,
@@ -111,8 +86,6 @@ Major_Surgery bit,
 Minor_Surgery bit,
 Foreign key (ID) references DONOR_INFO(ID)
 );
-
-drop table donor_3mon;
 
 -- All 3 checkers deduced to one table used for temporary storage
 CREATE TABLE FULL_CHECK(
@@ -124,8 +97,6 @@ CheckPer int,
 Foreign key (ID) references DONOR_INFO(ID)
 );
 
-drop table full_check;
-
 -- Successfully completed donations
 CREATE TABLE SUCCESSFUL_DONATION(
 BloodID int primary key IDENTITY,
@@ -136,11 +107,6 @@ BloodType varchar(3),
 Foreign key (ID) references DONOR_INFO(ID)
 );
 
-drop table successful_donation;
-
-
-SELECT * FROM  DONATION_CHART GROUP BY COUNT,MONTHS,YEARS ORDER BY MONTHS DESC
-DROP TABLE  DONATION_CHART
 CREATE TABLE DONATION_CHART
 (
 COUNT INT,
@@ -163,27 +129,11 @@ Anemic bit,
 Foreign key (ID) references DONOR_INFO(ID)
 );
 
-drop table fail_history;
-
-
 -- BLOOD COUNT
 CREATE TABLE BLOOD_COUNT(
 bloodtype varchar(3),
 bloodcount int
 );
-
-insert into BLOOD_COUNT values('A+', 10);
-insert into BLOOD_COUNT values('B+', 10);
-insert into BLOOD_COUNT values('AB+', 10);
-insert into BLOOD_COUNT values('O+', 10);
-insert into BLOOD_COUNT values('A-', 10);
-insert into BLOOD_COUNT values('B-', 10);
-insert into BLOOD_COUNT values('AB-', 10);
-insert into BLOOD_COUNT values('O-', 10);
-
-select * from BLOOD_COUNT;
-drop table BLOOD_COUNT;
-
 
 -- Hospital info
 CREATE TABLE HOSPITAL_INFO(
@@ -195,7 +145,6 @@ City varchar(50),
 Region varchar(50),
 Ownership varchar(50)
 );
-select * from HOSPITAL_INFO;
 
 
 -- Transfer info
@@ -214,20 +163,11 @@ Date varchar(50),
 Foreign key(Hospital) references HOSPITAL_INFO(Name)
 );
 
-drop table transfer_info;
-
-
-select * from TRANSFER_INFO;
-
-
 -- Illness info
 CREATE TABLE ILLNESS_INFO(
 Name varchar(30),
 Description varchar(1000)
 );
-
-select * from ILLNESS_INFO;
-drop table ILLNESS_INFO;
 
 Insert into ILLNESS_INFO values('Heart problems', 'Heart disease describes a range of conditions that affect your heart.  Heart diseases include several series of illness as blood vessel disease, heart rhythm problems (arrhythmias), congenital heart defects, heart valve disease, heart muscle defects and more.');
 Insert into ILLNESS_INFO values('HIV/AIDS', 'Acquired immunodeficiency syndrome (AIDS) is a chronic, potentially life-threatening   condition caused by the human immunodeficiency virus (HIV). By damaging your immune system, HIV interferes with your ability   to fight infection and disease. HIV is a sexually transmitted infection (STI). It can also be spread by contact with infected blood');

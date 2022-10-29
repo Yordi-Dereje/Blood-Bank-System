@@ -1,4 +1,4 @@
-Use BloodBankSql;
+Use BBSql;
 -- donor stored procedures
 
 -- INSERT
@@ -18,11 +18,9 @@ BEGIN
         INSERT INTO DONOR_INFO(FirstName, LastName, Dob, Gender, Phone, Email, Country, City, Region, BloodType) VALUES (@FirstName, @LastName, @Dob, @Gender, @Phone, @Email, @Country, @City, @Region, @BT);
 END
 
-EXEC spINSERT_DONOR_INFO 'bbb', 'bbb','12/12/12', 'Male', '0911', 'bbb', 'bbb', 'bbb', 'bbb', 'B+';
-select * from DONOR_INFO;
 
 -- UPDATE
-ALTER PROCEDURE spUPDATE_DONOR_INFO
+CREATE PROCEDURE spUPDATE_DONOR_INFO
 @id int,
 @FirstName varchar(50),
 @LastName varchar(50),
@@ -38,7 +36,6 @@ BEGIN
         UPDATE DONOR_INFO SET FirstName = @FirstName,LastName = @LastName, Dob = @Dob, Gender = @Gender,Phone = @Phone,Email = @Email,Country = @Country,City = @City,Region = @Region where id = @id;
 END
 
-drop procedure spUPDATE_DONOR_INFO;
 
 -- UPDATE BLOOD TYPE
 CREATE PROCEDURE spUPDATE_DONOR_BLOODTYPE
@@ -64,8 +61,6 @@ AS
 BEGIN
         SELECT * FROM DONOR_INFO WHERE FirstName = @name or LastName = @name or concat(FirstName,' ',LastName) = @name;
 END
-
-drop procedure spLOAD_SEARCH;
 
 -- DISPLAY
 CREATE PROCEDURE spDISPLAY_DONOR_INFO
@@ -125,16 +120,3 @@ AS
 BEGIN
 	SELECT * FROM DONOR_INFO WHERE FirstName like '%' + @Name + '%' or LastName like '%' + @Name + '%' or concat(FirstName,' ',LastName) like '%' + @Name + '%';
 END
-
-
--- new procedures
-CREATE PROCEDURE editDonor
-@id int,
-@fn varchar(50),
-@ln varchar(50),
-@gen varchar(6),
-@Phone varchar(50),
-@Email varchar(50),
-@Country varchar(50),
-@City varchar(50),
-@Region varchar(50)

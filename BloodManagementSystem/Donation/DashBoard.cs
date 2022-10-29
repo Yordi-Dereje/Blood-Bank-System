@@ -30,15 +30,6 @@ namespace BloodManagementSystem
             label2.Text = TransferClass.getTotalTransfers().ToString();
             label3.Text = SQLDonationClass.getTotalDonations().ToString();
             label4.Text = EmployeeClass.getTotalEmployees().ToString();
-            var log = EmployeeClass.findEmp(id);
-            if (log == null)
-            {
-                MessageBox.Show("You can rly lose rn unless you did something absolutely wrong in adminemplogin");
-            }
-            else
-            {
-                btn_Employee.Visible = false;
-            }
         }
 
         private void gunaButton1_Click(object sender, EventArgs e)
@@ -52,7 +43,7 @@ namespace BloodManagementSystem
         private void btn_Transfer_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
-            TransferList tl = new TransferList(panel1,id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            TransferList tl = new TransferList(panel1) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             panel1.Controls.Add(tl);
             tl.Show();
 
@@ -74,12 +65,13 @@ namespace BloodManagementSystem
             df.Show();
         }
 
-        private void btn_Employee_Click(object sender, EventArgs e)
+        private void gunaButton2_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
-            ListOfEmp emp = new ListOfEmp(panel1) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            panel1.Controls.Add(emp);
-            emp.Show();
+            RequestDonor r = new RequestDonor(panel1, id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            panel1.Controls.Add(r);
+            r.Show();
+
         }
     }
 }

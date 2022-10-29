@@ -70,7 +70,7 @@ namespace BloodManagementSystem
                     Password = tbPWEmp.Text
                 };
                 emp.Insert();
-                CustomMessageBox c = new CustomMessageBox(p,2){TopMost = true };
+                CustomMessageBox c = new CustomMessageBox(p,2, this, 0){TopMost = true };
                 c.Show();
                 
             }

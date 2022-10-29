@@ -140,6 +140,12 @@
     <Compile Include="Donation\BloodStock.Designer.cs">
       <DependentUpon>BloodStock.cs</DependentUpon>
     </Compile>
+    <Compile Include="Donation\DashBoardAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Donation\DashBoardAdmin.Designer.cs">
+      <DependentUpon>DashBoardAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Donation\DonationChart.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -334,12 +340,6 @@
     <Compile Include="Donation\UCallIllness.Designer.cs">
       <DependentUpon>UCallIllness.cs</DependentUpon>
     </Compile>
-    <Compile Include="Donation\UCHaveIllness.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Donation\UCHaveIllness.Designer.cs">
-      <DependentUpon>UCHaveIllness.cs</DependentUpon>
-    </Compile>
     <Compile Include="Transfer\UCHospital.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -381,6 +381,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Donation\DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Donation\DashBoardAdmin.resx">
+      <DependentUpon>DashBoardAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Donation\DonationInfo.resx">
       <DependentUpon>DonationInfo.cs</DependentUpon>
@@ -481,9 +484,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Donation\UCallIllness.resx">
       <DependentUpon>UCallIllness.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Donation\UCHaveIllness.resx">
-      <DependentUpon>UCHaveIllness.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Transfer\UCHospital.resx">
       <DependentUpon>UCHospital.cs</DependentUpon>

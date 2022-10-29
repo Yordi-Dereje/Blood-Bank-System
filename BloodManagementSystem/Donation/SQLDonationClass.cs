@@ -64,7 +64,7 @@ namespace BloodManagementSystem
             }
         }
         
-        public void requestFormLoad(FlowLayoutPanel flp, Panel p,int id)
+        public void requestFormLoad(FlowLayoutPanel flp, Panel p, int id)
         {
             using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
@@ -77,7 +77,7 @@ namespace BloodManagementSystem
                     bool flager = false;
                     foreach (DataRow item in ds.Tables["FULL_CHECK"].Rows)
                     {
-                        UCRequestingDonor r = new UCRequestingDonor(p,id);
+                        UCRequestingDonor r = new UCRequestingDonor(p, id);
                         r.ID = int.Parse(item["ID"].ToString());
                         r.Datee = item["Datee"].ToString();
                         int ch72 = int.Parse(item["Check72"].ToString());
@@ -98,14 +98,14 @@ namespace BloodManagementSystem
                         else
                             r.stat_per = "Unchecked";
 
-                        //if (r.stat_per == "Unchecked")
-                        //disable the accept
                         r.Click += (object P, EventArgs e2) =>
                         {
                             p.Controls.Clear();
-
+                            RequestDonDetails rd = new RequestDonDetails(id, p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                            p.Controls.Add(rd);
+                            rd.Show();
                         };
-                            if (flager == false)
+                        if (flager == false)
                         {
                             flager = true;
                             r.BackColor = Color.LightGray;
@@ -199,10 +199,10 @@ namespace BloodManagementSystem
                     cmd.Dispose();
                     return count;
                 }
-                catch (Exception e)
+                catch (Exception ee)
                 {
-                    MessageBox.Show(e.Message);
-                    return 0;
+                    //MessageBox.Show(e.Message);
+                    return -1;
                 };
             }
         }

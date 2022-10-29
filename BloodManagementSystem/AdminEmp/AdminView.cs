@@ -1,4 +1,5 @@
 ﻿using BloodManagementSystem.AdminEmp;
+using BloodManagementSystem.Donation;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -42,7 +43,7 @@ namespace BloodManagementSystem
             {
                 lbl_hi.Text = log.FirstName;
                 panel2.Controls.Clear();
-                DashBoard d = new DashBoard(id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                DashBoardAdmin d = new DashBoardAdmin() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
                 panel2.Controls.Add(d);
                 d.Show();
             }
@@ -62,7 +63,7 @@ namespace BloodManagementSystem
         {
             panel2.Controls.Clear();
            // panel1.Visible = false;
-            DashBoard d = new DashBoard(id){ Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            DashBoardAdmin d = new DashBoardAdmin(){ Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             panel2.Controls.Add(d);
             d.Show();
         }
@@ -96,7 +97,7 @@ namespace BloodManagementSystem
             
             panel2.Controls.Clear();
            // panel1.Visible = true;
-            Transfer t = new Transfer(panel2,id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            Transfer t = new Transfer(panel2) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             panel2.Controls.Add(t);
             panel2.Controls.Add(panel1);
             panel1.Show();

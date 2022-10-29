@@ -59,6 +59,10 @@ namespace BloodManagementSystem
         {
             var log = DonorClass.findDonor(id);
             lbl_Donor.Text = log.FirstName.ToString();
+            panel3.Controls.Clear();
+            DonationInfo df = new DonationInfo(panel3, id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            panel3.Controls.Add(df);
+            df.Show();
         }
 
         private void PicDonProfile_MouseHover(object sender, EventArgs e)
@@ -88,10 +92,10 @@ namespace BloodManagementSystem
             bool b = m.SingleCheck(id);
             SQLDonationClass c = new SQLDonationClass();
             int d = c.getDate(id);
-            if (b == true && d > 90 )
+            if (b == true && (d > 90 || d == -1))
             {
                 panel3.Controls.Clear();
-                RequestDon rd = new RequestDon(panel3, id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                RequestDon rd = new RequestDon(panel3, id, this) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
                 panel3.Controls.Add(rd);
                 rd.Show();
             }
@@ -101,7 +105,7 @@ namespace BloodManagementSystem
             }
             else
             {
-                MessageBox.Show("Less than 3 months");
+                MessageBox.Show("Your last donation was within the past 3 months. You can not donate for the time being");
             }
         }
 

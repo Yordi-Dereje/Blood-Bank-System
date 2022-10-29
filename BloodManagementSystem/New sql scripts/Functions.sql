@@ -1,10 +1,7 @@
--- functions used
+-- functions
+Use BBSql;
 
--- total donations
--- total transfers
--- total donors
-
-ALTER FUNCTION totalDonations()
+CREATE FUNCTION totalDonations()
 RETURNS int
 AS
 BEGIN
@@ -12,8 +9,6 @@ BEGIN
 	SELECT @count = count(*) from SUCCESSFUL_DONATION;
 	RETURN @count;
 END
-
-select dbo.totalDonations();
 
 
 CREATE FUNCTION totalDonationsBY_MONTH()
@@ -25,17 +20,7 @@ BEGIN
 	RETURN @count;
 END
 
-Select * FROM DONATION_CHART
-Select DATENAME(MONTH,DateDonated) FROM SUCCESSFUL_DONATION;
-Select DATEPART(YEAR,DateDonated) FROM SUCCESSFUL_DONATION;
-select dbo.totalDonationsBY_MONTH();
-
-
-
-
-
-
-ALTER FUNCTION totalDonors()
+CREATE FUNCTION totalDonors()
 RETURNS int
 AS
 BEGIN
@@ -44,7 +29,7 @@ BEGIN
 	RETURN @count;
 END
 
-ALTER FUNCTION totalTransfers()
+CREATE FUNCTION totalTransfers()
 RETURNS int
 AS
 BEGIN
@@ -53,7 +38,7 @@ BEGIN
 	RETURN @count;
 END
 
-ALTER FUNCTION totalEmployees()
+CREATE FUNCTION totalEmployees()
 RETURNS int
 AS
 BEGIN
@@ -63,7 +48,7 @@ BEGIN
 END
 
 -- age calculator
-ALTER FUNCTION ageCalculate(@id int)
+CREATE FUNCTION ageCalculate(@id int)
 RETURNS int
 AS
 BEGIN
@@ -72,7 +57,7 @@ BEGIN
         RETURN @age;
 END
 
-Alter FUNCTION dateCalculate(@id int)
+CREATE FUNCTION dateCalculate(@id int)
 RETURNS INT
 AS
 BEGIN
@@ -81,8 +66,7 @@ BEGIN
 	RETURN @datee;
 END
 
-SELECT min(datediff(DAY,DateDonated, GetDate())) from SUCCESSFUL_DONATION ;
-ALTER FUNCTION ageCalculateE(@id int)
+CREATE FUNCTION ageCalculateE(@id int)
 RETURNS int
 AS
 BEGIN
@@ -92,7 +76,7 @@ BEGIN
 END
 
 -- name concatenation
-ALTER FUNCTION concatName(@id int)
+CREATE FUNCTION concatName(@id int)
 RETURNS varchar(100)
 AS
 BEGIN
@@ -101,7 +85,7 @@ BEGIN
         RETURN @fullName;
 END
 
-ALTER FUNCTION concatNameE(@id int)
+CREATE FUNCTION concatNameE(@id int)
 RETURNS varchar(100)
 AS
 BEGIN
@@ -110,7 +94,7 @@ BEGIN
         RETURN @fullName;
 END
 
-ALTER FUNCTION totalBloodTransfer(@id int)
+CREATE FUNCTION totalBloodTransfer(@id int)
 RETURNS int
 AS
 BEGIN
@@ -120,22 +104,13 @@ BEGIN
 END
 
 
-ALTER FUNCTION specificBloodCount(@type varchar(3))
+CREATE FUNCTION specificBloodCount(@type varchar(3))
 RETURNS int
 AS
 BEGIN
 	DECLARE @count int;
 	SELECT @count = bloodcount from BLOOD_COUNT where bloodtype = @type;
 	RETURN @count;
-END
-
-CREATE FUNCTION totalBloodTransfer(@id int)
-RETURNS int
-AS
-BEGIN
-	DECLARE @total int;
-	SELECT @total += 1; -- finish this some other time
-	RETURN @total;
 END
 
 CREATE FUNCTION SingleRequestCheck(@id int)

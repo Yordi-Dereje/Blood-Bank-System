@@ -1,5 +1,5 @@
 -- employee stored procedures
-Use BloodBankSql;
+Use BBSql;
 
 --INSERT
 CREATE PROCEDURE spINSERT_EMP_INFO
@@ -36,7 +36,6 @@ AS
 BEGIN
         UPDATE EMP_INFO SET FirstName = @FirstName, LastName = @LastName, Dob = @Dob, Gender = @Gender, Phone = @Phone,Email = @Email, Country = @Country, City = @City, Region = @Region where ID = @id;
 END
-
 
 
 CREATE PROCEDURE spUPDATE_EMP_INFO_AS_ADMIN
@@ -81,7 +80,6 @@ END
 
 
 -- Employee accounts
-
 -- INSERT
 CREATE PROCEDURE spINSERT_EMP_ACCOUNTS
 @ID INT,

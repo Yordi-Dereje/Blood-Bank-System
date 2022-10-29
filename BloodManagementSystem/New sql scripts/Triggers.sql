@@ -1,4 +1,4 @@
-Use BloodBankSql;
+Use BBSql;
 -- triggers used
 
 CREATE TRIGGER BLOOD_COUNT_INCREMENT
@@ -9,7 +9,6 @@ BEGIN
         DECLARE @type varchar(3);
         SELECT @type = BloodType from INSERTED;
 		EXEC spINCREMENT_BLOODCOUNT @type;
-        -- UPDATE BLOOD_COUNT set bloodcount += 1 where bloodtype = @type;	
 END
 
 CREATE TRIGGER TRANSFER_DECREMENT

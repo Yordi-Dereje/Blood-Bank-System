@@ -1,6 +1,6 @@
-﻿namespace BloodManagementSystem
+﻿namespace BloodManagementSystem.Donation
 {
-    partial class DashBoard
+    partial class DashBoardAdmin
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashBoard));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashBoardAdmin));
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.kryptonPanel3 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.label4 = new System.Windows.Forms.Label();
@@ -46,13 +47,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_DonorDash = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.DonorDashPic = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
-            this.btn_Donor = new Guna.UI.WinForms.GunaButton();
-            this.btn_Transfer = new Guna.UI.WinForms.GunaButton();
-            this.btn_Donations = new Guna.UI.WinForms.GunaButton();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
+            this.btn_Employee = new Guna.UI.WinForms.GunaButton();
+            this.btn_Donor = new Guna.UI.WinForms.GunaButton();
+            this.btn_Donations = new Guna.UI.WinForms.GunaButton();
+            this.btn_Transfer = new Guna.UI.WinForms.GunaButton();
+            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).BeginInit();
             this.kryptonPanel3.SuspendLayout();
@@ -69,6 +69,17 @@
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(738, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(209, 33);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "Current statistics";
+            // 
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -77,11 +88,11 @@
             this.panel1.Controls.Add(this.kryptonPanel2);
             this.panel1.Controls.Add(this.kryptonPanel1);
             this.panel1.Controls.Add(this.DonorDashPanel);
-            this.panel1.Location = new System.Drawing.Point(324, 46);
+            this.panel1.Location = new System.Drawing.Point(324, 54);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1039, 588);
-            this.panel1.TabIndex = 17;
+            this.panel1.TabIndex = 19;
             // 
             // kryptonPanel3
             // 
@@ -101,7 +112,6 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label4.Location = new System.Drawing.Point(200, 62);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(29, 33);
@@ -122,7 +132,6 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3.Location = new System.Drawing.Point(152, 38);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
@@ -148,7 +157,6 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.Location = new System.Drawing.Point(200, 62);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(29, 33);
@@ -169,7 +177,6 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point(152, 38);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
@@ -195,7 +202,6 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label3.Location = new System.Drawing.Point(200, 60);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(29, 33);
@@ -204,7 +210,7 @@
             // 
             // kryptonLabel2
             // 
-            this.kryptonLabel2.Location = new System.Drawing.Point(4, 84);
+            this.kryptonLabel2.Location = new System.Drawing.Point(0, 89);
             this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(4);
             this.kryptonLabel2.Name = "kryptonLabel2";
             this.kryptonLabel2.Size = new System.Drawing.Size(131, 38);
@@ -216,7 +222,6 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Location = new System.Drawing.Point(156, 36);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
@@ -242,7 +247,6 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(204, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(29, 33);
@@ -264,7 +268,6 @@
             // 
             // DonorDashPic
             // 
-            this.DonorDashPic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.DonorDashPic.Location = new System.Drawing.Point(156, 36);
             this.DonorDashPic.Margin = new System.Windows.Forms.Padding(4);
             this.DonorDashPic.Name = "DonorDashPic";
@@ -272,41 +275,43 @@
             this.DonorDashPic.TabIndex = 0;
             this.DonorDashPic.TabStop = false;
             // 
-            // label5
+            // panel2
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(746, 4);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(209, 33);
-            this.label5.TabIndex = 17;
-            this.label5.Text = "Current statistics";
+            this.panel2.Controls.Add(this.btn_Employee);
+            this.panel2.Controls.Add(this.btn_Donor);
+            this.panel2.Controls.Add(this.btn_Donations);
+            this.panel2.Controls.Add(this.btn_Transfer);
+            this.panel2.Controls.Add(this.gunaButton1);
+            this.panel2.Location = new System.Drawing.Point(4, 9);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(292, 628);
+            this.panel2.TabIndex = 22;
             // 
-            // gunaButton1
+            // btn_Employee
             // 
-            this.gunaButton1.AnimationHoverSpeed = 0.07F;
-            this.gunaButton1.AnimationSpeed = 0.03F;
-            this.gunaButton1.BaseColor = System.Drawing.Color.Maroon;
-            this.gunaButton1.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton1.Font = new System.Drawing.Font("Times New Roman", 16.25F);
-            this.gunaButton1.ForeColor = System.Drawing.Color.White;
-            this.gunaButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton1.Image")));
-            this.gunaButton1.ImageSize = new System.Drawing.Size(40, 40);
-            this.gunaButton1.Location = new System.Drawing.Point(0, 94);
-            this.gunaButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.gunaButton1.Name = "gunaButton1";
-            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.Firebrick;
-            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton1.OnHoverImage = null;
-            this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton1.Size = new System.Drawing.Size(292, 65);
-            this.gunaButton1.TabIndex = 0;
-            this.gunaButton1.Text = "Blood Stock";
-            this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click);
+            this.btn_Employee.AnimationHoverSpeed = 0.07F;
+            this.btn_Employee.AnimationSpeed = 0.03F;
+            this.btn_Employee.BaseColor = System.Drawing.Color.Maroon;
+            this.btn_Employee.BorderColor = System.Drawing.Color.Black;
+            this.btn_Employee.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_Employee.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_Employee.Font = new System.Drawing.Font("Times New Roman", 16.25F);
+            this.btn_Employee.ForeColor = System.Drawing.Color.White;
+            this.btn_Employee.Image = ((System.Drawing.Image)(resources.GetObject("btn_Employee.Image")));
+            this.btn_Employee.ImageSize = new System.Drawing.Size(40, 40);
+            this.btn_Employee.Location = new System.Drawing.Point(-4, 446);
+            this.btn_Employee.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Employee.Name = "btn_Employee";
+            this.btn_Employee.OnHoverBaseColor = System.Drawing.Color.Firebrick;
+            this.btn_Employee.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_Employee.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_Employee.OnHoverImage = null;
+            this.btn_Employee.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_Employee.Size = new System.Drawing.Size(292, 73);
+            this.btn_Employee.TabIndex = 21;
+            this.btn_Employee.Text = "Employee";
+            this.btn_Employee.Click += new System.EventHandler(this.btn_Employee_Click);
             // 
             // btn_Donor
             // 
@@ -320,7 +325,7 @@
             this.btn_Donor.ForeColor = System.Drawing.Color.White;
             this.btn_Donor.Image = ((System.Drawing.Image)(resources.GetObject("btn_Donor.Image")));
             this.btn_Donor.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_Donor.Location = new System.Drawing.Point(4, 390);
+            this.btn_Donor.Location = new System.Drawing.Point(0, 348);
             this.btn_Donor.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Donor.Name = "btn_Donor";
             this.btn_Donor.OnHoverBaseColor = System.Drawing.Color.Firebrick;
@@ -328,35 +333,10 @@
             this.btn_Donor.OnHoverForeColor = System.Drawing.Color.White;
             this.btn_Donor.OnHoverImage = null;
             this.btn_Donor.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_Donor.Size = new System.Drawing.Size(284, 73);
+            this.btn_Donor.Size = new System.Drawing.Size(292, 73);
             this.btn_Donor.TabIndex = 18;
             this.btn_Donor.Text = "Donor";
             this.btn_Donor.Click += new System.EventHandler(this.btn_Donor_Click);
-            // 
-            // btn_Transfer
-            // 
-            this.btn_Transfer.AnimationHoverSpeed = 0.07F;
-            this.btn_Transfer.AnimationSpeed = 0.03F;
-            this.btn_Transfer.BaseColor = System.Drawing.Color.Maroon;
-            this.btn_Transfer.BorderColor = System.Drawing.Color.Black;
-            this.btn_Transfer.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_Transfer.FocusedColor = System.Drawing.Color.Empty;
-            this.btn_Transfer.Font = new System.Drawing.Font("Times New Roman", 16.25F);
-            this.btn_Transfer.ForeColor = System.Drawing.Color.White;
-            this.btn_Transfer.Image = ((System.Drawing.Image)(resources.GetObject("btn_Transfer.Image")));
-            this.btn_Transfer.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_Transfer.Location = new System.Drawing.Point(0, 189);
-            this.btn_Transfer.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_Transfer.Name = "btn_Transfer";
-            this.btn_Transfer.OnHoverBaseColor = System.Drawing.Color.Firebrick;
-            this.btn_Transfer.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btn_Transfer.OnHoverForeColor = System.Drawing.Color.White;
-            this.btn_Transfer.OnHoverImage = null;
-            this.btn_Transfer.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_Transfer.Size = new System.Drawing.Size(292, 73);
-            this.btn_Transfer.TabIndex = 19;
-            this.btn_Transfer.Text = "Transfer";
-            this.btn_Transfer.Click += new System.EventHandler(this.btn_Transfer_Click);
             // 
             // btn_Donations
             // 
@@ -370,7 +350,7 @@
             this.btn_Donations.ForeColor = System.Drawing.Color.White;
             this.btn_Donations.Image = ((System.Drawing.Image)(resources.GetObject("btn_Donations.Image")));
             this.btn_Donations.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_Donations.Location = new System.Drawing.Point(0, 286);
+            this.btn_Donations.Location = new System.Drawing.Point(0, 238);
             this.btn_Donations.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Donations.Name = "btn_Donations";
             this.btn_Donations.OnHoverBaseColor = System.Drawing.Color.Firebrick;
@@ -383,59 +363,69 @@
             this.btn_Donations.Text = "Donations";
             this.btn_Donations.Click += new System.EventHandler(this.btn_Donations_Click);
             // 
-            // panel2
+            // btn_Transfer
             // 
-            this.panel2.Controls.Add(this.gunaButton2);
-            this.panel2.Controls.Add(this.btn_Donor);
-            this.panel2.Controls.Add(this.btn_Donations);
-            this.panel2.Controls.Add(this.btn_Transfer);
-            this.panel2.Controls.Add(this.gunaButton1);
-            this.panel2.Location = new System.Drawing.Point(13, 4);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(292, 633);
-            this.panel2.TabIndex = 21;
+            this.btn_Transfer.AnimationHoverSpeed = 0.07F;
+            this.btn_Transfer.AnimationSpeed = 0.03F;
+            this.btn_Transfer.BaseColor = System.Drawing.Color.Maroon;
+            this.btn_Transfer.BorderColor = System.Drawing.Color.Black;
+            this.btn_Transfer.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_Transfer.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_Transfer.Font = new System.Drawing.Font("Times New Roman", 16.25F);
+            this.btn_Transfer.ForeColor = System.Drawing.Color.White;
+            this.btn_Transfer.Image = ((System.Drawing.Image)(resources.GetObject("btn_Transfer.Image")));
+            this.btn_Transfer.ImageSize = new System.Drawing.Size(40, 40);
+            this.btn_Transfer.Location = new System.Drawing.Point(0, 136);
+            this.btn_Transfer.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Transfer.Name = "btn_Transfer";
+            this.btn_Transfer.OnHoverBaseColor = System.Drawing.Color.Firebrick;
+            this.btn_Transfer.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_Transfer.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_Transfer.OnHoverImage = null;
+            this.btn_Transfer.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_Transfer.Size = new System.Drawing.Size(292, 73);
+            this.btn_Transfer.TabIndex = 19;
+            this.btn_Transfer.Text = "Transfer";
+            this.btn_Transfer.Click += new System.EventHandler(this.btn_Transfer_Click);
             // 
-            // gunaButton2
+            // gunaButton1
             // 
-            this.gunaButton2.AnimationHoverSpeed = 0.07F;
-            this.gunaButton2.AnimationSpeed = 0.03F;
-            this.gunaButton2.BaseColor = System.Drawing.Color.Maroon;
-            this.gunaButton2.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton2.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton2.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton2.Font = new System.Drawing.Font("Times New Roman", 16.25F);
-            this.gunaButton2.ForeColor = System.Drawing.Color.White;
-            this.gunaButton2.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton2.Image")));
-            this.gunaButton2.ImageSize = new System.Drawing.Size(40, 40);
-            this.gunaButton2.Location = new System.Drawing.Point(4, 501);
-            this.gunaButton2.Margin = new System.Windows.Forms.Padding(4);
-            this.gunaButton2.Name = "gunaButton2";
-            this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.Firebrick;
-            this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton2.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton2.OnHoverImage = null;
-            this.gunaButton2.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton2.Size = new System.Drawing.Size(284, 73);
-            this.gunaButton2.TabIndex = 21;
-            this.gunaButton2.Text = "New donations";
-            this.gunaButton2.Click += new System.EventHandler(this.gunaButton2_Click);
+            this.gunaButton1.AnimationHoverSpeed = 0.07F;
+            this.gunaButton1.AnimationSpeed = 0.03F;
+            this.gunaButton1.BaseColor = System.Drawing.Color.Maroon;
+            this.gunaButton1.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton1.Font = new System.Drawing.Font("Times New Roman", 16.25F);
+            this.gunaButton1.ForeColor = System.Drawing.Color.White;
+            this.gunaButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton1.Image")));
+            this.gunaButton1.ImageSize = new System.Drawing.Size(40, 40);
+            this.gunaButton1.Location = new System.Drawing.Point(0, 45);
+            this.gunaButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaButton1.Name = "gunaButton1";
+            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.Firebrick;
+            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton1.OnHoverImage = null;
+            this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton1.Size = new System.Drawing.Size(292, 65);
+            this.gunaButton1.TabIndex = 0;
+            this.gunaButton1.Text = "Blood Stock";
+            this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click);
             // 
-            // DashBoard
+            // DashBoardAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1379, 650);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "DashBoard";
-            this.Text = "DashBoard";
-            this.Load += new System.EventHandler(this.DashBoard_Load);
+            this.Name = "DashBoardAdmin";
+            this.Text = "DashBoardAdmin";
+            this.Load += new System.EventHandler(this.DashBoardAdmin_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).EndInit();
             this.kryptonPanel3.ResumeLayout(false);
@@ -460,12 +450,9 @@
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel1;
-        private Guna.UI.WinForms.GunaButton gunaButton1;
-        private Guna.UI.WinForms.GunaButton btn_Donor;
-        private Guna.UI.WinForms.GunaButton btn_Transfer;
-        private Guna.UI.WinForms.GunaButton btn_Donations;
+
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panel1;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel3;
         private System.Windows.Forms.Label label4;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel1;
@@ -483,6 +470,10 @@
         private ComponentFactory.Krypton.Toolkit.KryptonLabel lbl_DonorDash;
         private System.Windows.Forms.PictureBox DonorDashPic;
         private System.Windows.Forms.Panel panel2;
-        private Guna.UI.WinForms.GunaButton gunaButton2;
+        private Guna.UI.WinForms.GunaButton btn_Employee;
+        private Guna.UI.WinForms.GunaButton btn_Donor;
+        private Guna.UI.WinForms.GunaButton btn_Donations;
+        private Guna.UI.WinForms.GunaButton btn_Transfer;
+        private Guna.UI.WinForms.GunaButton gunaButton1;
     }
 }

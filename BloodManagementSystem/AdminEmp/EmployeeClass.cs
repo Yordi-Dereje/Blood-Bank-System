@@ -406,7 +406,7 @@ namespace BloodManagementSystem
                         u.Click += (object P, EventArgs e2) =>
                         {
                             p.Controls.Clear();
-                            ListOfEmpDetailPage ld = new ListOfEmpDetailPage(int.Parse(item["ID"].ToString()), item["FirstName"].ToString(),
+                            ListOfEmpDetailPage ld = new ListOfEmpDetailPage(p, int.Parse(item["ID"].ToString()), item["FirstName"].ToString(),
                                 item["LastName"].ToString(), item["Gender"].ToString(), item["DOB"].ToString(), item["Phone"].ToString(), 
                                 item["Email"].ToString(), item["Country"].ToString(), item["City"].ToString(), item["Region"].ToString(), 
                                 int.Parse(item["Salary"].ToString()), bool.Parse(item["Stat"].ToString()))
@@ -458,18 +458,17 @@ namespace BloodManagementSystem
                         else
                             st = "Admin";
                         u.Status = st;
-                        /*string query2 = "Select dbo.ageCalculateE(@id2)";
+                        string query2 = "Select dbo.ageCalculateE(@id2)";
                         int ageCal;
                         SqlCommand cmd2 = new SqlCommand(query2, con);
                         cmd2.Parameters.AddWithValue("@id2", (int)sdr0["ID"]);
-                        ageCal = int.Parse(cmd2.ExecuteScalar().ToString());*/
-                        //u.Age = ageCal;
-                        u.Age = 200;
+                        ageCal = int.Parse(cmd2.ExecuteScalar().ToString());
+                        u.Age = ageCal;
                         u.Gender = (string)sdr0["Gender"];
                         u.Click += (object P, EventArgs e2) =>
                         {
                             p.Controls.Clear();
-                            ListOfEmpDetailPage ld = new ListOfEmpDetailPage((int)sdr0["ID"], (string)sdr0["FirstName"],
+                            ListOfEmpDetailPage ld = new ListOfEmpDetailPage(p, (int)sdr0["ID"], (string)sdr0["FirstName"],
                                 (string)sdr0["LastName"], (string)sdr0["Gender"], (string)sdr0["DOB"], (string)sdr0["Phone"],
                                 (string)sdr0["Email"], (string)sdr0["Country"], (string)sdr0["City"], (string)sdr0["Region"],
                                 (int)sdr0["Salary"], (bool)sdr0["Stat"])

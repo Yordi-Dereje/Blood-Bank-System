@@ -60,5 +60,10 @@ namespace BloodManagementSystem.Donation
         {
 
         }
+
+        private void btn_history_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

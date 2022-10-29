@@ -45,14 +45,15 @@
             this.tbAbm = new Guna.UI.WinForms.GunaLabel();
             this.tbBm = new Guna.UI.WinForms.GunaLabel();
             this.tbAm = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
+            this.kryptonLabel8 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.SuspendLayout();
             // 
             // kryptonLabel4
             // 
-            this.kryptonLabel4.Location = new System.Drawing.Point(442, 345);
+            this.kryptonLabel4.Location = new System.Drawing.Point(589, 425);
+            this.kryptonLabel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonLabel4.Name = "kryptonLabel4";
-            this.kryptonLabel4.Size = new System.Drawing.Size(34, 26);
+            this.kryptonLabel4.Size = new System.Drawing.Size(41, 31);
             this.kryptonLabel4.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
             this.kryptonLabel4.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel4.TabIndex = 77;
@@ -60,9 +61,10 @@
             // 
             // kryptonLabel5
             // 
-            this.kryptonLabel5.Location = new System.Drawing.Point(430, 271);
+            this.kryptonLabel5.Location = new System.Drawing.Point(573, 334);
+            this.kryptonLabel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonLabel5.Name = "kryptonLabel5";
-            this.kryptonLabel5.Size = new System.Drawing.Size(46, 26);
+            this.kryptonLabel5.Size = new System.Drawing.Size(56, 31);
             this.kryptonLabel5.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
             this.kryptonLabel5.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel5.TabIndex = 76;
@@ -70,9 +72,10 @@
             // 
             // kryptonLabel6
             // 
-            this.kryptonLabel6.Location = new System.Drawing.Point(444, 195);
+            this.kryptonLabel6.Location = new System.Drawing.Point(592, 240);
+            this.kryptonLabel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonLabel6.Name = "kryptonLabel6";
-            this.kryptonLabel6.Size = new System.Drawing.Size(32, 26);
+            this.kryptonLabel6.Size = new System.Drawing.Size(38, 31);
             this.kryptonLabel6.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
             this.kryptonLabel6.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel6.TabIndex = 75;
@@ -80,9 +83,10 @@
             // 
             // kryptonLabel7
             // 
-            this.kryptonLabel7.Location = new System.Drawing.Point(442, 122);
+            this.kryptonLabel7.Location = new System.Drawing.Point(589, 150);
+            this.kryptonLabel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonLabel7.Name = "kryptonLabel7";
-            this.kryptonLabel7.Size = new System.Drawing.Size(33, 26);
+            this.kryptonLabel7.Size = new System.Drawing.Size(40, 31);
             this.kryptonLabel7.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
             this.kryptonLabel7.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel7.TabIndex = 74;
@@ -90,9 +94,10 @@
             // 
             // kryptonLabel3
             // 
-            this.kryptonLabel3.Location = new System.Drawing.Point(170, 345);
+            this.kryptonLabel3.Location = new System.Drawing.Point(227, 425);
+            this.kryptonLabel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonLabel3.Name = "kryptonLabel3";
-            this.kryptonLabel3.Size = new System.Drawing.Size(39, 26);
+            this.kryptonLabel3.Size = new System.Drawing.Size(47, 31);
             this.kryptonLabel3.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
             this.kryptonLabel3.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel3.TabIndex = 73;
@@ -100,9 +105,10 @@
             // 
             // kryptonLabel2
             // 
-            this.kryptonLabel2.Location = new System.Drawing.Point(159, 271);
+            this.kryptonLabel2.Location = new System.Drawing.Point(212, 334);
+            this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(50, 26);
+            this.kryptonLabel2.Size = new System.Drawing.Size(61, 31);
             this.kryptonLabel2.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
             this.kryptonLabel2.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel2.TabIndex = 72;
@@ -110,9 +116,10 @@
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(172, 195);
+            this.kryptonLabel1.Location = new System.Drawing.Point(229, 240);
+            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(37, 26);
+            this.kryptonLabel1.Size = new System.Drawing.Size(44, 31);
             this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
             this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
             this.kryptonLabel1.TabIndex = 71;
@@ -120,9 +127,10 @@
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(171, 122);
+            this.label1.Location = new System.Drawing.Point(228, 150);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 26);
+            this.label1.Size = new System.Drawing.Size(45, 31);
             this.label1.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
             this.label1.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
             this.label1.TabIndex = 70;
@@ -131,10 +139,11 @@
             // btn_back
             // 
             this.btn_back.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_back.Location = new System.Drawing.Point(628, 446);
+            this.btn_back.Location = new System.Drawing.Point(808, 530);
+            this.btn_back.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_back.Name = "btn_back";
             this.btn_back.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btn_back.Size = new System.Drawing.Size(106, 38);
+            this.btn_back.Size = new System.Drawing.Size(141, 47);
             this.btn_back.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.btn_back.StateCommon.Back.Color2 = System.Drawing.Color.White;
             this.btn_back.StateCommon.Back.ColorAngle = 45F;
@@ -161,10 +170,9 @@
             this.tbAp.AutoSize = true;
             this.tbAp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbAp.ForeColor = System.Drawing.Color.Maroon;
-            this.tbAp.Location = new System.Drawing.Point(250, 122);
-            this.tbAp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.tbAp.Location = new System.Drawing.Point(333, 150);
             this.tbAp.Name = "tbAp";
-            this.tbAp.Size = new System.Drawing.Size(18, 20);
+            this.tbAp.Size = new System.Drawing.Size(23, 25);
             this.tbAp.TabIndex = 87;
             this.tbAp.Text = "0";
             // 
@@ -173,10 +181,9 @@
             this.tbBp.AutoSize = true;
             this.tbBp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbBp.ForeColor = System.Drawing.Color.Maroon;
-            this.tbBp.Location = new System.Drawing.Point(250, 195);
-            this.tbBp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.tbBp.Location = new System.Drawing.Point(333, 240);
             this.tbBp.Name = "tbBp";
-            this.tbBp.Size = new System.Drawing.Size(18, 20);
+            this.tbBp.Size = new System.Drawing.Size(23, 25);
             this.tbBp.TabIndex = 88;
             this.tbBp.Text = "0";
             // 
@@ -185,10 +192,9 @@
             this.tbAbp.AutoSize = true;
             this.tbAbp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbAbp.ForeColor = System.Drawing.Color.Maroon;
-            this.tbAbp.Location = new System.Drawing.Point(250, 271);
-            this.tbAbp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.tbAbp.Location = new System.Drawing.Point(333, 334);
             this.tbAbp.Name = "tbAbp";
-            this.tbAbp.Size = new System.Drawing.Size(18, 20);
+            this.tbAbp.Size = new System.Drawing.Size(23, 25);
             this.tbAbp.TabIndex = 89;
             this.tbAbp.Text = "0";
             // 
@@ -197,10 +203,9 @@
             this.tbOp.AutoSize = true;
             this.tbOp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbOp.ForeColor = System.Drawing.Color.Maroon;
-            this.tbOp.Location = new System.Drawing.Point(250, 349);
-            this.tbOp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.tbOp.Location = new System.Drawing.Point(333, 430);
             this.tbOp.Name = "tbOp";
-            this.tbOp.Size = new System.Drawing.Size(18, 20);
+            this.tbOp.Size = new System.Drawing.Size(23, 25);
             this.tbOp.TabIndex = 90;
             this.tbOp.Text = "0";
             // 
@@ -209,10 +214,9 @@
             this.tbOm.AutoSize = true;
             this.tbOm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbOm.ForeColor = System.Drawing.Color.Maroon;
-            this.tbOm.Location = new System.Drawing.Point(539, 349);
-            this.tbOm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.tbOm.Location = new System.Drawing.Point(719, 430);
             this.tbOm.Name = "tbOm";
-            this.tbOm.Size = new System.Drawing.Size(18, 20);
+            this.tbOm.Size = new System.Drawing.Size(23, 25);
             this.tbOm.TabIndex = 94;
             this.tbOm.Text = "0";
             // 
@@ -221,10 +225,9 @@
             this.tbAbm.AutoSize = true;
             this.tbAbm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbAbm.ForeColor = System.Drawing.Color.Maroon;
-            this.tbAbm.Location = new System.Drawing.Point(539, 271);
-            this.tbAbm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.tbAbm.Location = new System.Drawing.Point(719, 334);
             this.tbAbm.Name = "tbAbm";
-            this.tbAbm.Size = new System.Drawing.Size(18, 20);
+            this.tbAbm.Size = new System.Drawing.Size(23, 25);
             this.tbAbm.TabIndex = 93;
             this.tbAbm.Text = "0";
             // 
@@ -233,10 +236,9 @@
             this.tbBm.AutoSize = true;
             this.tbBm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbBm.ForeColor = System.Drawing.Color.Maroon;
-            this.tbBm.Location = new System.Drawing.Point(539, 195);
-            this.tbBm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.tbBm.Location = new System.Drawing.Point(719, 240);
             this.tbBm.Name = "tbBm";
-            this.tbBm.Size = new System.Drawing.Size(18, 20);
+            this.tbBm.Size = new System.Drawing.Size(23, 25);
             this.tbBm.TabIndex = 92;
             this.tbBm.Text = "0";
             // 
@@ -245,33 +247,30 @@
             this.tbAm.AutoSize = true;
             this.tbAm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbAm.ForeColor = System.Drawing.Color.Maroon;
-            this.tbAm.Location = new System.Drawing.Point(539, 122);
-            this.tbAm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.tbAm.Location = new System.Drawing.Point(719, 150);
             this.tbAm.Name = "tbAm";
-            this.tbAm.Size = new System.Drawing.Size(18, 20);
+            this.tbAm.Size = new System.Drawing.Size(23, 25);
             this.tbAm.TabIndex = 91;
             this.tbAm.Text = "0";
             // 
-            // gunaLabel5
+            // kryptonLabel8
             // 
-            this.gunaLabel5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gunaLabel5.AutoSize = true;
-            this.gunaLabel5.Font = new System.Drawing.Font("Times New Roman", 10.8F);
-            this.gunaLabel5.ForeColor = System.Drawing.Color.Maroon;
-            this.gunaLabel5.Location = new System.Drawing.Point(22, 19);
-            this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(67, 17);
-            this.gunaLabel5.TabIndex = 95;
-            this.gunaLabel5.Text = "<<< Back";
-            this.gunaLabel5.Click += new System.EventHandler(this.gunaLabel5_Click);
+            this.kryptonLabel8.Location = new System.Drawing.Point(347, 48);
+            this.kryptonLabel8.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonLabel8.Name = "kryptonLabel8";
+            this.kryptonLabel8.Size = new System.Drawing.Size(243, 31);
+            this.kryptonLabel8.StateCommon.ShortText.Color1 = System.Drawing.Color.Maroon;
+            this.kryptonLabel8.StateCommon.ShortText.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
+            this.kryptonLabel8.TabIndex = 95;
+            this.kryptonLabel8.Values.Text = "Each blood type count";
             // 
             // TransferDetails
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(744, 495);
-            this.Controls.Add(this.gunaLabel5);
+            this.ClientSize = new System.Drawing.Size(992, 609);
+            this.Controls.Add(this.kryptonLabel8);
             this.Controls.Add(this.tbOm);
             this.Controls.Add(this.tbAbm);
             this.Controls.Add(this.tbBm);
@@ -290,7 +289,7 @@
             this.Controls.Add(this.kryptonLabel1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "TransferDetails";
             this.Text = "TransferDetails";
             this.Load += new System.EventHandler(this.TransferDetails_Load);
@@ -317,6 +316,6 @@
         private Guna.UI.WinForms.GunaLabel tbAbm;
         private Guna.UI.WinForms.GunaLabel tbBm;
         private Guna.UI.WinForms.GunaLabel tbAm;
-        private Guna.UI.WinForms.GunaLabel gunaLabel5;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel8;
     }
 }

@@ -256,11 +256,11 @@ namespace BloodManagementSystem
                     while (sdr.Read())
                     {
                         UCDonorInfo u = new UCDonorInfo();
-                        u.Namee = (string)sdr["FirstName"] + " " + (string)sdr["LastName"];
-                        u.Age = 200;
+                        /*u.Namee = (string)sdr["FirstName"] + " " + (string)sdr["LastName"];
+                        u.Age = 200;*/
                         u.Phone = (string)sdr["Phone"];
                         u.Email = (string)sdr["Email"];
-                        /*string query = "Select dbo.concatName(@id)";
+                        string query = "Select dbo.concatName(@id)";
                         string fullName;
                         SqlCommand cmd = new SqlCommand(query, con);
                         cmd.Parameters.AddWithValue("@id", (int)sdr["ID"]);
@@ -271,7 +271,7 @@ namespace BloodManagementSystem
                         SqlCommand cmd2 = new SqlCommand(query2, con);
                         cmd2.Parameters.AddWithValue("@id2", (int)sdr["ID"]);
                         ageCal = int.Parse(cmd2.ExecuteScalar().ToString());
-                        u.Age = ageCal;*/
+                        u.Age = ageCal;
                         u.Gender = (string)sdr["Gender"];
                         u.Phone = (string)sdr["Phone"];
                         u.Email = (string)sdr["Email"];

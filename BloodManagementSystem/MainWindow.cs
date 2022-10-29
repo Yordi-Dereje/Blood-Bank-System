@@ -19,9 +19,8 @@ namespace BloodManagementSystem
 
         private void lblHome_Click(object sender, EventArgs e)
         {
-            //legizew nothing
             panel1.Controls.Clear();
-            HomePage hp = new HomePage() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            HomePage hp = new HomePage(panel1, this) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             panel1.Controls.Add(hp);
             hp.Show();
         }
@@ -49,7 +48,10 @@ namespace BloodManagementSystem
 
         private void MainWindow_Load(object sender, EventArgs e)
         {
-
+            panel1.Controls.Clear();
+            HomePage hp = new HomePage(panel1, this) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            panel1.Controls.Add(hp);
+            hp.Show();
         }
     }
 }

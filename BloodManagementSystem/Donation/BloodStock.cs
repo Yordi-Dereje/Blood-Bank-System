@@ -16,5 +16,10 @@ namespace BloodManagementSystem
         {
             InitializeComponent();
         }
+
+        private void BloodStock_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

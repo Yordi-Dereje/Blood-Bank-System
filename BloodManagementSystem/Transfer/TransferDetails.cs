@@ -18,14 +18,13 @@ namespace BloodManagementSystem
         private void gunaLabel5_Click(object sender, EventArgs e)
         {
             p.Controls.Clear();
-            TransferList t = new TransferList(p,id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            TransferList t = new TransferList(p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             p.Controls.Add(t);
             t.Show();
         }
 
         Panel p;
-        int id;
-        public TransferDetails(Panel p,int id, string Ap, string Am, string Bp, string Bm, string Abp, string Abm, string Op, string Om)
+        public TransferDetails(Panel p, string Ap, string Am, string Bp, string Bm, string Abp, string Abm, string Op, string Om)
         {
             InitializeComponent();
             this.p = p;
@@ -37,12 +36,14 @@ namespace BloodManagementSystem
             this.Abm = Abm;
             this.Op = Op;
             this.Om = Om;
-            this.id = id;
         }
 
         private void btn_back_Click(object sender, EventArgs e)
         {
-            
+            p.Controls.Clear();
+            TransferList t = new TransferList(p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            p.Controls.Add(t);
+            t.Show();
         }
 
         private void TransferDetails_Load(object sender, EventArgs e)

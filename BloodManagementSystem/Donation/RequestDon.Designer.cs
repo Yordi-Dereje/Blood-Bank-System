@@ -214,7 +214,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RequestDon";
             this.Text = "RequestDon";
-            this.Load += new System.EventHandler(this.RequestDon_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

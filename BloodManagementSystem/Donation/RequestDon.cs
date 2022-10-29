@@ -14,11 +14,13 @@ namespace BloodManagementSystem
     {
         Panel p;
         int id;
-        public RequestDon(Panel p,int id)
+        Form f;
+        public RequestDon(Panel p,int id, Form f)
         {
             InitializeComponent();
             this.p = p;
             this.id = id;
+            this.f = f;
         }
 
         private void checkedListBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -33,22 +35,8 @@ namespace BloodManagementSystem
             m.Insert3(id, CLB3m);
             m.InsertPer(id, CLBperm);
             m.InsertFull(id, DTP.Value.ToString(), CLB72h, CLB3m, CLBperm);
-            /*CustomMessageBox c = new CustomMessageBox(p, 1) { TopMost = true };
-            c.Show();*/
-            MessageBox.Show("Request sent successfully. Thank you.");
-            /*p.Controls.Clear();
-            HomePage h = new HomePage();
-            p.Controls.Add(h);
-            h.Show();*/
-            p.Controls.Clear();
-            DonationInfo df = new DonationInfo(p, id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            p.Controls.Add(df);
-            df.Show();
-
-        }
-
-        private void RequestDon_Load(object sender, EventArgs e)
-        {
+            CustomMessageBox c = new CustomMessageBox(p, 4, f, id) { TopMost = true };
+            c.Show();
 
         }
     }

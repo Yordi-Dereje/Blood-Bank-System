@@ -15,9 +15,9 @@ namespace BloodManagementSystem.AdminEmp
     {
         int id,sal;
         string fn, ln, gen, phone, email, co, ci, reg, dob;
-
         bool adstat;
-        public ListOfEmpDetailPage(int id, string fn,string ln,string gen, string dob,string phone, string email, string co, string ci, string reg, int sal, bool adstat)
+        Panel p;
+        public ListOfEmpDetailPage(Panel p, int id, string fn,string ln,string gen, string dob,string phone, string email, string co, string ci, string reg, int sal, bool adstat)
         {
             InitializeComponent();
             this.id = id;
@@ -32,6 +32,7 @@ namespace BloodManagementSystem.AdminEmp
             this.reg = reg;
             this.dob = dob;
             this.adstat = adstat;
+            this.p = p;
         }
 
         private void ListOfEmpDetailPage_Load(object sender, EventArgs e)
@@ -57,14 +58,28 @@ namespace BloodManagementSystem.AdminEmp
         {
             EmployeeClass emp = new EmployeeClass();
             emp.DeleteInfo(id);
-            MessageBox.Show("Deleted Successfully!");
+            MessageBox.Show("Delete Successful!");
+            p.Controls.Clear();
+            ListOfEmp ld = new ListOfEmp(p)
+            { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            p.Controls.Add(ld);
+            ld.Show();
 
         }
 
         private void btn_Edit_Click(object sender, EventArgs e)
         {
             EmployeeClass emp = new EmployeeClass();
-            emp.UpdateInfoAsAdmin(id, sal, adstat);
+            bool ad = false;
+            if (switchstat.Checked == true)
+                ad = true;
+            emp.UpdateInfoAsAdmin(id, sal, ad);
+            MessageBox.Show("Update Successful!");
+            p.Controls.Clear();
+            ListOfEmp ld = new ListOfEmp(p)
+            { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            p.Controls.Add(ld);
+            ld.Show();
         }
     }
 }

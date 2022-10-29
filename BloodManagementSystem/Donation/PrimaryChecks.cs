@@ -60,11 +60,9 @@ namespace BloodManagementSystem
                     SQLDonationClass s = new SQLDonationClass();
                     s.successInsert(id, dtp.Value.ToString(), cbVenue.SelectedItem.ToString(), bt);
                     s.removePerson(id);
-                    /*EmployeeClass emp = new EmployeeClass();
-                    emp.DonationChart();*/
                     EmployeeView ee = new EmployeeView(id2);
                     ee.Show();
-                    //this.Close();
+                    this.Close();
                 }
                 else
                 {
@@ -84,7 +82,7 @@ namespace BloodManagementSystem
                     EmployeeView ee = new EmployeeView(id2);
                     ee.Show();
                     MessageBox.Show("Inserted into failure table");
-                    this.Hide();
+                    this.Close();
                 }
             }
         }

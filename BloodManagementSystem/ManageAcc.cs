@@ -57,9 +57,9 @@ namespace BloodManagementSystem
                     tbFNEmp.Text = log.FirstName.ToString();
                     tbLNEmp.Text = log.LastName.ToString();
                     dtpEmp.Value = DateTime.Parse(log.DOB.ToString());
-                    if (log.Gender.ToString() == "Male")
+                    if (log.Gender.ToString() == "Male" || log.Gender.ToString() == "male")
                         rbMEmp.Checked = true;
-                    else if (log.Gender.ToString() == "Female")
+                    else if (log.Gender.ToString() == "Female" || log.Gender.ToString() == "female")
                         rbFEmp.Checked = true;
                     tbPhoneEmp.Text = log.Phone;
                     tbEmailEmp.Text = log.Email.ToString();
@@ -86,9 +86,9 @@ namespace BloodManagementSystem
                     tbFNEmp.Text = log.FirstName.ToString();
                     tbLNEmp.Text = log.LastName.ToString();
                     dtpEmp.Value = DateTime.Parse(log.DOB.ToString());
-                    if (log.Gender.ToString() == "Male")
+                    if (log.Gender.ToString() == "Male" || log.Gender.ToString() == "male")
                         rbMEmp.Checked = true;
-                    else if (log.Gender.ToString() == "Female")
+                    else if (log.Gender.ToString() == "Female" || log.Gender.ToString() == "female")
                         rbFEmp.Checked = true;
                     tbPhoneEmp.Text = log.Phone.ToString();
                     tbEmailEmp.Text = log.Email.ToString();
@@ -96,7 +96,11 @@ namespace BloodManagementSystem
                     tbCiEmp.Text = log.City.ToString();
                     tbRegEmp.Text = log.Region.ToString();
                     tbSalEmp.Text = log.Salary.ToString();
-                    tbStat.Text = log.AdminStatus.ToString();
+                    string ad = log.AdminStatus.ToString();
+                    if (ad == "True" || ad == "true")
+                        tbStat.Text = "Admin";
+                    else
+                        tbStat.Text = "Employee";
                     var res = EmployeeClass.findPass(log.ID);
                     tbUN.Text = res.UserName.ToString();
                     tbPW.Text = res.Password.ToString();
@@ -114,9 +118,9 @@ namespace BloodManagementSystem
                     tbFNEmp.Text = log.FirstName.ToString();
                     tbLNEmp.Text = log.LastName.ToString();
                     dtpEmp.Value = DateTime.Parse(log.DOB.ToString());
-                    if (log.Gender.ToString() == "Male")
+                    if (log.Gender.ToString() == "Male" || log.Gender.ToString() == "male")
                         rbMEmp.Checked = true;
-                    else if (log.Gender.ToString() == "Female")
+                    else if (log.Gender.ToString() == "Female" || log.Gender.ToString() == "female")
                         rbFEmp.Checked = true;
                     tbPhoneEmp.Text = log.Phone.ToString();
                     tbEmailEmp.Text = log.Email.ToString();
@@ -124,7 +128,11 @@ namespace BloodManagementSystem
                     tbCiEmp.Text = log.City.ToString();
                     tbRegEmp.Text = log.Region.ToString();
                     tbSalEmp.Text = log.Salary.ToString();
-                    tbStat.Text = log.AdminStatus.ToString();
+                    string ad = log.AdminStatus.ToString();
+                    if (ad == "True" || ad == "true")
+                        tbStat.Text = "Admin";
+                    else
+                        tbStat.Text = "Employee";
                     var res = EmployeeClass.findPass(log.ID);
                     tbUN.Text = res.UserName.ToString();
                     tbPW.Text = res.Password.ToString();
@@ -204,23 +212,18 @@ namespace BloodManagementSystem
                         gen = "Male";
                     EmployeeClass s = new EmployeeClass();
                     s.UpdateInfo(id, tbFNEmp.Text, tbLNEmp.Text, dtpEmp.Value.ToString(), gen, tbPhoneEmp.Text, tbEmailEmp.Text, tbCoEmp.Text, tbCiEmp.Text, tbRegEmp.Text);
-                   /* bool st;
-                    if (tbStat.Text == "Admin")
-                        st = true;
-                    else// if(tbStat.Text == "Employee")
-                        st = false;
-                    s.UpdateInfoAsAdmin(id, int.Parse(tbSalEmp.Text), st);
-                   */
                     s.UpdateAcc(id, tbUN.Text, tbPW.Text);
                     MessageBox.Show("Updated Successfully");
-                    EmployeeView ev = new EmployeeView(id);
-                    ev.Show();
-                    f.Close();
                     AdminView av = new AdminView(id);
                     av.Show();
                     f.Close();
                 }
             }
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

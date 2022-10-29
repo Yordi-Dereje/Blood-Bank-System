@@ -71,11 +71,10 @@ namespace BloodManagementSystem
                     BloodType = bt
                 };
                 d.Insert();
+                CustomMessageBox c = new CustomMessageBox(p, 3, f, 0) { TopMost = true };
+                c.Show();
 
-                p.Controls.Clear();
-                DonorLogin dl = new DonorLogin(p, f) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-                p.Controls.Add(dl);
-                dl.Show();
+                
             }
         }
     }

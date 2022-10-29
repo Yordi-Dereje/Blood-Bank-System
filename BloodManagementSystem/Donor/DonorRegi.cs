@@ -33,33 +33,31 @@ namespace BloodManagementSystem
                 if (rbF.Checked == false && rbM.Checked == false)
                     errorProvider1.SetError(rb, "Gender required");
             }
-            if(ComboBox.SelectedItem == null)
+            if (ComboBox.SelectedItem == null)
                 errorProvider1.SetError(ComboBox, "Field required");
-            else if (string.IsNullOrEmpty(tbFN.Text))
+            if (string.IsNullOrEmpty(tbFN.Text))
                 errorProvider1.SetError(tbFN, "First Name required");
-            else if (string.IsNullOrEmpty(tbLN.Text))
+            if (string.IsNullOrEmpty(tbLN.Text))
                 errorProvider1.SetError(tbLN, "Last Name required");
-            else if (string.IsNullOrEmpty(tbEmail.Text))
+            if (string.IsNullOrEmpty(tbEmail.Text))
                 errorProvider1.SetError(tbEmail, "Email required");
-            else if (string.IsNullOrEmpty(tbPhone.Text))
+            if (string.IsNullOrEmpty(tbPhone.Text))
                 errorProvider1.SetError(tbPhone, "Phone Number required");
-            else if (string.IsNullOrEmpty(tbCo.Text))
+            if (string.IsNullOrEmpty(tbCo.Text))
                 errorProvider1.SetError(tbCo, "Country required");
-            else if (string.IsNullOrEmpty(tbCity.Text))
+            if (string.IsNullOrEmpty(tbCity.Text))
                 errorProvider1.SetError(tbCity, "City required");
-            else if (string.IsNullOrEmpty(tbReg.Text))
+            if (string.IsNullOrEmpty(tbReg.Text))
                 errorProvider1.SetError(tbReg, "Region required");
-            else if (!re.IsMatch(tbPhone.Text))
-            {
-                errorProvider1.SetError(tbPhone, "Phone formate error");
-            }
+            if (!re.IsMatch(tbPhone.Text))
+                errorProvider1.SetError(tbPhone, "Phone format error");
             else
             {
                 p.Controls.Clear();
                 int id = DonorClass.GetCount();
                 id = id + 1;
                 string gen;
-                if (rbF.Checked)
+                if (rbF.Checked == true)
                     gen = "Female";
                 else
                     gen = "Male";

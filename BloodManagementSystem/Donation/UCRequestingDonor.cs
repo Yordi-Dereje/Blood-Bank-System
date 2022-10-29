@@ -79,7 +79,7 @@ namespace BloodManagementSystem
             SQLDonationClass sd = new SQLDonationClass();
             sd.removePerson(_id);
             p.Controls.Clear();
-            RequestDonor r = new RequestDonor(p,id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            RequestDonor r = new RequestDonor(p, id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             p.Controls.Add(r);
             r.Show();
         }

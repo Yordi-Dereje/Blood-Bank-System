@@ -15,12 +15,10 @@ namespace BloodManagementSystem
     public partial class Transfer : Form
     {
         Panel p;
-        int id;
-        public Transfer(Panel p, int id)
+        public Transfer(Panel p)
         {
             InitializeComponent();
             this.p = p;
-            this.id = id;
         }
 
         private void Transfer_Load(object sender, EventArgs e)
@@ -42,7 +40,7 @@ namespace BloodManagementSystem
         private void btn_HospitalList_Click(object sender, EventArgs e)
         {
             p.Controls.Clear();
-            Hospital h = new Hospital(p,id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            Hospital h = new Hospital(p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             p.Controls.Add(h);
             h.Show();
         }
@@ -50,7 +48,7 @@ namespace BloodManagementSystem
         private void btn_history_Click(object sender, EventArgs e)
         {
             p.Controls.Clear();
-            TransferList tl = new TransferList(p,id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            TransferList tl = new TransferList(p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             p.Controls.Add(tl);
             tl.Show();
         }
@@ -103,7 +101,7 @@ namespace BloodManagementSystem
                 tbOm.Text = "";
             }
             p.Controls.Clear();
-            TransferList tl = new TransferList(p,id) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            TransferList tl = new TransferList(p) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             p.Controls.Add(tl);
             tl.Show();
         }

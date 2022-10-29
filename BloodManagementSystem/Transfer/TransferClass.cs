@@ -51,7 +51,7 @@ namespace BloodManagementSystem
                 };
             }
         }
-        public void TransferFormLoad(FlowLayoutPanel flp, Panel p,int id)
+        public void TransferFormLoad(FlowLayoutPanel flp, Panel p)
         {
             using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
             {
@@ -78,7 +78,7 @@ namespace BloodManagementSystem
                         u.Click += (object P, EventArgs e2) =>
                         {
                             p.Controls.Clear();
-                            TransferDetails td = new TransferDetails(p,id, item["Ap"].ToString(), item["Am"].ToString(), item["Bp"].ToString(), item["Bm"].ToString(), item["Abp"].ToString(), item["Abm"].ToString(), item["Op"].ToString(), item["Om"].ToString()) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                            TransferDetails td = new TransferDetails(p, item["Ap"].ToString(), item["Am"].ToString(), item["Bp"].ToString(), item["Bm"].ToString(), item["Abp"].ToString(), item["Abm"].ToString(), item["Op"].ToString(), item["Om"].ToString()) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
                             p.Controls.Add(td);
                             td.Show();
                         };

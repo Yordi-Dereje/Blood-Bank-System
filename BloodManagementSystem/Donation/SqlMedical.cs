@@ -20,7 +20,7 @@ namespace BloodManagementSystem
             {
                 try
                 {
-                    string query = "select count(*) from FULL_CHECK where ID = @id";
+                    string query = "EXEC SecondRequest @id";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@id", id);
                     con.Open();
@@ -33,8 +33,8 @@ namespace BloodManagementSystem
                 }
                 catch (Exception ee)
                 {
-                    MessageBox.Show(ee.Message);
-                    return false;
+                    //MessageBox.Show(ee.Message);
+                    return true;
                 };
             }
         }
@@ -149,6 +149,7 @@ namespace BloodManagementSystem
             }
         }
 
+
         public void illnessFormLoad(FlowLayoutPanel flp, Panel p)
         {
             using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
@@ -171,44 +172,6 @@ namespace BloodManagementSystem
                             flager = true;
                             u.BackColor = Color.LightGray;
                             
-                        }
-                        else if (flager == true)
-                        {
-                            flager = false;
-                            u.BackColor = Color.DarkGray;
-                        }
-                        flp.Controls.Add(u);
-                    }
-                }
-                catch (Exception ee)
-                {
-                    MessageBox.Show(ee.Message);
-                };
-            }
-        }
-
-        public void illnessFormLoadID(FlowLayoutPanel flp, Panel p, int id)
-        {
-            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString))
-            {
-                try
-                {
-                    con.Open();
-                    string query = "EXEC spLOAD_SEARCH_DONOR_PER_CHECK @id";
-                    SqlCommand cmd = new SqlCommand(query, con);
-                    cmd.Parameters.AddWithValue("@id", id);
-
-                    bool flager = false;
-                    SqlDataReader sdr = cmd.ExecuteReader();
-                    while (sdr.Read())
-                    {
-                        UCHaveIllness u = new UCHaveIllness();
-                        //filter those that have bit = 1
-                        if (flager == false)
-                        {
-                            flager = true;
-                            u.BackColor = Color.LightGray;
-
                         }
                         else if (flager == true)
                         {

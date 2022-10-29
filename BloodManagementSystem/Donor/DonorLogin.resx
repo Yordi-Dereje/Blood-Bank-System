@@ -123,10 +123,13 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="kryptonLabel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 161</value>
+    <value>556, 198</value>
+  </data>
+  <data name="kryptonLabel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="kryptonLabel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 26</value>
+    <value>115, 32</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="kryptonLabel3.TabIndex" type="System.Int32, mscorlib">
@@ -151,10 +154,13 @@
     <value>None</value>
   </data>
   <data name="txt_usDonor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 105</value>
+    <value>556, 129</value>
+  </data>
+  <data name="txt_usDonor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="txt_usDonor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>251, 35</value>
+    <value>335, 39</value>
   </data>
   <data name="txt_usDonor.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -175,10 +181,13 @@
     <value>None</value>
   </data>
   <data name="lbl_UserName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 64</value>
+    <value>556, 79</value>
+  </data>
+  <data name="lbl_UserName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="lbl_UserName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 26</value>
+    <value>128, 31</value>
   </data>
   <data name="lbl_UserName.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
@@ -202,10 +211,16 @@
     <value>None</value>
   </data>
   <data name="txt_pwDonor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 193</value>
+    <value>556, 238</value>
+  </data>
+  <data name="txt_pwDonor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="txt_pwDonor.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
+    <value>*</value>
   </data>
   <data name="txt_pwDonor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>251, 35</value>
+    <value>335, 39</value>
   </data>
   <data name="txt_pwDonor.TabIndex" type="System.Int32, mscorlib">
     <value>30</value>
@@ -229,10 +244,13 @@
     <value>NoControl</value>
   </data>
   <data name="btn_Login.Location" type="System.Drawing.Point, System.Drawing">
-    <value>474, 270</value>
+    <value>632, 332</value>
+  </data>
+  <data name="btn_Login.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="btn_Login.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 38</value>
+    <value>177, 47</value>
   </data>
   <data name="btn_Login.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
@@ -259,10 +277,13 @@
     <value>NoControl</value>
   </data>
   <data name="btn_CreateAcc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>433, 314</value>
+    <value>577, 386</value>
+  </data>
+  <data name="btn_CreateAcc.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="btn_CreateAcc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>217, 38</value>
+    <value>289, 47</value>
   </data>
   <data name="btn_CreateAcc.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
@@ -286,10 +307,13 @@
     <value>None</value>
   </data>
   <data name="btn_ForgotPassword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>580, 228</value>
+    <value>773, 281</value>
+  </data>
+  <data name="btn_ForgotPassword.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="btn_ForgotPassword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 17</value>
+    <value>123, 21</value>
   </data>
   <data name="btn_ForgotPassword.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
@@ -316,7 +340,7 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2875,7 +2899,7 @@
     <value>Stretch</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1002, 469</value>
+    <value>1336, 577</value>
   </data>
   <data name="gunaLabel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -2887,10 +2911,13 @@
     <value>Times New Roman, 16.2pt</value>
   </data>
   <data name="gunaLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>470, 11</value>
+    <value>627, 14</value>
+  </data>
+  <data name="gunaLabel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="gunaLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 25</value>
+    <value>158, 33</value>
   </data>
   <data name="gunaLabel1.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
@@ -2912,6 +2939,9 @@
   </data>
   <data name="$this.Location" type="System.Drawing.Point, System.Drawing">
     <value>612, 200</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>Manual</value>
