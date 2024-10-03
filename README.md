@@ -74,10 +74,6 @@ There are 3 roles in this program, namely:
 <br>
 
 
-<center><h3> Er diagram </h3> </center>
-
-Will be added in a short bit
-
 <center><h3> Authors </h3> </center>
 
 | Names | Github accounts | ID |
